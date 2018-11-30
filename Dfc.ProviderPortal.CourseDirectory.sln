@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.28307.102
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Dfc.ProviderPortal.CourseDirectory.Web", "src\Dfc.ProviderPortal.CourseDirectory.Web\Dfc.ProviderPortal.CourseDirectory.Web.csproj", "{2FAD26CF-7A10-4E20-BD2A-DC4E6B2F8560}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{2FAD26CF-7A10-4E20-BD2A-DC4E6B2F8560}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2FAD26CF-7A10-4E20-BD2A-DC4E6B2F8560}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2FAD26CF-7A10-4E20-BD2A-DC4E6B2F8560}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2FAD26CF-7A10-4E20-BD2A-DC4E6B2F8560}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {597DA06C-2CE4-4F8F-85F3-C2F9AFC7A451}
+	EndGlobalSection
+EndGlobal
