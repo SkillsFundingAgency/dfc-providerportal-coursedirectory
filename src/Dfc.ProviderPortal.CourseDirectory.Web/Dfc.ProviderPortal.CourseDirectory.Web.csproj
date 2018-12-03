@@ -13,12 +13,10 @@
     <PackageReference Include="Microsoft.AspNetCore.Razor.Design" Version="2.1.2" PrivateAssets="All" />
     <PackageReference Include="Microsoft.VisualStudio.Web.CodeGeneration.Design" Version="2.1.1" />
   </ItemGroup>
+	<ItemGroup>
+	<Content Update="Views\Providers\Index.cshtml">
+	<Pack>$(IncludeRazorContentInPack)</Pack>
+	</Content>
+	</ItemGroup>
 
-  <ItemGroup>
-    <Content Remove="wwwroot\css\main.css" />
-    <Content Remove="wwwroot\css\partials\view-components.pagination.css" />
-    <Content Remove="wwwroot\vendor\jquery-validation\additional-methods.min.js" />
-    <Content Remove="wwwroot\vendor\jquery-validation-unobtrusive\jquery.validate.unobtrusive.min.js" />
-    <Content Remove="wwwroot\css\main.css" />
-  </ItemGroup>
 </Project>
