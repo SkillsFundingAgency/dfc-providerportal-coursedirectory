@@ -3,5 +3,72 @@
     ViewData["Title"] = "Index";
 }
 
-<h2>Index</h2>
+<form>
+    <h1>find a provider</h1>
+    <div>
+        <input type="search" placeholder="enter a search term" aria-controls=""/>
+        <input type ="submit" />
+    </div>
+</form>
+
+<table class="govuk-table">
+    <caption class="govuk-table__caption">Providers</caption>
+    <thead class="govuk-table__head">
+        <tr class="govuk-table__row">
+            <th class="govuk-table__header" scope="col">UKRPN</th>
+            <th class="govuk-table__header" scope="col">Name</th>
+            <th class="govuk-table__header" scope="col">Town/City</th>
+            <th class="govuk-table__header" scope="col">Postcode</th>
+            <th class="govuk-table__header" scope="col"></th>
+        </tr>
+    </thead>
+    <tbody class="govuk-table__body">
+        <tr class="govuk-table__row">
+            <td class="govuk-table__cell">100000</td>
+            <td class="govuk-table__cell">Provider 1</td>
+            <td class="govuk-table__cell">Newcastle</td>
+            <td class="govuk-table__cell">NW4 6yg</td>
+            <td class="govuk-table__cell"><a href="#">Select</a></td>
+        </tr>
+        <tr class="govuk-table__row">
+            <td class="govuk-table__cell">100001</td>
+            <td class="govuk-table__cell">Provider 2</td>
+            <td class="govuk-table__cell">Newcastle</td>
+            <td class="govuk-table__cell">NW4 6yg</td>
+            <td class="govuk-table__cell"><a href="#">Select</a></td>
+        </tr>
+        <tr class="govuk-table__row">
+            <td class="govuk-table__cell">100020</td>
+            <td class="govuk-table__cell">Provider 3</td>
+            <td class="govuk-table__cell">Newcastle</td>
+            <td class="govuk-table__cell">NW4 6yg</td>
+            <td class="govuk-table__cell"><a href="#">Select</a></td>
+        </tr>
+    </tbody>
+</table>
+
+<div>
+    <div class="govuk-table__header">
+        <span>UKPRN</span>
+        <span>Name</span>
+        <span>Town/City</span>
+        <span>Postcode</span>
+    </div>
+</div>
+
+<div>
+    <h1>details view</h1>
+
+    <h3>status</h3>
+    <h3>ID</h3>
+    <h3>UKPRN</h3>
+    <h3>Name</h3>
+    <h3>Type</h3>
+    <h3>Address</h3>
+    <h3>Web</h3>
+    <h3>email</h3>
+    <h3>telephone</h3>
+    <h3>created</h3>
+    <h3>Updated</h3>
+</div>
 
