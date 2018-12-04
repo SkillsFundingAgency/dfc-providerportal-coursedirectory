@@ -1,0 +1,26 @@
+﻿@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@{
+}
+<header class="cd-hero-search">
+    <div class="content-container">
+        <div class="grid-row" data-sf-element="Row">
+            <div class="column-two-thirds">
+                <div>
+                    <h1 class="govuk-heading-xl">Find a Provider</h1>
+                    <p class="lede">You can search for providers by entering a name, UKPRN, City or Postcode</p>
+                </div>
+                <form action="/providers/results/" class="site-search ui-front" id="header-search" method="post">
+                    <div class="header-search-content">
+                        <label for="SearchTerm">Enter a  search term</label>
+                        <div class="search-input-wrapper">
+                            <input class="search-input js-search-focus" id="SearchTerm" name="SearchTerm" type="search" value="">
+                        </div>
+                        <input class="submit" type="submit" value="Search">
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</header>

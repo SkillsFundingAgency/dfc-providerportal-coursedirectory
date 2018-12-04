@@ -5429,3 +5429,13 @@
 .pagination .pagination__item.pagination__item--current:hover {
   text-decoration: underline;
 }
+
+.cd-hero-search {
+  background: green;
+  color: white;
+  padding: 2rem 0;
+}
+
+.cd-hero-green {
+  background-color: green;
+}
