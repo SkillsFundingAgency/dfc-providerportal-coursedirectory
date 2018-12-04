@@ -2,6 +2,45 @@
 @{
     ViewData["Title"] = "Index";
 }
-
-<h2>Add!</h2>
+<h1>Searct Results</h1>
+<table class="govuk-table">
+    <caption class="govuk-table__caption">Providers</caption>
+    <thead class="govuk-table__head">
+        <tr class="govuk-table__row">
+            <th class="govuk-table__header" scope="col">UKRPN</th>
+            <th class="govuk-table__header" scope="col">Name</th>
+            <th class="govuk-table__header" scope="col">Town/City</th>
+            <th class="govuk-table__header" scope="col">Postcode</th>
+            <th class="govuk-table__header" scope="col"></th>
+        </tr>
+    </thead>
+    <tbody class="govuk-table__body">
+        <tr class="govuk-table__row">
+            <td class="govuk-table__cell">100000</td>
+            <td class="govuk-table__cell">Provider 1</td>
+            <td class="govuk-table__cell">Newcastle</td>
+            <td class="govuk-table__cell">NW4 6yg</td>
+            <td class="govuk-table__cell"><a asp-controller="Providers"
+   asp-action="Details">Select</a></td>
+        </tr>
+        <tr class="govuk-table__row">
+            <td class="govuk-table__cell">100001</td>
+            <td class="govuk-table__cell">Provider 2</td>
+            <td class="govuk-table__cell">Newcastle</td>
+            <td class="govuk-table__cell">NW4 6yg</td>
+            <td class="govuk-table__cell">
+                <a asp-controller="Providers"
+                   asp-action="Details">Select</a>
+           </td>
+        </tr>
+        <tr class="govuk-table__row">
+            <td class="govuk-table__cell">100020</td>
+            <td class="govuk-table__cell">Provider 3</td>
+            <td class="govuk-table__cell">Newcastle</td>
+            <td class="govuk-table__cell">NW4 6yg</td>
+            <td class="govuk-table__cell"><a asp-controller="Providers"
+   asp-action="Details">Select</a></td>
+        </tr>
+    </tbody>
+</table>
 
