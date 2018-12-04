@@ -1,46 +1,62 @@
 ﻿
 @{
+    Layout = "_LayoutFullWidthHero";
     ViewData["Title"] = "Index";
 }
-<span class="govuk-caption-xl"> Course Provider</span>
-<h1 class="govuk-heading-xl">Search Results</h1>
-<table class="govuk-table">
-    <thead class="govuk-table__head">
-        <tr class="govuk-table__row">
-            <th class="govuk-table__header" scope="col">UKRPN</th>
-            <th class="govuk-table__header" scope="col">Name</th>
-            <th class="govuk-table__header" scope="col">Town/City</th>
-            <th class="govuk-table__header" scope="col">Postcode</th>
-            <th class="govuk-table__header" scope="col"></th>
-        </tr>
-    </thead>
-    <tbody class="govuk-table__body">
-        <tr class="govuk-table__row">
-            <td class="govuk-table__cell">100000</td>
-            <td class="govuk-table__cell">Provider 1 Provider Provider Provider Provider Provider  </td>
-            <td class="govuk-table__cell">Newcastle Newcastle Newcastle Newcastle</td>
-            <td class="govuk-table__cell">NW4 6yg</td>
-            <td class="govuk-table__cell"><a asp-controller="Providers"
-   asp-action="Details">Select</a></td>
-        </tr>
-        <tr class="govuk-table__row">
-            <td class="govuk-table__cell">100001</td>
-            <td class="govuk-table__cell">Provider 2</td>
-            <td class="govuk-table__cell">Newcastle</td>
-            <td class="govuk-table__cell">NW4 6yg</td>
-            <td class="govuk-table__cell">
-                <a asp-controller="Providers"
-                   asp-action="Details">Select</a>
-           </td>
-        </tr>
-        <tr class="govuk-table__row">
-            <td class="govuk-table__cell">100020</td>
-            <td class="govuk-table__cell">Provider 3</td>
-            <td class="govuk-table__cell">Newcastle</td>
-            <td class="govuk-table__cell">NW4 6yg</td>
-            <td class="govuk-table__cell"><a asp-controller="Providers"
-   asp-action="Details">Select</a></td>
-        </tr>
-    </tbody>
-</table>
-
+<div class="cd-hero-green">
+    <div class="govuk-width-container">
+        <partial name="_CDHeroSearch" />
+    </div>
+</div>
+<div class="govuk-width-container">
+    @*@await Component.InvokeAsync(nameof(GovukPhaseBanner))*@
+    @*<vc:govuk-phase-banner is-visible="true"></vc:govuk-phase-banner>*@
+    <main class="govuk-main-wrapper app-main-class" id="main-content" role="main">
+        <span class="govuk-caption-l"> Course Provider</span>
+        <h2 class="govuk-heading-xl">Search Results</h2>
+        <table class="govuk-table">
+            <thead class="govuk-table__head">
+                <tr class="govuk-table__row">
+                    <th class="govuk-table__header" scope="col">UKRPN</th>
+                    <th class="govuk-table__header" scope="col">Name</th>
+                    <th class="govuk-table__header" scope="col">Town/City</th>
+                    <th class="govuk-table__header" scope="col">Postcode</th>
+                    <th class="govuk-table__header" scope="col"></th>
+                </tr>
+            </thead>
+            <tbody class="govuk-table__body">
+                <tr class="govuk-table__row">
+                    <td class="govuk-table__cell">100000</td>
+                    <td class="govuk-table__cell">Provider 1 Provider Provider Provider Provider Provider  </td>
+                    <td class="govuk-table__cell">Newcastle Newcastle Newcastle Newcastle</td>
+                    <td class="govuk-table__cell">NW4 6yg</td>
+                    <td class="govuk-table__cell">
+                        <a asp-controller="Providers"
+                           asp-action="Details">Select</a>
+                    </td>
+                </tr>
+                <tr class="govuk-table__row">
+                    <td class="govuk-table__cell">100001</td>
+                    <td class="govuk-table__cell">Provider 2</td>
+                    <td class="govuk-table__cell">Newcastle</td>
+                    <td class="govuk-table__cell">NW4 6yg</td>
+                    <td class="govuk-table__cell">
+                        <a asp-controller="Providers"
+                           asp-action="Details">Select</a>
+                    </td>
+                </tr>
+                <tr class="govuk-table__row">
+                    <td class="govuk-table__cell">100020</td>
+                    <td class="govuk-table__cell">Provider 3</td>
+                    <td class="govuk-table__cell">Newcastle</td>
+                    <td class="govuk-table__cell">NW4 6yg</td>
+                    <td class="govuk-table__cell">
+                        <a asp-controller="Providers"
+                           asp-action="Details">Select</a>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <div> pagination here</div>
+    </main>
+</div>

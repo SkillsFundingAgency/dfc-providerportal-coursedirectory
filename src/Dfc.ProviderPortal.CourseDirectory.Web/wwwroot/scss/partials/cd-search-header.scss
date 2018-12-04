@@ -1,9 +1,12 @@
 ﻿.cd-hero-search {
-    background: green;
-    color:white;
-    padding:2rem 0;
+    color: white;
+    padding: 2rem 0;
 }
 
 .cd-hero-green {
-    background-color:green;
+    background-color: #28a197;
+
+    h1,p {
+        color: white;    
+    }
 }
