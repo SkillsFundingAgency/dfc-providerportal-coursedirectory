@@ -1,7 +1,12 @@
 ﻿
 @{
-    ViewData["Title"] = "Index";
+    Layout = "_LayoutFullWidthHero";
+    ViewData["Title"] = "Add a Provider";
+    ViewData["Subtext"] = "Enter UKPRN number";
+    ViewData["Target"] = "/providers/AddResults/";
 }
-
-<h2>Add!</h2>
-
+<div class="cd-hero-green">
+    <div class="govuk-width-container">
+        <partial name="_CDHeroSearch" />
+    </div>
+</div>

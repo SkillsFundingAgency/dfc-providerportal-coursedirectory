@@ -1,7 +1,9 @@
 ﻿
 @{
     Layout = "_LayoutFullWidthHero";
-    ViewData["Title"] = "Index";
+    ViewData["Title"] = "Search for a Provider";
+    ViewData["Subtext"] = "You can search for providers by entering a name, UKPRN, City or Postcode";
+    ViewData["Target"] = "/providers/results/";
 }
 
 <div class="cd-hero-green">
@@ -14,7 +16,13 @@
     @*<vc:govuk-phase-banner is-visible="true"></vc:govuk-phase-banner>*@
 
     <main class="govuk-main-wrapper app-main-class" id="main-content" role="main">
+        <div class="no-results">
+            <h2 class="govuk-heading-l">
+                No results found
+                <span class="govuk-caption-l">please check that the information you have entered is correct.</span>
 
+            </h2>
+        </div>
     </main>
 </div>
 
