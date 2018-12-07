@@ -1,0 +1,30 @@
+﻿@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@{
+}
+<span class="govuk-caption-l"> Course Provider</span>
+<h2 class="govuk-heading-xl">Search Results </h2>
+<table class="cd-provider-results govuk-table">
+    <thead class="govuk-table__head">
+        <tr class="govuk-table__row">
+            <th class="govuk-table__header" scope="col">UKRPN</th>
+            <th class="govuk-table__header" scope="col">Name</th>
+            <th class="govuk-table__header" scope="col">Town/City</th>
+            <th class="govuk-table__header" scope="col">Postcode</th>
+            <th class="govuk-table__header" scope="col"></th>
+        </tr>
+    </thead>
+    <tbody class="govuk-table__body">
+        <tr class="govuk-table__row">
+            <td class="govuk-table__cell">100000</td>
+            <td class="govuk-table__cell">Provider 1 Provider Provider Provider Provider Provider  </td>
+            <td class="govuk-table__cell">Newcastle Newcastle Newcastle Newcastle</td>
+            <td class="govuk-table__cell">NW4 6yg</td>
+            <td class="govuk-table__cell">
+                <a asp-controller="Providers"
+                   asp-action="Details">View</a>
+            </td>
+        </tr>
+    </tbody>
+</table>

@@ -43,4 +43,7 @@
 	</Content>
 	</ItemGroup>
 
+	<ItemGroup>
+	  <None Remove="Views\Shared\_CDProviderListTable.css" />
+	</ItemGroup>
 </Project>
