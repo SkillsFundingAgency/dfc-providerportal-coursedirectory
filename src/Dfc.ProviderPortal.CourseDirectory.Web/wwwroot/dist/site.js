@@ -133,11 +133,11 @@ function ajax_get(url, callback) {
     var xmlhttp = new XMLHttpRequest();
     xmlhttp.onreadystatechange = function() {
         if (xmlhttp.readyState == 4 && xmlhttp.status == 200) {
-            console.log('responseText:' + xmlhttp.responseText);
+            //console.log('responseText:' + xmlhttp.responseText);
             try {
                 var data = JSON.parse(xmlhttp.responseText);
             } catch(err) {
-                console.log(err.message + " in " + xmlhttp.responseText);
+                //console.log(err.message + " in " + xmlhttp.responseText);
                 return;
             }
             callback(data);
@@ -149,7 +149,7 @@ function ajax_get(url, callback) {
 }
  
 ajax_get('/js/providers.json', function(data) {
-console.log(data.length);
+//console.log(data.length);
 const target = document.getElementsByClassName('cd-provider-results')[0];
 
 
@@ -178,10 +178,10 @@ provs.push(v)
 }
 
 provs.forEach((x) => {
-let tb = document.createElement("tr");
-tb.classList.add("govuk-table__row");
-tb.innerHTML = x;
-target.append(tb);
+    let tb = document.createElement("tr");
+    tb.classList.add("govuk-table__row");
+    tb.innerHTML = x;
+    target.append(tb);
 });
 });
 
