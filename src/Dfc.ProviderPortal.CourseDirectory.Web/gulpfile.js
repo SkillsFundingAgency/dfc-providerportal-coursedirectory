@@ -9,6 +9,7 @@ var gulp = require("gulp"),
     cssmin = require("gulp-cssmin"),
     uglify = require("gulp-uglify"),
     sass = require("gulp-sass"),
+    babel = require("gulp-babel"),
     eslint = require("gulp-eslint"),
     merge = require("merge-stream");
 
@@ -80,6 +81,7 @@ gulp.task("js", function () {
 gulp.task("min:js", function () {
     return gulp.src([paths.js, "!" + paths.minJs], { base: "." })
         .pipe(concat(paths.concatMinJsDest))
+        .pipe(babel())
         .pipe(uglify())
         .pipe(gulp.dest("."));
 });
@@ -137,6 +139,12 @@ gulp.task("eslint:watch", function () {
 
 gulp.task("js:watch", function () {
     gulp.watch([paths.js], gulp.series("js"));
+});
+
+gulp.task("babel", function () {
+  return gulp.src("dist/site.js")
+    .pipe(babel())
+    .pipe(gulp.dest("dist"));
 });
 
 // commands
