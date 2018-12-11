@@ -141,11 +141,6 @@ gulp.task("js:watch", function () {
     gulp.watch([paths.js], gulp.series("js"));
 });
 
-gulp.task("babel", function () {
-  return gulp.src("dist/site.js")
-    .pipe(babel())
-    .pipe(gulp.dest("dist"));
-});
 
 // commands
 
@@ -172,6 +167,6 @@ gulp.task("prod",
         "clean",
         "sass",
         "js:vendor",
-        //"eslint",
+        "eslint",
         "min")
 );
