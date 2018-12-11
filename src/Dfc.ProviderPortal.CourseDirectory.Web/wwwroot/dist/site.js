@@ -149,15 +149,13 @@ function ajax_get(url, callback) {
 }
  
 ajax_get('/js/providers.json', function(data) {
-//console.log(data.length);
 const target = document.getElementsByClassName('cd-provider-results')[0];
 
 
 let provs = [];
 for (let x of data) {
-    //console.log(x.UnitedKingdomProviderReferenceNumber, x.ProviderName );
 
-let getContact = x.ProviderContact.map((y) => {
+ x.ProviderContact.map((y) => {
     if (y.ContactType === "L") {
             let v = `
                         <td class="govuk-table__cell">${x.UnitedKingdomProviderReferenceNumber}</td>
