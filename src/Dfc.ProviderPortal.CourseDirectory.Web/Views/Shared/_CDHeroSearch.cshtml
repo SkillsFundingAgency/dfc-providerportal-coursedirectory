@@ -9,18 +9,16 @@
             <div class="column-two-thirds">
                 <div>
                     <h1 class="govuk-heading-xl">@ViewBag.Title</h1>
-                    <p class="govuk-heading-m">@ViewBag.Subtext</p>
+                    <p class="column-two-thirds govuk-heading-m">@ViewBag.Subtext</p>
                 </div>
                 <form action="@ViewBag.Target" class="site-search ui-front" id="header-search" method="post">
                     <div class="header-search-content">
                         <div class="search-input-wrapper">
-                            <input class="govuk-input govuk-!-width-three-quarters search-input js-search-focus" id="SearchTerm" name="SearchTerm" type="search" value="">
-
+                            <input class="govuk-input govuk-!-width-three-quarters search-input js-search-focus" id="SearchTerm" name="SearchTerm" type="search" placeholder="Enter search term">
                             <div class="cd-c-search__item cd-search__submit-wrapper">
                                 <button type="submit" class=" submit">Search</button>
                             </div>
                         </div>
-
                     </div>
                 </form>
             </div>

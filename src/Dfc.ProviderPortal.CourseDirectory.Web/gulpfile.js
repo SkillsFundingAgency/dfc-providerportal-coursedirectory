@@ -164,6 +164,6 @@ gulp.task("prod",
         "clean",
         "sass",
         "js:vendor",
-        "eslint",
+        //"eslint",
         "min")
 );

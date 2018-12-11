@@ -1,4 +1,4 @@
-﻿/*eslint-disable */
+﻿
 
 
 function ajax_get(url, callback) {
