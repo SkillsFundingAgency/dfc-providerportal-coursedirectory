@@ -1,7 +1,19 @@
 @charset "UTF-8";
 .cd-hero-search {
   color: white;
-  padding: 2rem 0;
+  padding: 0.5rem 0 2rem 0;
+}
+
+.cd-hero-search .govuk-breadcrumbs {
+  color: white;
+}
+
+.cd-hero-search .govuk-breadcrumbs a {
+  color: white;
+}
+
+.cd-hero-search .govuk-breadcrumbs__list-item:before {
+  border-color: white;
 }
 
 .cd-hero-search__label {
