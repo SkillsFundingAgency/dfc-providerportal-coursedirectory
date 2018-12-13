@@ -67,6 +67,11 @@
     <Content Remove="wwwroot\vendor\jquery\jquery.slim.min.js" />
     <Content Remove="wwwroot\css\partials\view-components.pagination.css" />
     <Content Remove="wwwroot\.babel.rc" />
+    <Content Remove="wwwroot\dist\site.min.js" />
+    <Content Remove="wwwroot\dist\site.min.css" />
+    <Content Remove="wwwroot\vendor\jquery\jquery.slim.min.js" />
+    <Content Remove="wwwroot\dist\site.min.js" />
+    <Content Remove="wwwroot\dist\site.min.css" />
   </ItemGroup>
 	<ItemGroup>
 	<Content Update="Views\Providers\Index.cshtml">

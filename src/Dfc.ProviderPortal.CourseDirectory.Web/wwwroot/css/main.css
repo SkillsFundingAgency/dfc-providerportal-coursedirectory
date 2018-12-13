@@ -5497,3 +5497,21 @@
   z-index: 900;
   position: relative;
 }
+
+.success-container {
+  border: 2px solid #28a197;
+  position: relative;
+  padding: 1rem;
+  margin-bottom: 1rem;
+  color: white;
+}
+
+.success-close {
+  position: absolute;
+  right: 16px;
+  top: 6px;
+}
+
+.success-container p {
+  color: black;
+}
