@@ -12,6 +12,10 @@ namespace Dfc.ProviderPortal.CourseDirectory.Web.Controllers
         {
             return View();
         }
+        public IActionResult IndexError()
+        {
+            return View();
+        }
         public IActionResult Add()
         {
             return View();

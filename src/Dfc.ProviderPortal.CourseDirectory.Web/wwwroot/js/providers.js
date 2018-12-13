@@ -21,10 +21,10 @@ function ajax_get(url, callback) {
 }
  
 ajax_get('/js/providers.json', function(data) {
-const target = document.getElementsByClassName('cd-provider-results')[0];
+var target = document.getElementsByClassName('cd-provider-results')[0];
 
 
-let provs = [];
+var provs = [];
 for (let x of data) {
 
  x.ProviderContact.map((y) => {
@@ -51,3 +51,5 @@ provs.forEach((x) => {
     target.append(tb);
 });
 });
+
+//export default Providers;

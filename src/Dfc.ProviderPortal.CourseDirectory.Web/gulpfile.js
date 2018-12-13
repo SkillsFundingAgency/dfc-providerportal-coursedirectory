@@ -19,6 +19,8 @@ var paths = {
     webroot: "wwwroot/"
 };
 
+
+
 paths.js = paths.webroot + "js/**/*.js";
 paths.minJs = paths.webroot + "js/**/*.min.js";
 paths.scss = paths.webroot + "scss/**/*.scss";
@@ -81,7 +83,10 @@ gulp.task("js", function () {
 gulp.task("min:js", function () {
     return gulp.src([paths.js, "!" + paths.minJs], { base: "." })
         .pipe(concat(paths.concatMinJsDest))
-        .pipe(babel())
+        .pipe(babel( {
+            ignore: [paths.js ],
+            presets: ['@babel/env']
+    }))
         .pipe(uglify())
         .pipe(gulp.dest("."));
 });
@@ -153,6 +158,8 @@ gulp.task("dev",
         "sass",
         "js:vendor",
         "js",
+        "eslint",
+        "min",
         "min:css",
         "min:js:vendor:govuk-frontend",
         gulp.parallel(

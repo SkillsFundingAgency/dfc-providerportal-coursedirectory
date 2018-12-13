@@ -1,0 +1,10 @@
+﻿using System;
+namespace Dfc.ProviderPortal.CourseDirectory.Web.wwwroot
+{
+	public class babel
+	{
+		public babel()
+		{
+		}
+	}
+}

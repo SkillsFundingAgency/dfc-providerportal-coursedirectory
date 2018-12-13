@@ -1,0 +1,39 @@
+﻿@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@{
+}
+<header class="cd-hero-search">
+    <div class="content-container">
+        <div class="grid-row" data-sf-element="Row">
+            <div class="column-two-thirds">
+                <div>
+                    <h1 class="govuk-heading-xl">@ViewBag.Title</h1>
+                    <p class="column-two-thirds govuk-body-l">@ViewBag.Subtext</p>
+                </div>
+                <form action="@ViewBag.Target" class="site-search ui-front" id="header-search" method="post">
+                    <div class="govuk-form-group">
+                        <label class="govuk-label cd-hero-search__label" for="sort">
+                            select a search type
+                        </label>
+                        <select class="govuk-select cd-hero-select" id="sort" name="sort">
+                            <option value="name">Name</option>
+                            <option value="lars" selected>UKPRN</option>
+                            <option value="views">City/Town</option>
+                            <option value="postcode">Postcode</option>
+                        </select>
+                    </div>
+                    <div class="header-search-content">
+                        <div class="search-input-wrapper">
+
+                            <input class="govuk-input govuk-!-width-three-quarters search-input js-search-focus" id="SearchTerm" name="SearchTerm" type="search" placeholder="Enter search term">
+                            <div class="cd-c-search__item cd-search__submit-wrapper">
+                                <button type="submit" class=" submit">Search</button>
+                            </div>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</header>
