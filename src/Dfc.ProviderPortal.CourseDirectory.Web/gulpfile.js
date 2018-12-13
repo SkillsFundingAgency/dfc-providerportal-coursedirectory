@@ -175,5 +175,7 @@ gulp.task("prod",
         "sass",
         "js:vendor",
         "eslint",
-        "min")
+        "min",
+        "min:css",
+        "min:js:vendor:govuk-frontend")
 );
