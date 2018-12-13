@@ -1,0 +1,90 @@
+{
+  "$schema": "https://schema.management.azure.com/schemas/2015-01-01/deploymentTemplate.json",
+  "contentVersion": "1.0.0.0",
+  "parameters": {
+    "projectPrefix": {
+      "type": "string",
+      "metadata": {
+        "description": "Prefix for all resources created for the project (except storage account, see below). Should be in the format dfc-env-proj"
+      }
+    },
+    "appServicePlanName": {
+      "type": "string",
+      "metadata": {
+          "description": "Size of the instances in the app service plan"
+      }
+    },
+    "appServicePlanResourceGroup": {
+      "type": "string",
+      "metadata": {
+          "description": "Number of instances in the app service plan"
+      }
+    }
+  },
+  "variables": {
+    "dasDeploymentUrlBase": "https://raw.githubusercontent.com/SkillsFundingAgency/das-platform-building-blocks/master/templates/",
+    "appInsightsName": "[concat(parameters('projectPrefix'),'-ai')]",
+    "appServiceName": "[concat(parameters('projectPrefix'),'-as')]"
+  },
+  "resources": [
+    {
+      "apiVersion": "2017-05-10",
+      "name": "providerPortalCourseDirectoryAppInsights",
+      "type": "Microsoft.Resources/deployments",
+      "properties": {
+        "mode": "Incremental",
+        "templateLink": {
+          "uri": "[concat(variables('dasDeploymentUrlBase'),'application-insights.json')]",
+          "contentVersion": "1.0.0.0"
+        },
+        "parameters": {
+          "appInsightsName": {
+            "value": "[variables('appInsightsName')]"
+          },
+          "attachedService": {
+            "value": "[variables('appServiceName')]"
+          }
+        }
+      }
+    },
+    {
+      "apiVersion": "2017-05-10",
+      "name": "providerPortalCourseDirectoryAppService",
+      "type": "Microsoft.Resources/deployments",
+      "dependsOn": [
+        "providerPortalCourseDirectoryAppInsights"
+      ],
+      "properties": {
+        "mode": "Incremental",
+        "templateLink": {
+          "uri": "[concat(variables('dasDeploymentUrlBase'),'app-service.json')]",
+          "contentVersion": "1.0.0.0"
+        },
+        "parameters": {
+          "appServiceName": {
+            "value": "[variables('appServiceName')]"
+          },
+          "appServicePlanName": {
+            "value": "[parameters('appServicePlanName')]"
+          },
+          "appServicePlanResourceGroup": {
+            "value": "[parameters('appServicePlanResourceGroup')]"
+          },
+          "deployStagingSlot": {
+            "value": true
+          }
+        }
+      }
+    }
+  ],
+  "outputs": {
+    "appInsightInstrumentationKey": {
+      "type": "string",
+      "value": "[reference('providerPortalCourseDirectoryAppInsights').outputs.InstrumentationKey.value]"
+    },
+    "appServiceName": {
+      "type": "string",
+      "value": "[variables('appServiceName')]"
+    }
+  }
+}

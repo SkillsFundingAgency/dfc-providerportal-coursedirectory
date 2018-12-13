@@ -1,0 +1,15 @@
+{
+  "$schema": "http://schema.management.azure.com/schemas/2015-01-01/deploymentParameters.json#",
+  "contentVersion": "1.0.0.0",
+  "parameters": {
+    "projectPrefix": {
+      "value": "dfc-foo-prov-ui"
+    },
+    "appServicePlanName": {
+      "value": "dfc-dev-prov-asp"
+    },
+    "appServicePlanResourceGroup": {
+      "value": "dfc-dev-prov-rg"
+    }
+  }
+}
