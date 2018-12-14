@@ -5451,11 +5451,7 @@
   border-color: white;
 }
 
-.cd-hero-search__label {
-  color: white;
-}
-
-.cd-hero-search__label {
+.cd-hero-search .cd-hero-search__label {
   color: white;
 }
 
@@ -5463,7 +5459,7 @@
   display: flex;
 }
 
-.search-input[type="search"] {
+.search-input-wrapper .search-input[type="search"] {
   border: 0;
 }
 
@@ -5479,19 +5475,7 @@
   background-color: black;
 }
 
-.cd-search__submit {
-  position: relative;
-  padding: 0;
-  width: 40px;
-  height: 40px;
-  background-image: url(https://assets.publishing.service.gov.uk/frontend/govuk_publishing_componen…utton-ca89b2a….png);
-  background-repeat: no-repeat;
-  background-position: 2px 50%;
-  text-indent: -5000px;
-  overflow: hidden;
-}
-
-.submit {
+.cd-search__submit-wrapper .submit {
   height: 40px;
   width: 40px;
   cursor: pointer;
@@ -5526,4 +5510,10 @@
 
 .success-container p {
   color: black;
+}
+
+.cd-lars-search-result__container {
+  border: 1px solid #ececec;
+  margin-bottom: 1rem;
+  padding: 0 1rem;
 }

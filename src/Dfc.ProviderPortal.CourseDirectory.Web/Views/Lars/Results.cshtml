@@ -1,0 +1,34 @@
+﻿@{
+    Layout = "_LayoutFullWidthHero";
+    ViewData["Title"] = "Lars Search";
+    ViewData["Subtext"] = "Enter a LARS or QAN to begin your search";
+    ViewData["Target"] = "/providers/AddResults/";
+    ViewData["Placeholder"] = "Enter reference";
+}
+<div class="cd-hero-green">
+    <div class="govuk-width-container">
+        <partial name="_CDHeroSearch" />
+    </div>
+</div>
+
+
+<div class="govuk-width-container">
+    <h2>found <span>10</span> results for <span>Biology</span></h2>
+    <div class="govuk-grid-row">
+        <div class="govuk-grid-column-one-third">
+            <div class="">
+                filters
+            </div>
+        </div>
+        <div class="govuk-grid-column-two-thirds">
+            <div> showing 1 - 10 of 100 results</div>
+            <div class="cd-lars-results">
+
+            </div>
+        </div>
+    </div>
+
+
+
+
+</div>
