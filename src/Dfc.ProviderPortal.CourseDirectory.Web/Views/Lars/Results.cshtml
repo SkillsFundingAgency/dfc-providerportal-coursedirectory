@@ -1,9 +1,9 @@
 ﻿@{
     Layout = "_LayoutFullWidthHero";
-    ViewData["Title"] = "Lars Search";
-    ViewData["Subtext"] = "Enter a LARS or QAN to begin your search";
+    ViewData["Title"] = "Find A Qualification";
+    ViewData["Subtext"] = "Enter a search term or LARS/QAN to begin your search";
     ViewData["Target"] = "/providers/AddResults/";
-    ViewData["Placeholder"] = "Enter reference";
+    ViewData["Placeholder"] = "Search";
 }
 <div class="cd-hero-green">
     <div class="govuk-width-container">
@@ -16,12 +16,195 @@
     <h2>found <span>10</span> results for <span>Biology</span></h2>
     <div class="govuk-grid-row">
         <div class="govuk-grid-column-one-third">
-            <div class="">
-                filters
-            </div>
+            <div class="controls"><span>clear</span><span>open all</span></div>
+            <section class="accordian" role="tablist" aria-live="polite">
+                <article>
+                    <span id="tab0" tabindex="0" class="section-title" aria-controls="panel0" role="tab">
+                        <h3 class="govuk-heading-s">Level <span>+</span></h3>
+                    </span>
+                    <div class="collapsing-section" id="panel0" aria-labelledby="tab0" role="tabpanel">
+                        <fieldset class="govuk-fieldset" aria-describedby="waste-hint">
+                            <legend class="govuk-fieldset__legend govuk-fieldset__legend--xl">
+
+                            </legend>
+
+                            <div class="govuk-checkboxes">
+                                <div class="govuk-checkboxes__item">
+                                    <input class="govuk-checkboxes__input" id="All" name="All" type="checkbox" value="carcasses">
+                                    <label class="govuk-label govuk-checkboxes__label" for="All">
+                                        All
+                                    </label>
+                                </div>
+                                <div class="govuk-checkboxes__item">
+                                    <input class="govuk-checkboxes__input" id="Entry-level" name="Entry-level" type="checkbox" value="mines">
+                                    <label class="govuk-label govuk-checkboxes__label" for="Entry-level">
+                                        Entry Level
+                                    </label>
+                                </div>
+                                <div class="govuk-checkboxes">
+                                    <div class="govuk-checkboxes__item">
+                                        <input class="govuk-checkboxes__input" id="level-1" name="level-1" type="checkbox" value="carcasses">
+                                        <label class="govuk-label govuk-checkboxes__label" for="level-1">
+                                            Level 1
+                                        </label>
+                                    </div>
+                                    <div class="govuk-checkboxes__item">
+                                        <input class="govuk-checkboxes__input" id="level-2" name="level-2" type="checkbox" value="mines">
+                                        <label class="govuk-label govuk-checkboxes__label" for="level-2">
+                                            Level 2
+                                        </label>
+                                    </div>
+                                    <div class="govuk-checkboxes__item">
+                                        <input class="govuk-checkboxes__input" id="level-3" name="level-3" type="checkbox" value="farm">
+                                        <label class="govuk-label govuk-checkboxes__label" for="level-3">
+                                            Level 3
+                                        </label>
+                                    </div>
+                                    <div class="govuk-checkboxes__item">
+                                        <input class="govuk-checkboxes__input" id="level-4" name="level-4" type="checkbox" value="farm">
+                                        <label class="govuk-label govuk-checkboxes__label" for="level-4">
+                                            Level 4
+                                        </label>
+                                    </div>
+                                    <div class="govuk-checkboxes__item">
+                                        <input class="govuk-checkboxes__input" id="level-5" name="level-5" type="checkbox" value="farm">
+                                        <label class="govuk-label govuk-checkboxes__label" for="level-5">
+                                            Level 5
+                                        </label>
+                                    </div>
+                                    <div class="govuk-checkboxes__item">
+                                        <input class="govuk-checkboxes__input" id="level-6" name="level-6" type="checkbox" value="farm">
+                                        <label class="govuk-label govuk-checkboxes__label" for="level-6">
+                                            Level 6
+                                        </label>
+                                    </div>
+                                    <div class="govuk-checkboxes__item">
+                                        <input class="govuk-checkboxes__input" id="level-7" name="level-7" type="checkbox" value="farm">
+                                        <label class="govuk-label govuk-checkboxes__label" for="level-7">
+                                            Level 7
+                                        </label>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </fieldset>
+                    </div>
+                </article>
+                <article>
+                    <span id="tab1" tabindex="0" class="section-title" aria-controls="panel1" role="tab">
+                        <h3 class="govuk-heading-s">Awarding Body <span>+</span></h3>
+                    </span>
+                    <div class="collapsing-section" id="panel1" aria-labelledby="tab1" role="tabpanel">
+                        <div class="govuk-checkboxes">
+                            <div class="govuk-checkboxes__item">
+                                <input class="govuk-checkboxes__input" id="CG" name="All" type="checkbox" value="carcasses">
+                                <label class="govuk-label govuk-checkboxes__label" for="CG">
+                                    City and Guilds of London Institute (5682)
+                                </label>
+                            </div>
+                            <div class="govuk-checkboxes__item">
+                                <input class="govuk-checkboxes__input" id="OCR" name="OCR" type="checkbox" value="carcasses">
+                                <label class="govuk-label govuk-checkboxes__label" for="OCR">
+                                    OCR (2589)
+                                </label>
+                            </div>
+                            <div class="govuk-checkboxes__item">
+                                <input class="govuk-checkboxes__input" id="NCFE" name="NCFE" type="checkbox" value="carcasses">
+                                <label class="govuk-label govuk-checkboxes__label" for="NCFE">
+                                    NCFE (1460)
+                                </label>
+                            </div>
+                            <div class="govuk-checkboxes__item">
+                                <input class="govuk-checkboxes__input" id="VTCT" name="VTCT" type="checkbox" value="carcasses">
+                                <label class="govuk-label govuk-checkboxes__label" for="VTCT">
+                                    VTCT (1142)
+                                </label>
+                            </div>
+                            <div class="govuk-checkboxes__item">
+                                <input class="govuk-checkboxes__input" id="ABC" name="ABC" type="checkbox" value="carcasses">
+                                <label class="govuk-label govuk-checkboxes__label" for="ABC">
+                                    ABC Awards (1111)
+                                </label>
+                            </div>
+                            <div class="govuk-checkboxes__item">
+                                <input class="govuk-checkboxes__input" id="NOCN" name="NOCN" type="checkbox" value="carcasses">
+                                <label class="govuk-label govuk-checkboxes__label" for="NOCN">
+                                    NOCN (1079)
+                                </label>
+                            </div>
+                            <div class="govuk-checkboxes__item">
+                                <input class="govuk-checkboxes__input" id="WJEC-CBAC" name="WJEC-CBAC" type="checkbox" value="carcasses">
+                                <label class="govuk-label govuk-checkboxes__label" for="WJEC-CBAC">
+                                    WJEC-CBAC (1016)
+                                </label>
+                            </div>
+                            <div class="govuk-checkboxes__item">
+                                <input class="govuk-checkboxes__input" id="AQA" name="AQA" type="checkbox" value="carcasses">
+                                <label class="govuk-label govuk-checkboxes__label" for="AQA">
+                                    AQA Education
+                                </label>
+                            </div>
+                            <div class="govuk-checkboxes__item">
+                                <input class="govuk-checkboxes__input" id="Pearson" name="Pearson" type="checkbox" value="carcasses">
+                                <label class="govuk-label govuk-checkboxes__label" for="Pearson">
+                                    Pearson EDI (944)
+                                </label>
+                            </div>
+                            <div class="govuk-checkboxes__item">
+                                <input class="govuk-checkboxes__input" id="AIM" name="AIM" type="checkbox" value="carcasses">
+                                <label class="govuk-label govuk-checkboxes__label" for="AIM">
+                                    AIM Awards (943)
+                                </label>
+                            </div>
+                            <div class="govuk-checkboxes__item">
+                                <input class="govuk-checkboxes__input" id="Ascentis" name="Ascentis" type="checkbox" value="carcasses">
+                                <label class="govuk-label govuk-checkboxes__label" for="Ascentis">
+                                    Ascentis (935)
+                                </label>
+                            </div>
+                            <div class="govuk-checkboxes__item">
+                                <input class="govuk-checkboxes__input" id="ACLL" name="ACLL" type="checkbox" value="carcasses">
+                                <label class="govuk-label govuk-checkboxes__label" for="ACLL">
+                                    Excellence, Achievement &amp; Learning Limited (710)
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+            </section>
         </div>
         <div class="govuk-grid-column-two-thirds">
-            <div> showing 1 - 10 of 100 results</div>
+            <div class="sort-container">
+                <span> Showing 1 - 25 of 120 | </span>
+                <ul class="list-inline sort-order sort-list">
+                    <li>
+                        <span style="font-weight: 600">Show:</span>
+                    </li>
+                    <li class="sort-list-item">
+                        <a href="#">
+                            10
+                        </a>
+                    </li>
+                    <li class="sort-list-item">
+                        <a href="#">
+                            20
+
+                        </a>
+                    </li>
+                    <li class="sort-list-item">
+                        <a href="#">
+                            50
+
+                        </a>
+                    </li>
+                    <li class="sort-list-item">
+                        <a href="#">
+                            100
+
+                        </a>
+                    </li>
+                </ul>
+            </div>
             <div class="cd-lars-results">
 
             </div>
