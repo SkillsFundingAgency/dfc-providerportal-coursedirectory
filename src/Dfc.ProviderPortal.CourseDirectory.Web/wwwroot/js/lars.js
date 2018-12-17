@@ -37,8 +37,10 @@ var target = document.getElementsByClassName('cd-lars-results')[0];
     }
     courses.forEach((course)=> {
     let container = document.createElement("div");
-    container.innerHTML = course;
-       target.append(container); 
+        container.innerHTML = course;
+        if(target) {
+            target.append(container);
+            }
     });
 
 

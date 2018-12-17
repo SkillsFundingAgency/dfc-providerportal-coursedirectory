@@ -23,7 +23,6 @@ function ajax_get(url, callback) {
 ajax_get('/js/providers.json', function(data) {
 var target = document.getElementsByClassName('cd-provider-results')[0];
 
-
 var provs = [];
 for (let x of data) {
 
@@ -48,7 +47,9 @@ provs.forEach((x) => {
     let tb = document.createElement("tr");
     tb.classList.add("govuk-table__row");
     tb.innerHTML = x;
-    target.append(tb);
+    if (target) {
+        target.append(tb);
+        }
 });
 });
 
