@@ -61,4 +61,10 @@
 
 
 
+#courseStartDate {
+    display: none;
+}
 
+input[value="specific"]:checked ~ #courseStartDate {
+    display: block;
+}
