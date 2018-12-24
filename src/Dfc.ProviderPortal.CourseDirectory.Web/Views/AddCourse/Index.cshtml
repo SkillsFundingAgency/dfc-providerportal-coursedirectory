@@ -4,7 +4,7 @@
 @{
 }
 <h1 class="govuk-heading-l">Add a course</h1>
-
+<form>
 <div class="govuk-character-count govuk-!-margin-bottom-9" data-module="character-count" data-maxlength="200">
     <div class="govuk-form-group">
         <label class="govuk-label govuk-!-font-size-24" for="with-hint">
@@ -70,3 +70,7 @@
         You can enter up to 200 characters
     </span>
 </div>
+<button type="submit" class="govuk-button" formaction="/AddCourse/Details" formmethod="post">
+    Continue
+</button>
+</form>
