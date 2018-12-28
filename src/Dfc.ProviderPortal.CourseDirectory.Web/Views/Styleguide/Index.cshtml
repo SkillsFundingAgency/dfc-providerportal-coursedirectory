@@ -7,8 +7,8 @@
 <h2 class="govuk-heading-m">Header with search bar</h2>
 <section class="styleguide-item">
     <div>
-        <h1 class="govuk-heading-l govuk-!-margin-top-4">section header</h1>
-        <p class="column-two-thirds govuk-heading-m">descriptive text</p>
+        <h1 class="govuk-heading-l govuk-!-margin-top-4">Section header</h1>
+        <p class="column-two-thirds govuk-heading-m">descriptive text what ca the user do.</p>
     </div>
     <form action="@ViewBag.Target" class="site-search ui-front" id="header-search" method="post">
         <div class="header-search-content">
@@ -21,7 +21,7 @@
         </div>
     </form>
 </section>
-<h2 class="govuk-heading-m">start date</h2>
+<h2 class="govuk-heading-m">Start date</h2>
 <section class="styleguide-item">
     <div class="govuk-form-group govuk-!-margin-bottom-9">
         <label class="govuk-label govuk-!-font-size-24" for="with-hint">
@@ -85,5 +85,22 @@
 
     <a href="#" class="govuk-link">govuk-link</a>
 </section>
-<section class="styleguide-item"></section>
+<h2 class="govuk-heading-m">character check input box</h2>
+<section class="styleguide-item">
+    <div class="govuk-character-count govuk-!-margin-bottom-9" data-module="character-count" data-maxlength="200">
+        <div class="govuk-form-group">
+            <label class="govuk-label govuk-!-font-size-24" for="with-hint">
+                Who is this course for?
+            </label>
+            <span id="with-hint-hint" class="govuk-hint">
+                Who is this course designed for.
+            </span>
+            <textarea class="govuk-textarea js-character-count " id="with-hint" name="with-hint" rows="5" aria-describedby="with-hint-hint"></textarea>
+        </div>
+
+        <span id="with-hint-info" class="govuk-hint govuk-character-count__message" aria-live="polite">
+            You can enter up to 200 characters
+        </span>
+    </div>
+</section>
 <section class="styleguide-item"></section>
