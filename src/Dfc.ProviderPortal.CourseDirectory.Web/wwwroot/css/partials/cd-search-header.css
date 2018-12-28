@@ -23,10 +23,6 @@
   display: flex;
 }
 
-.search-input-wrapper .search-input[type="search"] {
-  border: 0;
-}
-
 .cd-hero-green {
   background-color: #28a197;
 }

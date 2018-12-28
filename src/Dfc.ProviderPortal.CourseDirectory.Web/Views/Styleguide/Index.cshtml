@@ -1,0 +1,89 @@
+﻿@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@{
+}
+<h1 class="govuk-heading-xl">Styleguide</h1>
+<h2 class="govuk-heading-m">Header with search bar</h2>
+<section class="styleguide-item">
+    <div>
+        <h1 class="govuk-heading-l govuk-!-margin-top-4">section header</h1>
+        <p class="column-two-thirds govuk-heading-m">descriptive text</p>
+    </div>
+    <form action="@ViewBag.Target" class="site-search ui-front" id="header-search" method="post">
+        <div class="header-search-content">
+            <div class="search-input-wrapper">
+                <input class="govuk-input govuk-!-width-three-quarters search-input js-search-focus" id="SearchTerm" name="SearchTerm" type="search" placeholder="Search">
+                <div class="cd-c-search__item cd-search__submit-wrapper">
+                    <button type="submit" class=" submit">Search</button>
+                </div>
+            </div>
+        </div>
+    </form>
+</section>
+<h2 class="govuk-heading-m">start date</h2>
+<section class="styleguide-item">
+    <div class="govuk-form-group govuk-!-margin-bottom-9">
+        <label class="govuk-label govuk-!-font-size-24" for="with-hint">
+            Start date
+        </label>
+        <span id="rwith-hint-hint" class="govuk-hint">
+            Please select the type of start date for this course.
+        </span>
+        <div class="govuk-radios">
+            <div class="govuk-radios__item">
+                <input class="govuk-radios__input" id="where-do-you-live-1" name="start-date" type="radio" value="specific">
+                <label class="govuk-label govuk-radios__label" for="where-do-you-live-1">
+                    Specific start date
+                </label>
+
+                <div class="govuk-date-input show-radios govuk-!-margin-top-4" id="courseStartDate">
+                    <span id="rwith-hint-hint" class="govuk-hint">
+                        Please enter the date (dd/mm/yyyy).
+                    </span>
+                    <div class="govuk-date-input__item">
+                        <div class="govuk-form-group">
+                            <label class="govuk-label govuk-date-input__label" for="dob-day">
+                                Day
+                            </label>
+                            <input class="govuk-input govuk-date-input__input govuk-input--width-2" id="dob-day" name="dob-day" type="number" pattern="[0-9]*">
+                        </div>
+                    </div>
+                    <div class="govuk-date-input__item">
+                        <div class="govuk-form-group">
+                            <label class="govuk-label govuk-date-input__label" for="dob-month">
+                                Month
+                            </label>
+                            <input class="govuk-input govuk-date-input__input govuk-input--width-2" id="dob-month" name="dob-month" type="number" pattern="[0-9]*">
+                        </div>
+                    </div>
+                    <div class="govuk-date-input__item">
+                        <div class="govuk-form-group">
+                            <label class="govuk-label govuk-date-input__label" for="dob-year">
+                                Year
+                            </label>
+                            <input class="govuk-input govuk-date-input__input govuk-input--width-4" id="dob-year" name="dob-year" type="number" pattern="[0-9]*">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="govuk-radios__item">
+                <input class="govuk-radios__input" id="where-do-you-live-2" name="start-date" type="radio" value="scotland">
+                <label class="govuk-label govuk-radios__label" for="where-do-you-live-2">
+                    Flexible start date
+                </label>
+            </div>
+
+        </div>
+    </div>
+</section>
+<h2 class="govuk-heading-m">Buttons</h2>
+<section class="styleguide-item">
+    <button type="submit" class="govuk-button">
+        Save and continue
+    </button>
+
+    <a href="#" class="govuk-link">govuk-link</a>
+</section>
+<section class="styleguide-item"></section>
+<section class="styleguide-item"></section>
