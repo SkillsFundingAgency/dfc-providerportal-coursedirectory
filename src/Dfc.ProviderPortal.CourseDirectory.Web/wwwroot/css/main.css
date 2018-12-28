@@ -5459,10 +5459,6 @@
   display: flex;
 }
 
-.search-input-wrapper .search-input[type="search"] {
-  border: 0;
-}
-
 .cd-hero-green {
   background-color: #28a197;
 }
@@ -5492,6 +5488,14 @@
   color: white;
   z-index: 900;
   position: relative;
+}
+
+#courseStartDate {
+  display: none;
+}
+
+input[value="specific"]:checked ~ #courseStartDate {
+  display: block;
 }
 
 .success-container {
@@ -5619,4 +5623,10 @@ ul.sort-list {
 
 .collapsing-section p {
   margin: 0;
+}
+
+.styleguide-item {
+  border: 1px solid #ececec;
+  padding: 1em;
+  margin-bottom: 2em;
 }
