@@ -1,0 +1,19 @@
+﻿.user-status-controls {
+
+    margin-top: 15px;
+    text-align: right;
+
+    > * {
+        padding-right: .8rem;
+
+        &:last-child {
+            padding-right:0;
+        }
+    }
+}
+
+.cd-secondary-nav-container {
+    border-top: 1px solid #bfc1c3;
+    border-bottom: 1px solid #bfc1c3;
+}
+
