@@ -11,12 +11,13 @@
             <div class="column-two-thirds">
                 <div>
                     <h1 class="govuk-heading-l govuk-!-margin-top-4">@ViewBag.Title</h1>
-                    <p class="column-two-thirds govuk-heading-m">@ViewBag.Subtext</p>
+                    <p class="column-two-thirds gov-body">@ViewBag.Subtext</p>
                 </div>
                 <form action="@ViewBag.Target" class="site-search ui-front" id="header-search" method="post">
                     <div class="header-search-content">
                         <div class="search-input-wrapper">
-                            <input class="govuk-input govuk-!-width-three-quarters search-input js-search-focus" id="SearchTerm" name="SearchTerm" type="search" placeholder="@ViewBag.Placeholder">
+                            <label class="cd-search__label">@ViewBag.Placeholder</label>
+                            <input class="govuk-input govuk-!-width-three-quarters search-input js-search-focus" id="SearchTerm" name="SearchTerm" type="search">
                             <div class="cd-c-search__item cd-search__submit-wrapper">
                                 <button type="submit" class=" submit">Search</button>
                             </div>

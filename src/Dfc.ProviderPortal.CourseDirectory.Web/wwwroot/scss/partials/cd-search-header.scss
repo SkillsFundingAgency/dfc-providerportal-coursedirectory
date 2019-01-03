@@ -1,5 +1,5 @@
 ﻿.cd-hero-search {
-    color: white;
+    //color: white;
     padding: 0.5rem 0 2rem 0;
 
     .govuk-breadcrumbs {
@@ -10,24 +10,33 @@
         }
     }
 
+    .cd-search__label {
+        position: absolute;
+        top: 10px;
+        left: 10px;
+        color: #6f777b;
+        font-size:19px;
+    }
+
     .govuk-breadcrumbs__list-item:before {
         border-color: white;
     }
 
     .cd-hero-search__label {
-        color: white;
+        //color: white;
     }
 }
 
 .search-input-wrapper {
     display: flex;
+    position:relative;
 
 
 }
 
 
 .cd-hero-green {
-    background-color: #28a197;
+    //background-color: #28a197;
 
     h1, p {
         color: white;
