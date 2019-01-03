@@ -33,7 +33,8 @@ for (let x of data) {
                         <td class="govuk-table__cell">${x.ProviderName}</td>
                         <td class="govuk-table__cell">${y.ContactAddress.Items[0]}, ${y.ContactAddress.StreetDescription}</td>
                         <td class="govuk-table__cell">${y.ContactAddress.PostCode}</td>
-                        <td class="govuk-table__cell"><a href="../../providers/details">view</a></td>
+                        <td class="govuk-table__cell">${x.ProviderStatus}</td>
+                        <td class="govuk-table__cell"><a class="govuk-link" href="../../providers/details">view</a></td>
                         `
 provs.push(v)
         }
