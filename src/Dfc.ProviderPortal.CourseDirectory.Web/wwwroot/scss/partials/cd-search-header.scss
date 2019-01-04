@@ -1,9 +1,6 @@
 ﻿.cd-hero-search {
-    //color: white;
     padding: 0.5rem 0 2rem 0;
-
-
-
+    
     .cd-search__label {
         position: absolute;
         top: 10px;
@@ -11,9 +8,7 @@
         color: #6f777b;
         font-size:19px;
     }
-
-
-
+    
     .cd-hero-search__label {
         //color: white;
     }
@@ -22,17 +17,6 @@
 .search-input-wrapper {
     display: flex;
     position:relative;
-
-
-}
-
-
-.cd-hero-green {
-    //background-color: #28a197;
-
-    h1, p {
-        color: white;
-    }
 }
 
 .cd-search__submit-wrapper {
@@ -57,8 +41,6 @@
         position: relative;
     }
 }
-
-
 
 #courseStartDate {
     display: none;
