@@ -1,0 +1,60 @@
+﻿$success: #006435;
+$info: #005ea5;
+$warning: #f47738;
+
+.cd-success-summary {
+    padding: 2em;
+    border: 5px solid $success;
+    margin-bottom: 2em;
+
+    .cd-success-summary__title {
+        font-family: nta,Arial,sans-serif;
+        font-weight:700;
+    }
+
+    .cd-success-summary__body {
+        color: $success;
+
+        .cd-success-summary__list a {
+            color: $success;
+        }
+    }
+}
+
+.cd-warning-summary {
+    padding: 2em;
+    border: 5px solid $warning;
+    margin-bottom: 2em;
+
+    .cd-warning-summary__title {
+        font-family: nta,Arial,sans-serif;
+        font-weight: 700;
+    }
+
+    .cd-warning-summary__body {
+        color: $warning;
+
+        .cd-warning-summary__list a {
+            color: $warning;
+        }
+    }
+}
+
+.cd-info-summary {
+    padding: 2em;
+    border: 5px solid $info;
+    margin-bottom: 2em;
+
+    .cd-info-summary__title {
+        font-family: nta,Arial,sans-serif;
+        font-weight: 700;
+    }
+
+    .cd-info-summary__body {
+        color: $info;
+
+        .cd-info-summary__list a {
+            color: $info;
+        }
+    }
+}
