@@ -31,7 +31,7 @@ var target = document.getElementsByClassName('cd-lars-results')[0];
         <p class="govuk-body">LARS/QAN:<span class="govuk-!-font-weight-bold">${x.LearnAimRef}</span></p>
         <p class="govuk-body">Level: <span class="govuk-!-font-weight-bold">${x.NotionalNVQLevelv2}</span></p>
         <p class="govuk-body">Awarding body: <span class="govuk-!-font-weight-bold">${x.AwardOrgCode}</span></p>
-        <p class="govuk-body"><a class="govuk-link" href="#">Add this qualification</a></p>
+        <p class="govuk-body"><a class="govuk-link" href="/addCourse">Add this qualification</a></p>
      </div>`
       courses.push(course);
     }

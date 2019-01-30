@@ -54,4 +54,20 @@ provs.forEach((x) => {
 });
 });
 
+const searchInput = document.getElementById("search");
+const searchInputLabel = document.querySelector(".search-input-wrapper .cd-search__label");
+
+
+searchInput.addEventListener("focus", () => {
+
+
+if (document.querySelector(":focus") !== searchInput) {
+    console.log("t");
+searchInputLabel.classList.add("visible");
+} else {
+searchInputLabel.classList.remove("visible");
+}
+
+})
+
 //export default Providers;
