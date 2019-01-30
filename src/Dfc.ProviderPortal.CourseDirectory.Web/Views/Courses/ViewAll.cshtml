@@ -1,0 +1,190 @@
+﻿@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@{
+}
+<div>
+    <h1 class="govuk-heading-xl">All courses</h1>
+    <div class="govuk-tabs" data-module="tabs">
+
+
+        <ul class="govuk-tabs__list">
+            <li class="govuk-tabs__list-item">
+                <a class="govuk-tabs__tab govuk-tabs__tab--selected" href="#live">
+                    Live (3)
+                </a>
+            </li>
+            <li class="govuk-tabs__list-item">
+                <a class="govuk-tabs__tab" href="#pending">
+                    Pending (3)
+                </a>
+            </li>
+            <li class="govuk-tabs__list-item">
+                <a class="govuk-tabs__tab" href="#archived">
+                    Archived (3)
+                </a>
+            </li>
+        
+        </ul>
+
+        <section class="govuk-tabs__panel" id="live">
+            <table class="govuk-table">
+                <caption class="govuk-table__caption govuk-heading-l">Live courses</caption>
+                <thead class="govuk-table__head">
+                    <tr class="govuk-table__row">
+                        <th class="govuk-table__header" scope="col">Course name</th>
+                        <th class="govuk-table__header" scope="col">Location</th>
+                        <th class="govuk-table__header" scope="col">Start date</th>
+                        <th class="govuk-table__header" scope="col">Length</th>
+                        <th class="govuk-table__header" scope="col">Mode</th>
+                        <th class="govuk-table__header" scope="col"></th>
+                    </tr>
+                </thead>
+                <tbody class="govuk-table__body">
+                    <tr class="govuk-table__row">
+                        <th class="govuk-table__header" scope="row">
+                        Advanced maths<br />
+                                      <span class="govuk-caption-m">govuk-caption-m</span>
+                        </th>
+                        <td class="govuk-table__cell">London</td>
+                        <td class="govuk-table__cell ">25/03/2019</td>
+                        <td class="govuk-table__cell ">12 weeks</td>
+                        <td class="govuk-table__cell ">online</td>
+                        <td class="govuk-table__cell "><a asp-controller="Courses" asp-action="summary">change</a></td>
+                    </tr>
+                    <tr class="govuk-table__row">
+                        <th class="govuk-table__header" scope="row">
+                            Advanced maths<br />
+                            <span class="govuk-caption-m">govuk-caption-m</span>
+                        </th>
+                        <td class="govuk-table__cell">London</td>
+                        <td class="govuk-table__cell ">25/03/2019</td>
+                        <td class="govuk-table__cell ">12 weeks</td>
+                        <td class="govuk-table__cell ">online</td>
+                        <td class="govuk-table__cell "><a asp-controller="Courses" asp-action="summary">change</a></td>
+                    </tr>
+                    <tr class="govuk-table__row">
+                        <th class="govuk-table__header" scope="row">
+                            Advanced maths<br />
+                            <span class="govuk-caption-m">govuk-caption-m</span>
+                        </th>
+                        <td class="govuk-table__cell">London</td>
+                        <td class="govuk-table__cell ">25/03/2019</td>
+                        <td class="govuk-table__cell ">12 weeks</td>
+                        <td class="govuk-table__cell ">online</td>
+                        <td class="govuk-table__cell "><a asp-controller="Courses" asp-action="summary">change</a></td>
+                    </tr>
+                   
+                </tbody>
+            </table>
+
+        </section>
+        <section class="govuk-tabs__panel govuk-tabs__panel--hidden" id="pending">
+            <a href="">publish all</a>
+            <table class="govuk-table">
+                <caption class="govuk-table__caption govuk-heading-l">Pending courses</caption>
+
+                <thead class="govuk-table__head">
+                    <tr class="govuk-table__row">
+                        <th class="govuk-table__header" scope="col">Course name</th>
+                        <th class="govuk-table__header" scope="col">Location</th>
+                        <th class="govuk-table__header" scope="col">Start date</th>
+                        <th class="govuk-table__header" scope="col">Length</th>
+                        <th class="govuk-table__header" scope="col">Mode</th>
+                        <th class="govuk-table__header" scope="col"></th>
+                    </tr>
+                </thead>
+                <tbody class="govuk-table__body">
+                    <tr class="govuk-table__row">
+                        <th class="govuk-table__header" scope="row">
+                            Advanced maths<br />
+                            <span class="govuk-caption-m">govuk-caption-m</span>
+
+                        </th>
+                        <td class="govuk-table__cell">London</td>
+                        <td class="govuk-table__cell ">25/03/2019</td>
+                        <td class="govuk-table__cell ">12 weeks</td>
+                        <td class="govuk-table__cell ">online</td>
+                        <td class="govuk-table__cell "><a asp-controller="Courses" asp-action="summary">publish</a></td>
+                    </tr>
+                    <tr class="govuk-table__row">
+                        <th class="govuk-table__header" scope="row">
+                            Advanced maths<br />
+                            <span class="govuk-caption-m">govuk-caption-m</span>
+                        </th>
+                        <td class="govuk-table__cell">London</td>
+                        <td class="govuk-table__cell ">25/03/2019</td>
+                        <td class="govuk-table__cell ">12 weeks</td>
+                        <td class="govuk-table__cell ">online</td>
+                        <td class="govuk-table__cell "><a asp-controller="Courses" asp-action="summary">publish</a></td>
+                    </tr>
+                    <tr class="govuk-table__row">
+                        <th class="govuk-table__header" scope="row">
+                            Advanced maths<br />
+                            <span class="govuk-caption-m">govuk-caption-m</span>
+                        </th>
+                        <td class="govuk-table__cell">London</td>
+                        <td class="govuk-table__cell ">25/03/2019</td>
+                        <td class="govuk-table__cell ">12 weeks</td>
+                        <td class="govuk-table__cell ">online</td>
+                        <td class="govuk-table__cell "><a asp-controller="Courses" asp-action="summary">publish</a></td>
+                    </tr>
+
+                </tbody>
+            </table>
+
+        </section>
+        <section class="govuk-tabs__panel govuk-tabs__panel--hidden" id="archived">
+            <table class="govuk-table">
+                <caption class="govuk-table__caption govuk-heading-l">Archived courses</caption>
+                <thead class="govuk-table__head">
+                    <tr class="govuk-table__row">
+                        <th class="govuk-table__header" scope="col">Course name</th>
+                        <th class="govuk-table__header" scope="col">Location</th>
+                        <th class="govuk-table__header" scope="col">Start date</th>
+                        <th class="govuk-table__header" scope="col">Length</th>
+                        <th class="govuk-table__header" scope="col">Mode</th>
+                        <th class="govuk-table__header" scope="col"></th>
+                    </tr>
+                </thead>
+                <tbody class="govuk-table__body">
+                    <tr class="govuk-table__row">
+                        <th class="govuk-table__header" scope="row">
+                            Advanced maths<br />
+                            <span class="govuk-caption-m">govuk-caption-m</span>
+                        </th>
+                        <td class="govuk-table__cell">London</td>
+                        <td class="govuk-table__cell ">25/03/2019</td>
+                        <td class="govuk-table__cell ">12 weeks</td>
+                        <td class="govuk-table__cell ">online</td>
+                        <td class="govuk-table__cell "><a asp-controller="Courses" asp-action="summary">Unarchive</a></td>
+                    </tr>
+                    <tr class="govuk-table__row">
+                        <th class="govuk-table__header" scope="row">
+                            Advanced maths<br />
+                            <span class="govuk-caption-m">govuk-caption-m</span>
+                        </th>
+                        <td class="govuk-table__cell">London</td>
+                        <td class="govuk-table__cell ">25/03/2019</td>
+                        <td class="govuk-table__cell ">12 weeks</td>
+                        <td class="govuk-table__cell ">online</td>
+                        <td class="govuk-table__cell "><a asp-controller="Courses" asp-action="summary">Unarchive</a></td>
+                    </tr>
+                    <tr class="govuk-table__row">
+                        <th class="govuk-table__header" scope="row">
+                            Advanced maths<br />
+                            <span class="govuk-caption-m">govuk-caption-m</span>
+                        </th>
+                        <td class="govuk-table__cell">London</td>
+                        <td class="govuk-table__cell ">25/03/2019</td>
+                        <td class="govuk-table__cell ">12 weeks</td>
+                        <td class="govuk-table__cell ">online</td>
+                        <td class="govuk-table__cell "><a asp-controller="Courses" asp-action="summary">Unarchive</a></td>
+                    </tr>
+
+                </tbody>
+            </table>
+
+        </section>
+    </div>
+</div>
