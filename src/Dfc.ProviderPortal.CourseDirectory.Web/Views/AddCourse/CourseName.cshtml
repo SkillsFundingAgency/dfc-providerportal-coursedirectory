@@ -1,0 +1,20 @@
+﻿@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@{
+}
+<h1 class="govuk-heading-l">Edit course name</h1>
+<form>
+    <div id="Coursename" class="govuk-form-group govuk-!-margin-bottom-9">
+        <label class="govuk-label govuk-!-font-size-24" for="national-insurance-number">
+            Course name
+        </label>
+        <span id="national-insurance-number-hint" class="govuk-hint">
+            Please enter the course name.
+        </span>
+        <input class="govuk-input " id="national-insurance-number" name="national-insurance-number" type="text" aria-describedby="national-insurance-number-hint">
+    </div>
+    <button type="submit" class="govuk-button" formaction="/Courses/Summary" formmethod="post">
+        Save
+    </button>
+</form>
