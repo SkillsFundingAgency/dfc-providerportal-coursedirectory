@@ -38,6 +38,17 @@ namespace Dfc.ProviderPortal.CourseDirectory.Web.Controllers
         {
             return View();
         }
-
+        public IActionResult EditQual()
+        {
+            return View();
+        }
+        public IActionResult EditCourse()
+        {
+            return View();
+        }
+        public IActionResult CourseList()
+        {
+            return View();
+        }
     }
 }
