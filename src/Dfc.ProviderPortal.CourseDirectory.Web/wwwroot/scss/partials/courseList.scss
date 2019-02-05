@@ -5,7 +5,7 @@
         flex-direction: row;
         flex-wrap: wrap;
         align-items: center;
-        border-bottom: 1px solid #ececec;
+        border-bottom: 1px solid #bfc1c3;
         margin-bottom: 1em;
 
         &:last-child {
@@ -24,6 +24,15 @@
             > * {
                 padding: 0 0.51em;
             }
+        }
+
+        .venue-select,
+        .course-name-input {
+            width: 300px;
+        }
+
+        .cost-input {
+            width:100px;
         }
     }
 
