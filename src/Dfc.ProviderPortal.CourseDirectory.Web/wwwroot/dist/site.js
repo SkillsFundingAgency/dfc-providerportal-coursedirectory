@@ -159,7 +159,7 @@ var target = document.getElementsByClassName('cd-lars-results')[0];
         <p class="govuk-body">LARS/QAN:<span class="govuk-!-font-weight-bold">${x.LearnAimRef}</span></p>
         <p class="govuk-body">Level: <span class="govuk-!-font-weight-bold">${x.NotionalNVQLevelv2}</span></p>
         <p class="govuk-body">Awarding body: <span class="govuk-!-font-weight-bold">${x.AwardOrgCode}</span></p>
-        <p class="govuk-body"><a class="govuk-link" href="#">Add this qualification</a></p>
+        <p class="govuk-body"><a class="govuk-link" href="/addCourse">Choose this qualification</a></p>
      </div>`
       courses.push(course);
     }
@@ -211,7 +211,8 @@ for (let x of data) {
                         <td class="govuk-table__cell">${x.ProviderName}</td>
                         <td class="govuk-table__cell">${y.ContactAddress.Items[0]}, ${y.ContactAddress.StreetDescription}</td>
                         <td class="govuk-table__cell">${y.ContactAddress.PostCode}</td>
-                        <td class="govuk-table__cell"><a href="../../providers/details">view</a></td>
+                        <td class="govuk-table__cell">${x.ProviderStatus}</td>
+                        <td class="govuk-table__cell"><a class="govuk-link" href="../../providers/details">view</a></td>
                         `
 provs.push(v)
         }
@@ -230,6 +231,22 @@ provs.forEach((x) => {
         }
 });
 });
+
+const searchInput = document.getElementById("search");
+const searchInputLabel = document.querySelector(".search-input-wrapper .cd-search__label");
+
+
+searchInput.addEventListener("focus", () => {
+
+
+if (document.querySelector(":focus") !== searchInput) {
+    console.log("t");
+searchInputLabel.classList.add("visible");
+} else {
+searchInputLabel.classList.remove("visible");
+}
+
+})
 
 //export default Providers;
 
