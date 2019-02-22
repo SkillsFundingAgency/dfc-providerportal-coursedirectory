@@ -1,0 +1,9 @@
+.cd-fullwidth-container {
+  width: 90%;
+  margin: 0 auto;
+}
+
+.cd-fullwidth-container .cd-grid-coloumn-three-quarters {
+  width: 75%;
+  float: left;
+}
