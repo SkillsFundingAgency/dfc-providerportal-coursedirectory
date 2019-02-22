@@ -3,7 +3,7 @@
   flex-direction: row;
   flex-wrap: wrap;
   align-items: center;
-  border-bottom: 1px solid #ececec;
+  border-bottom: 1px solid #bfc1c3;
   margin-bottom: 1em;
 }
 
@@ -23,6 +23,15 @@
 
 #Cd-course-list .cd-course--list_item-heading > * {
   padding: 0 0.51em;
+}
+
+#Cd-course-list .cd-course--list .venue-select,
+#Cd-course-list .cd-course--list .course-name-input {
+  width: 300px;
+}
+
+#Cd-course-list .cd-course--list .cost-input {
+  width: 100px;
 }
 
 #Cd-course-list .govuk-details__summary {

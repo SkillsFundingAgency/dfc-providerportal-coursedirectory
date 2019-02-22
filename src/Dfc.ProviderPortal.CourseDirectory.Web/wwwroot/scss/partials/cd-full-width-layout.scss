@@ -1,9 +1,14 @@
-﻿.cd-fullwidth-container {
+﻿.govuk-header__container.cd-fullwidth-container {
+    margin-bottom:-10px;
+
+}
+
+.cd-fullwidth-container {
     width: 90%;
     margin: 0 auto;
 
     .cd-grid-coloumn-three-quarters {
-        width:75%;
-        float:left;
+        width: 75%;
+        float: left;
     }
 }

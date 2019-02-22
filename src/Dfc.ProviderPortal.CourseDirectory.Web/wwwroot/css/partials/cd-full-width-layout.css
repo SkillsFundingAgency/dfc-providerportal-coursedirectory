@@ -1,3 +1,7 @@
+.govuk-header__container.cd-fullwidth-container {
+  margin-bottom: -10px;
+}
+
 .cd-fullwidth-container {
   width: 90%;
   margin: 0 auto;
