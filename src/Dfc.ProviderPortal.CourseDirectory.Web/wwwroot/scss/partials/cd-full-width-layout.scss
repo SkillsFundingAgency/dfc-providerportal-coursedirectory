@@ -11,16 +11,24 @@
         width: 75%;
         float: left;
     }
-
+/*need to fix these media queries*/
     .cd-grid-coloumn-85 {
-        width: 85%;
+        width: 100%;
         float: left;
+
+        @media (min-width: 40.0625em) {
+            width: 80%;
+        }
     }
 
     .cd-grid-coloumn-15 {
-        width: 15%;
+        width: 100%;
         float: left;
-        padding:1em;
-        box-sizing:border-box;
+        padding: 1em;
+        box-sizing: border-box;
+
+        @media (min-width: 40.0625em) {
+            width: 20%;
+        }
     }
 }
