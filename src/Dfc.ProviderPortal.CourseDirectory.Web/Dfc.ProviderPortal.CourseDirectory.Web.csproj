@@ -15,6 +15,9 @@
     <PackageReference Include="Microsoft.VisualStudio.Web.CodeGeneration.Design" Version="2.1.1" />
   </ItemGroup>
 
+  <ItemGroup>
+    <Content Remove="Views\Upload-a-file\Index.cshtml" />
+  </ItemGroup>
 	<ItemGroup>
 	<Content Update="Views\Providers\Index.cshtml">
 	<Pack>$(IncludeRazorContentInPack)</Pack>
