@@ -6,7 +6,7 @@
 
   <ItemGroup>
     <Folder Include="wwwroot\" />
-    <Folder Include="Views\Upload-a-file\" />
+    <Folder Include="Views\Uploadafile\" />
   </ItemGroup>
 
   <ItemGroup>
