@@ -1,4 +1,7 @@
-﻿.cd-status-panel {
+﻿
+$grey: #6f777b;
+
+.cd-status-panel {
     background-color: #dee0e2;
     display:flex;
     padding:1em;
@@ -7,4 +10,20 @@
     justify-content:center;
     flex-direction:column;
     
+}
+
+.cd-activity-item {
+    display: block;
+    border-bottom: 1px solid $grey;
+    margin-bottom:1em;
+    padding-bottom:.5em;
+}
+
+.cd-activity-item-heading {
+    margin-bottom:0;
+}
+
+.cd-activity-item-tag {
+    color: $grey;
+    font-weight:800;
 }
