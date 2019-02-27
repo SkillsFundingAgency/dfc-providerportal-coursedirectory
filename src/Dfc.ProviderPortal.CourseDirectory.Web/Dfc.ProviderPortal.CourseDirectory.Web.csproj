@@ -6,6 +6,9 @@
 
   <ItemGroup>
     <Folder Include="wwwroot\" />
+    <Folder Include="Views\AddCourse\" />
+    <Folder Include="Views\Styleguide\" />
+    <Folder Include="Views\Courses\" />
   </ItemGroup>
 
   <ItemGroup>
@@ -14,6 +17,75 @@
     <PackageReference Include="Microsoft.VisualStudio.Web.CodeGeneration.Design" Version="2.1.1" />
   </ItemGroup>
 
+  <ItemGroup>
+    <Content Remove="wwwroot\css\main.css" />
+    <Content Remove="wwwroot\css\partials\cd-confirmation-message.css" />
+    <Content Remove="wwwroot\css\partials\cd-lars-search.css" />
+    <Content Remove="wwwroot\css\partials\cd-search-header.css" />
+    <Content Remove="wwwroot\css\partials\view-components.pagination.css" />
+    <Content Remove="wwwroot\css\partials\styleguide.css" />
+    <Content Remove="wwwroot\vendor\jquery-validation\additional-methods.min.js" />
+    <Content Remove="wwwroot\vendor\jquery-validation-unobtrusive\jquery.validate.unobtrusive.min.js" />
+    <Content Remove="wwwroot\css\main.css" />
+    <Content Remove="wwwroot\css\partials\cd-user-status.css" />
+    <Content Remove="wwwroot\css\partials\cd-add-courses.css" />
+    <Content Remove="wwwroot\css\partials\cd-confirmation-message.css" />
+    <Content Remove="wwwroot\css\partials\cd-lars-search.css" />
+    <Content Remove="wwwroot\css\partials\cd-search-header.css" />
+    <Content Remove="wwwroot\css\partials\cd-user-status.css" />
+    <Content Remove="wwwroot\css\partials\styleguide.css" />
+    <Content Remove="wwwroot\css\partials\view-components.pagination.css" />
+    <Content Remove="wwwroot\css\partials\cd-lars-search.css" />
+    <Content Remove="wwwroot\css\partials\cd-search-header.css" />
+    <Content Remove="wwwroot\css\partials\cd-user-status.css" />
+    <Content Remove="wwwroot\css\partials\styleguide.css" />
+    <Content Remove="wwwroot\css\partials\view-components.pagination.css" />
+    <Content Remove="wwwroot\vendor\govuk-frontend\all.min.js" />
+    <Content Remove="wwwroot\css\partials\cd-confirmation-message.css" />
+    <Content Remove="wwwroot\css\partials\cd-lars-search.css" />
+    <Content Remove="wwwroot\css\partials\cd-search-header.css" />
+    <Content Remove="wwwroot\css\partials\cd-user-status.css" />
+    <Content Remove="wwwroot\css\partials\styleguide.css" />
+    <Content Remove="wwwroot\css\partials\view-components.pagination.css" />
+    <Content Remove="wwwroot\.babel.rc" />
+    <Content Remove="wwwroot\vendor\govuk-frontend\all.js" />
+    <Content Remove="wwwroot\vendor\jquery\jquery.min.js" />
+    <Content Remove="wwwroot\vendor\jquery\jquery.slim.min.js" />
+    <Content Remove="wwwroot\vendor\jquery-validation\jquery.validate.min.js" />
+    <Content Remove="wwwroot\vendor\jquery\jquery.min.js" />
+    <Content Remove="wwwroot\vendor\jquery-validation\jquery.validate.min.js" />
+    <Content Remove="wwwroot\vendor\jquery\jquery.slim.min.js" />
+    <Content Remove="wwwroot\css\partials\cd-confirmation-message.css" />
+    <Content Remove="wwwroot\css\partials\cd-lars-search.css" />
+    <Content Remove="wwwroot\css\partials\cd-notifications.css" />
+    <Content Remove="wwwroot\css\partials\cd-search-header.css" />
+    <Content Remove="wwwroot\css\partials\cd-user-status.css" />
+    <Content Remove="wwwroot\css\partials\styleguide.css" />
+    <Content Remove="wwwroot\css\partials\view-components.pagination.css" />
+    <Content Remove="wwwroot\vendor\jquery-validation\jquery.validate.min.js" />
+    <Content Remove="wwwroot\css\partials\courseList.css" />
+    <Content Remove="wwwroot\css\partials\cd-lars-search.css" />
+    <Content Remove="wwwroot\css\partials\cd-notifications.css" />
+    <Content Remove="wwwroot\css\partials\cd-search-header.css" />
+    <Content Remove="wwwroot\css\partials\cd-user-status.css" />
+    <Content Remove="wwwroot\css\partials\courseList.css" />
+    <Content Remove="wwwroot\css\partials\styleguide.css" />
+    <Content Remove="wwwroot\css\main.css" />
+    <Content Remove="wwwroot\css\partials\cd-add-courses.css" />
+    <Content Remove="wwwroot\css\partials\cd-confirmation-message.css" />
+    <Content Remove="wwwroot\css\partials\cd-lars-search.css" />
+    <Content Remove="wwwroot\css\partials\cd-notifications.css" />
+    <Content Remove="wwwroot\css\partials\cd-search-header.css" />
+    <Content Remove="wwwroot\css\partials\cd-confirmation-message.css" />
+    <Content Remove="wwwroot\css\partials\cd-homepage.css" />
+    <Content Remove="wwwroot\css\partials\cd-lars-search.css" />
+    <Content Remove="wwwroot\css\partials\cd-notifications.css" />
+    <Content Remove="wwwroot\css\partials\cd-search-header.css" />
+    <Content Remove="wwwroot\css\partials\cd-user-status.css" />
+    <Content Remove="wwwroot\css\partials\courseList.css" />
+    <Content Remove="wwwroot\css\partials\styleguide.css" />
+    <Content Remove="wwwroot\css\partials\view-components.pagination.css" />
+  </ItemGroup>
 	<ItemGroup>
 	<Content Update="Views\Providers\Index.cshtml">
 	<Pack>$(IncludeRazorContentInPack)</Pack>
