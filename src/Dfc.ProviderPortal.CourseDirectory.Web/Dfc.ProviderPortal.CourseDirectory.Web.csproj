@@ -17,6 +17,19 @@
 
   <ItemGroup>
     <Content Remove="Views\Upload-a-file\Index.cshtml" />
+    <Content Remove="wwwroot\css\main.css" />
+    <Content Remove="wwwroot\vendor\govuk-frontend\all.js" />
+    <Content Remove="wwwroot\vendor\jquery\jquery.min.js" />
+    <Content Remove="wwwroot\vendor\jquery\jquery.slim.min.js" />
+    <Content Remove="wwwroot\vendor\jquery-validation\additional-methods.min.js" />
+    <Content Remove="wwwroot\vendor\jquery-validation\jquery.validate.min.js" />
+    <Content Remove="wwwroot\vendor\jquery-validation-unobtrusive\jquery.validate.unobtrusive.min.js" />
+    <Content Remove="wwwroot\css\main.css" />
+    <Content Remove="wwwroot\vendor\jquery\jquery.min.js" />
+    <Content Remove="wwwroot\vendor\jquery-validation-unobtrusive\jquery.validate.unobtrusive.min.js" />
+    <Content Remove="wwwroot\vendor\jquery-validation\additional-methods.min.js" />
+    <Content Remove="wwwroot\vendor\jquery\jquery.slim.min.js" />
+    <Content Remove="wwwroot\vendor\govuk-frontend\all.js" />
   </ItemGroup>
 	<ItemGroup>
 	<Content Update="Views\Providers\Index.cshtml">
