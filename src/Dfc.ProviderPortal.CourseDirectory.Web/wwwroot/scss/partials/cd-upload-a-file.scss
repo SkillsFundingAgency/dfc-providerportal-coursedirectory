@@ -1,4 +1,4 @@
-﻿.file-upload {
+﻿.cd-file-upload {
 
     .box-container {
         width: 100%;
@@ -60,25 +60,22 @@
             text-align: center;
             display: inline-block;
         }
-
-        .no-error-box {
-            width: 80%;
-            height: auto;
-            text-align: center;
-            padding: 10px;
-            margin: 0 auto;
-            border-radius: 4px;
-        }
     }
 
     .error-box {
+        width: 80%;
+        height: auto;
+        text-align: center;
+        padding: 10px;
+        margin: 0 auto;
+        border-radius: 4px;
         color: #ff0000;
         border: solid 1px #ff0000;
-    }
 
-    .no-error-box {
-        color: #22ad00;
-        border: solid 1px #22ad00;
+        &.no-error {
+            color: #22ad00;
+            border: solid 1px #22ad00;
+        }
     }
 
     .error-fix {

@@ -6331,14 +6331,14 @@ ul.sort-list {
   font-weight: 800;
 }
 
-.file-upload .box-container {
+.cd-file-upload .box-container {
   width: 100%;
   height: auto;
   margin-top: 40px;
   margin-bottom: 40px;
 }
 
-.file-upload .box-container .box {
+.cd-file-upload .box-container .box {
   width: 200px;
   height: 200px;
   display: inline-block;
@@ -6352,7 +6352,7 @@ ul.sort-list {
   margin-top: 15px;
 }
 
-.file-upload .error-line {
+.cd-file-upload .error-line {
   width: 100%;
   padding: 15px 0 15px 0;
   border-bottom: solid 1px #ccc;
@@ -6360,18 +6360,18 @@ ul.sort-list {
   align-content: center;
 }
 
-.file-upload .error-line .heading {
+.cd-file-upload .error-line .heading {
   width: calc(100% - 400px);
   display: inline-block;
 }
 
-.file-upload .error-line .col {
+.cd-file-upload .error-line .col {
   width: 200px;
   text-align: center;
   display: inline-block;
 }
 
-.file-upload .error-line-in {
+.cd-file-upload .error-line-in {
   width: calc(100% - 100px);
   padding: 15px 0 15px 0;
   border-bottom: solid 1px #ccc;
@@ -6380,46 +6380,43 @@ ul.sort-list {
   margin-left: 100px;
 }
 
-.file-upload .error-line-in .heading {
+.cd-file-upload .error-line-in .heading {
   width: calc(100% - 400px);
   display: inline-block;
   padding-top: 12px;
 }
 
-.file-upload .error-line-in .col {
+.cd-file-upload .error-line-in .col {
   width: 200px;
   text-align: center;
   display: inline-block;
 }
 
-.file-upload .error-line-in .no-error-box {
+.cd-file-upload .error-box {
   width: 80%;
   height: auto;
   text-align: center;
   padding: 10px;
   margin: 0 auto;
   border-radius: 4px;
-}
-
-.file-upload .error-box {
   color: #ff0000;
   border: solid 1px #ff0000;
 }
 
-.file-upload .no-error-box {
+.cd-file-upload .error-box.no-error {
   color: #22ad00;
   border: solid 1px #22ad00;
 }
 
-.file-upload .error-fix {
+.cd-file-upload .error-fix {
   margin-top: 12px;
   display: inline-block;
 }
 
-.file-upload .err-top-line {
+.cd-file-upload .err-top-line {
   border-top: solid 1px #666;
 }
 
-.file-upload .new-upload {
+.cd-file-upload .new-upload {
   margin-top: 40px;
 }
