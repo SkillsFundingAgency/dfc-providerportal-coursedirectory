@@ -1,3 +1,11 @@
+.cd-dashboard.provider .cd-dashboard-title {
+  margin-bottom: 0.23em;
+}
+
+.cd-dashboard.provider .spacer {
+  margin-bottom: 1.23em;
+}
+
 .cd-status-panel {
   background-color: #dee0e2;
   display: flex;
@@ -20,6 +28,7 @@
 }
 
 .cd-activity-item-tag {
+  font-family: nta,Arial,sans-serif;
   color: #6f777b;
-  font-weight: 800;
+  padding-right: 1em;
 }
