@@ -83,6 +83,7 @@
 
 .courserun__row2 {
   display: flex;
+  padding: 0.25em 0;
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
