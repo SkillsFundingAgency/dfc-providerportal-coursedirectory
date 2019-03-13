@@ -6205,6 +6205,7 @@ ul.sort-list {
 
 #Cd-course-list .cd-course-list-level-filter > * {
   border-bottom: 1px solid black;
+  padding: .25em 0;
 }
 
 #Cd-course-list .cd-course-list-level-filter > *:hover {
