@@ -2,6 +2,17 @@
 $blue: #005ea5;
 
 #Cd-course-list {
+    .cd-course-list-level-filter {
+        list-style-type: none;
+        padding-inline-start: 0px;
+        >* {
+            border-bottom:1px solid black;
+
+            &:hover {
+                cursor:pointer;
+            }
+        }
+    }
 
     .cd-course--list {
         display: flex;
@@ -58,8 +69,8 @@ $blue: #005ea5;
 
         .open-prompt {
             font-size: .5em;
-            font-weight:200;
-            padding-right:1em;
+            font-weight: 200;
+            padding-right: 1em;
         }
     }
 

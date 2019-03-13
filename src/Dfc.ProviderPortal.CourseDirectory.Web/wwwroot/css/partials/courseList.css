@@ -1,3 +1,16 @@
+#Cd-course-list .cd-course-list-level-filter {
+  list-style-type: none;
+  padding-inline-start: 0px;
+}
+
+#Cd-course-list .cd-course-list-level-filter > * {
+  border-bottom: 1px solid black;
+}
+
+#Cd-course-list .cd-course-list-level-filter > *:hover {
+  cursor: pointer;
+}
+
 #Cd-course-list .cd-course--list {
   display: flex;
   flex-direction: row;
