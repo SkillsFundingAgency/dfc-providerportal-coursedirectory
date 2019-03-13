@@ -5,12 +5,18 @@ $blue: #005ea5;
     .cd-course-list-level-filter {
         list-style-type: none;
         padding-inline-start: 0px;
-        >* {
-            border-bottom:1px solid black;
-            padding:.25em 0 ;
+
+        .selected {
+            font-weight:800;
+        }
+
+
+        > * {
+            border-bottom: 1px solid black;
+            padding: .25em 0;
 
             &:hover {
-                cursor:pointer;
+                cursor: pointer;
             }
         }
     }
@@ -67,7 +73,7 @@ $blue: #005ea5;
         display: flex;
         justify-content: space-between;
         text-decoration: none;
-        align-items:center;
+        align-items: center;
 
         .open-prompt {
             font-size: .6em;
