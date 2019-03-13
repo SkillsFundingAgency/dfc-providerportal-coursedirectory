@@ -1,4 +1,7 @@
-﻿#Cd-course-list {
+﻿$grey2: #6f777b;
+$blue: #005ea5;
+
+#Cd-course-list {
 
     .cd-course--list {
         display: flex;
@@ -32,15 +35,15 @@
         }
 
         .cost-input {
-            width:100px;
+            width: 100px;
         }
     }
 
     .govuk-details__summary {
-        color: black;
+        //color: black;
         font-size: 1.5em;
         font-weight: 900;
-        border-bottom: 1px solid grey;
+        border-bottom: none;
         display: block;
     }
 
@@ -49,10 +52,73 @@
     }
 
     .govuk-details__summary-text {
+        display: flex;
+        justify-content: space-between;
         text-decoration: none;
+
+        .open-prompt {
+            font-size: .5em;
+            font-weight:200;
+            padding-right:1em;
+        }
     }
 
     .govuk-accordion__section-button {
-        color: #0b0c0c;
+        //color: #0b0c0c;
+    }
+}
+
+.courserun {
+    font-family: nta,Arial,sans-serif;
+    padding-left: 1em;
+
+    &__row1 {
+        //font-size: 1.2em;
+
+
+        .coursename {
+            font-weight: 800;
+            font-size: 1.3em;
+        }
+    }
+
+    &__row2 {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+
+        > * {
+            padding-right: 1em;
+        }
+
+        &:last-child {
+            padding-right: 0;
+        }
+
+
+
+        .tag-live {
+            background-color: $blue;
+            color: white;
+            align-content: center;
+            text-align: center;
+        }
+    }
+
+    &__row3 {
+        color: $grey2;
+        padding-bottom: .5em;
+
+        > * {
+            padding-right: 1em;
+        }
+    }
+
+    &__row4 {
+        padding: .5em 0;
+        border-top: 1px solid grey;
+        border-bottom: 1px solid grey;
+        margin-bottom: .5em;
     }
 }

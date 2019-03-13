@@ -1,0 +1,19 @@
+﻿.cd-nonregulated-provision {
+    display:flex;
+    flex-direction: row;
+
+    >* {
+        padding-right:1.5em;
+    }
+}
+
+
+
+.provision-container {
+    border: 1px solid grey;
+    padding: .5em;
+
+    .provision-title {
+        margin-top: 0;
+    }
+}

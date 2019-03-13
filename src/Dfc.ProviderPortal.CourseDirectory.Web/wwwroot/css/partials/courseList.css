@@ -35,10 +35,9 @@
 }
 
 #Cd-course-list .govuk-details__summary {
-  color: black;
   font-size: 1.5em;
   font-weight: 900;
-  border-bottom: 1px solid grey;
+  border-bottom: none;
   display: block;
 }
 
@@ -47,9 +46,61 @@
 }
 
 #Cd-course-list .govuk-details__summary-text {
+  display: flex;
+  justify-content: space-between;
   text-decoration: none;
 }
 
-#Cd-course-list .govuk-accordion__section-button {
-  color: #0b0c0c;
+#Cd-course-list .govuk-details__summary-text .open-prompt {
+  font-size: .5em;
+  font-weight: 200;
+  padding-right: 1em;
+}
+
+.courserun {
+  font-family: nta,Arial,sans-serif;
+  padding-left: 1em;
+}
+
+.courserun__row1 .coursename {
+  font-weight: 800;
+  font-size: 1.3em;
+}
+
+.courserun__row2 {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.courserun__row2 > * {
+  padding-right: 1em;
+}
+
+.courserun__row2:last-child {
+  padding-right: 0;
+}
+
+.courserun__row2 .tag-live {
+  background-color: #005ea5;
+  color: white;
+  align-content: center;
+  text-align: center;
+}
+
+.courserun__row3 {
+  color: #6f777b;
+  padding-bottom: .5em;
+}
+
+.courserun__row3 > * {
+  padding-right: 1em;
+}
+
+.courserun__row4 {
+  padding: .5em 0;
+  border-top: 1px solid grey;
+  border-bottom: 1px solid grey;
+  margin-bottom: .5em;
 }

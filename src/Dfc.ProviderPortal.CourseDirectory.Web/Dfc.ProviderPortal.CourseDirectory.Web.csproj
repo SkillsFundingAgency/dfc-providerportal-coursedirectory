@@ -100,6 +100,14 @@
     <Content Remove="wwwroot\vendor\jquery-validation\additional-methods.min.js" />
     <Content Remove="wwwroot\vendor\jquery\jquery.slim.min.js" />
     <Content Remove="wwwroot\vendor\govuk-frontend\all.js" />
+    <Content Remove="wwwroot\css\partials\cd-notifications.css" />
+    <Content Remove="wwwroot\css\partials\cd-search-header.css" />
+    <Content Remove="wwwroot\css\partials\cd-upload-a-file.css" />
+    <Content Remove="wwwroot\css\partials\cd-user-status.css" />
+    <Content Remove="wwwroot\css\partials\courseList.css" />
+    <Content Remove="wwwroot\css\partials\styleguide.css" />
+    <Content Remove="wwwroot\css\partials\view-components.pagination.css" />
+    <Content Remove="wwwroot\css\partials\cd-nonregulated-search.css" />
   </ItemGroup>
 	<ItemGroup>
 	<Content Update="Views\Providers\Index.cshtml">
