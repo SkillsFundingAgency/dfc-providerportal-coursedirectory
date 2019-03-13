@@ -63,10 +63,11 @@
   display: flex;
   justify-content: space-between;
   text-decoration: none;
+  align-items: center;
 }
 
 #Cd-course-list .govuk-details__summary-text .open-prompt {
-  font-size: .5em;
+  font-size: .6em;
   font-weight: 200;
   padding-right: 1em;
 }
