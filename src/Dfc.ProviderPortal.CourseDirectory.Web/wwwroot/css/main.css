@@ -6333,6 +6333,10 @@ ul.sort-list {
   margin-bottom: .5em;
 }
 
+.courserun__row4 > * {
+  padding-right: 1em;
+}
+
 .govuk-header__container.cd-fullwidth-container {
   margin-bottom: -10px;
 }
