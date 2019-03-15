@@ -22,6 +22,10 @@ namespace Dfc.ProviderPortal.CourseDirectory.Web.Controllers
         {
             return View();
         }
+        public IActionResult Summary2()
+        {
+            return View();
+        }
         public IActionResult MakeChanges()
         {
             return View();

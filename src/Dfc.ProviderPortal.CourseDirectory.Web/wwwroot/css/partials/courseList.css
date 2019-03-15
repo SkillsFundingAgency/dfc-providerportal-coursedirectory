@@ -3,6 +3,10 @@
   padding-inline-start: 0px;
 }
 
+#Cd-course-list .cd-course-list-level-filter .selected {
+  font-weight: 800;
+}
+
 #Cd-course-list .cd-course-list-level-filter > * {
   border-bottom: 1px solid black;
   padding: .25em 0;
@@ -53,6 +57,11 @@
   font-weight: 900;
   border-bottom: none;
   display: block;
+  padding: 0 0 0 1em;
+}
+
+#Cd-course-list .govuk-details__summary:before {
+  margin-left: 0.25em;
 }
 
 #Cd-course-list .govuk-details__text {

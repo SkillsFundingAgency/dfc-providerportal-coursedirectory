@@ -6102,8 +6102,11 @@ ul.sort-list {
 }
 
 .cd-nonregulated-provision {
-  display: flex;
-  flex-direction: row;
+  background-color: #dee0e2;
+  padding: 1em 0.5em 0 0.5em;
+  border-bottom: 2px solid black;
+  border-top: 2px solid black;
+  margin-bottom: 2em;
 }
 
 .cd-nonregulated-provision > * {
@@ -6203,6 +6206,10 @@ ul.sort-list {
   padding-inline-start: 0px;
 }
 
+#Cd-course-list .cd-course-list-level-filter .selected {
+  font-weight: 800;
+}
+
 #Cd-course-list .cd-course-list-level-filter > * {
   border-bottom: 1px solid black;
   padding: .25em 0;
@@ -6253,6 +6260,11 @@ ul.sort-list {
   font-weight: 900;
   border-bottom: none;
   display: block;
+  padding: 0 0 0 1em;
+}
+
+#Cd-course-list .govuk-details__summary:before {
+  margin-left: 0.25em;
 }
 
 #Cd-course-list .govuk-details__text {

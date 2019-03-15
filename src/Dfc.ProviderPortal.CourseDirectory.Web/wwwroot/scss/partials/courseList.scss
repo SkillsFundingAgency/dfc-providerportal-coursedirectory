@@ -7,7 +7,7 @@ $blue: #005ea5;
         padding-inline-start: 0px;
 
         .selected {
-            font-weight:800;
+            font-weight: 800;
         }
 
 
@@ -63,6 +63,14 @@ $blue: #005ea5;
         font-weight: 900;
         border-bottom: none;
         display: block;
+        //testing out new styling
+        //background: whitesmoke;
+        //border-bottom: 3px solid #bfc1c3;
+        padding: 0 0 0 1em;
+
+        &:before {
+            margin-left: 0.25em;
+        }
     }
 
     .govuk-details__text {
