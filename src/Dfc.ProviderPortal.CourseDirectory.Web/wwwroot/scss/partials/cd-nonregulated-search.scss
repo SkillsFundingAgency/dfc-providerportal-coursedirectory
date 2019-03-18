@@ -1,8 +1,8 @@
 ﻿.cd-nonregulated-provision {
-    background-color: #dee0e2;
+    background-color: #f8f8f8;
     padding: 1em 0.5em 0 0.5em;
-    border-bottom: 2px solid black;
-    border-top: 2px solid black;
+    //border-bottom: 2px solid black;
+    //border-top: 2px solid black;
     margin-bottom: 2em;
 
     > * {
@@ -13,8 +13,9 @@
 
 
 .provision-container {
-    border: 1px solid grey;
-    padding: .5em;
+    border: 1px solid #bfc1c3;
+    background-color: #f8f8f8;
+     padding: .5em;
 
     .provision-title {
         margin-top: 0;
