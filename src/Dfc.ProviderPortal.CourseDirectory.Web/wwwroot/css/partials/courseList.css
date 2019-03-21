@@ -86,9 +86,25 @@
   padding-left: 1em;
 }
 
+.courserun.border {
+  border: 1px solid #bfc1c3;
+  margin-bottom: 1em;
+  padding-left: 0em;
+}
+
+.courserun.border > * {
+  padding: 0.25em 1em;
+}
+
+.courserun.border .courserun__row4 {
+  margin-bottom: 0;
+  border-bottom: none;
+}
+
 .courserun__row1 .coursename {
   font-weight: 800;
   font-size: 1.3em;
+  margin: 0;
 }
 
 .courserun__row2 {
@@ -131,5 +147,17 @@
 }
 
 .courserun__row4 > * {
+  padding-right: 1em;
+}
+
+.cd-course-list-filters {
+  background-color: #dee0e2;
+  display: flex;
+  flex-direction: row;
+  padding: 0.5em;
+  border: 1px solid #bfc1c3;
+}
+
+.cd-course-list-filters > * {
   padding-right: 1em;
 }

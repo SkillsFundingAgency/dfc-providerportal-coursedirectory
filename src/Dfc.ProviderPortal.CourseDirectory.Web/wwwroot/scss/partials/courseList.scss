@@ -99,19 +99,33 @@ $blue: #005ea5;
     font-family: nta,Arial,sans-serif;
     padding-left: 1em;
 
+    &.border {
+        border: 1px solid #bfc1c3;
+        margin-bottom: 1em;
+        padding-left: 0em;
+
+        > * {
+            padding: 0.25em 1em;
+        }
+
+        .courserun__row4 {
+            margin-bottom: 0;
+            border-bottom: none;
+        }
+    }
+
     &__row1 {
         //font-size: 1.2em;
-
-
         .coursename {
             font-weight: 800;
             font-size: 1.3em;
+            margin: 0;
         }
     }
 
     &__row2 {
         display: flex;
-        padding:0.25em 0;
+        padding: 0.25em 0;
         flex-direction: row;
         justify-content: space-between;
         align-items: center;
@@ -149,8 +163,20 @@ $blue: #005ea5;
         border-bottom: 1px solid grey;
         margin-bottom: .5em;
 
-        >* {
-            padding-right:1em;
+        > * {
+            padding-right: 1em;
         }
+    }
+}
+
+.cd-course-list-filters {
+    background-color: #dee0e2;
+    display: flex;
+    flex-direction: row;
+    padding: 0.5em;
+
+    border: 1px solid #bfc1c3;
+     > * {
+        padding-right: 1em;
     }
 }

@@ -10,12 +10,14 @@
     }
 }
 
-
+.cd-non-regulated-filters {
+    background-color: #f8f8f8;
+}
 
 .provision-container {
     border: 1px solid #bfc1c3;
-    background-color: #f8f8f8;
-     padding: .5em;
+    //background-color: #f8f8f8;
+    padding: .5em;
 
     .provision-title {
         margin-top: 0;
