@@ -187,7 +187,7 @@ if (provider) {
 
 
 
-function ajax_get(url, callback) {
+function ajax_get1(url, callback) {
     var xmlhttp = new XMLHttpRequest();
     xmlhttp.onreadystatechange = function() {
         if (xmlhttp.readyState == 4 && xmlhttp.status == 200) {
@@ -206,7 +206,7 @@ function ajax_get(url, callback) {
     xmlhttp.send();
 }
  
-ajax_get('/js/providers.json', function(data) {
+ajax_get1('/js/providers.json', function(data) {
 var target = document.getElementsByClassName('cd-provider-results')[0];
 
 var provs = [];
