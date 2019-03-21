@@ -1,4 +1,12 @@
-﻿
+﻿const provider = document.getElementsByClassName('provider')[0];
+
+//console.log(provider);
+
+if (provider) {
+    console.log('provider page');
+}
+    
+
 
 
 function ajax_get(url, callback) {
@@ -43,6 +51,7 @@ provs.push(v)
   
 
 }
+
 
 provs.forEach((x) => {
     let tb = document.createElement("tr");
