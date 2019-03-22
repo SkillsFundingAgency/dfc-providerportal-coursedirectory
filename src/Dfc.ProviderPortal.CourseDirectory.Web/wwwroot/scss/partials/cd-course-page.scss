@@ -1,0 +1,28 @@
+﻿.cd-course-page .govuk-related-items {
+    border-top: 10px solid #005ea5;
+    padding: 20px;
+    background-color: #f8f8f8;
+}
+.cd-course-page .phase-tag-published {
+    background: #00823b;
+}
+
+.cd-course-page p, .cd-course-page .govuk-related-items a {
+    color: #0b0c0c;
+    font-family: "nta", Arial, sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    font-weight: 400;
+    font-size: 16px;
+    font-size: 1rem;
+    line-height: 1.25;
+    margin-top: 0;
+    margin-bottom: 15px;
+}
+.cd-course-page .govuk-related-items a {
+    color: #005ea5;
+}
+
+.cd-course-page .m20 {
+    margin-top: 20px
+}
