@@ -12,12 +12,17 @@ $blue: #005ea5;
 
 
         > * {
-            border-bottom: 1px solid black;
+            border-bottom: 1px solid #bfc1c3;
             padding: .25em 0;
 
             &:hover {
                 cursor: pointer;
             }
+        }
+
+        .sublevel {
+            background-color: green;
+            display:none;
         }
     }
 

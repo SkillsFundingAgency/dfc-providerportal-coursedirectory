@@ -8,12 +8,17 @@
 }
 
 #Cd-course-list .cd-course-list-level-filter > * {
-  border-bottom: 1px solid black;
+  border-bottom: 1px solid #bfc1c3;
   padding: .25em 0;
 }
 
 #Cd-course-list .cd-course-list-level-filter > *:hover {
   cursor: pointer;
+}
+
+#Cd-course-list .cd-course-list-level-filter .sublevel {
+  background-color: green;
+  display: none;
 }
 
 #Cd-course-list .cd-course--list {
