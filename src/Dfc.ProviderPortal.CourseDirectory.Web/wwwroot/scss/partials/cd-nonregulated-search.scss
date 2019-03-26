@@ -1,6 +1,7 @@
 ﻿.cd-nonregulated-provision {
     background-color: #f8f8f8;
     padding: 1em 0.5em 0 0.5em;
+    border: 1px solid #bfc1c3;
     //border-bottom: 2px solid black;
     //border-top: 2px solid black;
     margin-bottom: 2em;
@@ -11,7 +12,11 @@
 }
 
 .cd-non-regulated-filters {
-    background-color: #f8f8f8;
+    //background-color: #f8f8f8;
+    padding:0 1em;
+   .govuk-select {
+        margin-bottom:1em;
+    }
 }
 
 .provision-container {
