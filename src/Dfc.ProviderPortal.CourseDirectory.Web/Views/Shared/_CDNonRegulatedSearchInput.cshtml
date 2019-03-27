@@ -1,0 +1,37 @@
+﻿@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@{
+}
+<header class=""></header>
+    <div class="cd-fullwidth-container">
+        <div class="grid-row govuk-body" data-sf-element="Row">
+            <div class="">
+                <div>
+                    <h1 class="govuk-heading-l govuk-!-margin-top-4">@ViewBag.Title</h1>
+                    <p class="column-two-thirds">@ViewBag.Subtext</p>
+                </div>
+
+
+                        <form  class="govuk-!-margin-bottom-9"  action="@ViewBag.Target" class="site-search ui-front" id="header-search" method="post" role="search">
+                            <div class="header-search-content">
+                                <div class="search-input-wrapper">
+                                    <input class="govuk-input govuk-!-width-three-quarters search-input js-search-focus" id="search" name="SearchTerm" placeholder="@ViewBag.Placeholder" type="search">
+                                    <div class="cd-c-search__item cd-search__submit-wrapper">
+                                        <button type="submit" class=" submit">Search</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </form>
+
+
+
+
+
+
+                        <a class="govuk-link" asp-controller="lars" asp-action="nonregulated">I dont know the Z code</a>
+
+
+            </div>
+        </div>
+    </div>
