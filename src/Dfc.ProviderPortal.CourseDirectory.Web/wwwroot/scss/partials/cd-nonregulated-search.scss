@@ -28,3 +28,13 @@
         margin-top: 0;
     }
 }
+
+.cd-action-container{
+    display:flex;
+    flex-direction:row;
+    align-items:baseline;
+    >* {
+        margin-right:1em;
+    }
+
+}

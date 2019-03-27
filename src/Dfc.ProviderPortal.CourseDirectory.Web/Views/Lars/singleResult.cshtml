@@ -1,0 +1,29 @@
+﻿@{
+
+    ViewData["Title"] = "Find a Qualification";
+    ViewData["Subtext"] = "Enter a search term or LARS/QAN to begin your search";
+    ViewData["Target"] = "/providers/AddResults/";
+    ViewData["Placeholder"] = "Search";
+    ViewData["Area"] = "Qualifications";
+}
+
+<div class="cd-fullwidth-container govuk-!-margin-top-4 ">
+    <a  asp-controller="lars" asp-action="nonregsearch" class="govuk-back-link">Back</a>
+    <div class="provision-container govuk-body govuk-!-margin-bottom-9">
+        <h2 class="provision-title govuk-heading-l">
+            Non regulated Adult skills formula funded provision, Pre-Entry Level,
+            Maths, 93 to 100 hrs
+        </h2>
+        <span>LARS/QAN :</span> <span>Z00004395</span><br />
+        <span>Level :</span> <span>E</span><br />
+        <a href="#">Add this provison</a>
+    </div>
+    <div class="cd-action-container">
+        <button type="submit" class="govuk-button ">
+            Choose
+        </button>
+        <a href="#" class="govuk-link">Cancel</a>
+    </div>
+</div>
+
+

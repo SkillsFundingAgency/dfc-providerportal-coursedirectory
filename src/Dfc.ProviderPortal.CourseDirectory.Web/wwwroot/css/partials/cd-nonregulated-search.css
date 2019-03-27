@@ -25,3 +25,13 @@
 .provision-container .provision-title {
   margin-top: 0;
 }
+
+.cd-action-container {
+  display: flex;
+  flex-direction: row;
+  align-items: baseline;
+}
+
+.cd-action-container > * {
+  margin-right: 1em;
+}

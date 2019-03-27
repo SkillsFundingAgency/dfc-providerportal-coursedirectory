@@ -19,6 +19,10 @@ namespace Dfc.ProviderPortal.CourseDirectory.Web.Controllers
         {
             return View();
         }
+        public IActionResult singleResult()
+        {
+            return View();
+        }
         public IActionResult nonregulated()
         {
             return View();
