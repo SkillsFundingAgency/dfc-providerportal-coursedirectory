@@ -1,0 +1,14 @@
+﻿@{
+
+    ViewData["Title"] = "Find a Qualification";
+    ViewData["Subtext"] = "Enter a search term or LARS/QAN to begin your search";
+    ViewData["Target"] = "/lars/Results/";
+    ViewData["Placeholder"] = "Search";
+    ViewData["Area"] = "Qualifications";
+}
+<div class="cd-hero-green">
+    <div class="govuk-width-container">
+        <a class="govuk-link" asp-controller="lars" asp-action="Index">Regulated</a><br />
+        <a class="govuk-link" asp-controller="lars" asp-action="nonregsearch">Non regulated</a>
+    </div>
+</div>
