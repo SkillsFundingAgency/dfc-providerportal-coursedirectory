@@ -11,7 +11,7 @@
         width: 75%;
         float: left;
     }
-/*need to fix these media queries*/
+    /*need to fix these media queries*/
     .cd-grid-coloumn-80 {
         width: 100%;
         float: left;
@@ -29,6 +29,26 @@
 
         @media (min-width: 40.0625em) {
             width: 20%;
+        }
+    }
+
+    .cd-grid-coloumn-70 {
+        width: 100%;
+        float: left;
+
+        @media (min-width: 40.0625em) {
+            width: 70%;
+        }
+    }
+
+    .cd-grid-coloumn-30 {
+        width: 100%;
+        float: left;
+        padding: 0 1em;
+        box-sizing: border-box;
+
+        @media (min-width: 40.0625em) {
+            width: 30%;
         }
     }
 }
