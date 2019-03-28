@@ -5,3 +5,13 @@
 .cd-duration-container .cd-duration-list {
   margin-left: 10px;
 }
+
+.region-checkboxes {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.region-checkboxes .govuk-checkboxes__item {
+  margin: 0.5em;
+  flex: 0 0 18%;
+}

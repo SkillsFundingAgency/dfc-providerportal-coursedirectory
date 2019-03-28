@@ -12,10 +12,16 @@
 }
 
 .cd-non-regulated-filters {
-    //background-color: #f8f8f8;
-    padding:0 1em;
-   .govuk-select {
-        margin-bottom:1em;
+    padding: 0 1em;
+
+    .govuk-form-group {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .govuk-select {
+        margin-bottom: 1em;
+        width:auto;
     }
 }
 

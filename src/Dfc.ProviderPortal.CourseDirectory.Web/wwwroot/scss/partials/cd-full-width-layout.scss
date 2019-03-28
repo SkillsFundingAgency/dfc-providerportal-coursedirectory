@@ -1,6 +1,28 @@
 ﻿.govuk-header__container.cd-fullwidth-container {
     margin-bottom:-10px;
+    
 
+}
+.cd-flex{
+    display:flex;
+}
+.cd-subHead {
+    background-color: #005ea5;
+    margin-top: -10px;
+    color:white;
+}
+
+.navigation-container {
+    border-bottom: 1px solid #bfc1c3;
+
+    .cd-secondary-nav {
+        padding: 0.5em 0;
+        text-align: right;
+        font-size: 19px;
+        .cd-secondary-nav--item {
+            text-decoration:none;
+        }
+    }
 }
 
 .cd-fullwidth-container {

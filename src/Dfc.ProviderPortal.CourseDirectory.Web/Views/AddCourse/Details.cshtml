@@ -7,6 +7,51 @@
 <h1 class="govuk-heading-xl">Add course details</h1>
 
 <form>
+    <div class="chex">
+
+        <div class="govuk-checkboxes" id="SelectRegionCheckBoxes" val-required-message="Select a region">
+            <details class="form-group" role="group" open="">
+
+                <summary role="button" aria-controls="details-content-acd8b86c-37f2-498a-91ff-0775b15e96cf" aria-expanded="true">
+                    <span id="region+E12000001" class="summary govuk-label govuk-checkboxes__label">North East</span>
+                </summary>
+
+                <div class="govuk-form-group" id="details-content-acd8b86c-37f2-498a-91ff-0775b15e96cf" aria-hidden="false">
+                    <h3><a class="govuk-link" id="SelectAll" region-id="E12000001" href="#">Select all</a></h3>
+                </div>
+                <div class="flex-container region-checkboxes govuk-grid-row" id="details-content-E12000001" aria-hidden="true">
+
+                    <div class="govuk-checkboxes__item">
+                        <input class="govuk-checkboxes__input" id="RegionName-1" region-id="E12000001" name="SelectedRegions" type="checkbox" value="E06000001">
+                        <label class="govuk-label govuk-checkboxes__label" for="SelectedRegions">County Durham</label>
+                    </div>
+                    <div class="govuk-checkboxes__item">
+                        <input class="govuk-checkboxes__input" id="RegionName-2" region-id="E12000001" name="SelectedRegions" type="checkbox" value="E06000002">
+                        <label class="govuk-label govuk-checkboxes__label" for="SelectedRegions">Darlington</label>
+                    </div>
+                    <div class="govuk-checkboxes__item">
+                        <input class="govuk-checkboxes__input" id="RegionName-3" region-id="E12000001" name="SelectedRegions" type="checkbox" value="E06000003">
+                        <label class="govuk-label govuk-checkboxes__label" for="SelectedRegions">Gateshead</label>
+                    </div>
+                    <div class="govuk-checkboxes__item">
+                        <input class="govuk-checkboxes__input" id="RegionName-4" region-id="E12000001" name="SelectedRegions" type="checkbox" value="E06000004">
+                        <label class="govuk-label govuk-checkboxes__label" for="SelectedRegions">Hartlepool</label>
+                    </div>
+                    <div class="govuk-checkboxes__item">
+                        <input class="govuk-checkboxes__input" id="RegionName-5" region-id="E12000001" name="SelectedRegions" type="checkbox" value="E06000005">
+                        <label class="govuk-label govuk-checkboxes__label" for="SelectedRegions">Middlesbrough</label>
+                    </div>
+                    <div class="govuk-checkboxes__item">
+                        <input class="govuk-checkboxes__input" id="RegionName-6" region-id="E12000001" name="SelectedRegions" type="checkbox" value="E06000047">
+                        <label class="govuk-label govuk-checkboxes__label" for="SelectedRegions">Newcastle upon Tyne</label>
+                    </div>
+
+
+                </div>
+            </details>
+
+
+        </div>
     <div id="Coursename" class="govuk-form-group govuk-!-margin-bottom-9">
         <label class="govuk-label govuk-!-font-size-24" for="national-insurance-number">
             Course name
@@ -27,7 +72,7 @@
         <input class="govuk-input " id="national-insurance-number" name="national-insurance-number" type="text" aria-describedby="national-insurance-number-hint">
     </div>
 
-    <div id="Deliverymode" class="govuk-form-group govuk-!-margin-bottom-9">
+    <div id="Deliverymode" class="govuk-form-group govuk-!-margichexn-bottom-9">
         <fieldset class="govuk-fieldset">
             <label class="govuk-label govuk-!-font-size-24" for="national-insurance-nmber">
                 Delivery Mode

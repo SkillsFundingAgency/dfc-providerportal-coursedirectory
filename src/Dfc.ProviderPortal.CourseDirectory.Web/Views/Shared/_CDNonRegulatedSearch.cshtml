@@ -3,8 +3,7 @@
 *@
 @{
 }
-<header class=""></header>
-    <div class="cd-fullwidth-container">
+    <main class="cd-fullwidth-">
         <a asp-controller="lars" asp-action="nonregsearch" class="govuk-back-link">Back</a>
         <div class="grid-row govuk-body" data-sf-element="Row">
             <div class="">
@@ -12,9 +11,9 @@
                     <h1 class="govuk-heading-l govuk-!-margin-top-4">@ViewBag.Title</h1>
 
                 </div>
-                <div class="govuk-grid-row cd-nonregulated-provision ">
-                    <div class="">
-                        <div class="cd-grid-coloumn-30">
+                <div class="govuk--row cd-nonregulated-provision ">
+                    <div class="cd-flex">
+                        <div class="govuk-!-width-one-quarter">
                             <div class="govuk-form-group">
                                 <label class="govuk-label" for="level1">
                                     Level 1
@@ -27,7 +26,7 @@
                                 </select>
                             </div>
                         </div>
-                        <div class="cd-grid-coloumn-70">
+                        <div class="govuk-!-width-one-quarter">
                             <div class="govuk-form-group">
                                 <label class="govuk-label" for="level2">
                                     Level 2
@@ -43,8 +42,8 @@
                     </div>
                 </div>
 
-                <div class="govuk-grid-row">
-                    <div class="cd-non-regulated-filters cd-grid-coloumn-30">
+                <div class="cd-flex">
+                    <div class="cd-non-regulated-filters govuk-!-width-one-quarter">
                         <div class="govuk-form-group">
 
                             <select class="govuk-select" id="category" name="category">
@@ -84,4 +83,4 @@
 
             </div>
         </div>
-    </div>
+    </main>
