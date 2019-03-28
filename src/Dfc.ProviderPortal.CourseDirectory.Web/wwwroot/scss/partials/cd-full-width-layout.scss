@@ -9,7 +9,10 @@
 .cd-subHead {
     background-color: #005ea5;
     margin-top: -10px;
-    color:white;
+    color: white;
+    .cd-subHead--item {
+        font-weight:800;
+    }
 }
 
 .navigation-container {

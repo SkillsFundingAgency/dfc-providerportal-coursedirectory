@@ -12,6 +12,10 @@
   color: white;
 }
 
+.cd-subHead .cd-subHead--item {
+  font-weight: 800;
+}
+
 .navigation-container {
   border-bottom: 1px solid #bfc1c3;
 }
