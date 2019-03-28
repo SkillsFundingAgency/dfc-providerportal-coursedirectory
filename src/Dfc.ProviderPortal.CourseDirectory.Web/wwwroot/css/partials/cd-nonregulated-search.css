@@ -1,8 +1,12 @@
 .cd-nonregulated-provision {
   background-color: #f8f8f8;
-  padding: 1em 0.5em 0 0.5em;
+  padding: 1em .5em;
   border: 1px solid #bfc1c3;
   margin-bottom: 2em;
+}
+
+.cd-nonregulated-provision .cd-level-select {
+  padding-right: 1.5em;
 }
 
 .cd-nonregulated-provision > * {

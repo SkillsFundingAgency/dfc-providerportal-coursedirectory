@@ -9,78 +9,78 @@
             <div class="">
                 <div>
                     <h1 class="govuk-heading-l govuk-!-margin-top-4">@ViewBag.Title</h1>
-
                 </div>
-                <div class="govuk--row cd-nonregulated-provision ">
+                <div class="govuk-form-group">
+                    <div class="govuk--row cd-nonregulated-provision">
+                        <div class="cd-flex">
+                            <div class="">
+                                <div class="cd-level-select govuk-form-group">
+                                    <label class="govuk-label" for="level1">
+                                        Level 1
+                                    </label>
+                                    <select class="govuk-select" id="level1" name="level1">
+                                        <option value="published">Recently published</option>
+                                        <option value="updated" selected> Choose a sector area</option>
+                                        <option value="views">Most views</option>
+                                        <option value="comments">Most comments</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="">
+                                <div class="cd-level-select govuk-form-group">
+                                    <label class="govuk-label" for="level2">
+                                        Level 2
+                                    </label>
+                                    <select class="govuk-select" id="level2" name="level2">
+                                        <option value="published">Recently published</option>
+                                        <option value="updated" selected>Choose a sector area</option>
+                                        <option value="views">Most views</option>
+                                        <option value="comments">Most comments</option>
+                                    </select>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
                     <div class="cd-flex">
-                        <div class="govuk-!-width-one-quarter">
+                        <div class="cd-non-regulated-filters govuk-!-width-one-uarter">
                             <div class="govuk-form-group">
-                                <label class="govuk-label" for="level1">
-                                    Level 1
-                                </label>
-                                <select class="govuk-select" id="level1" name="level1">
+
+                                <select class="govuk-select" id="category" name="category">
                                     <option value="published">Recently published</option>
-                                    <option value="updated" selected> Choose a sector area</option>
+                                    <option value="updated" selected>Select a category</option>
+                                    <option value="views">Most views</option>
+                                    <option value="comments">Most comments</option>
+                                </select>
+
+                                <select class="govuk-select" id="level" name="level">
+                                    <option value="published">Recently published</option>
+                                    <option value="updated" selected>Select a level</option>
+                                    <option value="views">Most views</option>
+                                    <option value="comments">Most comments</option>
+                                </select>
+
+                                <select class="govuk-select" id="hours" name="hours">
+                                    <option value="published">Recently published</option>
+                                    <option value="updated" selected>Select course hours</option>
                                     <option value="views">Most views</option>
                                     <option value="comments">Most comments</option>
                                 </select>
                             </div>
                         </div>
-                        <div class="govuk-!-width-one-quarter">
-                            <div class="govuk-form-group">
-                                <label class="govuk-label" for="level2">
-                                    Level 2
-                                </label>
-                                <select class="govuk-select" id="level2" name="level2">
-                                    <option value="published">Recently published</option>
-                                    <option value="updated" selected>Choose a sector area</option>
-                                    <option value="views">Most views</option>
-                                    <option value="comments">Most comments</option>
-                                </select>
+                        <div class="cd-grid-coloumn-0 ">
+                            <div class="provision-container">
+                                <h2 class="provision-title">
+                                    Non regulated Adult skills formula funded provision, Pre-Entry Level,
+                                    Maths, 93 to 100 hrs
+                                </h2>
+                                <span>LARS/QAN :</span> <span>Z00004395</span><br />
+                                <span>Level :</span> <span>E</span><br />
+                                <a href="#">Add this provison</a>
                             </div>
                         </div>
                     </div>
+
                 </div>
-
-                <div class="cd-flex">
-                    <div class="cd-non-regulated-filters govuk-!-width-one-quarter">
-                        <div class="govuk-form-group">
-
-                            <select class="govuk-select" id="category" name="category">
-                                <option value="published">Recently published</option>
-                                <option value="updated" selected>Select a category</option>
-                                <option value="views">Most views</option>
-                                <option value="comments">Most comments</option>
-                            </select>
-
-                            <select class="govuk-select" id="level" name="level">
-                                <option value="published">Recently published</option>
-                                <option value="updated" selected>Select a level</option>
-                                <option value="views">Most views</option>
-                                <option value="comments">Most comments</option>
-                            </select>
-
-                            <select class="govuk-select" id="hours" name="hours">
-                                <option value="published">Recently published</option>
-                                <option value="updated" selected>Select course hours</option>
-                                <option value="views">Most views</option>
-                                <option value="comments">Most comments</option>
-                            </select>
-                        </div>
-                    </div>
-                    <div class="cd-grid-coloumn-70">
-                        <div class="provision-container">
-                            <h2 class="provision-title">
-                                Non regulated Adult skills formula funded provision, Pre-Entry Level,
-                                Maths, 93 to 100 hrs
-                            </h2>
-                            <span>LARS/QAN :</span> <span>Z00004395</span><br />
-                            <span>Level :</span> <span>E</span><br />
-                            <a href="#">Add this provison</a>
-                        </div>
-                    </div>
-                </div>
-
             </div>
-        </div>
     </main>
