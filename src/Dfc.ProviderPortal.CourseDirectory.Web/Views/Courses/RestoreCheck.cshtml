@@ -6,8 +6,8 @@
 <div class="govuk-body">
     <main id="Cd-course-list" class="govuk-main-wrapper">
         <span class="govuk-caption-xl">Course directory</span>
-        <h1 class="govuk-heading-xl">Archive courses</h1>
-        <p class="govuk-body-l">You are about to archive the courses below. select arc</p>
+        <h1 class="govuk-heading-xl">Republish courses</h1>
+        <p class="govuk-body-l">You are about to republish the courses below.</p>
 
         <div class=" archive ">
 
@@ -25,17 +25,20 @@
                     <h3 class="govuk-heading-m cd-activity-item-heading ">Maths and applied physics</h3>
                     <span class="cd-activity-item-tag">Course ID</span> <span class="cd-activity-item-tag"> Venue</span> <span class="cd-activity-item-tag"> full-time</span> <span class="cd-activity-item-tag">25/03/2019</span>
                 </div>
+
+
+
                 <div class="cd-action-container">
-                    <a class="govuk-button" asp-controller="Courses" asp-action="ArchiveConfirm">
-                        Archive
+                    <a class="govuk-button" asp-controller="Courses" asp-action="RestoreConfirm">
+                        Republish
                     </a>
-                    <a class="govuk-link" asp-controller="Courses" asp-action="Archive">
+                    <a class="govuk-link" asp-controller="Courses" asp-action="Restore">
                         Cancel
                     </a>
 
                 </div>
-                    <partial name="_CDPagination" />
-                </div>
+                <partial name="_CDPagination" />
+            </div>
         </div>
 
     </main>

@@ -6453,6 +6453,7 @@ ul.sort-list {
 }
 
 .cd-fullwidth-container .cd-grid-coloumn-80 {
+  box-sizing: border-box;
   width: 100%;
   float: left;
 }
@@ -6464,6 +6465,7 @@ ul.sort-list {
 }
 
 .cd-fullwidth-container .cd-grid-coloumn-20 {
+  box-sizing: border-box;
   width: 100%;
   float: left;
   padding: 0 1em;
@@ -6477,6 +6479,7 @@ ul.sort-list {
 }
 
 .cd-fullwidth-container .cd-grid-coloumn-70 {
+  box-sizing: border-box;
   width: 100%;
   float: left;
 }
@@ -6488,6 +6491,7 @@ ul.sort-list {
 }
 
 .cd-fullwidth-container .cd-grid-coloumn-30 {
+  box-sizing: border-box;
   width: 100%;
   float: left;
   padding: 0 1em;
@@ -6761,4 +6765,10 @@ ul.sort-list {
 
 .cd-course-page .m20 {
   margin-top: 20px;
+}
+
+.archive .cd-activity-item-heading {
+  margin-bottom: 0;
+  font-size: 1.3em;
+  font-weight: 600;
 }
