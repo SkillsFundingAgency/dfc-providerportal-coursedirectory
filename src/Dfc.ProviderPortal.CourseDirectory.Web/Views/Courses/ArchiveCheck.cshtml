@@ -1,0 +1,39 @@
+﻿@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@{
+}
+<div class="govuk-body">
+    <main id="Cd-course-list" class="govuk-main-wrapper">
+        <span class="govuk-caption-xl">Course directory</span>
+        <h1 class="govuk-heading-xl">Archive courses</h1>
+        <p class="govuk-body-l">You are about to archive the courses below. select arc</p>
+
+        <div class=" archive ">
+
+            <div class=" govuk-!-padding-top-5">
+
+                <div class="cd-activity-item ">
+                    <h3 class="govuk-heading-m cd-activity-item-heading ">Maths and applied physics</h3>
+                    <span class="cd-activity-item-tag">Course ID</span> <span class="cd-activity-item-tag"> Venue</span> <span class="cd-activity-item-tag"> full-time</span> <span class="cd-activity-item-tag">25/03/2019</span>
+                </div>
+                <div class="cd-activity-item">
+                    <h3 class="govuk-heading-m cd-activity-item-heading ">Maths and applied physics</h3>
+                    <span class="cd-activity-item-tag">Course ID</span> <span class="cd-activity-item-tag"> Venue</span> <span class="cd-activity-item-tag"> full-time</span> <span class="cd-activity-item-tag">25/03/2019</span>
+                </div>
+                <div class="cd-activity-item">
+                    <h3 class="govuk-heading-m cd-activity-item-heading ">Maths and applied physics</h3>
+                    <span class="cd-activity-item-tag">Course ID</span> <span class="cd-activity-item-tag"> Venue</span> <span class="cd-activity-item-tag"> full-time</span> <span class="cd-activity-item-tag">25/03/2019</span>
+                </div>
+                <a asp-controller="Courses" asp-action="ArchiveCheck">
+                    <input type="button" class="govuk-button" value="Archive" />
+                </a>
+                <a asp-controller="Courses" asp-action="Archive">
+                    Cancel
+                </a>
+                <partial name="_CDPagination" />
+            </div>
+        </div>
+
+    </main>
+</div>

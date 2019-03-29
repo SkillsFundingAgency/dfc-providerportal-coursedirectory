@@ -1,0 +1,35 @@
+.cd-dashboard.provider .cd-dashboard-title {
+  margin-bottom: 0.23em;
+}
+
+.cd-dashboard.provider .spacer {
+  margin-bottom: 1.23em;
+}
+
+.cd-status-panel {
+  background-color: #dee0e2;
+  display: flex;
+  padding: 1em;
+  margin-bottom: 1.5em;
+  text-align: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.cd-activity-item {
+  display: block;
+  border-bottom: 1px solid #6f777b;
+  margin-bottom: 1em;
+  padding-bottom: .5em;
+  font-family: nta,Arial,sans-serif;
+}
+
+.cd-activity-item-heading {
+  margin-bottom: 0;
+}
+
+.cd-activity-item-tag {
+  font-family: nta,Arial,sans-serif;
+  color: #6f777b;
+  padding-right: 1em;
+}

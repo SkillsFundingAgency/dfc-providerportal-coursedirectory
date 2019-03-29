@@ -42,10 +42,15 @@
             <div>
                 <ul class="govuk-list">
                     <li>
-                        <a class="govuk-link" href="#">Archive a course</a>
+                        <a asp-controller="Courses" asp-action="Archive">
+                            Archive a courses
+                        </a>
                     </li>
                     <li>
-                        <a class="govuk-link" href="#">Republish an archived course </a>
+                        <a class="govuk-link" asp-controller="Courses" asp-action="Restore">
+                            Republish an archived course
+                        </a>
+                        
                     </li>
                 </ul>
             </div>

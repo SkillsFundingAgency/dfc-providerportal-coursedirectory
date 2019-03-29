@@ -42,6 +42,14 @@ namespace Dfc.ProviderPortal.CourseDirectory.Web.Controllers
         {
             return View();
         }
+        public IActionResult Restore()
+        {
+            return View();
+        }
+        public IActionResult ArchiveCheck()
+        {
+            return View();
+        }
         public IActionResult EditQual()
         {
             return View();
