@@ -9,36 +9,41 @@
         <h1 class="govuk-heading-xl">Republish courses</h1>
         <p class="govuk-body-l">You are about to republish the courses below.</p>
 
-        <div class=" archive ">
+        <div class=" archive  ">
+            <div class="govuk-grid-row">
+                <div class="govuk-grid-column-two-thirds">
+                    <div class="cd-activity-item ">
+                        <h3 class="govuk-heading-m cd-activity-item-heading ">Maths and applied physics</h3>
+                        <span class="cd-activity-item-tag">Course ID</span> <span class="cd-activity-item-tag"> Venue</span> <span class="cd-activity-item-tag"> full-time</span> <span class="cd-activity-item-tag">25/03/2019</span>
+                    </div>
+                    <div class="cd-activity-item">
+                        <h3 class="govuk-heading-m cd-activity-item-heading ">Maths and applied physics</h3>
+                        <span class="cd-activity-item-tag">Course ID</span> <span class="cd-activity-item-tag"> Venue</span> <span class="cd-activity-item-tag"> full-time</span> <span class="cd-activity-item-tag">25/03/2019</span>
+                    </div>
+                    <div class="cd-activity-item">
+                        <h3 class="govuk-heading-m cd-activity-item-heading ">Maths and applied physics</h3>
+                        <span class="cd-activity-item-tag">Course ID</span> <span class="cd-activity-item-tag"> Venue</span> <span class="cd-activity-item-tag"> full-time</span> <span class="cd-activity-item-tag">25/03/2019</span>
+                    </div>
 
-            <div class=" govuk-!-padding-top-5">
-
-                <div class="cd-activity-item ">
-                    <h3 class="govuk-heading-m cd-activity-item-heading ">Maths and applied physics</h3>
-                    <span class="cd-activity-item-tag">Course ID</span> <span class="cd-activity-item-tag"> Venue</span> <span class="cd-activity-item-tag"> full-time</span> <span class="cd-activity-item-tag">25/03/2019</span>
+                    <partial name="_CDPagination" />
                 </div>
-                <div class="cd-activity-item">
-                    <h3 class="govuk-heading-m cd-activity-item-heading ">Maths and applied physics</h3>
-                    <span class="cd-activity-item-tag">Course ID</span> <span class="cd-activity-item-tag"> Venue</span> <span class="cd-activity-item-tag"> full-time</span> <span class="cd-activity-item-tag">25/03/2019</span>
-                </div>
-                <div class="cd-activity-item">
-                    <h3 class="govuk-heading-m cd-activity-item-heading ">Maths and applied physics</h3>
-                    <span class="cd-activity-item-tag">Course ID</span> <span class="cd-activity-item-tag"> Venue</span> <span class="cd-activity-item-tag"> full-time</span> <span class="cd-activity-item-tag">25/03/2019</span>
-                </div>
 
+                <div class="govuk-grid-column-one-third">
+                    <h2 class="govuk-heading-m">One-third column</h2>
+                        <p class="govuk-body">This is a paragraph inside a one-third wide column</p>
+                        <div class="cd-action-container">
+                            <a class="govuk-button" asp-controller="Home" asp-action="RestoreConfirm">
+                                Republish
+                            </a>
+                            <a class="govuk-link" asp-controller="Courses" asp-action="Restore">
+                                Cancel
+                            </a>
 
-
-                <div class="cd-action-container">
-                    <a class="govuk-button" asp-controller="Courses" asp-action="RestoreConfirm">
-                        Republish
-                    </a>
-                    <a class="govuk-link" asp-controller="Courses" asp-action="Restore">
-                        Cancel
-                    </a>
-
-                </div>
-                <partial name="_CDPagination" />
+                        </div>
+</div>
             </div>
+
+
         </div>
 
     </main>
