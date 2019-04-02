@@ -17,11 +17,11 @@ namespace Dfc.ProviderPortal.CourseDirectory.Web.Controllers
         {
             return View();
         }
-        public IActionResult ArchiveConfrim()
+        public IActionResult Archive()
         {
             return View();
         }
-        public IActionResult RestoreConfrim()
+        public IActionResult Restore()
         {
             return View();
         }
