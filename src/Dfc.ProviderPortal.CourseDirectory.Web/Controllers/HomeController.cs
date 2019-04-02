@@ -17,7 +17,7 @@ namespace Dfc.ProviderPortal.CourseDirectory.Web.Controllers
         {
             return View();
         }
-        public IActionResult Archive()
+        public IActionResult Archive1()
         {
             return View();
         }
