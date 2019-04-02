@@ -90,5 +90,9 @@ namespace Dfc.ProviderPortal.CourseDirectory.Web.Controllers
         {
             return View();
         }
+        public IActionResult CourseListfullwidth6()
+        {
+            return View();
+        }
     }
 }
