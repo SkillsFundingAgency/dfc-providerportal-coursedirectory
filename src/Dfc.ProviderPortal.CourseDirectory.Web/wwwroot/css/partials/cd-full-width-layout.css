@@ -11,10 +11,18 @@
   margin-top: -10px;
   color: white;
   font-family: nta,Arial,sans-serif;
+  padding-bottom: 10px;
 }
 
 .cd-subHead .cd-subHead--item {
   font-weight: 800;
+  font-size: 0.8em;
+}
+
+.cd-subHead-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
 }
 
 .navigation-container {
