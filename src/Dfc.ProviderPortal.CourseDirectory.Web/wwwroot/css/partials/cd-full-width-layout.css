@@ -40,6 +40,12 @@
   text-decoration: none;
 }
 
+.cd-filter-reset {
+  color: #005ea5;
+  font-size: .8em;
+  text-decoration: underline;
+}
+
 .cd-fullwidth-container {
   width: 90%;
   margin: 0 auto;
