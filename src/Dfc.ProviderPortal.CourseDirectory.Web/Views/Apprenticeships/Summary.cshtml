@@ -1,0 +1,106 @@
+﻿
+@{
+    ViewData["Title"] = "Index";
+}
+
+
+<div class="cd-dashboard ">
+
+
+    <div class="">
+
+
+        <main class="govuk-mainwrapper " id="main-content" role="main">
+            <div class="govuk-grid-row">
+                <div class="govuk-grid-column-two-thirds-from-desktop">
+
+                    <h1 class="govuk-heading-xl">Check your answers before saving</h1>
+
+                    <h2 class="govuk-heading-m">Apprenticeship in accounting</h2>
+
+                    <dl class="govuk-summary-list govuk-!-margin-bottom-9">
+                        <div class="govuk-summary-list__row">
+                            <dt class="govuk-summary-list__key">
+                                Description
+                            </dt>
+                            <dd class="govuk-summary-list__value">
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.   Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum.
+                            </dd>
+                            <dd class="govuk-summary-list__actions">
+                                <a class="" asp-controller="Apprenticeships" asp-action="Edit">Edit <span class="govuk-visually-hidden"> edit</span></a>
+
+                            </dd>
+                        </div>
+                    </dl>
+
+
+
+                    <table class="govuk-table">
+                        <caption class="govuk-table__caption">Locations where you provide this Apprenticeship.</caption>
+                        <thead class="govuk-table__head">
+                            <tr class="govuk-table__row">
+                                <th class="govuk-table__header" scope="col">Location</th>
+                                <th class="govuk-table__header" scope="col">Delivery</th>
+                                <th class="govuk-table__header" scope="col">Catchment radius</th>
+                                <th class="govuk-table__header" scope="col"></th>
+                            </tr>
+                        </thead>
+                        <tbody class="govuk-table__body">
+                            <tr class="govuk-table__row">
+                                <th class="govuk-table__header" scope="row">Birmingham</th>
+                                <td class="govuk-table__cell">100% employer based</td>
+                                <td class="govuk-table__cell">125 miles</td>
+                                <td class="govuk-table__cell">
+                                    <a class="govuk-link" href="#">
+                                        Edit
+                                    </a>
+                                </td>
+                            </tr>
+                            <tr class="govuk-table__row">
+                                <th class="govuk-table__header" scope="row">Leeds</th>
+                                <td class="govuk-table__cell">100% employer based, Work based</td>
+                                <td class="govuk-table__cell">250 miles</td>
+                                <td class="govuk-table__cell">
+                                    <a class="govuk-link" href="#">
+                                        Edit
+                                    </a>
+                                </td>
+                            </tr>
+                            <tr class="govuk-table__row">
+                                <th class="govuk-table__header" scope="row">Liverpool</th>
+                                <td class="govuk-table__cell">100% employer based</td>
+                                <td class="govuk-table__cell">25 miles</td>
+                                <td class="govuk-table__cell">
+                                    <a class="govuk-link" href="#">
+                                        Edit
+                                    </a>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+
+                    <h2 class="govuk-heading-m">Now send your application</h2>
+
+                    <p class="govuk-body">By submitting this notification you are confirming that, to the best of your knowledge, the details you are providing are correct.</p>
+
+                    <form action="/form-handler" method="post" novalidate>
+
+                        <input type="hidden" name="answers-checked" value="true">
+
+
+
+
+
+                    </form>
+                    <a class="govuk-button" asp-controller="Apprenticeships" asp-action="Index">Save</a>
+                </div>
+            </div>
+        </main>
+    </div>
+
+
+
+
+
+</div>
+

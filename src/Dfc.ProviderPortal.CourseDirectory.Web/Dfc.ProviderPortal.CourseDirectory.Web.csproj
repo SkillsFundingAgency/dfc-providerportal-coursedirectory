@@ -12,6 +12,7 @@
     <Folder Include="Views\Uploadafile\" />
     <Folder Include="Views\NavHeaderFooter\" />
     <Folder Include="Views\CoursePage\" />
+    <Folder Include="Views\Apprenticeships\" />
   </ItemGroup>
 
   <ItemGroup>

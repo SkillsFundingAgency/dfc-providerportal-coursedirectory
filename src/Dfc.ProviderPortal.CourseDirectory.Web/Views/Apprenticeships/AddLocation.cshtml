@@ -1,0 +1,94 @@
+﻿
+@{
+    ViewData["Title"] = "Index";
+}
+
+
+<div class="cd-dashboard provider">
+    <span class="govuk-caption-xl">Course Directory</span>
+    <h1 class="govuk-heading-xl cd-dashboard-title">venues</h1>
+    <hr class="spacer" />
+
+
+
+
+    <div class="govuk-form-group">
+        <fieldset class="govuk-fieldset" aria-describedby="how-contacted-conditional-hint">
+            <legend class="govuk-fieldset__legend govuk-fieldset__legend--xl">
+                <h1 class="govuk-fieldset__heading">
+                    Add Apprenticehsip
+                </h1>
+            </legend>
+            <span id="how-contacted-conditional-hint" class="govuk-hint">
+                Select one option.
+            </span>
+            <div class="govuk-character-count" data-module="character-count" data-maxlength="750">
+                <div class="govuk-form-group">
+                    <label class="govuk-label" for="with-hint">
+                        Can you provide more detail?
+                    </label>
+                    <span id="with-hint-hint" class="govuk-hint">
+                        Do not include personal or financial information like your National Insurance number or credit card details.
+                    </span>
+                    <textarea class="govuk-textarea js-character-count " id="with-hint" name="with-hint" rows="7" aria-describedby="with-hint-hint"></textarea>
+                </div>
+
+                <span id="with-hint-info" class="govuk-hint govuk-character-count__message" aria-live="polite">
+                    You can enter up to 750 characters
+                </span>
+            </div>
+            <h2> cacthement radius</h2>
+            <input />
+
+            <div class="govuk-form-group">
+                <label class="govuk-label" for="sort">
+                    Sort by
+                </label>
+                <select class="govuk-select" id="sort" name="sort">
+                    <option value="published">Recently published</option>
+                    <option value="updated" selected>Recently updated</option>
+                    <option value="views">Most views</option>
+                    <option value="comments">Most comments</option>
+                </select>
+                <a href="#" class="govuk-link">Add a new location</a>
+            </div>
+            <h2>delivery</h2>
+            <div class="govuk-form-group">
+                <fieldset class="govuk-fieldset" aria-describedby="waste-hint">
+                    <legend class="govuk-fieldset__legend govuk-fieldset__legend--xl">
+                        <h1 class="govuk-fieldset__heading">
+                            Which types of waste do you transport?
+                        </h1>
+                    </legend>
+                    <span id="waste-hint" class="govuk-hint">
+                        Select all that apply.
+                    </span>
+                    <div class="govuk-checkboxes">
+                        <div class="govuk-checkboxes__item">
+                            <input class="govuk-checkboxes__input" id="waste-1" name="waste" type="checkbox" value="carcasses">
+                            <label class="govuk-label govuk-checkboxes__label" for="waste-1">
+                                Waste from animal carcasses
+                            </label>
+                        </div>
+                        <div class="govuk-checkboxes__item">
+                            <input class="govuk-checkboxes__input" id="waste-2" name="waste" type="checkbox" value="mines">
+                            <label class="govuk-label govuk-checkboxes__label" for="waste-2">
+                                Waste from mines or quarries
+                            </label>
+                        </div>
+                        <div class="govuk-checkboxes__item">
+                            <input class="govuk-checkboxes__input" id="waste-3" name="waste" type="checkbox" value="farm">
+                            <label class="govuk-label govuk-checkboxes__label" for="waste-3">
+                                Farm or agricultural waste
+                            </label>
+                        </div>
+                    </div>
+                </fieldset>
+            </div>
+
+            <a class="govuk-button" asp-controller="Apprenticeships" asp-action="Summary">Save</a>
+            <a class="govuk-button" asp-controller="Apprenticeships" asp-action="Search">Save and add another location</a>
+        </fieldset>
+    </div>
+</div>
+

@@ -2,9 +2,7 @@
 
 //console.log(provider);
 
-if (provider) {
-    console.log('provider page');
-}
+
     
 
 
@@ -66,6 +64,8 @@ provs.forEach((x) => {
 const searchInput = document.getElementById("search");
 const searchInputLabel = document.querySelector(".search-input-wrapper .cd-search__label");
 
+if (provider) {
+
 
 searchInput.addEventListener("focus", () => {
 
@@ -78,5 +78,6 @@ searchInputLabel.classList.remove("visible");
 }
 
 })
+    }
 
 //export default Providers;

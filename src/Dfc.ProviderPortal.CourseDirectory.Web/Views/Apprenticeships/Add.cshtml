@@ -1,0 +1,98 @@
+﻿
+@{
+    ViewData["Title"] = "Index";
+}
+
+
+<div class="cd-dashboard govuk-grid-row govuk-body ">
+
+    <div class="govuk-form-group govuk-grid-column-two-thirds">
+        <fieldset class="govuk-fieldset" aria-describedby="how-contacted-conditional-hint">
+            <legend class="govuk-fieldset__legend govuk-fieldset__legend--xl">
+                <h1 class="govuk-fieldset__heading">
+                    Add an Apprenticeship
+                </h1>
+            </legend>
+
+            <div class="govuk-character-count" data-module="character-count" data-maxlength="750">
+                <div class="govuk-form-group ">
+                    <label class="govuk-label" for="with-hint">
+                        Apprenticeship description
+                    </label>
+                    <span id="with-hint-hint" class="govuk-hint">
+                        Please list the details of your apprenticeship
+                    </span>
+                    <textarea class="govuk-textarea js-character-count  " id="with-hint" name="with-hint" rows="7" aria-describedby="with-hint-hint"></textarea>
+                </div>
+
+                <span id="with-hint-info" class="govuk-hint govuk-character-count__message" aria-live="polite">
+                    You can enter up to 750 characters
+                </span>
+            </div>
+
+
+            <div class="govuk-form-group">
+                <label class="govuk-label" for="event-name">
+                    Catchment radius
+                </label>
+                <span id="waste-hint" class="govuk-hint">
+                    what is the radius
+                </span>
+                <input class="govuk-input govuk-input--width-4" id="event-name" name="event-name" type="text"> <span>miles</span>
+            </div>
+
+            <div class="govuk-form-group">
+                <label class="govuk-label" for="sort">
+                    Select a location
+                </label>
+                <span id="waste-hint" class="govuk-hint">
+                    where will the course be held
+                </span>
+                <select class="govuk-select" id="sort" name="sort">
+                    <option value="published">Location 1</option>
+                    <option value="updated" selected>Location 2</option>
+                    <option value="views">Location3</option>
+                    <option value="comments">Location 4</option>
+                </select>
+                <a href="#" class="govuk-link">Add a new location</a>
+            </div>
+
+            <div class="govuk-form-group govuk-!-margin-bottom-6">
+                <fieldset class="govuk-fieldset" aria-describedby="waste-hint">
+                    <legend class="govuk-fieldset__legend govuk-fieldset__legend--s">
+                        <label class="govuk-label">
+                            Delivery mode
+                        </label>
+                    </legend>
+                    <span id="waste-hint" class="govuk-hint">
+                        Select all that apply.
+                    </span>
+                    <div class="govuk-checkboxes">
+                        <div class="govuk-checkboxes__item">
+                            <input class="govuk-checkboxes__input" id="waste-1" name="waste" type="checkbox" value="carcasses">
+                            <label class="govuk-label govuk-checkboxes__label" for="waste-1">
+                                100% Employer based
+                            </label>
+                        </div>
+                        <div class="govuk-checkboxes__item">
+                            <input class="govuk-checkboxes__input" id="waste-2" name="waste" type="checkbox" value="mines">
+                            <label class="govuk-label govuk-checkboxes__label" for="waste-2">
+                                Block release
+                            </label>
+                        </div>
+                        <div class="govuk-checkboxes__item">
+                            <input class="govuk-checkboxes__input" id="waste-3" name="waste" type="checkbox" value="farm">
+                            <label class="govuk-label govuk-checkboxes__label" for="waste-3">
+                                Day release
+                            </label>
+                        </div>
+                    </div>
+                </fieldset>
+            </div>
+
+            <a class="govuk-button" asp-controller="Apprenticeships" asp-action="Summary">Save</a>
+            <a class="govuk-button" asp-controller="Apprenticeships" asp-action="AddAnotherLocation">Save and add another location</a>
+        </fieldset>
+    </div>
+</div>
+
