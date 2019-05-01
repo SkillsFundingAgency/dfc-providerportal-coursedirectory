@@ -13,6 +13,7 @@
     <Folder Include="Views\NavHeaderFooter\" />
     <Folder Include="Views\CoursePage\" />
     <Folder Include="Views\Apprenticeships\" />
+    <Folder Include="Views\UR\" />
   </ItemGroup>
 
   <ItemGroup>

@@ -1,0 +1,150 @@
+﻿@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@{
+}
+
+<div class="govuk-body">
+    <main id="Cd-course-list" class="govuk-main-wrapper">
+        <span class="govuk-caption-xl">Course directory</span>
+        <h1 class="govuk-heading-xl">Your published courses</h1>
+        <p class="govuk-body-l">These are the courses you have listed on the course directory.</p>
+        <div>
+            <partial name="_CDHeroSearch" />
+        </div>
+        <div class="govuk-grid-row  ">
+
+            <div class="cd-grid-coloumn-20 govuk-body">
+                <span class="cd-filter-reset">Reset filters</span>
+                <div class="cd-level-select govuk-form-group">
+                    <label class="govuk-label" for="level1">
+                        Filter by delivery mode
+                    </label>
+                    <select class="govuk-select" id="level1" name="level1">
+                        <option value="published">Work based</option>
+                        <option value="updated" selected> Classroom based</option>
+                        <option value="views">Online</option>
+                    </select>
+                </div>
+                <div class="cd-level-select govuk-form-group">
+                    <label class="govuk-label" for="level1">
+                        Filter by level
+                    </label>
+                    <select class="govuk-select" id="level1" name="level1">
+                        <option value="published">Recently published</option>
+                        <option value="updated" selected> Level 1</option>
+                        <option value="views">Most views</option>
+                        <option value="comments">Most comments</option>
+                    </select>
+                </div>
+
+
+                <div class="cd-level-select govuk-form-group">
+                    <label class="govuk-label" for="level1">
+                        Filter by venue
+                    </label>
+                    <select class="govuk-select" id="level1" name="level1">
+                        <option value="published">Recently published</option>
+                        <option value="updated" selected>Main campus</option>
+                        <option value="views">Most views</option>
+                        <option value="comments">Most comments</option>
+                    </select>
+                </div>
+
+                <div class="cd-level-select govuk-form-group">
+                    <label class="govuk-label" for="region">
+                        Filter by region
+                    </label>
+                    <select class="govuk-select" id="region" name="region">
+                        <option value="published">South</option>
+                        <option value="updated" selected> North</option>
+                        <option value="views">Midlands</option>
+                        <option value="comments">Most comments</option>
+                    </select>
+                </div>
+                <div class="cd-level-select govuk-form-group">
+                    <label class="govuk-label" for="level1">
+                        Filter by attendance mode
+                    </label>
+                    <select class="govuk-select" id="level1" name="level1">
+                        <option value="published">Recently published</option>
+                        <option value="updated" selected>Full time</option>
+                        <option value="views">Most views</option>
+                        <option value="comments">Most comments</option>
+                    </select>
+                </div>
+            </div>
+
+            <div class="cd-grid-coloumn-80 ">
+
+                <div class="courserun border">
+                    <div class="courserun__row1">
+                        <h3 class="coursename">GCSE Biology</h3>
+                        <h4 class="coursename smaller "><small>Qualification name <span>1000399999</span> </small></h4>
+                    </div>
+                    <div class="courserun__row2">
+                        <span class="">MANYGATES ADULT EDUCATION CENTRE</span>
+                    </div>
+                    <div class="courserun__row3">
+                        <span>maths11223354</span> <span>Day time</span> <span>Level 3</span> <span>Classroom based</span> <span>Full time</span> <span>Starts: 25/01/2019</span>
+                    </div>
+                    <div class="courserun__row4">
+                        <a class="govuk-link" asp-controller="UR" asp-action="CoursePage">Select</a>
+
+                    </div>
+                </div>
+                <div class="courserun border">
+                    <div class="courserun__row1">
+                        <h3 class="coursename">GCSE English</h3>
+                        <h4 class="coursename smaller "><small>Qualification name what if this is really long. <span>LARS/QAN:1000399999</span> </small></h4>
+                    </div>
+                    <div class="courserun__row2">
+                        <span class="">MANYGATES ADULT EDUCATION CENTRE</span>
+                    </div>
+                    <div class="courserun__row3">
+                        <span>maths11223354</span> <span>Day time</span> <span>Level 2</span> <span>Classroom based</span> <span>Full time</span> <span>Starts: 25/01/2019</span>
+                    </div>
+                    <div class="courserun__row4">
+                        <a class="govuk-link" asp-controller="UR" asp-action="CoursePage">Select</a>
+
+                    </div>
+                </div>
+                <div class="courserun border">
+                    <div class="courserun__row1">
+                        <h3 class="coursename">GCSE Maths</h3>
+                        <h4 class="coursename smaller "><small>Qualification name <span>1000399999</span> </small></h4>
+                    </div>
+                    <div class="courserun__row2">
+                        <span class="">MANYGATES ADULT EDUCATION CENTRE</span>
+                    </div>
+                    <div class="courserun__row3">
+                        <span>maths11223354</span> <span>Day time</span> <span>Level 3</span> <span>Classroom based</span> <span>Full time</span> <span>Starts: 25/01/2019</span>
+                    </div>
+                    <div class="courserun__row4">
+                        <a class="govuk-link" asp-controller="UR" asp-action="CoursePage">Select</a>
+
+                    </div>
+                </div>
+                <div class="courserun border">
+                    <div class="courserun__row1">
+                        <h3 class="coursename">GCSE Maths</h3>
+                        <h4 class="coursename smaller "><small>Qualification name <span>1000399999</span> </small></h4>
+                    </div>
+                    <div class="courserun__row2">
+                        <span class="">MANYGATES ADULT EDUCATION CENTRE</span>
+                    </div>
+                    <div class="courserun__row3">
+                        <span>maths11223354</span> <span>Day time</span> <span>Level 3</span> <span>Classroom based</span> <span>Full time</span> <span>Starts: 25/01/2019</span>
+                    </div>
+                    <div class="courserun__row4">
+                        <a class="govuk-link" asp-controller="UR" asp-action="CoursePage">Select</a>
+
+                    </div>
+                </div>
+                <partial name="_CDPagination" />
+            </div>
+        </div>
+
+    </main>
+</div>
+
