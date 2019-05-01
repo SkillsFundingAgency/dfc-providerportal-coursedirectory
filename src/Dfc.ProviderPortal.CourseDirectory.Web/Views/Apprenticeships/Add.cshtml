@@ -29,34 +29,6 @@
                     You can enter up to 750 characters
                 </span>
             </div>
-
-
-            <div class="govuk-form-group">
-                <label class="govuk-label" for="event-name">
-                    Catchment radius
-                </label>
-                <span id="waste-hint" class="govuk-hint">
-                    what is the radius
-                </span>
-                <input class="govuk-input govuk-input--width-4" id="event-name" name="event-name" type="text"> <span>miles</span>
-            </div>
-
-            <div class="govuk-form-group">
-                <label class="govuk-label" for="sort">
-                    Select a location
-                </label>
-                <span id="waste-hint" class="govuk-hint">
-                    where will the course be held
-                </span>
-                <select class="govuk-select" id="sort" name="sort">
-                    <option value="published">Location 1</option>
-                    <option value="updated" selected>Location 2</option>
-                    <option value="views">Location3</option>
-                    <option value="comments">Location 4</option>
-                </select>
-                <a href="#" class="govuk-link">Add a new location</a>
-            </div>
-
             <div class="govuk-form-group govuk-!-margin-bottom-6">
                 <fieldset class="govuk-fieldset" aria-describedby="waste-hint">
                     <legend class="govuk-fieldset__legend govuk-fieldset__legend--s">
@@ -69,19 +41,19 @@
                     </span>
                     <div class="govuk-checkboxes">
                         <div class="govuk-checkboxes__item">
-                            <input class="govuk-checkboxes__input" id="waste-1" name="waste" type="checkbox" value="carcasses">
+                            <input class="govuk-checkboxes__input delivery-checkbox" id="waste-1" name="waste" type="checkbox" value="carcasses">
                             <label class="govuk-label govuk-checkboxes__label" for="waste-1">
                                 100% Employer based
                             </label>
                         </div>
                         <div class="govuk-checkboxes__item">
-                            <input class="govuk-checkboxes__input" id="waste-2" name="waste" type="checkbox" value="mines">
+                            <input class="govuk-checkboxes__input delivery-checkbox" id="waste-2" name="waste" type="checkbox" value="mines">
                             <label class="govuk-label govuk-checkboxes__label" for="waste-2">
                                 Block release
                             </label>
                         </div>
                         <div class="govuk-checkboxes__item">
-                            <input class="govuk-checkboxes__input" id="waste-3" name="waste" type="checkbox" value="farm">
+                            <input class="govuk-checkboxes__input delivery-checkbox" id="waste-3" name="waste" type="checkbox" value="farm">
                             <label class="govuk-label govuk-checkboxes__label" for="waste-3">
                                 Day release
                             </label>
@@ -89,6 +61,225 @@
                     </div>
                 </fieldset>
             </div>
+
+
+            <div class="govuk-tabs" data-module="tabs">
+                <h2 class="govuk-tabs__title">
+                    Contents
+                </h2>
+
+                <ul class="govuk-tabs__list">
+                    <li class="govuk-tabs__list-item">
+                        <a class="govuk-tabs__tab govuk-tabs__tab--selected" href="#past-day">
+                            Region 1
+                        </a>
+                    </li>
+                    <li class="govuk-tabs__list-item">
+                        <a class="govuk-tabs__tab" href="#past-week">
+                            Region 2
+                        </a>
+                    </li>
+                    <li class="govuk-tabs__list-item">
+                        <a class="govuk-tabs__tab" href="#past-month">
+                            Region 3
+                        </a>
+                    </li>
+                    <li class="govuk-tabs__list-item">
+                        <a class="govuk-tabs__tab" href="#past-year">
+                            Region 4
+                        </a>
+                    </li>
+                    <li class="govuk-tabs__list-item">
+                        <a class="govuk-tabs__tab govuk-tabs__tab--selected" href="#past-day">
+                            Region 5
+                        </a>
+                    </li>
+                    <li class="govuk-tabs__list-item">
+                        <a class="govuk-tabs__tab" href="#past-week">
+                            Region 6
+                        </a>
+                    </li>
+                    <li class="govuk-tabs__list-item">
+                        <a class="govuk-tabs__tab" href="#past-month">
+                            Region 7
+                        </a>
+                    </li>
+                    <li class="govuk-tabs__list-item">
+                        <a class="govuk-tabs__tab" href="#past-year">
+                            Region 8
+                        </a>
+                    </li>
+                    <li class="govuk-tabs__list-item">
+                        <a class="govuk-tabs__tab" href="#past-year">
+                            Region 9
+                        </a>
+                    </li>
+                </ul>
+
+                <section class="govuk-tabs__panel" id="past-day">
+                    <h2 class="govuk-heading-l">region1</h2>
+                    <div class="flex-container region-checkboxes govuk-grid-row" id="details-content-E12000001" aria-hidden="true">
+
+                        <div class="govuk-checkboxes__item">
+                            <input class="govuk-checkboxes__input" id="RegionName-1" region-id="E12000001" name="SelectedRegions" type="checkbox" value="E06000001">
+                            <label class="govuk-label govuk-checkboxes__label" for="SelectedRegions">County Durham</label>
+                        </div>
+                        <div class="govuk-checkboxes__item">
+                            <input class="govuk-checkboxes__input" id="RegionName-2" region-id="E12000001" name="SelectedRegions" type="checkbox" value="E06000002">
+                            <label class="govuk-label govuk-checkboxes__label" for="SelectedRegions">Darlington</label>
+                        </div>
+                        <div class="govuk-checkboxes__item">
+                            <input class="govuk-checkboxes__input" id="RegionName-3" region-id="E12000001" name="SelectedRegions" type="checkbox" value="E06000003">
+                            <label class="govuk-label govuk-checkboxes__label" for="SelectedRegions">Gateshead</label>
+                        </div>
+                        <div class="govuk-checkboxes__item">
+                            <input class="govuk-checkboxes__input" id="RegionName-4" region-id="E12000001" name="SelectedRegions" type="checkbox" value="E06000004">
+                            <label class="govuk-label govuk-checkboxes__label" for="SelectedRegions">Hartlepool</label>
+                        </div>
+                        <div class="govuk-checkboxes__item">
+                            <input class="govuk-checkboxes__input" id="RegionName-5" region-id="E12000001" name="SelectedRegions" type="checkbox" value="E06000005">
+                            <label class="govuk-label govuk-checkboxes__label" for="SelectedRegions">Middlesbrough</label>
+                        </div>
+                        <div class="govuk-checkboxes__item">
+                            <input class="govuk-checkboxes__input" id="RegionName-6" region-id="E12000001" name="SelectedRegions" type="checkbox" value="E06000047">
+                            <label class="govuk-label govuk-checkboxes__label" for="SelectedRegions">Newcastle upon Tyne</label>
+                        </div>
+                    </div>
+
+                </section>
+                <section class="govuk-tabs__panel govuk-tabs__panel--hidden" id="past-week">
+                    <h2 class="govuk-heading-l">Past week</h2>
+                    <table class="govuk-table">
+                        <thead class="govuk-table__head">
+                            <tr class="govuk-table__row">
+                                <th class="govuk-table__header" scope="col">Case manager</th>
+                                <th class="govuk-table__header" scope="col">Cases opened</th>
+                                <th class="govuk-table__header" scope="col">Cases closed</th>
+                            </tr>
+                        </thead>
+                        <tbody class="govuk-table__body">
+                            <tr class="govuk-table__row">
+                                <td class="govuk-table__cell">David Francis</td>
+                                <td class="govuk-table__cell">24</td>
+                                <td class="govuk-table__cell">18</td>
+                            </tr>
+                            <tr class="govuk-table__row">
+                                <td class="govuk-table__cell">Paul Farmer</td>
+                                <td class="govuk-table__cell">16</td>
+                                <td class="govuk-table__cell">20</td>
+                            </tr>
+                            <tr class="govuk-table__row">
+                                <td class="govuk-table__cell">Rita Patel</td>
+                                <td class="govuk-table__cell">24</td>
+                                <td class="govuk-table__cell">27</td>
+                            </tr>
+                        </tbody>
+                    </table>
+
+                </section>
+                <section class="govuk-tabs__panel govuk-tabs__panel--hidden" id="past-month">
+                    <h2 class="govuk-heading-l">Past month</h2>
+                    <table class="govuk-table">
+                        <thead class="govuk-table__head">
+                            <tr class="govuk-table__row">
+                                <th class="govuk-table__header" scope="col">Case manager</th>
+                                <th class="govuk-table__header" scope="col">Cases opened</th>
+                                <th class="govuk-table__header" scope="col">Cases closed</th>
+                            </tr>
+                        </thead>
+                        <tbody class="govuk-table__body">
+                            <tr class="govuk-table__row">
+                                <td class="govuk-table__cell">David Francis</td>
+                                <td class="govuk-table__cell">98</td>
+                                <td class="govuk-table__cell">95</td>
+                            </tr>
+                            <tr class="govuk-table__row">
+                                <td class="govuk-table__cell">Paul Farmer</td>
+                                <td class="govuk-table__cell">122</td>
+                                <td class="govuk-table__cell">131</td>
+                            </tr>
+                            <tr class="govuk-table__row">
+                                <td class="govuk-table__cell">Rita Patel</td>
+                                <td class="govuk-table__cell">126</td>
+                                <td class="govuk-table__cell">142</td>
+                            </tr>
+                        </tbody>
+                    </table>
+
+                </section>
+                <section class="govuk-tabs__panel govuk-tabs__panel--hidden" id="past-year">
+                    <h2 class="govuk-heading-l">Past year</h2>
+                    <table class="govuk-table">
+                        <thead class="govuk-table__head">
+                            <tr class="govuk-table__row">
+                                <th class="govuk-table__header" scope="col">Case manager</th>
+                                <th class="govuk-table__header" scope="col">Cases opened</th>
+                                <th class="govuk-table__header" scope="col">Cases closed</th>
+                            </tr>
+                        </thead>
+                        <tbody class="govuk-table__body">
+                            <tr class="govuk-table__row">
+                                <td class="govuk-table__cell">David Francis</td>
+                                <td class="govuk-table__cell">1380</td>
+                                <td class="govuk-table__cell">1472</td>
+                            </tr>
+                            <tr class="govuk-table__row">
+                                <td class="govuk-table__cell">Paul Farmer</td>
+                                <td class="govuk-table__cell">1129</td>
+                                <td class="govuk-table__cell">1083</td>
+                            </tr>
+                            <tr class="govuk-table__row">
+                                <td class="govuk-table__cell">Rita Patel</td>
+                                <td class="govuk-table__cell">1539</td>
+                                <td class="govuk-table__cell">1265</td>
+                            </tr>
+                        </tbody>
+                    </table>
+
+                </section>
+            </div>
+            <h2>select a venue</h2>
+
+            <div class="flex-container region-checkboxes govuk-grid-row" id="details-content-E12000001" aria-hidden="true">
+
+                <div class="govuk-checkboxes__item">
+                    <input class="govuk-checkboxes__input" id="RegionName-1" region-id="E12000001" name="SelectedRegions" type="checkbox" value="E06000001">
+                    <label class="govuk-label govuk-checkboxes__label" for="SelectedRegions">County Durham</label>
+                </div>
+                <div class="govuk-checkboxes__item">
+                    <input class="govuk-checkboxes__input" id="RegionName-2" region-id="E12000001" name="SelectedRegions" type="checkbox" value="E06000002">
+                    <label class="govuk-label govuk-checkboxes__label" for="SelectedRegions">Darlington</label>
+                </div>
+                <div class="govuk-checkboxes__item">
+                    <input class="govuk-checkboxes__input" id="RegionName-3" region-id="E12000001" name="SelectedRegions" type="checkbox" value="E06000003">
+                    <label class="govuk-label govuk-checkboxes__label" for="SelectedRegions">Gateshead</label>
+                </div>
+                <div class="govuk-checkboxes__item">
+                    <input class="govuk-checkboxes__input" id="RegionName-4" region-id="E12000001" name="SelectedRegions" type="checkbox" value="E06000004">
+                    <label class="govuk-label govuk-checkboxes__label" for="SelectedRegions">Hartlepool</label>
+                </div>
+                <div class="govuk-checkboxes__item">
+                    <input class="govuk-checkboxes__input" id="RegionName-5" region-id="E12000001" name="SelectedRegions" type="checkbox" value="E06000005">
+                    <label class="govuk-label govuk-checkboxes__label" for="SelectedRegions">Middlesbrough</label>
+                </div>
+                <div class="govuk-checkboxes__item">
+                    <input class="govuk-checkboxes__input" id="RegionName-6" region-id="E12000001" name="SelectedRegions" type="checkbox" value="E06000047">
+                    <label class="govuk-label govuk-checkboxes__label" for="SelectedRegions">Newcastle upon Tyne</label>
+                </div>
+
+
+            </div>
+
+
+            @*<div class="govuk-form-group">
+            <label class="govuk-label" for="event-name">
+                Catchment radius
+            </label>
+            <span id="waste-hint" class="govuk-hint">
+                what is the radius
+            </span>
+            <input class="govuk-input govuk-input--width-4" id="event-name" name="event-name" type="text"> <span>miles</span>
+        </div>*@
 
             <a class="govuk-button" asp-controller="Apprenticeships" asp-action="Summary">Save</a>
             <a class="govuk-button" asp-controller="Apprenticeships" asp-action="AddAnotherLocation">Save and add another location</a>

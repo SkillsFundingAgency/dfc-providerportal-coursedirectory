@@ -1,0 +1,333 @@
+﻿@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@{
+}
+<h1 class="govuk-heading-l">Add qualification and course details</h1>
+<form>
+    <div class="govuk-character-count govuk-!-margin-bottom-9" data-module="character-count" data-maxlength="200">
+        <div class="govuk-form-group">
+            <label class="govuk-label govuk-!-font-size-24" for="with-hint">
+                Qualification description
+            </label>
+            <span id="with-hint-hint" class="govuk-hint">
+                Describe who this qualification is for, what they’ll do and how they are likely to progress.
+                We have added a suggested description for you. You can keep this or change it.
+
+            </span>
+            <textarea class="govuk-textarea js-character-count " id="with-hint" name="with-hint" rows="5" aria-describedby="with-hint-hint"></textarea>
+        </div>
+
+        <span id="with-hint-info" class="govuk-hint govuk-character-count__message" aria-live="polite">
+            You can enter up to 200 characters
+        </span>
+    </div>
+    <h2>Unique course information</h2>
+
+    <div id="Coursename" class="govuk-form-group govuk-!-margin-bottom-9">
+        <label class="govuk-label govuk-!-font-size-24" for="national-insurance-number">
+            Course name
+        </label>
+        <span id="national-insurance-number-hint" class="govuk-hint">
+            Please enter the course name.
+        </span>
+        <input class="govuk-input " id="national-insurance-number" name="national-insurance-number" type="text" aria-describedby="national-insurance-number-hint">
+    </div>
+
+    <div class="govuk-form-group govuk-!-margin-bottom-9">
+        <label class="govuk-label govuk-!-font-size-24" for="national-insurance-number">
+            Course ID
+        </label>
+        <span id="national-insurance-number-hint" class="govuk-hint">
+            Please enter the course ID.
+        </span>
+        <input class="govuk-input " id="national-insurance-number" name="national-insurance-number" type="text" aria-describedby="national-insurance-number-hint">
+    </div>
+
+    <div class="govuk-form-group govuk-!-margin-bottom-9">
+        <label class="govuk-label govuk-!-font-size-24" for="national-insurance-number">
+            Url
+        </label>
+        <span id="national-insurance-number-hint" class="govuk-hint">
+            Please enter the url for the course.
+        </span>
+        <input class="govuk-input " id="national-insurance-number" name="national-insurance-number" type="text" aria-describedby="national-insurance-number-hint">
+    </div>
+
+    <h2>Attendance</h2>
+
+    <div id="Startdate" class="govuk-form-group govuk-!-margin-bottom-9">
+        <label class="govuk-label govuk-!-font-size-24" for="with-hint">
+            Start date
+        </label>
+        <span id="rwith-hint-hint" class="govuk-hint">
+            Please select the type of start date for this course.
+        </span>
+        <div class="govuk-radios">
+            <div class="govuk-radios__item">
+                <input class="govuk-radios__input" id="where-do-you-live-1" name="start-date" type="radio" value="specific">
+                <label class="govuk-label govuk-radios__label" for="where-do-you-live-1">
+                    Specific start date
+                </label>
+
+                <div class="govuk-date-input show-radios govuk-!-margin-top-4" id="courseStartDate">
+                    <span id="rwith-hint-hint" class="govuk-hint">
+                        Please enter the date (dd/mm/yyyy).
+                    </span>
+                    <div class="govuk-date-input__item">
+                        <div class="govuk-form-group">
+                            <label class="govuk-label govuk-date-input__label" for="dob-day">
+                                Day
+                            </label>
+                            <input class="govuk-input govuk-date-input__input govuk-input--width-2" id="dob-day" name="dob-day" type="number" pattern="[0-9]*">
+                        </div>
+                    </div>
+                    <div class="govuk-date-input__item">
+                        <div class="govuk-form-group">
+                            <label class="govuk-label govuk-date-input__label" for="dob-month">
+                                Month
+                            </label>
+                            <input class="govuk-input govuk-date-input__input govuk-input--width-2" id="dob-month" name="dob-month" type="number" pattern="[0-9]*">
+                        </div>
+                    </div>
+                    <div class="govuk-date-input__item">
+                        <div class="govuk-form-group">
+                            <label class="govuk-label govuk-date-input__label" for="dob-year">
+                                Year
+                            </label>
+                            <input class="govuk-input govuk-date-input__input govuk-input--width-4" id="dob-year" name="dob-year" type="number" pattern="[0-9]*">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="govuk-radios__item">
+                <input class="govuk-radios__input" id="where-do-you-live-2" name="start-date" type="radio" value="scotland">
+                <label class="govuk-label govuk-radios__label" for="where-do-you-live-2">
+                    Flexible start date
+                </label>
+            </div>
+
+        </div>
+    </div>
+
+    <div class="govuk-form-group govuk-!-margin-bottom-9">
+        <fieldset class="govuk-fieldset" aria-describedby="waste-hint">
+            <legend class="govuk-fieldset__legend govuk-fieldset__legend--xl">
+                <label class="govuk-label govuk-!-font-size-24" for="with-hint">
+                    Course Length
+                </label>
+            </legend>
+            <span id="waste-hint" class="govuk-hint">
+                Enter the duration of this course.
+            </span>
+            <div class="cd-duration-container">
+
+                <input class="govuk-input govuk-input--width-3" id="width-3" name="width-3" type="text">
+                <select class="govuk-select cd-duration-list" -list id="sort" name="sort">
+                    <option value="days">Days</option>
+                    <option value="weeks" selected>Weeks</option>
+                    <option value="months">Months</option>
+                    <option value="years">Years</option>
+                </select>
+            </div>
+        </fieldset>
+    </div>
+
+    <div class="govuk-form-group govuk-!-margin-bottom-9">
+        <fieldset class="govuk-fieldset" aria-describedby="waste-hint">
+            <legend class="govuk-fieldset__legend govuk-fieldset__legend--xl">
+                <label class="govuk-label govuk-!-font-size-24" for="with-hint">
+                    Hours
+                </label>
+            </legend>
+            <span id="waste-hint" class="govuk-hint">
+                Select this checkbox if advanced learner loans are available for this course.
+            </span>
+            <div class="govuk-checkboxes">
+                <div class="govuk-checkboxes__item">
+                    <input class="govuk-checkboxes__input" id="waste-1" name="waste" type="checkbox" value="carcasses">
+                    <label class="govuk-label govuk-checkboxes__label" for="waste-1">
+                        16 hours a week or fewer
+                    </label>
+                </div>
+                <div class="govuk-checkboxes__item">
+                    <input class="govuk-checkboxes__input" id="waste-1" name="waste" type="checkbox" value="carcasses">
+                    <label class="govuk-label govuk-checkboxes__label" for="waste-1">
+                        More than 16 hours a week
+                    </label>
+                </div>
+            </div>
+        </fieldset>
+    </div>
+
+    <div class="govuk-form-group govuk-!-margin-bottom-9">
+        <fieldset class="govuk-fieldset" aria-describedby="changed-name-hint">
+            <legend class="govuk-fieldset__legend govuk-fieldset__legend--xl">
+                <label class="govuk-label govuk-!-font-size-24">
+                    Attendance time
+                </label>
+            </legend>
+            <span id="changed-name-hint" class="govuk-hint">
+                Select the course time.
+            </span>
+            <div class="govuk-radios govuk-radios--inline">
+                <div class="govuk-radios__item">
+                    <input class="govuk-radios__input" id="changed-name-1" name="changed-name" type="radio" value="yes">
+                    <label class="govuk-label govuk-radios__label" for="changed-name-1">
+                        Daytime
+                    </label>
+                </div>
+                <div class="govuk-radios__item">
+                    <input class="govuk-radios__input" id="changed-name-2" name="changed-name" type="radio" value="no">
+                    <label class="govuk-label govuk-radios__label" for="changed-name-2">
+                        Evening
+                    </label>
+                </div>
+                <div class="govuk-radios__item">
+                    <input class="govuk-radios__input" id="changed-name-2" name="changed-name" type="radio" value="no">
+                    <label class="govuk-label govuk-radios__label" for="changed-name-2">
+                        Weekend
+                    </label>
+                </div>
+                <div class="govuk-radios__item">
+                    <input class="govuk-radios__input" id="changed-name-2" name="changed-name" type="radio" value="no">
+                    <label class="govuk-label govuk-radios__label" for="changed-name-2">
+                        Day/Block Release
+                    </label>
+                </div>
+            </div>
+        </fieldset>
+    </div>
+
+    <div id="Deliverymode" class="govuk-form-group govuk-!-margichexn-bottom-9">
+        <fieldset class="govuk-fieldset">
+            <label class="govuk-label govuk-!-font-size-24" for="national-insurance-nmber">
+                Delivery Mode
+            </label>
+            <span id="national-insurance-number-hint" class="govuk-hint">
+                How will this course be delivered.
+            </span>
+            <div class="govuk-radios__item">
+                <input class="govuk-radios__input" id="where-do-you-live-2" name="delivery-mode" type="radio" value="flexible">
+                <label class="govuk-label govuk-radios__label" for="where-do-you-live-2">
+                    Classroom based
+                </label>
+            </div>
+        </fieldset>
+    </div>
+
+    <div class="govuk-form-group govuk-!-margin-bottom-9">
+        <fieldset class="govuk-fieldset" aria-describedby="waste-hint">
+            <legend class="govuk-fieldset__legend govuk-fieldset__legend--xl">
+                <label class="govuk-label govuk-!-font-size-24" for="with-hint">
+                    Course venue
+                </label>
+            </legend>
+            <span id="waste-hint" class="govuk-hint">
+                Select all that apply.
+            </span>
+            <div class="govuk-checkboxes">
+                <div class="govuk-checkboxes__item">
+                    <input class="govuk-checkboxes__input" id="waste-1" name="waste" type="checkbox" value="carcasses">
+                    <label class="govuk-label govuk-checkboxes__label" for="waste-1">
+                        Baconsham College
+                    </label>
+                </div>
+                <div class="govuk-checkboxes__item">
+                    <input class="govuk-checkboxes__input" id="waste-2" name="waste" type="checkbox" value="mines">
+                    <label class="govuk-label govuk-checkboxes__label" for="waste-2">
+                        Durham College
+                    </label>
+                </div>
+                <div class="govuk-checkboxes__item">
+                    <input class="govuk-checkboxes__input" id="waste-3" name="waste" type="checkbox" value="farm">
+                    <label class="govuk-label govuk-checkboxes__label" for="waste-3">
+                        Newham College
+                    </label>
+                </div>
+            </div>
+        </fieldset>
+    </div>
+
+    <h2>Cost</h2>
+
+    <div class="govuk-form-group govuk-!-margin-bottom-9">
+        <label class="govuk-label govuk-!-font-size-24" for="national-insurance-number">
+            Cost
+        </label>
+        <span id="national-insurance-number-hint" class="govuk-hint">
+            Enter the total cost of this course in pounds.
+        </span>
+        <input class="govuk-input " id="national-insurance-number" name="national-insurance-number" type="number" aria-describedby="national-insurance-number-hint">
+    </div>
+
+    <div class="govuk-character-count govuk-!-margin-bottom-9" data-module="character-count" data-maxlength="200">
+        <div class="govuk-form-group">
+            <label class="govuk-label govuk-!-font-size-24" for="with-hint">
+                Cost description
+            </label>
+            <span id="with-hint-hint" class="govuk-hint">
+                Please provide any additional information relating to the cost of this course.
+            </span>
+            <textarea class="govuk-textarea js-character-count " id="with-hint" name="with-hint" rows="5" aria-describedby="with-hint-hint"></textarea>
+        </div>
+
+        <span id="with-hint-info" class="govuk-hint govuk-character-count__message" aria-live="polite">
+            You can enter up to 200 characters
+        </span>
+    </div>
+
+    <div class="govuk-character-count govuk-!-margin-bottom-9" data-module="character-count" data-maxlength="4000">
+        <div class="govuk-form-group">
+            <label class="govuk-label govuk-!-font-size-24" for="entry-with-hint">
+                Entry Requirements
+            </label>
+            <span id="entry-with-hint-hint" class="govuk-hint">
+                Please list the entry requirements for this course.
+            </span>
+            <textarea class="govuk-textarea js-character-count " id="entry-with-hint" name="entry-with-hint" rows="8" aria-describedby="entry-with-hint-hint"></textarea>
+        </div>
+
+        <span id="entry-with-hint-info" class="govuk-hint govuk-character-count__message" aria-live="polite">
+            You can enter up to 4000 characters
+        </span>
+    </div>
+
+    <div class="govuk-form-group govuk-!-margin-bottom-9">
+        <fieldset class="govuk-fieldset" aria-describedby="waste-hint">
+            <legend class="govuk-fieldset__legend govuk-fieldset__legend--xl">
+                <label class="govuk-label govuk-!-font-size-24" for="with-hint">
+                    Course venue
+                </label>
+            </legend>
+            <span id="waste-hint" class="govuk-hint">
+                Select all that apply.
+            </span>
+            <div class="govuk-checkboxes">
+                <div class="govuk-checkboxes__item">
+                    <input class="govuk-checkboxes__input" id="waste-1" name="waste" type="checkbox" value="carcasses">
+                    <label class="govuk-label govuk-checkboxes__label" for="waste-1">
+                        Baconsham College
+                    </label>
+                </div>
+                <div class="govuk-checkboxes__item">
+                    <input class="govuk-checkboxes__input" id="waste-2" name="waste" type="checkbox" value="mines">
+                    <label class="govuk-label govuk-checkboxes__label" for="waste-2">
+                        Durham College
+                    </label>
+                </div>
+                <div class="govuk-checkboxes__item">
+                    <input class="govuk-checkboxes__input" id="waste-3" name="waste" type="checkbox" value="farm">
+                    <label class="govuk-label govuk-checkboxes__label" for="waste-3">
+                        Newham College
+                    </label>
+                </div>
+            </div>
+        </fieldset>
+    </div>
+
+
+    <button type="submit" class="govuk-button" formaction="/AddCourse/Details" formmethod="post">
+        Continue
+    </button>
+</form>
