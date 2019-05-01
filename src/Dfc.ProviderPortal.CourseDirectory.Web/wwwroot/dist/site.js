@@ -234,6 +234,16 @@ var target = document.getElementsByClassName('cd-apprenticeships-results')[0];
 });
 
 
+
+
+const del = document.getElementsByClassName('delivery-checkbox');
+console.log(del);
+
+
+[...del].forEach((el) => {
+    console.log(el);
+})
+
 const provider = document.getElementsByClassName('provider')[0];
 
 //console.log(provider);
