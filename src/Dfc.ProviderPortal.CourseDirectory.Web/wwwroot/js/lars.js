@@ -73,3 +73,15 @@ var target = document.getElementsByClassName('cd-apprenticeships-results')[0];
 
 });
 
+
+
+
+const del = document.getElementsByClassName('delivery-checkbox');
+console.log(del);
+
+
+[...del].forEach((el) => {
+    console.log(el);
+
+    el.addEventListener()
+})
