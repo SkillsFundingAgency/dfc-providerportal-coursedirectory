@@ -22,7 +22,9 @@
             You can enter up to 200 characters
         </span>
     </div>
-    <h2>Unique course information</h2>
+
+
+    <h2 class="govuk-heading-m">Unique course information</h2>
 
     <div id="Coursename" class="govuk-form-group govuk-!-margin-bottom-9">
         <label class="govuk-label govuk-!-font-size-24" for="national-insurance-number">
@@ -46,7 +48,7 @@
 
     <div class="govuk-form-group govuk-!-margin-bottom-9">
         <label class="govuk-label govuk-!-font-size-24" for="national-insurance-number">
-            Url
+            External web page for this course
         </label>
         <span id="national-insurance-number-hint" class="govuk-hint">
             Please enter the url for the course.
@@ -54,7 +56,7 @@
         <input class="govuk-input " id="national-insurance-number" name="national-insurance-number" type="text" aria-describedby="national-insurance-number-hint">
     </div>
 
-    <h2>Attendance</h2>
+    <h2 class="govuk-heading-l">Attendance information</h2>
 
     <div id="Startdate" class="govuk-form-group govuk-!-margin-bottom-9">
         <label class="govuk-label govuk-!-font-size-24" for="with-hint">
@@ -141,7 +143,7 @@
                 </label>
             </legend>
             <span id="waste-hint" class="govuk-hint">
-                Select this checkbox if advanced learner loans are available for this course.
+                Select the amount of hours this course runs for each week.
             </span>
             <div class="govuk-checkboxes">
                 <div class="govuk-checkboxes__item">
@@ -207,11 +209,25 @@
             <span id="national-insurance-number-hint" class="govuk-hint">
                 How will this course be delivered.
             </span>
-            <div class="govuk-radios__item">
-                <input class="govuk-radios__input" id="where-do-you-live-2" name="delivery-mode" type="radio" value="flexible">
-                <label class="govuk-label govuk-radios__label" for="where-do-you-live-2">
-                    Classroom based
-                </label>
+            <div class="govuk-radios govuk-radios--inline">
+                <div class="govuk-radios__item">
+                    <input class="govuk-radios__input" id="changed-name-1" name="changed-name" type="radio" value="yes">
+                    <label class="govuk-label govuk-radios__label" for="changed-name-1">
+                        At our venue
+                    </label>
+                </div>
+                <div class="govuk-radios__item">
+                    <input class="govuk-radios__input" id="changed-name-2" name="changed-name" type="radio" value="no">
+                    <label class="govuk-label govuk-radios__label" for="changed-name-2">
+                        Online
+                    </label>
+                </div>
+                <div class="govuk-radios__item">
+                    <input class="govuk-radios__input" id="changed-name-2" name="changed-name" type="radio" value="no">
+                    <label class="govuk-label govuk-radios__label" for="changed-name-2">
+                        Employers address
+                    </label>
+                </div>
             </div>
         </fieldset>
     </div>
@@ -220,7 +236,7 @@
         <fieldset class="govuk-fieldset" aria-describedby="waste-hint">
             <legend class="govuk-fieldset__legend govuk-fieldset__legend--xl">
                 <label class="govuk-label govuk-!-font-size-24" for="with-hint">
-                    Course venue
+                    Where will this course be delivered?
                 </label>
             </legend>
             <span id="waste-hint" class="govuk-hint">
@@ -247,9 +263,10 @@
                 </div>
             </div>
         </fieldset>
+        <a> not in this list</a>
     </div>
 
-    <h2>Cost</h2>
+    <h2 class="govuk-heading-m">Costs </h2>
 
     <div class="govuk-form-group govuk-!-margin-bottom-9">
         <label class="govuk-label govuk-!-font-size-24" for="national-insurance-number">
@@ -261,29 +278,31 @@
         <input class="govuk-input " id="national-insurance-number" name="national-insurance-number" type="number" aria-describedby="national-insurance-number-hint">
     </div>
 
-    <div class="govuk-character-count govuk-!-margin-bottom-9" data-module="character-count" data-maxlength="200">
+    <div class="govuk-character-count govuk-!-margin-bottom-9" data-module="character-count" data-maxlength="300">
         <div class="govuk-form-group">
-            <label class="govuk-label govuk-!-font-size-24" for="with-hint">
+            <label class="govuk-label govuk-!-font-size-24" for="cost-with-hint">
                 Cost description
             </label>
             <span id="with-hint-hint" class="govuk-hint">
-                Please provide any additional information relating to the cost of this course.
+                Describe funding options or if the learner may have to buy things for the course such as their own uniform or equipment
             </span>
-            <textarea class="govuk-textarea js-character-count " id="with-hint" name="with-hint" rows="5" aria-describedby="with-hint-hint"></textarea>
+            <textarea class="govuk-textarea js-character-count" id="cost-with-hint" name="cost-with-hint" rows="5" aria-describedby="cost-with-hint-hint"></textarea>
         </div>
 
-        <span id="with-hint-info" class="govuk-hint govuk-character-count__message" aria-live="polite">
-            You can enter up to 200 characters
+        <span id="cost-with-hint-info" class="govuk-hint govuk-character-count__message" aria-live="polite">
+            You can enter up to 300 characters
         </span>
     </div>
 
+
+    <h2 class="govuk-heading-m">For your learners</h2>
     <div class="govuk-character-count govuk-!-margin-bottom-9" data-module="character-count" data-maxlength="4000">
         <div class="govuk-form-group">
             <label class="govuk-label govuk-!-font-size-24" for="entry-with-hint">
                 Entry Requirements
             </label>
             <span id="entry-with-hint-hint" class="govuk-hint">
-                Please list the entry requirements for this course.
+                Describe the entry requirements for this coursePlease list the entry requirements for this course.
             </span>
             <textarea class="govuk-textarea js-character-count " id="entry-with-hint" name="entry-with-hint" rows="8" aria-describedby="entry-with-hint-hint"></textarea>
         </div>
@@ -297,7 +316,7 @@
         <fieldset class="govuk-fieldset" aria-describedby="waste-hint">
             <legend class="govuk-fieldset__legend govuk-fieldset__legend--xl">
                 <label class="govuk-label govuk-!-font-size-24" for="with-hint">
-                    Course venue
+                    How will you be assessed
                 </label>
             </legend>
             <span id="waste-hint" class="govuk-hint">
@@ -307,19 +326,31 @@
                 <div class="govuk-checkboxes__item">
                     <input class="govuk-checkboxes__input" id="waste-1" name="waste" type="checkbox" value="carcasses">
                     <label class="govuk-label govuk-checkboxes__label" for="waste-1">
-                        Baconsham College
+                        Coursework
                     </label>
                 </div>
                 <div class="govuk-checkboxes__item">
                     <input class="govuk-checkboxes__input" id="waste-2" name="waste" type="checkbox" value="mines">
                     <label class="govuk-label govuk-checkboxes__label" for="waste-2">
-                        Durham College
+                        Final written exam
                     </label>
                 </div>
                 <div class="govuk-checkboxes__item">
                     <input class="govuk-checkboxes__input" id="waste-3" name="waste" type="checkbox" value="farm">
                     <label class="govuk-label govuk-checkboxes__label" for="waste-3">
-                        Newham College
+                        Final online exam
+                    </label>
+                </div>
+                <div class="govuk-checkboxes__item">
+                    <input class="govuk-checkboxes__input" id="waste-3" name="waste" type="checkbox" value="farm">
+                    <label class="govuk-label govuk-checkboxes__label" for="waste-3">
+                        Portfolio of evidence
+                    </label>
+                </div>
+                <div class="govuk-checkboxes__item">
+                    <input class="govuk-checkboxes__input" id="waste-3" name="waste" type="checkbox" value="farm">
+                    <label class="govuk-label govuk-checkboxes__label" for="waste-3">
+                        Practical tests
                     </label>
                 </div>
             </div>
