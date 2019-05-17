@@ -2,11 +2,6 @@
 
 //console.log(provider);
 
-
-    
-
-
-
 function ajax_get1(url, callback) {
     var xmlhttp = new XMLHttpRequest();
     xmlhttp.onreadystatechange = function() {

@@ -55,10 +55,8 @@ var target = document.getElementsByClassName('cd-apprenticeships-results')[0];
     let course = `
     <div class="cd-lars-search-result__container">
         <h3 class="govuk-heading-m" >${x.LearnAimRefTitle}</h3>
-        <p class="govuk-body">LARS/QAN:<span class="govuk-!-font-weight-bold">${x.LearnAimRef}</span></p>
         <p class="govuk-body">Level: <span class="govuk-!-font-weight-bold">${x.NotionalNVQLevelv2}</span></p>
-        <p class="govuk-body">Awarding body: <span class="govuk-!-font-weight-bold">${x.AwardOrgCode}</span></p>
-        <p class="govuk-body"><a class="govuk-link" href="/apprenticeships/add">Choose this qualification</a></p>
+        <p class="govuk-body"><a class="govuk-link" href="/apprenticeships/add">Choose this apprenticeship</a></p>
      </div>`
       courses.push(course);
     }
@@ -75,13 +73,27 @@ var target = document.getElementsByClassName('cd-apprenticeships-results')[0];
 
 
 
+function radioSwitcher(targetDiv) {
+//const del = document.getElementsByClassName('delivery-checkbox');
+   
+const apprenticeshipQuestion = document.getElementsByClassName(targetDiv)[0];
 
-const del = document.getElementsByClassName('delivery-checkbox');
-console.log(del);
 
+    console.log(apprenticeshipQuestion);
 
-[...del].forEach((el) => {
-    console.log(el);
+if (apprenticeshipQuestion) {
+    let button = document.querySelectorAll('.govuk-button')[0];
+    let radios = document.querySelectorAll('.'+targetDiv+' input[type="radio"]');
+    //console.log(radios);
 
-    el.addEventListener()
-})
+    radios.forEach((f) => {
+        f.addEventListener("click", function(x){
+
+            button.setAttribute("href", x.target.value);
+        })
+    })
+}
+}
+
+radioSwitcher('apprenticeship-type');
+radioSwitcher('employerNationalQuestion');

@@ -4,76 +4,44 @@
 }
 
 
-<div class="cd-dashboard provider">
-    <span class="govuk-caption-xl">Course Directory</span>
-    <h1 class="govuk-heading-xl cd-dashboard-title">Course management dashboard</h1>
-    <hr class="spacer" />
-
-
-
+<div class="cd-dashboard provider apprenticeship-type">
 
     <div class="govuk-form-group">
-        <fieldset class="govuk-fieldset" aria-describedby="how-contacted-conditional-hint">
+        <fieldset class="govuk-fieldset">
             <legend class="govuk-fieldset__legend govuk-fieldset__legend--xl">
                 <h1 class="govuk-fieldset__heading">
-                    How would you prefer to be contacted?
+                    Where will this apprenticeship training be
+                    delivered?
                 </h1>
             </legend>
             <span id="how-contacted-conditional-hint" class="govuk-hint">
                 Select one option.
             </span>
-            <div class="govuk-radios govuk-radios--conditional" data-module="radios">
+            <div class="govuk-radios">
                 <div class="govuk-radios__item">
-                    <input class="govuk-radios__input" id="how-contacted-conditional-1" name="how-contacted" type="radio" value="email" data-aria-controls="conditional-how-contacted-conditional-1">
-                    <label class="govuk-label govuk-radios__label" for="how-contacted-conditional-1">
-                        Email
+                    <input class="govuk-radios__input" id="where-do-you-live-1" name="where-do-you-live" type="radio" value="/apprenticeships/classroombased">
+                    <label class="govuk-label govuk-radios__label" for="where-do-you-live-1">
+                        At one of your locations
                     </label>
                 </div>
-                <div class="govuk-radios__conditional govuk-radios__conditional--hidden" id="conditional-how-contacted-conditional-1">
-                    <div class="govuk-form-group">
-                        <label class="govuk-label" for="contact-by-email">
-                            Email address
-                        </label>
-                        <input class="govuk-input govuk-!-width-one-third" id="contact-by-email" name="contact-by-email" type="email" spellcheck="false">
-                    </div>
-
-                </div>
                 <div class="govuk-radios__item">
-                    <input class="govuk-radios__input" id="how-contacted-conditional-2" name="how-contacted" type="radio" value="phone" data-aria-controls="conditional-how-contacted-conditional-2">
-                    <label class="govuk-label govuk-radios__label" for="how-contacted-conditional-2">
-                        Phone
+                    <input class="govuk-radios__input" id="where-do-you-live-2" name="where-do-you-live" type="radio" value="/apprenticeships/employerbased">
+                    <label class="govuk-label govuk-radios__label" for="where-do-you-live-2">
+                        At an employers address
                     </label>
                 </div>
-                <div class="govuk-radios__conditional govuk-radios__conditional--hidden" id="conditional-how-contacted-conditional-2">
-                    <div class="govuk-form-group">
-                        <label class="govuk-label" for="contact-by-phone">
-                            Phone number
-                        </label>
-                        <input class="govuk-input govuk-!-width-one-third" id="contact-by-phone" name="contact-by-phone" type="tel">
-                    </div>
-
-                </div>
                 <div class="govuk-radios__item">
-                    <input class="govuk-radios__input" id="how-contacted-conditional-3" name="how-contacted" type="radio" value="text" data-aria-controls="conditional-how-contacted-conditional-3">
-                    <label class="govuk-label govuk-radios__label" for="how-contacted-conditional-3">
-                        Text message
+                    <input class="govuk-radios__input" id="where-do-you-live-3" name="where-do-you-live" type="radio" value="/apprenticeships/both">
+                    <label class="govuk-label govuk-radios__label" for="where-do-you-live-3">
+                        Both
                     </label>
                 </div>
-                <div class="govuk-radios__conditional govuk-radios__conditional--hidden" id="conditional-how-contacted-conditional-3">
-                    <div class="govuk-form-group">
-                        <label class="govuk-label" for="contact-by-text">
-                            Mobile phone number
-                        </label>
-                        <input class="govuk-input govuk-!-width-one-third" id="contact-by-text" name="contact-by-text" type="tel">
-                    </div>
 
-                </div>
             </div>
-            <button type="submit" class="govuk-button">
-                Save and continue
-            </button>
-            <a class="govuk-button" asp-controller="Apprenticeships" asp-action="Search">Publish a new a course</a>
         </fieldset>
+
     </div>
+    <a class="govuk-button" asp-controller="Apprenticeships" asp-action="Search">continue</a>
+
 </div>
 

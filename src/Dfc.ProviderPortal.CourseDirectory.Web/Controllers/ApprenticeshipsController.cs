@@ -40,5 +40,26 @@ namespace Dfc.ProviderPortal.CourseDirectory.Web.Controllers
         {
             return View();
         }
+        public IActionResult YourApprenticeships()
+        {
+            return View();
+        }
+        public IActionResult classroombased()
+        {
+            return View();
+        }
+        public IActionResult employerbased()
+        {
+            return View();
+        }
+        public IActionResult both()
+        {
+            return View();
+        }
+        public IActionResult Regionselect()
+        {
+            return View();
+        }
+
     }
 }

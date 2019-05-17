@@ -51,8 +51,9 @@
 }
 
 .cd-fullwidth-container {
-    width: 90%;
-    margin: 0 auto;
+    width:90%;
+    max-width: 1400px;
+    margin: 0px auto;
 
     .cd-grid-coloumn-three-quarters {
         width: 75%;

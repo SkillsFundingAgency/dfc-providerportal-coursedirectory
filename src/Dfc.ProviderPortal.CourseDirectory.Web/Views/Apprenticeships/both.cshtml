@@ -1,0 +1,86 @@
+﻿
+@{
+    ViewData["Title"] = "Index";
+}
+
+
+<div class="cd-dashboard govuk-grid-row govuk-body ">
+
+    <div class="govuk-form-group govuk-grid-column-two-thirds">
+        <fieldset class="govuk-fieldset" aria-describedby="how-contacted-conditional-hint">
+            <legend class="govuk-fieldset__legend govuk-fieldset__legend--xl">
+                <h1 class="govuk-fieldset__heading">
+                    Select delivery options
+                </h1>
+            </legend>
+
+            <div class="govuk-form-group">
+                <label class="govuk-label" for="sort">
+                    Select venue
+                </label>
+                <select class="govuk-select" id="sort" name="sort">
+                    <option value="published">Recently published</option>
+                    <option value="updated" selected>Recently updated</option>
+                    <option value="views">Most views</option>
+                    <option value="comments">Most comments</option>
+                </select>
+                <a href="#" class="govuk-link">govuk-link</a>
+            </div>
+            <div class="govuk-form-group">
+                <fieldset class="govuk-fieldset" aria-describedby="waste-hint">
+                    <legend class="govuk-fieldset__legend govuk-fieldset__legend--xl">
+                        <h2 class="govuk-fieldset__heading">
+                            How is the training delivered at this location?
+
+                        </h2>
+                    </legend>
+                    <span id="waste-hint" class="govuk-hint">
+                        Select all that apply.
+                    </span>
+                    <div class="govuk-checkboxes">
+                        <div class="govuk-checkboxes__item">
+                            <input class="govuk-checkboxes__input" id="waste-1" name="waste" type="checkbox" value="carcasses">
+                            <label class="govuk-label govuk-checkboxes__label" for="waste-1">
+                                Day release
+                            </label>
+                        </div>
+                        <div class="govuk-checkboxes__item">
+                            <input class="govuk-checkboxes__input" id="waste-2" name="waste" type="checkbox" value="mines">
+                            <label class="govuk-label govuk-checkboxes__label" for="waste-2">
+                                Block release
+                            </label>
+                        </div>
+
+                    </div>
+
+                </fieldset>
+                <fieldset class="govuk-fieldset" aria-describedby="waste-hint">
+                    <legend>
+                        <h3>You said you can also deliver this course at employer locations</h3>
+                    </legend>
+                    <span id="waste-hint" class="govuk-hint">
+                        How far are willing to travel from [venue name]?
+
+                    </span>
+                    <div class="govuk-form-group">
+
+                        <input class="govuk-input govuk-input--width-4" id="width-4" name="width-4" type="text"><span>miles</span>
+                    </div>
+                    <p>Or</p>
+                    <div class="govuk-checkboxes__item">
+        <input class="govuk-checkboxes__input" id="waste-3" name="waste" type="checkbox" value="farm">
+        <label class="govuk-label govuk-checkboxes__label" for="waste-3">
+            Across England
+        </label> </div>
+
+
+            </div>
+
+
+
+
+        </fieldset>
+        <a class="govuk-button" asp-controller="Apprenticeships" asp-action="Summary">Continue</a>
+    </div>
+</div>
+
