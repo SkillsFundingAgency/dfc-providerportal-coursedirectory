@@ -53,7 +53,7 @@ var target = document.getElementsByClassName('cd-apprenticeships-results')[0];
     for (let x of data) {
 
     let course = `
-    <div class="cd-lars-search-result__container">
+    <div class="cd-apprenticeships-search-result__container">
         <h3 class="govuk-heading-m" >${x.LearnAimRefTitle}</h3>
         <p class="govuk-body">Level: <span class="govuk-!-font-weight-bold">${x.NotionalNVQLevelv2}</span></p>
         <p class="govuk-body"><a class="govuk-link" href="/apprenticeships/add">Choose this apprenticeship</a></p>
@@ -77,10 +77,7 @@ function radioSwitcher(targetDiv) {
 //const del = document.getElementsByClassName('delivery-checkbox');
    
 const apprenticeshipQuestion = document.getElementsByClassName(targetDiv)[0];
-
-
-
-
+    
 if (apprenticeshipQuestion) {
     let button = document.querySelectorAll('.govuk-button')[0];
     let radios = document.querySelectorAll('.'+targetDiv+' input[type="radio"]');
