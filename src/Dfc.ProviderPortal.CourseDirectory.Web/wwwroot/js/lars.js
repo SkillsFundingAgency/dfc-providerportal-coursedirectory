@@ -79,12 +79,12 @@ function radioSwitcher(targetDiv) {
 const apprenticeshipQuestion = document.getElementsByClassName(targetDiv)[0];
 
 
-    console.log(apprenticeshipQuestion);
+
 
 if (apprenticeshipQuestion) {
     let button = document.querySelectorAll('.govuk-button')[0];
     let radios = document.querySelectorAll('.'+targetDiv+' input[type="radio"]');
-    //console.log(radios);
+  
 
     radios.forEach((f) => {
         f.addEventListener("click", function(x){
