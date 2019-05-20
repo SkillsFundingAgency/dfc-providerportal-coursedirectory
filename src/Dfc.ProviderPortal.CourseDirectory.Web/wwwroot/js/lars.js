@@ -46,7 +46,7 @@ var target = document.getElementsByClassName('cd-lars-results')[0];
 
 });
 
-ajax_getApprenticeships('/js/lars.json', function(data) {
+ajax_get('/js/lars.json', function(data) {
 var target = document.getElementsByClassName('cd-apprenticeships-results')[0];
 
     let courses = [];
