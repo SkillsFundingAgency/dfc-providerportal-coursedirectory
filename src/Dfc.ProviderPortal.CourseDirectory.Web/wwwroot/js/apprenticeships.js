@@ -120,4 +120,4 @@ addAnother.addEventListener('click', () => {
     target.innerHTML +=(v);
     let table = document.getElementById('ResultsTable');
     table.classList.add('visible-table');
-})table
+})
