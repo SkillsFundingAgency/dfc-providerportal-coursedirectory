@@ -18,7 +18,7 @@
 
                     <h2 class="govuk-heading-m">Apprenticeship in accounting</h2>
 
-                    <dl class="govuk-summary-list govuk-!-margin-bottom-9">
+                    <dl class="govuk-summary-list ">
                         <div class="govuk-summary-list__row">
                             <dt class="govuk-summary-list__key">
                                 Description
@@ -32,16 +32,60 @@
                             </dd>
                         </div>
                     </dl>
+                    <dl class="govuk-summary-list ">
+                        <div class="govuk-summary-list__row">
+                            <dt class="govuk-summary-list__key">
+                                Apprenticeship webpage
+                            </dt>
+                            <dd class="govuk-summary-list__value">
+                                http://www.collegesite.com
+                            </dd>
+                            <dd class="govuk-summary-list__actions">
+                                <a class="" asp-controller="Apprenticeships" asp-action="Edit">Edit <span class="govuk-visually-hidden"> edit</span></a>
+
+                            </dd>
+                        </div>
+                    </dl>
+                    <dl class="govuk-summary-list">
+                        <div class="govuk-summary-list__row">
+                            <dt class="govuk-summary-list__key">
+                                Email
+                            </dt>
+                            <dd class="govuk-summary-list__value">
+                                user@college.com
+                            </dd>
+                            <dd class="govuk-summary-list__actions">
+                                <a class="" asp-controller="Apprenticeships" asp-action="Edit">Edit <span class="govuk-visually-hidden"> edit</span></a>
+
+                            </dd>
+                        </div>
+                    </dl>
+                    <dl class="govuk-summary-list govuk-!-margin-bottom-9">
+                        <div class="govuk-summary-list__row">
+                            <dt class="govuk-summary-list__key">
+                                Contact URL
+                            </dt>
+                            <dd class="govuk-summary-list__value">
+                                user@college.com
+                            </dd>
+                            <dd class="govuk-summary-list__actions">
+                                <a class="" asp-controller="Apprenticeships" asp-action="Edit">Edit <span class="govuk-visually-hidden"> edit</span></a>
+                            </dd>
+                        </div>
+                    </dl>
 
 
 
                     <table class="govuk-table">
-                        <caption class="govuk-table__caption">Locations where you provide this Apprenticeship.</caption>
+                        <caption class="govuk-table__caption">Delivery options.<span>edit</span></caption>
+                        <a class="govuk-link" href="#">
+                            Edit
+                        </a>
                         <thead class="govuk-table__head">
                             <tr class="govuk-table__row">
                                 <th class="govuk-table__header" scope="col">Location</th>
                                 <th class="govuk-table__header" scope="col">Delivery</th>
-                                <th class="govuk-table__header" scope="col">Catchment radius</th>
+                                <th class="govuk-table__header" scope="col">Radius</th>
                                 <th class="govuk-table__header" scope="col"></th>
                             </tr>
                         </thead>
@@ -79,20 +123,9 @@
                         </tbody>
                     </table>
 
-                    <h2 class="govuk-heading-m">Now send your application</h2>
-
-                    <p class="govuk-body">By submitting this notification you are confirming that, to the best of your knowledge, the details you are providing are correct.</p>
-
-                    <form action="/form-handler" method="post" novalidate>
-
-                        <input type="hidden" name="answers-checked" value="true">
 
 
-
-
-
-                    </form>
-                    <a class="govuk-button" asp-controller="Apprenticeships" asp-action="Index">Save</a>
+                    <a class="govuk-button" asp-controller="Apprenticeships" asp-action="Confirmation">Publish</a>
                 </div>
             </div>
         </main>

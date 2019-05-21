@@ -10,17 +10,19 @@
         <fieldset class="govuk-fieldset" aria-describedby="how-contacted-conditional-hint">
             <legend class="govuk-fieldset__legend govuk-fieldset__legend--xl">
                 <h1 class="govuk-fieldset__heading">
-                    Add an Apprenticeship
+                    Add apprenticeship training details
+
                 </h1>
             </legend>
 
             <div class="govuk-character-count" data-module="character-count" data-maxlength="750">
                 <div class="govuk-form-group ">
                     <label class="govuk-label" for="with-hint">
-                        Apprenticeship description
+                        Apprenticeship information for employers
                     </label>
                     <span id="with-hint-hint" class="govuk-hint">
-                        Please list the details of your apprenticeship
+                        Give information for employers about how you deliver this specific apprenticeship training. For useful advice
+                        on how to fill out this section go to the <a href="#">guidance</a>
                     </span>
                     <textarea class="govuk-textarea js-character-count  " id="with-hint" name="with-hint" rows="7" aria-describedby="with-hint-hint"></textarea>
                 </div>
@@ -32,10 +34,14 @@
 
             <div class="govuk-form-group">
                 <label class="govuk-label" for="event-name">
-                    Website
+                    Apprenticeship
+                    webpage
                 </label>
+                <span class="govuk-hint">Your web page for this apprenticeship. Include http://</span>
                 <input class="govuk-input" id="event-name" name="event-name" type="text">
             </div>
+            <h2 class="">Contact details</h2>
+
             <div class="govuk-form-group">
                 <label class="govuk-label" for="event-name">
                     Email
@@ -50,8 +56,9 @@
             </div>
             <div class="govuk-form-group">
                 <label class="govuk-label" for="event-name">
-                    Contact us page
+                    Contact Url
                 </label>
+                <span class="govuk-hint">You can also add the url of any ‘Contact us’ page you have on your website.</span>
                 <input class="govuk-input " id="event-name" name="event-name" type="text">
             </div>
             <div class="govuk-form-group govuk-!-margin-bottom-6">
@@ -75,7 +82,6 @@
         </div>*@
 
             <a class="govuk-button" asp-controller="Apprenticeships" asp-action="CourseType">Save</a>
-            <a class="govuk-button" asp-controller="Apprenticeships" asp-action="AddAnotherLocation">Save and add another location</a>
         </fieldset>
     </div>
 </div>

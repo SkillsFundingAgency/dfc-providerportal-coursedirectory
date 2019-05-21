@@ -1,0 +1,25 @@
+.cd-apprenticeships-search-result__container {
+  border: 1px solid #bfc1c3;
+  margin-bottom: 1em;
+  padding: 0.5em;
+}
+
+.select-list {
+  display: none;
+  transition: all .5s ease-in-out;
+}
+
+.hide {
+  display: none;
+  transition: all .5s ease-in-out;
+}
+
+.visible {
+  display: block;
+  transition: all .5s ease-in-out;
+}
+
+.visible-table {
+  display: table;
+  transition: all .5s ease-in-out;
+}

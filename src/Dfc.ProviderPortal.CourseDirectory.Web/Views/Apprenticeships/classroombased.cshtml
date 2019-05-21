@@ -3,7 +3,7 @@
     ViewData["Title"] = "Index";
 }
 
-
+<a asp-controller="Apprenticeships" asp-action="CourseType"class="govuk-back-link">Back</a>
 <div class="cd-dashboard govuk-grid-row govuk-body ">
 
     <div class="govuk-form-group govuk-grid-column-two-thirds">
@@ -18,48 +18,67 @@
                 <label class="govuk-label" for="sort">
                     Select venue
                 </label>
-                <select class="govuk-select" id="sort" name="sort">
-                    <option value="published">Recently published</option>
-                    <option value="updated" selected>Recently updated</option>
-                    <option value="views">Most views</option>
-                    <option value="comments">Most comments</option>
+                <select class="govuk-select govuk-!-margin-right-3 " id="sort" name="sort">
+                    <option value="published">Venue 1</option>
+                    <option value="updated" selected>Venue 2</option>
+                    <option value="views">Venue 3</option>
+                    <option value="comments">Venue 4</option>
                 </select>
-                <a href="#" class="govuk-link">govuk-link</a>
+                <a href="#" class="govuk-link">I need to add a loaction to this list</a>
             </div>
-            <div class="govuk-form-group">
-                <fieldset class="govuk-fieldset" aria-describedby="waste-hint">
-                    <legend class="govuk-fieldset__legend govuk-fieldset__legend--xl">
-                        <h2 class="govuk-fieldset__heading">
-                            How is the training delivered at this location?
-
-                        </h2>
-                    </legend>
-                    <span id="waste-hint" class="govuk-hint">
-                        Select all that apply.
-                    </span>
-                    <div class="govuk-checkboxes">
-                        <div class="govuk-checkboxes__item">
-                            <input class="govuk-checkboxes__input" id="waste-1" name="waste" type="checkbox" value="carcasses">
-                            <label class="govuk-label govuk-checkboxes__label" for="waste-1">
-                                Day release
-                            </label>
-                        </div>
-                        <div class="govuk-checkboxes__item">
-                            <input class="govuk-checkboxes__input" id="waste-2" name="waste" type="checkbox" value="mines">
-                            <label class="govuk-label govuk-checkboxes__label" for="waste-2">
-                                Block release
-                            </label>
-                        </div>
-
-                    </div>
-                </fieldset>
-            </div>
-            
-
-
-
         </fieldset>
-        <a class="govuk-button" asp-controller="Apprenticeships" asp-action="Summary">Continue</a>
+        <div class="govuk-form-group govuk-!-margin-top-9">
+            <fieldset class="govuk-fieldset" aria-describedby="waste-hint">
+                <legend class="govuk-fieldset__legend govuk-fieldset__legend--xl">
+                    <h2 class="govuk-heading-m">
+                        How is the training delivered at this location?
+
+                    </h2>
+                </legend>
+                <span id="waste-hint" class="govuk-hint">
+                    Select all that apply.
+                </span>
+                <div class="govuk-checkboxes">
+                    <div class="govuk-checkboxes__item">
+                        <input class="govuk-checkboxes__input" id="waste-1" name="waste" type="checkbox" value="Day release">
+                        <label class="govuk-label govuk-checkboxes__label" for="waste-1">
+                            Day release
+                        </label>
+                    </div>
+                    <div class="govuk-checkboxes__item">
+                        <input class="govuk-checkboxes__input" id="waste-2" name="waste" type="checkbox" value="Block release">
+                        <label class="govuk-label govuk-checkboxes__label" for="waste-2">
+                            Block release
+                        </label>
+                    </div>
+
+                </div>
+            </fieldset>
+        </div>
+        <div class="govuk-!-margin-top-9">
+            <a class="govuk-button govuk-!-margin-right-2" asp-controller="Apprenticeships" asp-action="Summary">Save and continue</a>
+            <a id="List" class="govuk-button govuk-button--secondary">Save and add another</a>
+        </div>
+
+        <table id="ResultsTable" class="govuk-table hide">
+            <caption class="govuk-table__caption">Delivery options</caption>
+            <thead class="govuk-table__head">
+                <tr class="govuk-table__row">
+                    <th class="govuk-table__header" scope="col">Venue</th>
+                    <th class="govuk-table__header govuk-table__header--numeric" scope="col">Delivery method</th>
+                    <th class="govuk-table__header govuk-table__header--numeric" scope="col"></th>
+                </tr>
+            </thead>
+            <tbody id="Results" class="govuk-table__body">
+
+
+            </tbody>
+        </table>
+
+        <div ></div>
     </div>
+
+
+
 </div>
 
