@@ -8,7 +8,7 @@ const items = [...item];
 for(let x of items) {
     items.forEach( (item) => {
         //item.classList.remove('active'); 
-//console.log(item.classList);
+console.log(item.classList);
     })
     x.addEventListener('click', () => {
 
