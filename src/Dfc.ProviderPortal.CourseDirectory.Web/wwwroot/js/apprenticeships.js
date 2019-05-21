@@ -76,6 +76,7 @@ if (DualDeliveryPage) {
     let employerCheckbox = document.getElementById('employer');
     let selectOption = document.querySelectorAll('.select-list')[0];
 
+    employerCheckbox.checked = true;
     employerCheckbox.addEventListener("click", () => {
         selectOption.classList.toggle("visible");
     })
