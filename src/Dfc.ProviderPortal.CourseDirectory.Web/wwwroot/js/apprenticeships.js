@@ -133,7 +133,7 @@ if (searchpage) {
     const searchButton =  document.getElementsByClassName('submit')[0];
     const resultsContainer = document.getElementsByClassName('cd-apprenticeships-results')[0];
 
-    searchButton.addEventListener('click', (e) => {
+    searchButton.addEventListener('click', () => {
        
         resultsContainer.classList.add('visible');
 
