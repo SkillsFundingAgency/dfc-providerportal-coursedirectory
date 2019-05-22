@@ -114,13 +114,31 @@ checkBoxes.forEach((checkbox) => {
 
 let addAnother = document.getElementById('List');
 
+if(addAnother) {
+
 addAnother.addEventListener('click', () => {
     let v = getOptions();
     let target = document.getElementById("Results");
     target.innerHTML +=(v);
     let table = document.getElementById('ResultsTable');
     table.classList.add('visible-table');
-})
+});
+
+    }
+const searchpage = document.getElementsByClassName('apprenticeship-search-page')[0];
+
+if (searchpage) {
+    console.log('search page');
+
+    const searchButton =  document.getElementsByClassName('submit')[0];
+    const resultsContainer = document.getElementsByClassName('cd-apprenticeships-results')[0];
+
+    searchButton.addEventListener('click', (e) => {
+       
+        resultsContainer.classList.add('visible');
+
+    })
+}
 
 
 

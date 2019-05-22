@@ -1,21 +1,38 @@
 ﻿@{
     Layout = "_Layout";
-    ViewData["Title"] = "Find a Qualification";
-    ViewData["Subtext"] = "Enter a search term or LARS/QAN to begin your search";
-    ViewData["Target"] = "/providers/AddResults/";
+    ViewData["Title"] = "Find apprenticeship training";
+    ViewData["Subtext"] = "Search by name or keyword for the apprenticeship this training is for.";
+ViewData["Target"] = "/providers/AddResults/";
     ViewData["Placeholder"] = "Search";
     ViewData["Area"] = "Qualifications";
 }
+<div class="apprenticeship-search-page">
+    <div>
+        <h1 class="govuk-heading-l govuk-!-margin-top-4">@ViewBag.Title</h1>
+        <p class="column-two-thirds govuk-body">@ViewBag.Subtext</p>
+    </div>
+    <div class="site-search ui-front" id="header-search" role="search">
+        <div class="header-search-content">
 
-<partial name="_CDHeroSearch" />
-<div class="">
-    <span class="govuk-heading-m">found <span>10</span> results for <span>Biology</span></span>
+            <div class="search-input-wrapper govuk-!-margin-bottom-4">
+
+                <input class="govuk-input govuk-!-width-two-thirds search-input js-search-focus" id="search" name="SearchTerm" type="search">
+                <div class="cd-c-search__item cd-search__submit-wrapper">
+                    <button type="submit" class=" submit">Search</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
     <div class="govuk-grid-row">
 
         <div class="govuk-grid-column-two-thirds ">
 
-            <div class="cd-apprenticeships-results">
-
+            <div class="cd-apprenticeships-results hide govuk-body">
+                <div class="govuk-!-margin-bottom-4">
+                    <span>found <strong>10</strong> results for <strong>Biology</strong></span>
+                </div>
                 <div>
                     <div class="cd-apprenticeships-search-result__container">
                         <h3 class="govuk-heading-m">Foundation Degree in Biological Sciences</h3>
@@ -77,8 +94,9 @@
                         <p class="govuk-body"><a class="govuk-link" href="/apprenticeships/add">Choose this apprenticeship</a></p>
                     </div>
                 </div>
+                <partial name="_CDPagination" />
             </div>
-            <partial name="_CDPagination" />
+
         </div>
-    </div> 
+    </div>
 </div>

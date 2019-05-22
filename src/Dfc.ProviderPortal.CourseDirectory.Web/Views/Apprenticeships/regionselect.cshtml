@@ -3,20 +3,22 @@
     ViewData["Title"] = "Index";
 }
 
-
+<a asp-controller="Apprenticeships" asp-action="CourseType" class="govuk-back-link">Back</a>
 <div class="cd-dashboard govuk-grid-row govuk-body ">
 
     <div class="govuk-form-group govuk-grid-column-two-thirds">
-        <fieldset class="govuk-fieldset" aria-describedby="how-contacted-conditional-hint">
+        <fieldset class="govuk-fieldset  govuk-!-margin-bottom-6" aria-describedby="how-contacted-conditional-hint">
             <legend class="govuk-fieldset__legend govuk-fieldset__legend--xl">
                 <h1 class="govuk-fieldset__heading">
                     Select the regions where you provide this training
                 </h1>
             </legend>
-            <div class="govuk-checkboxes" id="SelectRegionCheckBoxes" val-required-message="Select a region">
-                <details class="form-group" role="group" open="">
 
-                    <summary role="button" aria-controls="details-content-acd8b86c-37f2-498a-91ff-0775b15e96cf" aria-expanded="true">
+            <div class="govuk-checkboxes " id="SelectRegionCheckBoxes" val-required-message="Select a region">
+                <span class="govuk-hint">Select a region below to add sub regions</span>
+                <details class="form-group" role="group" >
+
+                    <summary role="button" aria-controls="details-content-acd8b86c-37f2-498a-91ff-0775b15e96cf" aria-expanded="false">
                         <span id="region+E12000001" class="summary govuk-label govuk-checkboxes__label">North East</span>
                     </summary>
 
@@ -57,7 +59,7 @@
 
             </div>
             <div class="govuk-checkboxes" id="SelectRegionCheckBoxes" val-required-message="Select a region">
-                <details class="form-group" role="group" open="">
+                <details class="form-group" role="group" >
 
                     <summary role="button" aria-controls="details-content-acd8b86c-37f2-498a-91ff-0775b15e96cf" aria-expanded="true">
                         <span id="region+E12000001" class="summary govuk-label govuk-checkboxes__label">South East</span>
