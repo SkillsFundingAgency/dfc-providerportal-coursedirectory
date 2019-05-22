@@ -7102,3 +7102,7 @@ ul.sort-list {
 .minwidth200 {
   min-width: 200px;
 }
+
+.float-right {
+  float: right;
+}

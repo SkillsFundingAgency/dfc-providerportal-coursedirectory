@@ -128,8 +128,8 @@ addAnother.addEventListener('click', () => {
 const searchpage = document.getElementsByClassName('apprenticeship-search-page')[0];
 
 if (searchpage) {
-    console.log('search page');
-
+ 
+   
     const searchButton =  document.getElementsByClassName('submit')[0];
     const resultsContainer = document.getElementsByClassName('cd-apprenticeships-results')[0];
 
