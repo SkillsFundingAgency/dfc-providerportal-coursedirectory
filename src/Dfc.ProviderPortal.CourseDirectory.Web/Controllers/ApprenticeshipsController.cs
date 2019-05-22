@@ -32,6 +32,18 @@ namespace Dfc.ProviderPortal.CourseDirectory.Web.Controllers
         {
             return View();
         }
+        public IActionResult SummaryMixed()
+        {
+            return View();
+        }
+        public IActionResult SummaryNational()
+        {
+            return View();
+        }
+        public IActionResult SummaryEmployer()
+        {
+            return View();
+        }
         public IActionResult Edit()
         {
             return View();

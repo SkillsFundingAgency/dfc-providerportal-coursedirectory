@@ -241,6 +241,13 @@
     <Content Remove="wwwroot\css\partials\courseList.css" />
     <Content Remove="wwwroot\css\partials\cd-course-page.css" />
     <Content Remove="wwwroot\vendor\jquery\jquery.min.js" />
+    <Content Remove="wwwroot\css\partials\cd-nonregulated-search.css" />
+    <Content Remove="wwwroot\css\partials\cd-search-header.css" />
+    <Content Remove="wwwroot\css\partials\cd-upload-a-file.css" />
+    <Content Remove="wwwroot\css\partials\courseList.css" />
+    <Content Remove="wwwroot\css\partials\cd-user-status.css" />
+    <Content Remove="wwwroot\css\partials\view-components.pagination.css" />
+    <Content Remove="wwwroot\css\partials\styleguide.css" />
   </ItemGroup>
 	<ItemGroup>
 	<Content Update="Views\Providers\Index.cshtml">
