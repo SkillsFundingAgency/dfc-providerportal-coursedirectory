@@ -1,0 +1,47 @@
+﻿
+@{
+    ViewData["Title"] = "Index";
+}
+
+<a asp-controller="Apprenticeships" asp-action="add" class="govuk-back-link">Back</a>
+<div class="cd-dashboard provider apprenticeship-type govuk-grid-row">
+    <div class="govuk-grid-column-two-thirds">
+        <div class="govuk-form-group">
+            <fieldset class="govuk-fieldset">
+                <legend class="govuk-fieldset__legend govuk-fieldset__legend--xl">
+                    <h1 class="govuk-fieldset__heading">
+                        Where will this apprenticeship training be
+                        delivered?
+                    </h1>
+                </legend>
+                <span id="how-contacted-conditional-hint" class="govuk-hint">
+                    Select one option.
+                </span>
+                <div class="govuk-radios">
+                    <div class="govuk-radios__item">
+                        <input class="govuk-radios__input" id="where-do-you-live-1" name="where-do-you-live" type="radio" value="/apprenticeships/classroombased">
+                        <label class="govuk-label govuk-radios__label" for="where-do-you-live-1">
+                            At one of your locations
+                        </label>
+                    </div>
+                    <div class="govuk-radios__item">
+                        <input class="govuk-radios__input" id="where-do-you-live-2" name="where-do-you-live" type="radio" value="/apprenticeships/employerbased">
+                        <label class="govuk-label govuk-radios__label" for="where-do-you-live-2">
+                            At an employers address
+                        </label>
+                    </div>
+                    <div class="govuk-radios__item">
+                        <input class="govuk-radios__input" id="where-do-you-live-3" name="where-do-you-live" type="radio" value="/apprenticeships/both">
+                        <label class="govuk-label govuk-radios__label" for="where-do-you-live-3">
+                            Both
+                        </label>
+                    </div>
+
+                </div>
+            </fieldset>
+
+        </div>
+        <a class="govuk-button" asp-controller="Apprenticeships" asp-action="Search">continue</a>
+    </div>
+</div>
+

@@ -7106,3 +7106,16 @@ ul.sort-list {
 .float-right {
   float: right;
 }
+
+.summary--linked-title {
+  display: flex;
+  justify-content: space-between;
+}
+
+.summary--linked-title h2 {
+  margin-top: 0;
+}
+
+.summary--linked-title a {
+  font-size: 1.1875rem;
+}

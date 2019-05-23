@@ -2,11 +2,11 @@ function get_data(url, callback) {
     var xmlhttp = new XMLHttpRequest();
     xmlhttp.onreadystatechange = function() {
         if (xmlhttp.readyState == 4 && xmlhttp.status == 200) {
-            //console.log('responseText:' + xmlhttp.responseText);
+
             try {
                 var data = JSON.parse(xmlhttp.responseText);
             } catch(err) {
-                //console.log(err.message + " in " + xmlhttp.responseText);
+              
                 return;
             }
             callback(data);
@@ -97,9 +97,9 @@ checkBoxes.forEach((checkbox) => {
            let uniqueOptions = Array.from(new Set(options));
 
             let row = ` <tr class="govuk-table__row">
-                    <th class="govuk-table__header" scope="row">venue</th>
+                    <th class="govuk-table__header" scope="row">venue<br /><span class="govuk-hint">postcode</span></th>
                     <td class="govuk-table__cell govuk-table__cell--numeric">${uniqueOptions}</td>
-                    <td class="govuk-table__cell govuk-table__cell--numeric"><a href="#">delete</a></td>
+                    <td class="govuk-table__cell govuk-table__cell--numeric"><a href="/apprenticeships/ConfirmDelete">Delete</a></td>
                 </tr>`;
             x = row;
 
@@ -109,9 +109,6 @@ checkBoxes.forEach((checkbox) => {
 });
     return x;
 }
-
-
-
 let addAnother = document.getElementById('List');
 
 if(addAnother) {
@@ -128,12 +125,12 @@ addAnother.addEventListener('click', () => {
 const searchpage = document.getElementsByClassName('apprenticeship-search-page')[0];
 
 if (searchpage) {
-    console.log('search page');
-
+ 
+   
     const searchButton =  document.getElementsByClassName('submit')[0];
     const resultsContainer = document.getElementsByClassName('cd-apprenticeships-results')[0];
 
-    searchButton.addEventListener('click', (e) => {
+    searchButton.addEventListener('click', () => {
        
         resultsContainer.classList.add('visible');
 

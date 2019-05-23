@@ -28,6 +28,30 @@ namespace Dfc.ProviderPortal.CourseDirectory.Web.Controllers
         {
             return View();
         }
+        public IActionResult ConfirmDelete()
+        {
+            return View();
+        }
+        public IActionResult LocationDelete()
+        {
+            return View();
+        }
+        public IActionResult ApprenticeshipDelete()
+        {
+            return View();
+        }
+        public IActionResult classroombasedwithTable()
+        {
+            return View();
+        }
+        public IActionResult classroombasedwithTableEdit()
+        {
+            return View();
+        }
+        public IActionResult ConfirmApprenticeshipDelete()
+        {
+            return View();
+        }
         public IActionResult Summary()
         {
             return View();

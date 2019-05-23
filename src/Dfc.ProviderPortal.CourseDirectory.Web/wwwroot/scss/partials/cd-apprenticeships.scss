@@ -31,3 +31,16 @@
 .float-right {
     float:right;
 }
+
+.summary--linked-title {
+    display: flex;
+    justify-content: space-between;
+
+    h2 {
+        margin-top: 0;
+    }
+
+    a {
+        font-size: 1.1875rem;
+    }
+}
