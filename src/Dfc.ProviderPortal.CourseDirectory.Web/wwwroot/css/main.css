@@ -7119,3 +7119,21 @@ ul.sort-list {
 .summary--linked-title a {
   font-size: 1.1875rem;
 }
+
+.cd-your-apprenticeships-search-result__container {
+  border: 1px solid #bfc1c3;
+  padding: 0.5em;
+}
+
+.ctas {
+  border: 1px solid #bfc1c3;
+  padding: 0.5em;
+  border-top: none;
+  margin-bottom: 1em;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.ctas a {
+  padding-right: 0.5em;
+}
