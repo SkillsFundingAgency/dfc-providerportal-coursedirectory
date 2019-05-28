@@ -18,16 +18,22 @@ function get_data(url, callback) {
 }
 
 
-get_data('/js/lars.json', function(data) {
-var target = document.getElementsByClassName('cd-apprenticeships-results')[0];
+get_data('/js/apprenticeships.json', function(data) {
+    var target = document.getElementsByClassName('cd-apprenticeships-results')[0];
 
+    //remove after UR
+    var hidden = document.getElementsByClassName('cd-apprenticeships-results')[1];
+
+    if(hidden){
+        hidden.classList.add('hide');
+        }
     let courses = [];
     for (let x of data) {
 
     let course = `
     <div class="cd-apprenticeships-search-result__container">
-        <h3 class="govuk-heading-m" >${x.LearnAimRefTitle}</h3>
-        <p class="govuk-body">Level: <span class="govuk-!-font-weight-bold">${x.NotionalNVQLevelv2}</span></p>
+        <h3 class="govuk-heading-m" >${x.StandardName}</h3>
+        <p class="govuk-body">Level: <span class="govuk-!-font-weight-bold">${x.NotionalEndLevel}</span></p>
         <p class="govuk-body"><a class="govuk-link" href="/apprenticeships/add">Choose this apprenticeship</a></p>
     </div>`
 

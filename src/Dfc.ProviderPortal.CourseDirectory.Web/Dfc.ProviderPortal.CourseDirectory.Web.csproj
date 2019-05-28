@@ -258,6 +258,10 @@
     <Content Remove="wwwroot\css\partials\view-components.pagination.css" />
     <Content Remove="wwwroot\vendor\govuk-frontend\all.min.js" />
     <Content Remove="Views\Apprenticeships\CourseType %28copy%29.cshtml" />
+    <Content Remove="wwwroot\css\partials\cd-apprenticeships.css" />
+    <Content Remove="wwwroot\css\partials\cd-archive.css" />
+    <Content Remove="wwwroot\js\Search.cshtml" />
+    <Content Remove="wwwroot\js\apprenticeships.json" />
   </ItemGroup>
 	<ItemGroup>
 	<Content Update="Views\Providers\Index.cshtml">
@@ -274,4 +278,7 @@
     <Folder Include="wwwroot\dist\" />
   </ItemGroup>
   
+  <ItemGroup>
+    <None Include="wwwroot\js\apprenticeships.json" />
+  </ItemGroup>
 </Project>

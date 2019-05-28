@@ -50,6 +50,10 @@
   padding: 0.5em;
 }
 
+.cd-your-apprenticeships-search-result__container {
+  padding: 0.5em;
+}
+
 .ctas {
   border: 1px solid #bfc1c3;
   padding: 0.5em;
@@ -61,4 +65,8 @@
 
 .ctas a {
   padding-right: 0.5em;
+}
+
+.tag-grey {
+  background-color: #bfc1c3;
 }

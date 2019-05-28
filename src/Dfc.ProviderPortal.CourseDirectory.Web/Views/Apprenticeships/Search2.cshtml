@@ -1,0 +1,104 @@
+﻿@{
+    Layout = "_Layout";
+    ViewData["Title"] = "Find apprenticeship";
+    ViewData["Subtext"] = "Search by name or keyword for the apprenticeship delivered by your training course.";
+    ViewData["Target"] = "/providers/AddResults/";
+    ViewData["Placeholder"] = "Search";
+    ViewData["Area"] = "Qualifications";
+}
+<div class="apprenticeship-search-page">
+    <div>
+        <h1 class="govuk-heading-l govuk-!-margin-top-4">@ViewBag.Title</h1>
+        <p class="column-two-thirds govuk-body">@ViewBag.Subtext</p>
+    </div>
+    <div class="site-search ui-front" id="header-search" role="search">
+        <div class="header-search-content">
+
+            <div class="search-input-wrapper govuk-!-margin-bottom-4">
+
+                <input class="govuk-input govuk-!-width-two-thirds search-input js-search-focus" id="search" name="SearchTerm" type="search">
+                <div class="cd-c-search__item cd-search__submit-wrapper">
+                    <button type="submit" class=" submit">Search</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="govuk-grid-row">
+
+        <div class="govuk-grid-column-two-thirds ">
+
+            <div class="cd-apprenticeships-results hide govuk-body">
+                <div class="govuk-!-margin-bottom-4">
+                    <span>found <strong>[Number]</strong> results for <strong>[Search term]</strong></span>
+                </div>
+                <div>
+                    <div class="cd-apprenticeships-search2-result__container">
+                        <h3 class="govuk-heading-m"> <a class="govuk-link" href="/apprenticeships/add">Foundation Degree in Biological Sciences</a><strong class="govuk-!-margin-left-3 govuk-tag tag-grey">
+                                    Framework
+</strong> </h3>
+                        <p class="govuk-body">Level: <span class="govuk-!-font-weight-bold">5</span></p>
+                       <hr />
+                    </div>
+                </div><div>
+                    <div class="cd-apprenticeships-search2-result__container">
+                        <h3 class="govuk-heading-m"><a class="govuk-link" href="/apprenticeships/add">Access to Higher Education Diploma: Health Studies: Biosciences - Central Sussex College</a> </h3>
+                        <p class="govuk-body">Level: <span class="govuk-!-font-weight-bold">3</span></p>
+                        <hr />
+                    </div>
+                </div><div>
+                    <div class="cd-apprenticeships-search2-result__container">
+                        <h3 class="govuk-heading-m"><a class="govuk-link" href="/apprenticeships/add">Access to Higher Education Diploma: Medicine and Medical Biosciences - City and Islington College</a> </h3>
+                        <p class="govuk-body">Level: <span class="govuk-!-font-weight-bold">3</span></p>
+                        <hr />
+                    </div>
+                </div><div>
+                    <div class="cd-apprenticeships-search2-result__container">
+                        <h3 class="govuk-heading-m"><a class="govuk-link" href="/apprenticeships/add">PGCE in Secondary (Biology) - Bradford College</a> </h3>
+                        <p class="govuk-body">Level: <span class="govuk-!-font-weight-bold">7</span></p>
+                        <hr />
+                    </div>
+                </div><div>
+                    <div class="cd-apprenticeships-search2-result__container">
+                        <h3 class="govuk-heading-m"><a class="govuk-link" href="/apprenticeships/add">BSc (Hons) in Applied Biomedical Science - University of Westminster - Healthcare Science Practitioner Standard</a> </h3>
+                        <p class="govuk-body">Level: <span class="govuk-!-font-weight-bold">6</span></p>
+                        <hr />
+                    </div>
+                </div><div>
+                    <div class="cd-apprenticeships-search2-result__container">
+                        <h3 class="govuk-heading-m"><a class="govuk-link" href="/apprenticeships/add">BSc (Hons) in Applied Biomedical Sciences ? University of Brighton ? Healthcare Science Practitioner Degree Apprenticeship</a> </h3>
+                        <p class="govuk-body">Level: <span class="govuk-!-font-weight-bold">6</span></p>
+                        <hr />
+                    </div>
+                </div><div>
+                    <div class="cd-apprenticeships-search2-result__container">
+                        <h3 class="govuk-heading-m"><a class="govuk-link" href="/apprenticeships/add">Access to Higher Education Diploma: Biomedical Sciences</a>  </h3>
+                        <p class="govuk-body">Level: <span class="govuk-!-font-weight-bold">3</span></p>
+                        <hr />
+                    </div>
+                </div><div>
+                    <div class="cd-apprenticeships-search2-result__container">
+                        <h3 class="govuk-heading-m"><a class="govuk-link" href="/apprenticeships/add"> Access to Higher Education Diploma: Biology combined with Chemistry</a></h3>
+                        <p class="govuk-body">Level: <span class="govuk-!-font-weight-bold">3</span></p>
+                        <hr />
+                    </div>
+                </div><div>
+                    <div class="cd-apprenticeships-search2-result__container">
+                        <h3 class="govuk-heading-m"><a class="govuk-link" href="/apprenticeships/add">Access to Higher Education Diploma: Biochemistry and Biomedical Science</a> </h3>
+                        <p class="govuk-body">Level: <span class="govuk-!-font-weight-bold">3</span></p>
+                        <hr />
+                    </div>
+                </div><div>
+                    <div class="cd-apprenticeships-search2-result__container">
+                        <h3 class="govuk-heading-m"><a class="govuk-link" href="/apprenticeships/add">Access to Higher Education Diploma: Science for Bioscience</a>  </h3>
+                        <p class="govuk-body">Level: <span class="govuk-!-font-weight-bold">3</span></p>
+                        <hr />
+                    </div>
+                </div>
+                <partial name="_CDPagination" />
+            </div>
+
+        </div>
+    </div>
+</div>
