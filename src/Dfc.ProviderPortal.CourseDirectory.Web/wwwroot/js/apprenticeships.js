@@ -136,13 +136,16 @@ const searchpage = document.getElementsByClassName('apprenticeship-search-page')
 
 if (searchpage) {
  
-   
+    const pagination = document.getElementsByClassName('pagination')[0];
     const searchButton =  document.getElementsByClassName('submit')[0];
     const resultsContainer = document.getElementsByClassName('cd-apprenticeships-results')[0];
+
+    pagination.classList.add('hide');
 
     searchButton.addEventListener('click', () => {
         create_data();
         resultsContainer.classList.add('visible');
+        pagination.classList.add('visible');
 
     })
 }
