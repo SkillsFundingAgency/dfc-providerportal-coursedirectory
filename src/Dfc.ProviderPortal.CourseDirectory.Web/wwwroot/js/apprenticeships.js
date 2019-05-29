@@ -17,16 +17,21 @@
     xmlhttp.send();
 }
 
-
+function create_data(){
 get_data('/js/apprenticeships.json', function(data) {
+    let page = document.getElementsByClassName('apprenticeship-search-page')[0];
+
+   
+     if(page){
     var target = document.getElementsByClassName('cd-apprenticeships-results')[0];
 
     //remove after UR
-    var hidden = document.getElementsByClassName('cd-apprenticeships-results')[1];
+    var hidden = document.getElementsByClassName('design2')[0];
 
-    if(hidden){
-        hidden.classList.add('hide');
-        }
+    if(!hidden){
+
+    
+
     let courses = [];
     for (let x of data) {
 
@@ -46,9 +51,10 @@ get_data('/js/apprenticeships.json', function(data) {
             target.append(container);
             }
     });
-
-
+        }
+    }
 });
+}
 
 
 
@@ -99,7 +105,7 @@ checkBoxes.forEach((checkbox) => {
                
         if (checkbox.checked == true) {
 
-            options.push(checkbox.value);
+           options.push(checkbox.value);
            let uniqueOptions = Array.from(new Set(options));
 
             let row = ` <tr class="govuk-table__row">
@@ -108,8 +114,6 @@ checkBoxes.forEach((checkbox) => {
                     <td class="govuk-table__cell govuk-table__cell--numeric"><a href="/apprenticeships/ConfirmDelete">Delete</a></td>
                 </tr>`;
             x = row;
-
-           
         }
 
 });
@@ -137,7 +141,7 @@ if (searchpage) {
     const resultsContainer = document.getElementsByClassName('cd-apprenticeships-results')[0];
 
     searchButton.addEventListener('click', () => {
-       
+        create_data();
         resultsContainer.classList.add('visible');
 
     })

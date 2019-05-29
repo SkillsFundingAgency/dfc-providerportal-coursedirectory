@@ -7145,3 +7145,8 @@ ul.sort-list {
 .tag-grey {
   background-color: #bfc1c3;
 }
+
+.cta-container {
+  display: flex;
+  align-items: baseline;
+}
