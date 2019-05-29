@@ -18,7 +18,7 @@
 }
 
 function create_data(){
-get_data('/assets/apprenticeships.json', function(data) {
+get_data('/js/apprenticeships.json', function(data) {
     let page = document.getElementsByClassName('apprenticeship-search-page')[0];
 
    
