@@ -48,7 +48,7 @@ get_data('/js/apprenticeships.json', function(data) {
     let container = document.createElement("div");
         container.innerHTML = course;
         if(target) {
-            //target.append(container);
+            target.append(container);
             }
     });
         }
