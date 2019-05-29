@@ -280,5 +280,7 @@
   
   <ItemGroup>
     <None Include="wwwroot\js\apprenticeships.json" />
+    <None Include="wwwroot\js\providers.json" />
+    
   </ItemGroup>
 </Project>
