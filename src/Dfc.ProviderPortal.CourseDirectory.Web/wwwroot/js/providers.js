@@ -59,17 +59,16 @@ provs.forEach((x) => {
 const searchInput = document.getElementById("search");
 const searchInputLabel = document.querySelector(".search-input-wrapper .cd-search__label");
 
-if (provider) {
+if (provider == true) {
 
 
 searchInput.addEventListener("focus", () => {
 
 
 if (document.querySelector(":focus") !== searchInput) {
-    console.log("t");
-searchInputLabel.classList.add("visible");
+    searchInputLabel.classList.add("visible");
 } else {
-searchInputLabel.classList.remove("visible");
+    searchInputLabel.classList.remove("visible");
 }
 
 })

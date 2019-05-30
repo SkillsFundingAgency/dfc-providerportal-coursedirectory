@@ -89,6 +89,7 @@ if (DualDeliveryPage) {
     let selectOption = document.querySelectorAll('.select-list')[0];
 
     employerCheckbox.checked = true;
+    employerCheckbox.style.backgroundColor = "red";
     employerCheckbox.addEventListener("click", () => {
         selectOption.classList.toggle("visible");
     })
