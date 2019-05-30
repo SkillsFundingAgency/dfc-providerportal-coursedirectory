@@ -84,6 +84,10 @@ namespace Dfc.ProviderPortal.CourseDirectory.Web.Controllers
         {
             return View();
         }
+        public IActionResult YourApprenticeshipsSuccess()
+        {
+            return View();
+        }
         public IActionResult classroombased()
         {
             return View();
