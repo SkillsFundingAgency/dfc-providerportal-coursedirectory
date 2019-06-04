@@ -1,18 +1,27 @@
-﻿<div class="apprenticeship-search-page">
+﻿@{
+    Layout = "_Layout";
+    ViewData["Title"] = "Find apprenticeship";
+    ViewData["Subtext"] = "Search by name or keyword for the apprenticeship delivered by your training course.";
+    ViewData["Target"] = "/providers/AddResults/";
+    ViewData["Placeholder"] = "Search";
+    ViewData["Area"] = "Qualifications";
+}
+<div class="apprenticeship-search-page">
+    <div class="cd-success-summary" aria-labelledby="success-summary-title" role="alert" tabindex="-1" data-module="success-summary">
+        <h2 class="cd-success-summary__title" id="success-summary-title">
+            <strong>Success title</strong>
+        </h2>
+        <div class="cd-success-summary__body">
+            <p>Success message</p>
+        </div>
+    </div>
     <div>
         <h1 class="govuk-heading-l govuk-!-margin-top-4">@ViewBag.Title</h1>
         <p class="column-two-thirds govuk-body">@ViewBag.Subtext</p>
     </div>
     <div class="site-search ui-front" id="header-search" role="search">
 
-        <div class="cd-success-summary" aria-labelledby="success-summary-title" role="alert" tabindex="-1" data-module="success-summary">
-            <h2 class="cd-success-summary__title" id="success-summary-title">
-                <strong>Item deleted</strong>
-            </h2>
-            <div class="cd-success-summary__body">
-                <p>Success message</p>
-            </div>
-        </div>
+
 
         <div class="header-search-content govuk-!-width-two-thirds">
 

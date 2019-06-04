@@ -1,4 +1,12 @@
-﻿<div class="apprenticeship-search-page">
+﻿@{
+    Layout = "_Layout";
+    ViewData["Title"] = "Find apprenticeship";
+    ViewData["Subtext"] = "Search by name or keyword for the apprenticeship delivered by your training course.";
+    ViewData["Target"] = "/providers/AddResults/";
+    ViewData["Placeholder"] = "Search";
+    ViewData["Area"] = "Qualifications";
+}
+<div class="apprenticeship-search-page">
     <div>
         <h1 class="govuk-heading-l govuk-!-margin-top-4">@ViewBag.Title</h1>
         <p class="column-two-thirds govuk-body">@ViewBag.Subtext</p>
@@ -27,19 +35,20 @@
                 </div>
 
                 <div class="cd-your-apprenticeships-search-result__container">
-                    <h3 class="govuk-heading-m">Network Engineer</h3>
+                    <h3 class="govuk-heading-m">Network Engineer <span class="govuk-!-margin-left-3 govuk-tag tag-grey">Framework</span></h3>
+
                     <p class="govuk-body">Level: <span class="govuk-!-font-weight-bold">4</span></p>
                 </div>
                 <div class="ctas">
-                    <a class="govuk-link" href="/apprenticeships/Summary">View and edit</a>
+                    <a class="govuk-link" href="/apprenticeships/ViewEdit">View and edit</a>
                     <a class="govuk-link" href="/apprenticeships/ConfirmApprenticeshipDelete">Delete</a>
                 </div>
                 <div class="cd-your-apprenticeships-search-result__container">
-                    <h3 class="govuk-heading-m">Software Developer</h3>
+                    <h3 class="govuk-heading-m">Software Developer <span class="govuk-!-margin-left-3 govuk-tag tag-grey">Framework</span></h3>
                     <p class="govuk-body">Level: <span class="govuk-!-font-weight-bold">4</span></p>
                 </div>
                 <div class="ctas">
-                    <a class="govuk-link" href="/apprenticeships/Summary">View and edit</a>
+                    <a class="govuk-link" href="/apprenticeships/ViewEdit">View and edit</a>
                     <a class="govuk-link" href="/apprenticeships/ConfirmApprenticeshipDelete">Delete</a>
                 </div>
                 <div class="cd-your-apprenticeships-search-result__container">
@@ -49,7 +58,7 @@
                     <p class="govuk-body">Level: <span class="govuk-!-font-weight-bold">3</span></p>
                 </div>
                 <div class="ctas">
-                    <a class="govuk-link" href="/apprenticeships/Summary">View and edit</a>
+                    <a class="govuk-link" href="/apprenticeships/ViewEdit">View and edit</a>
                     <a class="govuk-link" href="/apprenticeships/ConfirmApprenticeshipDelete">Delete</a>
                 </div>
                 <div class="cd-your-apprenticeships-search-result__container">
@@ -59,7 +68,7 @@
                     <p class="govuk-body">Level: <span class="govuk-!-font-weight-bold">3</span></p>
                 </div>
                 <div class="ctas">
-                    <a class="govuk-link" href="/apprenticeships/Summary">View and edit</a>
+                    <a class="govuk-link" href="/apprenticeships/ViewEdit">View and edit</a>
                     <a class="govuk-link" href="/apprenticeships/ConfirmApprenticeshipDelete">Delete</a>
                 </div>
                 <div class="cd-your-apprenticeships-search-result__container">
@@ -69,7 +78,7 @@
                     <p class="govuk-body">Level: <span class="govuk-!-font-weight-bold">3</span></p>
                 </div>
                 <div class="ctas">
-                    <a class="govuk-link" href="/apprenticeships/Summary">View and edit</a>
+                    <a class="govuk-link" href="/apprenticeships/ViewEdit">View and edit</a>
                     <a class="govuk-link" href="/apprenticeships/ConfirmApprenticeshipDelete">Delete</a>
                 </div>
                 <div class="cd-your-apprenticeships-search-result__container">
@@ -79,7 +88,7 @@
                     <p class="govuk-body">Level: <span class="govuk-!-font-weight-bold">6</span></p>
                 </div>
                 <div class="ctas">
-                    <a class="govuk-link" href="/apprenticeships/Summary">View and edit</a>
+                    <a class="govuk-link" href="/apprenticeships/ViewEdit">View and edit</a>
                     <a class="govuk-link" href="/apprenticeships/ConfirmApprenticeshipDelete">Delete</a>
                 </div>
 

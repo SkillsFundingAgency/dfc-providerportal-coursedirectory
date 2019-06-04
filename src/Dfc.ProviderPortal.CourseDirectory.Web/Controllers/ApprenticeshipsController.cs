@@ -76,6 +76,18 @@ namespace Dfc.ProviderPortal.CourseDirectory.Web.Controllers
         {
             return View();
         }
+        public IActionResult EditYourApprenticeships()
+        {
+            return View();
+        }
+        public IActionResult ViewEdit()
+        {
+            return View();
+        }
+        public IActionResult ViewEditSave()
+        {
+            return View();
+        }
         public IActionResult AddLocation()
         {
             return View();
@@ -105,6 +117,10 @@ namespace Dfc.ProviderPortal.CourseDirectory.Web.Controllers
             return View();
         }
         public IActionResult Confirmation()
+        {
+            return View();
+        }
+        public IActionResult ConfirmationDelete()
         {
             return View();
         }
