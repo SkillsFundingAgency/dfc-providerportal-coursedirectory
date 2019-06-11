@@ -14,6 +14,7 @@
     <Folder Include="Views\CoursePage\" />
     <Folder Include="Views\Apprenticeships\" />
     <Folder Include="Views\UR\" />
+    <Folder Include="Views\Migration\" />
   </ItemGroup>
 
   <ItemGroup>
@@ -277,13 +278,12 @@
     <Folder Include="wwwroot\css\" />
     <Folder Include="wwwroot\vendor\" />
     <Folder Include="wwwroot\dist\" />
-<Folder Include="wwwroot\assets\" />
+	<Folder Include="wwwroot\assets\" />
   </ItemGroup>
   
   <ItemGroup>
     <None Include="wwwroot\js\apprenticeships.json" />
     <None Include="wwwroot\js\providers.json" />
-    
-    <None Include="wwwroot\assets\apprenticeships.json" />
+<None Include="wwwroot\assets\apprenticeships.json" />
   </ItemGroup>
 </Project>

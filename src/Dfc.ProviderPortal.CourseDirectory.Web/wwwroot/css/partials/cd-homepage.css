@@ -6,6 +6,11 @@
   margin-bottom: 1.23em;
 }
 
+.border {
+  border: 1px solid #bfc1c3;
+  display: block;
+}
+
 .cd-status-panel {
   background-color: #dee0e2;
   display: flex;
@@ -16,9 +21,45 @@
   flex-direction: column;
 }
 
+.cd-status-panel.blue {
+  text-align: left;
+  background-color: #005ea5;
+  color: white;
+}
+
+.cd-status-panel.blue h2, .cd-status-panel.blue a {
+  color: white;
+}
+
+.cd-status-panel.green {
+  background-color: green;
+}
+
+.cd-status-panel.red {
+  background-color: red;
+}
+
+.cd-status-panel.white {
+  background-color: white;
+  text-align: left;
+}
+
+.cd-status-panel.grey {
+  background-color: #f8f8f8;
+  border: 1px solid #bfc1c3;
+  display: block;
+  text-align: left;
+  flex-direction: row;
+  margin-bottom: 0em;
+}
+
+.white {
+  color: white;
+}
+
 .cd-activity-item {
   display: block;
-  border-bottom: 1px solid #6f777b;
+  border-bottom: 1px solid #bfc1c3;
   margin-bottom: 1em;
   padding-bottom: .5em;
   font-family: nta,Arial,sans-serif;
