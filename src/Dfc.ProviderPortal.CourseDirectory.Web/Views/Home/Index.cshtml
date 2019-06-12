@@ -37,26 +37,36 @@
                 <div class="govuk-grid-column-one-half">
                     <div class="cd-status-panel grey">
                         <h2 class="govuk-heading-s">Venues</h2>
-                        <h3 class="govuk-heading-l">65</h3>
+                        <h3 class="govuk-heading-l">5</h3>
                     </div>
                     <div class="cd-status-panel white border">
                         <ul class="govuk-list">
                             <li>
                                 <a class="govuk-link" href="#">Manage your venues</a>
                             </li>
-                            @* <li>
-           <a class="govuk-link" href="#">Add venue </a>
-        </li>
-        <li>
-            <a class="govuk-link" href="#">Delete venue </a>
-        </li>*@
+                            <li>
+                                <a class="govuk-link" href="#">Add a new venue </a>
+                            </li>
+                            @*  <li>
+                        <a class="govuk-link" href="#">Delete venue </a>
+                    </li>*@
                         </ul>
                     </div>
+                </div>
+
+            </div>
+            <div class="govuk-grid-row">
+                <div class="govuk-grid-column-one-half">
+                    <div class="cd-status-panel blue">
+                        <h2 class="govuk-heading-s">Migration report</h2>
+                        <a asp-controller="Home" asp-action="Migration" class="govuk-link">View</a>
+                    </div>
+
                 </div>
             </div>
 
 
-            <h2 class="govuk-heading-m">Recent activity</h2>
+            @*<h2 class="govuk-heading-m">Recent activity</h2>
             <div class="cd-activity-item ">
                 <h3 class="govuk-heading-s cd-activity-item-heading ">Maths and applied physics</h3>
                 <span class="cd-activity-item-tag">Course ID</span> <span class="cd-activity-item-tag"> Venue</span> <span class="cd-activity-item-tag"> full-time</span> <span class="cd-activity-item-tag">25/03/2019</span>
@@ -68,11 +78,11 @@
             <div class="cd-activity-item">
                 <h3 class="govuk-heading-s cd-activity-item-heading ">Maths and applied physics</h3>
                 <span class="cd-activity-item-tag">Course ID</span> <span class="cd-activity-item-tag"> Venue</span> <span class="cd-activity-item-tag"> full-time</span> <span class="cd-activity-item-tag">25/03/2019</span>
-            </div>
+            </div>*@
         </div>
         <div class="govuk-grid-column-one-third">
 
-            <div class="cd-status-panel blue govuk-body">
+            <div class="cd-status-panel grey govuk-body">
                 <div>
                     <h2 class="govuk-heading-m ">Your details</h2>
                     <strong>Course directory status</strong>
@@ -97,7 +107,7 @@
                     <p>UCAN</p>
                     <hr class="govuk-section-break govuk-section-break--m govuk-section-break--visible" />
                 </div>
-                <a href="#">Edit your details</a>
+                <a href="#">View your details</a>
             </div>
         </div>
     </div>

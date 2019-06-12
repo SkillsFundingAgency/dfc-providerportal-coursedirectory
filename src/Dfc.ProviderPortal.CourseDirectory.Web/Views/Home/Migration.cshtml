@@ -1,0 +1,67 @@
+﻿
+@{
+    ViewData["Title"] = "Index";
+}
+
+
+<div class="cd-dashboard provider">
+    <span class="govuk-caption-xl">Course Directory</span>
+    <h1 class="govuk-heading-xl cd-dashboard-title">Migration Report</h1>
+    <hr class="spacer" />
+
+
+
+    <div class="govuk-grid-row govuk-body">
+
+        <div class="govuk-grid-column-two-thirds">
+            <p>we have attempted to migrate your courses </p>
+
+            <div>
+                <span class="govuk-heading-m">3 courses lost due to not having lars references </span>
+
+
+
+                <details class="govuk-details">
+                    <summary class="govuk-details__summary">
+                        <span class="govuk-details__summary-text">
+                            View
+                        </span>
+                    </summary>
+                    <div class="govuk-details__text">
+
+                            <div class="cd-activity-item">
+                                <h3 class="govuk-heading-s cd-activity-item-heading ">Maths and applied physics</h3>
+                                <span class="cd-activity-item-tag">Course ID</span> <span class="cd-activity-item-tag"> Venue</span> <span class="cd-activity-item-tag"> full-time</span> <span class="cd-activity-item-tag">25/03/2019</span>
+                            </div>
+                            <div class="cd-activity-item">
+                                <h3 class="govuk-heading-s cd-activity-item-heading ">Maths and applied physics</h3>
+                                <span class="cd-activity-item-tag">Course ID</span> <span class="cd-activity-item-tag"> Venue</span> <span class="cd-activity-item-tag"> full-time</span> <span class="cd-activity-item-tag">25/03/2019</span>
+                            </div>
+                            <div class="cd-activity-item">
+                                <h3 class="govuk-heading-s cd-activity-item-heading ">Maths and applied physics</h3>
+                                <span class="cd-activity-item-tag">Course ID</span> <span class="cd-activity-item-tag"> Venue</span> <span class="cd-activity-item-tag"> full-time</span> <span class="cd-activity-item-tag">25/03/2019</span>
+                            </div>
+
+                    </div>
+                </details>
+
+            </div>
+            <div>
+                <span class="govuk-heading-m">22 courses not migrated due to having errors</span>
+                <p></p>
+                <a asp-controller="Migration" asp-action="FixErrors" class="govuk-link">Fix errors</a>
+            </div>
+            <div>
+                <span class="govuk-heading-m">67 courses migrated successfuly</span>
+                <a asp-controller="Courses" asp-action="CourseListfullwidth6" class="govuk-link">View</a>
+            </div>
+
+        </div>
+        <div class="govuk-grid-column-one-third">
+
+
+        </div>
+    </div>
+
+</div>
+
