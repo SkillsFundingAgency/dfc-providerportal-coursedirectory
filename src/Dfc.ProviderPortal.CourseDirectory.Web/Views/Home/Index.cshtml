@@ -23,13 +23,16 @@
                     <div class="cd-status-panel white border">
                         <ul class="govuk-list">
                             <li>
-                                <a class="govuk-link" href="#">Manage your courses</a>
+
+                                <a asp-controller="Courses" asp-action="CourseListfullWidth6" class="govuk-link">Manage your courses</a>
                             </li>
                             <li>
-                                <a class="govuk-link" href="#">Add a new course</a>
+
+                                <a asp-controller="AddCourse" asp-action="Index" class="govuk-link">Add a new course</a>
                             </li>
                             <li>
-                                <a class="govuk-link" href="#">File upload all your courses</a>
+
+                                <a asp-controller="AddCourse" asp-action="BulkUpload" class="govuk-link">File upload all your courses</a>
                             </li>
                         </ul>
                     </div>
