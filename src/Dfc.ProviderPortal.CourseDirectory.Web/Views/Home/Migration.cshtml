@@ -19,7 +19,7 @@
             their start date is over 12 months old and x were migrated successfully. You can view futher details below.</p>
 
 
-            <div class="govuk-!-margin-top-9">
+            <div class="govuk-!-margin-top-9 cd-migration-report-item">
                 <span class="govuk-heading-m"><strong>[Number]</strong> courses lost due to not having lars references </span>
 
 
@@ -47,11 +47,10 @@
 
                     </div>
                 </details>
+                <hr class="govuk-section-break govuk-section-break--visible" />
             </div>
-            <div>
+            <div class="cd-migration-report-item">
                 <span class="govuk-heading-m"><strong>[Number]</strong> courses lost due to being over 12 months old </span>
-
-
 
                 <details class="govuk-details">
                     <summary class="govuk-details__summary">
@@ -76,17 +75,22 @@
 
                     </div>
                 </details>
+                <hr  class="govuk-section-break govuk-section-break--visible"/>
             </div>
             <div class="cd-migration-report-item">
                 <span class="govuk-heading-m"><strong>[Number]</strong> courses not migrated due to having errors</span>
                 <p></p>
                 <a asp-controller="Migration" asp-action="FixErrors" class="govuk-link">Fix errors</a>
+
             </div>
+            <hr class="govuk-section-break govuk-section-break--visible" />
             <div class="cd-migration-report-item">
                 <span class="govuk-heading-m"><strong>[Number]</strong> courses migrated successfully</span>
                 <a asp-controller="Courses" asp-action="CourseListfullwidth6" class="govuk-link">View</a>
+
             </div>
-            <a asp-controller="Home" asp-action="index" class="govuk-button ">Continue to course directory</a>
+            <hr class="govuk-section-break govuk-section-break--visible" />
+            <a asp-controller="Home" asp-action="index" class="govuk-button govuk-!-margin-top-6">Continue to course directory</a>
         </div>
         <div class="govuk-grid-column-one-third">
 
