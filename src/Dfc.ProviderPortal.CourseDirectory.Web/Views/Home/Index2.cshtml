@@ -1,0 +1,147 @@
+﻿
+@{
+    ViewData["Title"] = "Index";
+}
+<div class="cd-info-summary" aria-labelledby="info-summary-title" role="alert" tabindex="-1" data-module="info-summary">
+    <h2 class="cd-info-summary__title" id="info-summary-title">
+        Info
+    </h2>
+    <div class="cd-info-summary__body">
+        <p>Info message</p>
+    </div>
+</div>
+
+<div class="cd-dashboard provider">
+    <span class="govuk-caption-xl">Course Directory</span>
+    <h1 class="govuk-heading-xl cd-dashboard-title">Course management dashboard</h1>
+    <hr class="spacer" />
+
+
+
+    <div class="govuk-grid-row govuk-!-margin-bottom-9">
+
+        <div class="govuk-grid-column-two-thirds">
+            <div class="govuk-grid-row">
+                <div class="govuk-grid-column-full">
+                    <div class="cd-status-panel blue">
+                        <h2 class="govuk-heading-s">Migration report</h2>
+                        <a asp-controller="Home" asp-action="Migration" class="govuk-link">View</a>
+                    </div>
+
+                </div>
+            </div>
+            <div class="govuk-grid-row">
+                <div class="govuk-grid-column-one-half ">
+                    <div class="cd-status-panel grey">
+                        <h2 class="govuk-heading-s">Courses</h2>
+                        <h3 class="govuk-heading-l">65</h3>
+                    </div>
+                    <div class="cd-status-panel white border">
+                        <ul class="govuk-list">
+                            <li>
+
+                                <a asp-controller="Courses" asp-action="CourseListfullWidth6" class="govuk-link">Manage your courses</a>
+                            </li>
+                            <li>
+
+                                <a asp-controller="AddCourse" asp-action="Index" class="govuk-link">Add a new course</a>
+                            </li>
+                            <li>
+
+                                <a asp-controller="AddCourse" asp-action="BulkUpload" class="govuk-link">File upload all your courses</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="govuk-grid-column-one-half ">
+                    <div class="cd-status-panel grey">
+                        <h2 class="govuk-heading-s">Apprenticeships</h2>
+                        <h3 class="govuk-heading-l">5</h3>
+                    </div>
+                    <div class="cd-status-panel white border">
+                        <ul class="govuk-list">
+                            <li>
+
+                                <a asp-controller="apprenticeships" asp-action="YourApprenticeships" class="govuk-link">Manage your apprenticeships</a>
+                            </li>
+                            <li>
+
+                                <a asp-controller="apprenticeships" asp-action="add" class="govuk-link">Add a new apprenticeship</a>
+                            </li>
+                            <li>
+
+                                <a asp-controller="AddCourse" asp-action="BulkUpload" class="govuk-link">File upload all your apprenticeships</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="govuk-grid-column-one-half">
+                    <div class="cd-status-panel grey">
+                        <h2 class="govuk-heading-s">Venues</h2>
+                        <h3 class="govuk-heading-l">5</h3>
+                    </div>
+                    <div class="cd-status-panel white border">
+                        <ul class="govuk-list">
+                            <li>
+                                <a class="govuk-link" href="#">Manage your venues</a>
+                            </li>
+                            <li>
+                                <a class="govuk-link" href="#">Add a new venue </a>
+                            </li>
+
+                        </ul>
+                    </div>
+                </div>
+
+            </div>
+
+
+
+            @*<h2 class="govuk-heading-m">Recent activity</h2>
+        <div class="cd-activity-item ">
+            <h3 class="govuk-heading-s cd-activity-item-heading ">Maths and applied physics</h3>
+            <span class="cd-activity-item-tag">Course ID</span> <span class="cd-activity-item-tag"> Venue</span> <span class="cd-activity-item-tag"> full-time</span> <span class="cd-activity-item-tag">25/03/2019</span>
+        </div>
+        <div class="cd-activity-item">
+            <h3 class="govuk-heading-s cd-activity-item-heading ">Maths and applied physics</h3>
+            <span class="cd-activity-item-tag">Course ID</span> <span class="cd-activity-item-tag"> Venue</span> <span class="cd-activity-item-tag"> full-time</span> <span class="cd-activity-item-tag">25/03/2019</span>
+        </div>
+        <div class="cd-activity-item">
+            <h3 class="govuk-heading-s cd-activity-item-heading ">Maths and applied physics</h3>
+            <span class="cd-activity-item-tag">Course ID</span> <span class="cd-activity-item-tag"> Venue</span> <span class="cd-activity-item-tag"> full-time</span> <span class="cd-activity-item-tag">25/03/2019</span>
+        </div>*@
+        </div>
+        <div class="govuk-grid-column-one-third">
+
+            <div class="cd-status-panel grey govuk-body">
+                <div>
+                    <h2 class="govuk-heading-m ">Your details</h2>
+                    <strong>Course directory status</strong>
+                    <p>Live</p>
+                    <hr class="govuk-section-break govuk-section-break--m govuk-section-break--visible" />
+                </div>
+                <div>
+                    <strong>UKPRN</strong>
+                    <p>10008802</p>
+                    <hr class="govuk-section-break govuk-section-break--m govuk-section-break--visible" />
+                </div>
+                <div>
+                    <strong>
+                        Name registered with
+                        UKRLP
+                    </strong>
+                    <p>CSM Consulting Ltd</p>
+                    <hr class="govuk-section-break govuk-section-break--m govuk-section-break--visible" />
+                </div>
+                <div>
+                    <strong>Trading name</strong>
+                    <p>UCAN</p>
+                    <hr class="govuk-section-break govuk-section-break--m govuk-section-break--visible" />
+                </div>
+                <a href="#">View your details</a>
+            </div>
+        </div>
+    </div>
+
+</div>
+
