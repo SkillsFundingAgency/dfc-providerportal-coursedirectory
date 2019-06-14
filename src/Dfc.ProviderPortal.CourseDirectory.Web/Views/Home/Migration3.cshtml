@@ -1,0 +1,75 @@
+﻿
+@{
+    ViewData["Title"] = "Index";
+}
+
+
+<div class="cd-dashboard provider">
+    <span class="govuk-caption-xl">Course Directory</span>
+    <h1 class="govuk-heading-xl cd-dashboard-title">Migration Report</h1>
+    <hr class="spacer" />
+
+
+
+    <div class="govuk-grid-row govuk-body">
+
+        <div class="">
+            <p>
+                We have transferred your data to the new course directory.
+                To help you make sure your current provision is published correctly on the new course directory we have produced a report for you with actions you need to take.
+                Alternatively, you can overwrite any data transfer and ensure all of your provision is up to date by
+                <a asp-controller="AddCourse" asp-action="BulkUpload" class="govuk-link">uploading a file of all your courses.</a>
+            </p>
+            <div class="govuk-grid-row govuk-!-margin-bottom-6">
+                <h2 class="govuk-heading-l">Number of courses transferred </h2>
+                <div class="govuk-grid-column-full ">
+                    <div class="govuk-grid-column-one-quarter">
+                        <div href="/courses/CourseListfullWidth6" onkeydown="navigateLink(event)" onclick="navigateLink(event)" tabindex="0" role="link" class="cd-status-panel grey div--link">
+                            <h2 href="/courses/CourseListfullWidth6" onkeydown="navigateLink(event)" onclick="navigateLink(event)" tabindex="0" role="link" class="govuk-heading-s">Successfully transferred</h2>
+                            <h3 href="/courses/CourseListfullWidth6" onkeydown="navigateLink(event)" onclick="navigateLink(event)" tabindex="0" role="link" class="govuk-heading-l">65</h3>
+                        </div>
+
+                    </div>
+                    <div class="govuk-grid-column-one-half">
+                        <p>You need to check the information you had on the previous course directory was correct and delete any courses you no longer run.</p>
+                        <a asp-controller="Courses" asp-action="CourseListfullwidth6" class="govuk-link">View</a>
+                     </div>
+                </div>
+
+
+            </div>
+            <div class="govuk-!-margin-top-9 cd-migration-report-item">
+
+                <h2 class="govuk-heading-l">Number of courses not transferred </h2>
+
+              
+
+            </div>
+
+
+            <div class="govuk-grid-row">
+                <div class="govuk-grid-column-one-half">
+
+                    <h3 class="govuk-heading-s"><strong>12</strong> Courses wwith no or expired LARS/QAN numbers</h3>
+
+                    <p>If you still run these courses you will need to publish them to the new course directory. <a asp-controller="Migration" asp-action="NotTransferred" class="govuk-link">View</a></p>
+
+                </div>
+                <div class="govuk-grid-column-one-half">
+
+                    <h3 class="govuk-heading-s"><strong>12</strong> Courses with errors</h3>
+                    <p>You can still publish these courses if you <a asp-controller="Migration" asp-action="Fixerrors" class="govuk-link">fix errors</a> first. If you no longer run the courses, <a href="#">our helpdesk can delete them</a>.</p>
+
+
+                </div>
+            </div>
+            <hr class="govuk-section-break govuk-section-break--visible" />
+
+
+            <a asp-controller="Home" asp-action="index" class="govuk-button govuk-!-margin-top-6">Continue to course directory</a>
+        </div>
+
+    </div>
+
+</div>
+
