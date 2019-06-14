@@ -18,10 +18,10 @@
     <div class="govuk-grid-row govuk-!-margin-bottom-9">
         <div class="govuk-grid-row govuk-!-margin-bottom-6">
             <div class="govuk-grid-column-full ">
-                <div class="govuk-grid-column-one-half ">
-                    <div class="cd-status-panel grey">
-                        <h2 class="govuk-heading-s">Courses</h2>
-                        <h3 class="govuk-heading-l">65</h3>
+                <div class="govuk-grid-column-one-half">
+                    <div href="/courses/CourseListfullWidth6" onkeydown="navigateLink(event)" onclick="navigateLink(event)" tabindex="0"  role="link" class="cd-status-panel grey div--link">
+                        <h2 href="/courses/CourseListfullWidth6" onkeydown="navigateLink(event)" onclick="navigateLink(event)" tabindex="0"  role="link" class="govuk-heading-s">Courses</h2>
+                        <h3 href="/courses/CourseListfullWidth6" onkeydown="navigateLink(event)" onclick="navigateLink(event)" tabindex="0"  role="link"  class="govuk-heading-l">65</h3>
                     </div>
 
                 </div>
@@ -64,20 +64,18 @@
             </div>
         </div>
     </div>
-        <div class="govuk-grid-row govuk-!-margin-bottom-9">
 
-            <div class="govuk-grid-column-two-thirds">
-                <div class="govuk-grid-row">
-
-
-                </div>
-
-
-
-
-            </div>
-
-        </div>
 
     </div>
+<script type="text/javascript">
+sap = {ui:{keycodes:{SPACE:32, ENTER:13 }}};
+//handles clicks and keydowns on the link
+function navigateLink(evt) {
+    if (evt.type=="click" ||
+        evt.keyCode == sap.ui.keycodes.ENTER) {
+        var ref = evt.target != null ? evt.target : evt.srcElement;
+        if (ref) window.open(ref.getAttribute("href"),"_parent");
+    }
+}
+</script>
 
