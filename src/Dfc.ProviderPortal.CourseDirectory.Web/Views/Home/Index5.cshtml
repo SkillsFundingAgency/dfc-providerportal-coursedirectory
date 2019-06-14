@@ -1,0 +1,104 @@
+﻿
+@{
+    ViewData["Title"] = "Index";
+}
+<div class="cd-info-summary" aria-labelledby="info-summary-title" role="alert" tabindex="-1" data-module="info-summary">
+    <h2 class="cd-info-summary__title" id="info-summary-title">
+        Info
+    </h2>
+    <div class="cd-info-summary__body">
+        <p>Info message</p>
+    </div>
+</div>
+
+<div class="cd-dashboard provider">
+    <span class="govuk-caption-xl">Course Directory</span>
+    <h1 class="govuk-heading-xl cd-dashboard-title">Course management dashboard</h1>
+    <hr class="spacer" />
+    <div class="govuk-grid-row govuk-!-margin-bottom-9">
+        <div class="govuk-grid-row govuk-!-margin-bottom-6">
+            <div class="govuk-grid-column-full ">
+                <div class="govuk-grid-column-one-quarter">
+                    <div href="/courses/CourseListfullWidth6" onkeydown="navigateLink(event)" onclick="navigateLink(event)" tabindex="0" role="link" class="cd-status-panel grey div--link">
+                        <h2 href="/courses/CourseListfullWidth6" onkeydown="navigateLink(event)" onclick="navigateLink(event)" tabindex="0" role="link" class="govuk-heading-s">Your published courses</h2>
+                        <h3 href="/courses/CourseListfullWidth6" onkeydown="navigateLink(event)" onclick="navigateLink(event)" tabindex="0" role="link" class="govuk-heading-l">65</h3>
+                    </div>
+
+                </div>
+                <div class="govuk-grid-column-one-half">
+
+                    <ul class="govuk-list">
+
+                        <li>
+
+                            <a asp-controller="AddCourse" asp-action="Index" class="govuk-link">Add a new course</a>
+                        </li>
+                        <li>
+
+                            <a asp-controller="AddCourse" asp-action="BulkUpload" class="govuk-link">File upload all your courses</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+
+        </div>
+         <div class="govuk-grid-row">
+            <div class="govuk-grid-column-full govuk-body">
+
+                <div class=" homepage-item govuk-grid-column-one-third">
+                    
+                        <a href="#">
+                            Migration
+                        </a>
+                        <p>View details of the data we migrated.</p>
+                    
+                </div>
+                <div class="homepage-item govuk-grid-column-one-third">
+                    <a href="#">
+                        Venues
+                    </a>
+
+                    <p>View edit and add venues.</p>
+                </div>
+                <div class="homepage-item govuk-grid-column-one-third">
+                    <a href="#">
+                        Your details
+                    </a>
+                    <p>Manage the detials we hold about your organisation.</p>
+                </div>
+            </div>
+        </div>
+        @*<div class="govuk-grid-row">
+            <div class="govuk-grid-column-full ">
+                <div class="govuk-grid-column-one-half">
+                    <div class="cd-status-panel grey">
+                        <h2 class="govuk-heading-s">Venues</h2>
+                        <a asp-controller="Home" asp-action="Migration" class="govuk-link">18</a>
+                    </div>
+                </div>
+                <div class="govuk-grid-column-one-half">
+
+                    <div class="cd-status-panel blue">
+                        <h2 class="govuk-heading-s">Migration report</h2>
+                        <a asp-controller="Home" asp-action="Migration" class="govuk-link">View</a>
+                    </div>
+                </div>
+            </div>
+        </div>*@
+    </div>
+
+
+    </div>
+<script type="text/javascript">
+sap = {ui:{keycodes:{SPACE:32, ENTER:13 }}};
+//handles clicks and keydowns on the link
+function navigateLink(evt) {
+    if (evt.type=="click" ||
+        evt.keyCode == sap.ui.keycodes.ENTER) {
+        var ref = evt.target != null ? evt.target : evt.srcElement;
+        if (ref) window.open(ref.getAttribute("href"),"_parent");
+    }
+}
+</script>
+
