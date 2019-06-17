@@ -22,16 +22,16 @@
             </p>
             
             <div class="govuk-!-margin-top-9 cd-migration-report-item">
-                <h2 class="govuk-heading-l">Number of courses successfully transferred </h2>
-                <a asp-controller="Courses" asp-action="CourseListfullwidth6" class="govuk-link">17 View</a>
+                <h2 class="govuk-heading-l">17 courses successfully transferred </h2>
+                <a asp-controller="Courses" asp-action="CourseListfullwidth6" class="govuk-link">View</a>
                 <p>You need to check the information you had on the previous course directory was correct and delete any courses you no longer run.</p>
 
-                <h2 class="govuk-heading-l">Number of courses not transferred </h2>
-                <a href="#" class="govuk-heading-m"><strong>12</strong>  </a>
-                <strong>9</strong><h3 class="govuk-heading-s">No or expired LARS/QAN</h3>
+                <h2 class="govuk-heading-l">12 courses not transferred </h2>
+                @*<a href="#" class="govuk-heading-m"><strong>12</strong>  </a>*@
+                <h3 class="govuk-heading-s"><strong>9</strong> No or expired LARS/QAN</h3>
 
                 <p>If you still run these courses you will need to publish them to the new course directory.</p>
-                <strong>3</strong><h3 class="govuk-heading-s">Courses with errors</h3>
+                <h3 class="govuk-heading-s"><strong>3</strong> Courses with errors</h3>
                 <p>You can still publish these courses if you <a asp-controller="Migration" asp-action="FixErrors" class="govuk-link">Fix errors</a> first. If you no longer run the courses, <a href="#">our helpdesk can delete them</a>.</p>
 
 
