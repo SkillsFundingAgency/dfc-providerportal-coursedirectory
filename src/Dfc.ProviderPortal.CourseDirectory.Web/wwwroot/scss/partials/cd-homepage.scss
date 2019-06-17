@@ -104,3 +104,15 @@ $grey: #6f777b;
     padding-right: 1em;
     //font-weight:800;
 }
+
+.sidebar {
+    .widget {
+        border-top: 5px solid #005ea5;
+        background-color: #f8f8f8;
+        padding-left:1rem;
+
+        div {
+            margin-bottom:.5em;
+        }
+    }
+}

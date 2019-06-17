@@ -6,8 +6,8 @@
 
 <div class="cd-dashboard provider">
     <span class="govuk-caption-xl">Course Directory</span>
-    <h1 class="govuk-heading-xl cd-dashboard-title">Migration Report</h1>
-    <hr class="spacer" />
+    <h1 class="govuk-heading-xl cd-dashboard-title">Data transfer</h1>
+
     <div class="govuk-body">
         <div class="govuk-grid-row">
             <div class="govuk-grid-column-two-thirds">
@@ -24,30 +24,60 @@
                     <a asp-controller="AddCourse" asp-action="BulkUpload" class="govuk-link">uploading a file of all your courses</a>.
                 </p>
                 <div class="govuk-grid-row">
-                    <h2 class="govuk-heading-l">24 courses not transferred </h2>
+                    <h2 class="govuk-heading-l">12 courses need action</h2>
+
+                    <div class="govuk-grid-column-one-hlf cd-status-panel grey govuk-!-margin-bottom-6">
+                        <h3 class="govuk-heading-s"><strong>12</strong> courses with errors</h3>
+                        <p>You can still publish these courses if you fix errors first.</p>
+                        <a asp-controller="Migration" asp-action="Fixerrors" class="govuk-button">Fix errors</a>
+                    </div>
+                </div>
+                <div class="govuk-grid-row">
+                    <h2 class="govuk-heading-l">12 courses not transferred </h2>
                     <div class="govuk-grid-column-one-haf cd-status-panel grey govuk-!-margin-bottom-6">
                         <h3 class="govuk-heading-s"><strong>12</strong> courses with no or expired LARS/QAN numbers</h3>
                         <p>If you still run these courses you will need to publish them to the new course directory. <a asp-controller="Migration" asp-action="NotTransferred" class="govuk-link">View</a></p>
                     </div>
-                    <div class="govuk-grid-column-one-hlf cd-status-panel grey govuk-!-margin-bottom-6">
-                        <h3 class="govuk-heading-s"><strong>12</strong> courses with errors</h3>
-                        <p>You can still publish these courses if you <a asp-controller="Migration" asp-action="Fixerrors" class="govuk-link">fix errors</a> first.</p>
-                    </div>
+
                 </div>
 
                 <div class="govuk-grid-row govuk-!-margin-bottom-6">
                     <div class=" ">
-                        <h2 class="govuk-heading-l">65 courses transferred </h2>
+
+
+                        <h2 class="govuk-heading-l">65 courses successfully published</h2>
 
                         <div class="govuk-grid-column-one-hal cd-status-panel grey">
-                            <p>You need to check the information we have transferred to the <a asp-controller="Courses" asp-action="CourseListfullwidth6" class="govuk-link">course directory</a> is correct 
-                            and delete any courses you no longer run.</p>
+                            <h3 class="govuk-heading-s"><strong>65</strong> courses now live on the course directory</h3>
+                            <p>
+                                You need to check the information we have transferred to the <a asp-controller="Courses" asp-action="CourseListfullwidth6" class="govuk-link">course directory</a> is correct
+                                and delete any courses you no longer run.
+                            </p>
 
                         </div>
                     </div>
                 </div>
-                <hr class="govuk-section-break govuk-section-break--visible" />
-                <a asp-controller="Home" asp-action="index" class="govuk-button govuk-!-margin-top-6">Continue to course directory</a>
+                <hr class="govuk-section-break govuk-section-break--visible govuk-!-margin-bottom-6" />
+                <a asp-controller="Home" asp-action="index" class="govuk-link govuk-!-margin-top-3">Continue to course directory</a>
+            </div>
+            <div class="govuk-grid-column-one-third">
+                <aside class="sidebar">
+                    <div class="widget">
+                        <h3>Your details</h3>
+                        <div>
+                            <span><strong> Courses in transfer: </strong> </span><span>100</span>
+                        </div>
+                        <div>
+                            <span><strong> Courses that need attention: </strong></span><span>100</span>
+                        </div>
+                        <div>
+                            <span><strong> Courses not transferred:</strong></span><span>100</span>
+                        </div>
+                        <div>
+                            <span><strong> Courses published:</strong></span><span>100</span>
+                        </div>
+                    </div>
+                </aside>
             </div>
         </div>
     </div>
