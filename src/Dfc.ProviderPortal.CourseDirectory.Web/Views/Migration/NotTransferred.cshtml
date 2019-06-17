@@ -4,31 +4,33 @@
 @{
 }
 <div class="govuk-grid-row govuk-body">
-    <main class="govuk-grid-column-two-thirds">
+    <main class="govuk-grid-column-full">
         <h1 class="govuk-heading-l">Courses not transferred to the new directory</h1>
-        <p>
+        <p class="govuk-!-margin-bottom-6">
             We have not been able to transfer these courses to the new directory because they either had no LARS/QAN in the old directory or because they had one that had expired.
-
-            If you still run these courses you will need to [publish them to the new course directory].
-
+            </p>
+        <p>
+            If you still run these courses you will need to  <a asp-controller="Courses" asp-action="Index6" class="govuk-link">publish them to the new course directory</a>.
+            <br />
+            <br />
             Or you can ensure all of your provision is up to date by <a asp-controller="AddCourse" asp-action="BulkUpload" class="govuk-link">uploading a file of all your courses.</a>.
         </p>
         <div class="cd-activity-item ">
-            <h3 class="govuk-heading-s cd-activity-item-heading ">Maths and applied physics <span>Fix</span> </h3> 
+            <div class="cd-activity-item-title"><h3 class="govuk-heading-s cd-activity-item-heading ">Maths and applied physics  </h3> <div class="link"><a href="#" class="govuk-link">Fix</a></div></div>
             <span class="cd-activity-item-tag">Course ID</span> <span class="cd-activity-item-tag"> Venue</span> <span class="cd-activity-item-tag"> full-time</span> <span class="cd-activity-item-tag">25/03/2019</span>
             <span id="migration-error" class="govuk-error-message">
                 <span class="govuk-visually-hidden">Error:</span> The Lars is missing
             </span>
         </div>
         <div class="cd-activity-item">
-            <h3 class="govuk-heading-s cd-activity-item-heading ">Maths and applied physics</h3>
+            <div class="cd-activity-item-title"><h3 class="govuk-heading-s cd-activity-item-heading ">Maths and applied physics  </h3> <div class="link"><a href="#" class="govuk-link">Fix</a></div></div>
             <span class="cd-activity-item-tag">Course ID</span> <span class="cd-activity-item-tag"> Venue</span> <span class="cd-activity-item-tag"> full-time</span> <span class="cd-activity-item-tag">25/03/2019</span>
             <span id="migration-error" class="govuk-error-message">
                 <span class="govuk-visually-hidden">Error:</span> The Lars is missing
             </span>
         </div>
         <div class="cd-activity-item">
-            <h3 class="govuk-heading-s cd-activity-item-heading ">Maths and applied physics</h3>
+            <div class="cd-activity-item-title"><h3 class="govuk-heading-s cd-activity-item-heading ">Maths and applied physics  </h3> <div class="link"><a href="#" class="govuk-link">Fix</a></div></div>
             <span class="cd-activity-item-tag">Course ID</span> <span class="cd-activity-item-tag"> Venue</span> <span class="cd-activity-item-tag"> full-time</span> <span class="cd-activity-item-tag">25/03/2019</span>
             <span id="migration-error" class="govuk-error-message">
                 <span class="govuk-visually-hidden">Error:</span> The Lars is missing

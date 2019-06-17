@@ -87,6 +87,17 @@ $grey: #6f777b;
     margin-bottom:0;
 }
 
+.cd-activity-item-title {
+    display:flex;
+    flex-direction:row;
+    justify-content:space-between;
+
+    .link {
+        padding-right:2rem;
+    }
+
+}
+
 .cd-activity-item-tag {
     font-family: nta,Arial,sans-serif;
     color: $grey;
