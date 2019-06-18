@@ -7,7 +7,6 @@
 <div class="cd-dashboard provider">
     <span class="govuk-caption-xl">Course Directory</span>
     <h1 class="govuk-heading-xl cd-dashboard-title">Data transfer</h1>
-
     <div class="govuk-body">
         <div class="govuk-grid-row">
             <div class="govuk-grid-column-two-thirds">
@@ -24,56 +23,52 @@
                 </p>
                 <div class="govuk-grid-row">
                     <h2 class="govuk-heading-l">12 courses with errors</h2>
-
-                    <div class="govuk-grid-column-one-hlf cd-status-panel grey govuk-!-margin-bottom-6">
+                    <div class="govuk-grid-column-full cd-status-panel grey govuk-!-margin-bottom-9">
                         <h3 class="govuk-heading-s">These have errors or missing information</h3>
                         <p>You can still publish these courses if you fix errors first.</p>
                         <a asp-controller="Migration" asp-action="Fixerrors" class="govuk-button">Fix errors</a>
                     </div>
                 </div>
                 <div class="govuk-grid-row">
-                    <h2 class="govuk-heading-l">12 courses with no or expired LARS/QAN numbers </h2>
-                    <div class="govuk-grid-column-one-haf cd-status-panel grey govuk-!-margin-bottom-6">
+                    <div class="govuk-grid-column-one-full">
+                        <h2 class="govuk-heading-l">12 courses with no or expired LARS/QAN numbers </h2>
+                    </div>
+
+                    <div class=" cd-status-panel grey govuk-!-margin-bottom-9">
                         <h3 class="govuk-heading-s">These have no or an expired LARS/QAN</h3>
                         <p>If you still run these courses you will need to publish them to the new course directory. <a asp-controller="Migration" asp-action="NotTransferred" class="govuk-link">View</a></p>
                     </div>
-
                 </div>
-
-                <div class="govuk-grid-row govuk-!-margin-bottom-6">
+                <div class="govuk-grid-row govuk-!-margin-bottom-9">
                     <div class=" ">
-
-
                         <h2 class="govuk-heading-l">65 courses now live on the course directory </h2>
-
                         <div class="govuk-grid-column-one-hal cd-status-panel grey">
                             <h3 class="govuk-heading-s">These are now live on the course directory</h3>
                             <p>
                                 You need to check the information we have transferred to the <a asp-controller="Courses" asp-action="CourseListfullwidth6" class="govuk-link">course directory</a> is correct
                                 and delete any courses you no longer run.
                             </p>
-
                         </div>
                     </div>
                 </div>
                 <hr class="govuk-section-break govuk-section-break--visible govuk-!-margin-bottom-6" />
-                <a asp-controller="Home" asp-action="index" class="govuk-link govuk-!-margin-top-3">Continue to course directory</a>
+                <a asp-controller="Home" asp-action="index6" class="govuk-link govuk-!-margin-top-3">Continue to course directory</a>
             </div>
             <div class="govuk-grid-column-one-third">
                 <aside class="sidebar">
                     <div class="widget">
                         <h3>Data transfer details</h3>
                         <div>
-                            <span>Courses on the old directory: </span><span><strong>89</strong></span>
+                            <span>Courses on the old directory: </span><span><strong> 89</strong></span>
                         </div>
                         <div>
-                            <span>Courses that need action: </span><span><strong>12</strong></span>
+                            <span>Courses that need action: </span><span><strong> 12</strong></span>
                         </div>
                         <div>
-                            <span>Courses not transferred:</span><span><strong>12</strong></span>
+                            <span>Courses not transferred:</span><span><strong> 12</strong></span>
                         </div>
                         <div class="govuk-!-padding-bottom-6">
-                            <span>Courses successfully published:</span><span><strong>65</strong></span>
+                            <span>Courses successfully published:</span><span><strong> 65</strong></span>
                         </div>
                     </div>
                 </aside>
