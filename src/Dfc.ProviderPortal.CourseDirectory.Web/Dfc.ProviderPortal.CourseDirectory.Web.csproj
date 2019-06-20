@@ -15,6 +15,7 @@
     <Folder Include="Views\Apprenticeships\" />
     <Folder Include="Views\UR\" />
     <Folder Include="Views\Migration\" />
+    <Folder Include="Views\Venues\" />
   </ItemGroup>
 
   <ItemGroup>

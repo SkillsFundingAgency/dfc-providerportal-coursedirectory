@@ -1,0 +1,41 @@
+﻿@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@{
+}
+<a asp-controller="Home" asp-action="Migration3" class="govuk-back-link">Back</a>
+<div class="govuk-grid-row govuk-body">
+    <main class="govuk-grid-column-full">
+        <h1 class="govuk-heading-l">Courses not transferred to the new directory</h1>
+        <p class="govuk-!-margin-bottom-6">
+            We have not been able to transfer these courses to the new directory because they had either no LARS/QAN in the old directory or because they had one that was not genuine.
+        </p>
+        <p>
+            If you still run these courses you will need to  <a asp-controller="Home" asp-action="Index6" class="govuk-link">publish them to the new course directory</a>.
+            <br />
+            <br />
+            Or you can ensure all of your provision is up to date by <a asp-controller="AddCourse" asp-action="BulkUpload" class="govuk-link">uploading a file of all your courses.</a>.
+        </p>
+        <div class="cd-activity-item ">
+            <div class="cd-activity-item-title"><h3 class="govuk-heading-s cd-activity-item-heading ">Maths and applied physics  </h3> </div>
+            <span class="cd-activity-item-tag">Course ID</span> <span class="cd-activity-item-tag"> Venue</span> <span class="cd-activity-item-tag"> full-time</span> <span class="cd-activity-item-tag">25/03/2019</span>
+            <span id="migration-error" class="govuk-error-message">
+                <span class="govuk-visually-hidden">Error:</span> Add a LARS/QAN or Update to a genuine LARS/QAN
+            </span>
+        </div>
+        <div class="cd-activity-item">
+            <div class="cd-activity-item-title"><h3 class="govuk-heading-s cd-activity-item-heading ">Maths and applied physics  </h3></div>
+            <span class="cd-activity-item-tag">Course ID</span> <span class="cd-activity-item-tag"> Venue</span> <span class="cd-activity-item-tag"> full-time</span> <span class="cd-activity-item-tag">25/03/2019</span>
+                                                                                                                                                                      <span id="migration-error" class="govuk-error-message">
+                                                                                                                                                                          <span class="govuk-visually-hidden">Error:</span> Add a LARS/QAN or Update to a genuine LARS/QAN
+                                                                                                                                                                      </span>
+        </div>
+        <div class="cd-activity-item">
+            <div class="cd-activity-item-title"><h3 class="govuk-heading-s cd-activity-item-heading ">Maths and applied physics  </h3> </div>
+            <span class="cd-activity-item-tag">Course ID</span> <span class="cd-activity-item-tag"> Venue</span> <span class="cd-activity-item-tag"> full-time</span> <span class="cd-activity-item-tag">25/03/2019</span>
+                                                                                                                                                                      <span id="migration-error" class="govuk-error-message">
+                                                                                                                                                                          <span class="govuk-visually-hidden">Error:</span> Add a LARS/QAN or Update to a genuine LARS/QAN
+                                                                                                                                                                      </span>
+        </div>
+    </main>
+</div>
