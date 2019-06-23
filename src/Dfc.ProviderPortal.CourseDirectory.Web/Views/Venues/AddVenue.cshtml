@@ -3,36 +3,16 @@
 *@
 @{
 }
-<a asp-controller="Home" asp-action="Migration3" class="govuk-back-link">Back</a>
+<a asp-controller="Venues" asp-action="Index" class="govuk-back-link">Back</a>
 <div class="govuk-grid-row govuk-body">
     <main class="govuk-grid-column-full">
-        <h1 class="govuk-heading-l">Fix errors</h1>
-        <p class="">
-            We have not transferred 15 courses because they have errors. You must fix these to publish them to the course directory.
-         Or you can ensure all of your provision is up to date by <a asp-controller="AddCourse" asp-action="BulkUpload" class="govuk-link">uploading a file of all your courses</a>.</p>
-            <p>If you no longer run the courses, <a href="#">our helpdesk can delete them</a>.
-        </p>
-        <div class="cd-activity-item ">
-            <div class="cd-activity-item-title"><h3 class="govuk-heading-s cd-activity-item-heading ">Maths and applied physics  </h3> <div class="link"><a href="#" class="govuk-link">Fix</a></div></div>
-
-            <span class="cd-activity-item-tag">Course ID</span> <span class="cd-activity-item-tag"> Venue</span> <span class="cd-activity-item-tag"> full time</span> <span class="cd-activity-item-tag">25/03/2019</span>
-                                                                                                                                                                      <span id="migration-error" class="govuk-error-message">
-                                                                                                                                                                          <span class="govuk-visually-hidden">Error:</span> Add a venue
-                                                                                                                                                                      </span>
+        <h1 class="govuk-heading-l">Add venue</h1>
+        <div class="govuk-form-group">
+            <label class="govuk-label" for="event-name">
+                Venue name
+            </label>
+            <input class="govuk-input" id="event-name" name="event-name" type="text">
         </div>
-        <div class="cd-activity-item">
-            <div class="cd-activity-item-title"><h3 class="govuk-heading-s cd-activity-item-heading ">Maths and applied physics  </h3> <div class="link"><a href="#" class="govuk-link">Fix</a></div></div>
-            <span class="cd-activity-item-tag">Course ID</span> <span class="cd-activity-item-tag"> Venue</span> <span class="cd-activity-item-tag"> full time</span> <span class="cd-activity-item-tag">25/03/2019</span>
-                                                                                                                                                                      <span id="migration-error" class="govuk-error-message">
-                                                                                                                                                                          <span class="govuk-visually-hidden">Error:</span> Add a venue
-                                                                                                                                                                      </span>
-        </div>
-        <div class="cd-activity-item">
-            <div class="cd-activity-item-title"><h3 class="govuk-heading-s cd-activity-item-heading ">Maths and applied physics  </h3> <div class="link"><a href="#" class="govuk-link">Fix</a></div></div>
-            <span class="cd-activity-item-tag">Course ID</span> <span class="cd-activity-item-tag"> Venue</span> <span class="cd-activity-item-tag"> full time</span> <span class="cd-activity-item-tag">25/03/2019</span>
-                                                                                                                                                                      <span id="migration-error" class="govuk-error-message">
-                                                                                                                                                                          <span class="govuk-visually-hidden">Error:</span> TAdd a venue
-                                                                                                                                                                      </span>
-        </div>
+        <a asp-controller="Venues" asp-action="Addaddress" class="govuk-button">Add address</a>
     </main>
 </div>

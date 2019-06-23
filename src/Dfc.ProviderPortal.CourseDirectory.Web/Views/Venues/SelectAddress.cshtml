@@ -1,0 +1,30 @@
+﻿@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@{
+}
+<a asp-controller="Venues" asp-action="Addaddress" class="govuk-back-link">Back</a>
+<div class="govuk-grid-row govuk-body">
+    <main class="govuk-grid-column-full">
+        <h1 class="govuk-heading-l">Select your address</h1>
+        <h2>Postcode</h2><a asp-controller="Venues" asp-action="Addaddress" class="govuk-link">Change</a>
+        <span class="govuk-heading-l">XXXXXX</span>
+
+        <div class="govuk-form-group">
+            <label class="govuk-label" for="sort">
+                Select address
+            </label>
+            <select class="govuk-select" id="sort" name="sort">
+                <option value="published" selected> 2 addresses found</option>
+                <option value="updated">1 New road</option>
+                <option value="views">3 New road</option>
+            </select>
+
+        </div>
+
+        <a asp-controller="Venues" asp-action="AddaddressManual" class="govuk-link">I cant find my address in the list</a>
+        <br />
+
+        <a asp-controller="Venues" asp-action="Index" class="govuk-button">Continue</a>
+    </main>
+</div>

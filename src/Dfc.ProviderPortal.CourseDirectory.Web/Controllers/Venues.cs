@@ -13,11 +13,27 @@ namespace Dfc.ProviderPortal.CourseDirectory.Web.Controllers
             return View();
         }
 
-        public IActionResult addVenue()
+        public IActionResult AddVenue()
         {
             return View();
         }
-        public IActionResult editVenue()
+        public IActionResult AddAddress()
+        {
+            return View();
+        }
+        public IActionResult AddAddressManual()
+        {
+            return View();
+        }
+        public IActionResult EditVenue()
+        {
+            return View();
+        }
+        public IActionResult EditAddress()
+        {
+            return View();
+        }
+        public IActionResult SelectAddress()
         {
             return View();
         }

@@ -5,40 +5,139 @@
 }
 <div class="govuk-grid-row">
     <main class="govuk-grid-column-two-thirds">
-        <h1 class="govuk-heading-l">Migration</h1>
-        <p class="govuk-body">
-            We have attempted to migrate your courses 15 have errors 12 are out of date.
-            Before we continue you need to fix these errors using one of the following methods.
-        </p>
-        <div class="govuk-radios ">
-            <div class="govuk-radios__item">
-                <input class="govuk-radios__input" id="where-do-you-live-1" name="where-do-you-live" type="radio" value="england">
-                <label class="govuk-label govuk-radios__label" for="where-do-you-live-1">
-                    View and fix errors in page
-                </label>
-            </div>
-            <div class="govuk-radios__item">
-                <input class="govuk-radios__input" id="where-do-you-live-2" name="where-do-you-live" type="radio" value="scotland">
-                <label class="govuk-label govuk-radios__label" for="where-do-you-live-2">
-                    Download migrated data file
-                </label>
-            </div>
-            <div class="govuk-radios__item">
-                <input class="govuk-radios__input" id="where-do-you-live-3" name="where-do-you-live" type="radio" value="wales">
-                <label class="govuk-label govuk-radios__label" for="where-do-you-live-3">
-                    Upload bulk upload
-                </label>
-            </div>
-            <div class="govuk-radios__item govuk-!-margin-bottom-6">
-                <input class="govuk-radios__input" id="where-do-you-live-4" name="where-do-you-live" type="radio" value="northern-ireland">
-                <label class="govuk-label govuk-radios__label" for="where-do-you-live-4">
-                    Download a blank file
-                </label>
-            </div>
-            <div class="cta-container">
-                <a class="govuk-button govuk-!-margin-right-3" asp-controller="Apprenticeships" asp-action="DeleteConfirm">Confirm and continue</a>
-
-            </div>
+        <h1 class="govuk-heading-l">Your venues</h1>
+        <div>
+            <a asp-controller="Venues" asp-action="addVenue" class="govuk-button">Add a venue</a>
         </div>
+        <table class="govuk-table">
+            <thead class="govuk-table__head">
+                <tr class="govuk-table__row">
+                    <th class="govuk-table__header" scope="col">Venue</th>
+                    <th class="govuk-table__header" scope="col">Address</th>
+                    <th class="govuk-table__header" scope="col">Postcode</th>
+                    <th class="govuk-table__header" scope="col"></th>
+                    <th class="govuk-table__header" scope="col"></th>
+                    <th class="govuk-table__header" scope="col"></th>
+                </tr>
+            </thead>
+
+            <tbody class="govuk-table__body">
+                    <tr class="govuk-table__row">
+                        <td class="govuk-table__cell">
+                            a
+                        </td>
+                        <td class="govuk-table__cell">
+1 McNaught Place                                                            <br>
+                            5 Quinton Road                                                            <br>
+                            Worcester                                                            <br>
+                            Worcestershire                                                    </td>
+                        <td class="govuk-table__cell">
+WR1 1NZ                                                    </td>
+                                <td class="govuk-table__cell">
+                                    <a id="edit-3ff67f34-0183-45cc-902b-8627ec3f6a84" class="govuk-link edit-venue-link" href="/venues/EditVenue/3ff67f34-0183-45cc-902b-8627ec3f6a84" tabindex="5">Edit</a>
+                                    <a id="venue-delete-3ff67f34-0183-45cc-902b-8627ec3f6a84" class="govuk-button delete-button" style="display: none;padding-right:1em;margin-bottom: 0px;" href="/Venues/DeleteVenue?venueId=3ff67f34-0183-45cc-902b-8627ec3f6a84">Confirm delete</a>
+                                </td>
+                                <td class="govuk-table__cell">
+                                    <a href="#" class="govuk-link delete" id="delete-3ff67f34-0183-45cc-902b-8627ec3f6a84" data-venue-id="3ff67f34-0183-45cc-902b-8627ec3f6a84" style="padding-right:1em">Delete</a>
+                                    <a href="#" class="govuk-link cancel-delete" id="venue-cancel-delete-3ff67f34-0183-45cc-902b-8627ec3f6a84" data-venue-id="3ff67f34-0183-45cc-902b-8627ec3f6a84" hidden="hidden">Cancel</a>
+                                </td>
+                                <td>
+                                    <a href="#" class="govuk-link cancel-delete" id="venue-cancel-delete-3ff67f34-0183-45cc-902b-8627ec3f6a84" data-venue-id="3ff67f34-0183-45cc-902b-8627ec3f6a84" hidden="hidden">Cancel</a>
+                                </td>
+                    </tr>
+                    <tr class="govuk-table__row">
+                        <td class="govuk-table__cell">
+                            aa
+                        </td>
+                        <td class="govuk-table__cell">
+59 Grange Road                                                            <br>
+                            Kings Heath                                                            <br>
+                            Birmingham                                                            <br>
+                            West Midlands                                                    </td>
+                        <td class="govuk-table__cell">
+B14 7RN                                                    </td>
+                                <td class="govuk-table__cell">
+                                    <a id="edit-fb968f78-8971-4b99-ab72-2e317700fb41" class="govuk-link edit-venue-link" href="/venues/EditVenue/fb968f78-8971-4b99-ab72-2e317700fb41" tabindex="5">Edit</a>
+                                    <a id="venue-delete-fb968f78-8971-4b99-ab72-2e317700fb41" class="govuk-button delete-button" style="display: none;padding-right:1em;margin-bottom: 0px;" href="/Venues/DeleteVenue?venueId=fb968f78-8971-4b99-ab72-2e317700fb41">Confirm delete</a>
+                                </td>
+                                <td class="govuk-table__cell">
+                                    <a href="#" class="govuk-link delete" id="delete-fb968f78-8971-4b99-ab72-2e317700fb41" data-venue-id="fb968f78-8971-4b99-ab72-2e317700fb41" style="padding-right:1em">Delete</a>
+                                    <a href="#" class="govuk-link cancel-delete" id="venue-cancel-delete-fb968f78-8971-4b99-ab72-2e317700fb41" data-venue-id="fb968f78-8971-4b99-ab72-2e317700fb41" hidden="hidden">Cancel</a>
+                                </td>
+                                <td>
+                                    <a href="#" class="govuk-link cancel-delete" id="venue-cancel-delete-fb968f78-8971-4b99-ab72-2e317700fb41" data-venue-id="fb968f78-8971-4b99-ab72-2e317700fb41" hidden="hidden">Cancel</a>
+                                </td>
+                    </tr>
+                    <tr class="govuk-table__row">
+                        <td class="govuk-table__cell">
+                            Abbotsmead CDC1
+                        </td>
+                        <td class="govuk-table__cell">
+Cambridge Primary School                                                            <br>
+                            Cambridge Street                                                            <br>
+                            Barrow in Furness                                                            <br>
+                            Cumbria                                                    </td>
+                        <td class="govuk-table__cell">
+LA13 9RP                                                    </td>
+                                <td class="govuk-table__cell">
+                                    <a id="edit-ffdc16cb-6b31-4cb7-9ea1-4f5640b54c5b" class="govuk-link edit-venue-link" href="/venues/EditVenue/ffdc16cb-6b31-4cb7-9ea1-4f5640b54c5b" tabindex="5">Edit</a>
+                                    <a id="venue-delete-ffdc16cb-6b31-4cb7-9ea1-4f5640b54c5b" class="govuk-button delete-button" style="display: none;padding-right:1em;margin-bottom: 0px;" href="/Venues/DeleteVenue?venueId=ffdc16cb-6b31-4cb7-9ea1-4f5640b54c5b">Confirm delete</a>
+                                </td>
+                                <td class="govuk-table__cell">
+                                    <a href="#" class="govuk-link delete" id="delete-ffdc16cb-6b31-4cb7-9ea1-4f5640b54c5b" data-venue-id="ffdc16cb-6b31-4cb7-9ea1-4f5640b54c5b" style="padding-right:1em">Delete</a>
+                                    <a href="#" class="govuk-link cancel-delete" id="venue-cancel-delete-ffdc16cb-6b31-4cb7-9ea1-4f5640b54c5b" data-venue-id="ffdc16cb-6b31-4cb7-9ea1-4f5640b54c5b" hidden="hidden">Cancel</a>
+                                </td>
+                                <td>
+                                    <a href="#" class="govuk-link cancel-delete" id="venue-cancel-delete-ffdc16cb-6b31-4cb7-9ea1-4f5640b54c5b" data-venue-id="ffdc16cb-6b31-4cb7-9ea1-4f5640b54c5b" hidden="hidden">Cancel</a>
+                                </td>
+                    </tr>
+                    <tr class="govuk-table__row">
+                        <td class="govuk-table__cell">
+                            AGE UK - MYDDLETON ST CARLISLE 1
+                        </td>
+                        <td class="govuk-table__cell">
+Flat 9                                                            <br>
+                            St. Cuthberts Court                                                            <br>
+                            Carlisle                                                            <br>
+                            Cumbria                                                    </td>
+                        <td class="govuk-table__cell">
+CA1 2AA                                                    </td>
+                                <td class="govuk-table__cell">
+                                    <a id="edit-f3e8b870-7627-4678-822f-64692d277c36" class="govuk-link edit-venue-link" href="/venues/EditVenue/f3e8b870-7627-4678-822f-64692d277c36" tabindex="5">Edit</a>
+                                    <a id="venue-delete-f3e8b870-7627-4678-822f-64692d277c36" class="govuk-button delete-button" style="display: none;padding-right:1em;margin-bottom: 0px;" href="/Venues/DeleteVenue?venueId=f3e8b870-7627-4678-822f-64692d277c36">Confirm delete</a>
+                                </td>
+                                <td class="govuk-table__cell">
+                                    <a href="#" class="govuk-link delete" id="delete-f3e8b870-7627-4678-822f-64692d277c36" data-venue-id="f3e8b870-7627-4678-822f-64692d277c36" style="padding-right:1em">Delete</a>
+                                    <a href="#" class="govuk-link cancel-delete" id="venue-cancel-delete-f3e8b870-7627-4678-822f-64692d277c36" data-venue-id="f3e8b870-7627-4678-822f-64692d277c36" hidden="hidden">Cancel</a>
+                                </td>
+                                <td>
+                                    <a href="#" class="govuk-link cancel-delete" id="venue-cancel-delete-f3e8b870-7627-4678-822f-64692d277c36" data-venue-id="f3e8b870-7627-4678-822f-64692d277c36" hidden="hidden">Cancel</a>
+                                </td>
+                    </tr>
+                    <tr class="govuk-table__row">
+                        <td class="govuk-table__cell">
+                            Aldingham Hall
+                        </td>
+                        <td class="govuk-table__cell">
+11 Addison Road                                                            <br>
+                            Kings Heath                                                            <br>
+                            Birmingham                                                            <br>
+                            West Midlands                                                    </td>
+                        <td class="govuk-table__cell">
+B14 7EN                                                    </td>
+                                <td class="govuk-table__cell">
+                                    <a id="edit-7da3e85e-135d-446d-b88f-1322c1f8378a" class="govuk-link edit-venue-link" href="/venues/EditVenue/7da3e85e-135d-446d-b88f-1322c1f8378a" tabindex="5">Edit</a>
+                                    <a id="venue-delete-7da3e85e-135d-446d-b88f-1322c1f8378a" class="govuk-button delete-button" style="display: none;padding-right:1em;margin-bottom: 0px;" href="/Venues/DeleteVenue?venueId=7da3e85e-135d-446d-b88f-1322c1f8378a">Confirm delete</a>
+                                </td>
+                                <td class="govuk-table__cell">
+                                    <a href="#" class="govuk-link delete" id="delete-7da3e85e-135d-446d-b88f-1322c1f8378a" data-venue-id="7da3e85e-135d-446d-b88f-1322c1f8378a" style="padding-right:1em">Delete</a>
+                                    <a href="#" class="govuk-link cancel-delete" id="venue-cancel-delete-7da3e85e-135d-446d-b88f-1322c1f8378a" data-venue-id="7da3e85e-135d-446d-b88f-1322c1f8378a" hidden="hidden">Cancel</a>
+                                </td>
+                                <td>
+                                    <a href="#" class="govuk-link cancel-delete" id="venue-cancel-delete-7da3e85e-135d-446d-b88f-1322c1f8378a" data-venue-id="7da3e85e-135d-446d-b88f-1322c1f8378a" hidden="hidden">Cancel</a>
+                                </td>
+                    </tr>
+            </tbody>
+        </table>
     </main>
 </div>

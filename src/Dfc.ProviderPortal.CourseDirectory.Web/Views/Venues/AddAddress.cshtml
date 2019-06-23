@@ -1,0 +1,18 @@
+﻿@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@{
+}
+<a asp-controller="Venues" asp-action="addVenue" class="govuk-back-link">Back</a>
+<div class="govuk-grid-row govuk-body">
+    <main class="govuk-grid-column-full">
+        <h1 class="govuk-heading-l">Add address</h1>
+        <div class="govuk-form-group">
+            <label class="govuk-label" for="event-name">
+                Post code
+            </label>
+            <input class="govuk-input govuk-!-width-one-quarter" id="event-name" name="event-name" type="text">
+        </div>
+        <a asp-controller="Venues" asp-action="SelectAddress" class="govuk-button">Find address</a>
+    </main>
+</div>
