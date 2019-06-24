@@ -11,7 +11,7 @@
 
     <div class="govuk-grid-row govuk-!-margin-bottom-9">
 
-        <div class="govuk-grid-column-two-thirds">
+        <div class="govuk-grid-column-full">
             <form action="@ViewBag.Target" class="site-search ui-front govuk-!-margin-bottom-6" id="header-search" method="post" role="search">
                 <h2 class="govuk-heading-s">Search for a provider</h2>
                 <div class="header-search-content">
@@ -27,16 +27,7 @@
             </form>
             @*<partial name="_CDHeroSearch" />*@
 
-            <div class="govuk-grid-row govuk-!-margin-bottom-6">
-                <div class="govuk-grid-column-full">
-                    <div class="cd-status-panel grey">
-                        <h2 class="govuk-heading-s">Provider Onboarding</h2>
-                        <span class="govuk-heading-m">5</span>
-                        <a asp-controller="Home" asp-action="Onboarding" class="govuk-link">View</a>
-                    </div>
-                </div>
 
-            </div>
             <div class="govuk-grid-row">
                 <div class="govuk-grid-column-one-half">
                     <div class="cd-status-panel blue">
@@ -44,31 +35,34 @@
                         <span class="govuk-heading-m">25</span>
                         <a asp-controller="Home" asp-action="Reports" class="govuk-link">View</a>
                     </div>
-                </div>
-                <div class="govuk-grid-column-one-half">
+                    <div class="cd-status-panel grey govuk-!-margin-bottom-6">
+                        <h2 class="govuk-heading-s">Provider Onboarding</h2>
+                        <span class="govuk-heading-m">5</span>
+                        <a asp-controller="Home" asp-action="Onboarding" class="govuk-link">View</a>
+                    </div>
                     <div class="cd-status-panel grey">
                         <h2 class="govuk-heading-s">Quality assurance</h2>
                         <span class="govuk-heading-m">25</span>
                         <a asp-controller="Home" asp-action="qa" class="govuk-link">Start</a>
                     </div>
                 </div>
+                <div class="govuk-grid-column-one-half">
+                    <div class="cd-status-panel grey govuk-body">
+
+                        <h2 class="govuk-heading-m ">Recent searches</h2>
+
+
+                        <ul class="govuk-list">
+                            <li><a href="#" class="govuk-link">College 1</a></li>
+                            <li><a href="#" class="govuk-link">Prince training</a></li>
+                            <li><a href="#" class="govuk-link">Bristol</a></li>
+                        </ul>
+                    </div>
+                </div>
             </div>
 
         </div>
-        <div class="govuk-grid-column-one-third">
 
-            <div class="cd-status-panel grey govuk-body">
-
-                    <h2 class="govuk-heading-m ">Recent searches</h2>
-
-
-                <ul class="govuk-list">
-                    <li><a href="#" class="govuk-link">College 1</a></li>
-                    <li><a href="#" class="govuk-link">Prince training</a></li>
-                    <li><a href="#" class="govuk-link">Bristol</a></li>
-                </ul>
-            </div>
-        </div>
     </div>
 
 </div>
