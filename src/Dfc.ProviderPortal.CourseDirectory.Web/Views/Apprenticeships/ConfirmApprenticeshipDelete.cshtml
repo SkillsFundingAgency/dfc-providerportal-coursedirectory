@@ -14,11 +14,11 @@
         <table class="govuk-table">
             <caption class="govuk-table__caption">Apprenticeship</caption>
             @*<thead class="govuk-table__head">
-            <tr class="govuk-table__row">
-                <th class="govuk-table__header" scope="col">Date</th>
-                <th class="govuk-table__header" scope="col">Amount</th>
-            </tr>
-        </thead>*@
+                <tr class="govuk-table__row">
+                    <th class="govuk-table__header" scope="col">Date</th>
+                    <th class="govuk-table__header" scope="col">Amount</th>
+                </tr>
+            </thead>*@
             <tbody class="govuk-table__body">
                 <tr class="govuk-table__row">
                     <th class="govuk-table__header" scope="row">Apprenticeship name</th>
@@ -30,7 +30,13 @@
                 </tr>
             </tbody>
         </table>
-        <h2 class="govuk-heading-s">Do you want to permanently delete this apprenticeship? This can’t be undone.</h2>
+        <div class="govuk-warning-text">
+            <span class="govuk-warning-text__icon" aria-hidden="true">!</span>
+            <strong class="govuk-warning-text__text">
+                <span class="govuk-warning-text__assistive">Warning</span>
+                Are you sure?
+            </strong>
+        </div>
         <div class="govuk-radios govuk-!-margin-bottom-6">
             <div class="govuk-radios__item">
                 <input class="govuk-radios__input" id="where-do-you-live-1" name="where-do-you-live" type="radio" value="ConfirmationDelete">
@@ -48,6 +54,6 @@
         <div class="cta-container">
             <a class="govuk-button govuk-!-margin-right-3" asp-controller="Apprenticeships" asp-action="DeleteConfirm">Confirm</a>
         </div>
-        </div>
+    </div>
 </div>
 
