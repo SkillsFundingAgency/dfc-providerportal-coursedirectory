@@ -1,0 +1,79 @@
+﻿
+@{
+    ViewData["Title"] = "Index";
+}
+
+
+<div class="cd-dashboard provider">
+    <span class="govuk-caption-xl">Course Directory</span>
+    <h1 class="govuk-heading-xl cd-dashboard-title">Helpdesk dashboard</h1>
+    <hr class="spacer" />
+
+    <div class="govuk-grid-row govuk-!-margin-bottom-9">
+        <div class="govuk-grid-column-two-thirds">
+            <div class="govuk-grid-row govuk-!-margin-bottom-6">
+                <div class="govuk-grid-column-full govuk-body">
+                    <label for="my-autocomplete" class="govuk-heading-s">Select your country</label>
+                    <div class="wrapper govuk-!-margin-bottom-6">
+                        <div id="my-autocomplete-container" class="one "></div>
+                        <div class="cd-c-search__item cd-search__submit-wrapper two">
+                            <button type="submit" class=" submit">Search</button>
+                        </div>
+                    </div>
+                    <div class=" ">
+                        <h2 class="govuk-heading-s">Provider Onboarding</h2>
+                        <p>Add a new provider.</p>
+                        <a asp-controller="Home" asp-action="Onboarding" class="govuk-button">Add a provider</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="govuk-grid-column-one-third">
+            <aside class="sidebar">
+                <h3 class="govuk-heading-s">Your recent searches</h3>
+                <div class="widget white">
+
+                    <ul class="govuk-list">
+                        <li><a href="#" class="govuk-link">College 1</a></li>
+                        <li><a href="#" class="govuk-link">Prince training</a></li>
+                        <li><a href="#" class="govuk-link">Bristol</a></li>
+                    </ul>
+
+                </div>
+            </aside>
+            <aside class="sidebar">
+                <h3 class="govuk-heading-s">Your reports</h3>
+                <div class="widget white">
+
+                    <ul class="govuk-list">
+                        <li><a href="#" class="govuk-link">College 1</a></li>
+                        <li><a href="#" class="govuk-link">Prince training</a></li>
+                        <li><a href="#" class="govuk-link">Bristol</a></li>
+                    </ul>
+
+                </div>
+            </aside>
+        </div>
+    </div>
+</div>
+
+<script type="text/javascript" src="/js/accessible-autocomplete.min.js"></script>
+<script type="text/javascript">
+
+
+
+
+const countries = [
+  'College',
+  'Training',
+  'Provider',
+  'New College'
+]
+
+accessibleAutocomplete({
+  element: document.querySelector('#my-autocomplete-container'),
+  id: 'my-autocomplete', // To match it to the existing <label>.
+  source: countries
+})
+
+    </script>

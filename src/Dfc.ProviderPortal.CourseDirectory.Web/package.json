@@ -20,8 +20,9 @@
     "rimraf": "^2.6.2"
   },
   "dependencies": {
+    "accessible-autocomplete": "^1.6.2",
     "govuk-frontend": "^2.11.0",
-    "jquery": "^3.3.1",
+    "jquery": "^3.4.1",
     "jquery-validation": "^1.17.0",
     "jquery-validation-unobtrusive": "^3.2.10"
   }
