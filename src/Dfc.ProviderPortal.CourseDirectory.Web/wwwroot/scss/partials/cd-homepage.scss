@@ -75,13 +75,15 @@ $grey: #6f777b;
 }
 
 .wrapper {
-    display:flex;
-    .one,.two{
-        flex-direction:row;
+    display: flex;
+
+    .one, .two {
+        flex-direction: row;
     }
 
-    .one{
-        width:80%;
+    .one {
+        width: 80%;
+        border: 2px solid black;
     }
 }
 
