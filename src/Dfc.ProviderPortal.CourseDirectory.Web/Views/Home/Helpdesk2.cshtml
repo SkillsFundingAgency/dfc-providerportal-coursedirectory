@@ -20,15 +20,24 @@
                             <button type="submit" class=" submit">Search</button>
                         </div>
                     </div>
-                    <div class=" ">
-                        <h2 class="govuk-heading-s">Provider Onboarding</h2>
-                        <p>Add a new provider.</p>
-                        <a asp-controller="Home" asp-action="Onboarding" class="govuk-button">Add a provider</a>
-                    </div>
-                    <div class=" ">
-                        <h2 class="govuk-heading-s">Add a new user</h2>
-                        <p>Add a new provider.</p>
-                        <a asp-controller="Home" asp-action="Onboarding" class="govuk-button govuk-button--secondary">Add a new user</a>
+
+
+
+                </div>
+                <div class="govuk-grid-row govuk-body">
+                    <div class="govuk-grid-column-full ">
+                        <div class=" homepage-item govuk-grid-column-one-half">
+                            <a asp-controller="home" asp-action="Onboarding" class="govuk-link">Onboarding</a>
+
+                            <p>Onboard providers to the Course directory</p>
+
+                        </div>
+                        <div class=" homepage-item govuk-grid-column-one-half">
+                            <a asp-controller="home" asp-action="index6" class="govuk-link">Add a new user</a>
+
+                            <p>Add a new provider to the Course directory via DFE sign in.</p>
+
+                        </div>
                     </div>
                 </div>
             </div>
