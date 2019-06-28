@@ -2,120 +2,136 @@
     For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
 *@
 @{
+
+
+    ViewData["Target"] = "/providers/results/";
+    ViewData["Area"] = "Courses";
 }
+
+<div class="govuk-breadcrumbs">
+    <ol class="govuk-breadcrumbs__list">
+        <li class="govuk-breadcrumbs__list-item">
+            <a class="govuk-breadcrumbs__link" href="/home/index6">Home</a>
+        </li>
+        <li class="govuk-breadcrumbs__list-item">
+            <a class="govuk-breadcrumbs__link" href="/courses/index">@ViewBag.Area</a>
+        </li>
+        <li class="govuk-breadcrumbs__list-item" aria-current="page">Add a course</li>
+    </ol>
+</div>
 <h1 class="govuk-heading-l">Add a course</h1>
 <form>
-<div class="govuk-character-count govuk-!-margin-bottom-9" data-module="character-count" data-maxlength="200">
-    <div class="govuk-form-group">
-        <label class="govuk-label govuk-!-font-size-24" for="with-hint">
-            Who is this course for?
-        </label>
-        <span id="with-hint-hint" class="govuk-hint">
-            Who is this course designed for.
+    <div class="govuk-character-count govuk-!-margin-bottom-9" data-module="character-count" data-maxlength="200">
+        <div class="govuk-form-group">
+            <label class="govuk-label govuk-!-font-size-24" for="with-hint">
+                Who is this course for?
+            </label>
+            <span id="with-hint-hint" class="govuk-hint">
+                Who is this course designed for.
+            </span>
+            <textarea class="govuk-textarea js-character-count " id="with-hint" name="with-hint" rows="5" aria-describedby="with-hint-hint"></textarea>
+        </div>
+
+        <span id="with-hint-info" class="govuk-hint govuk-character-count__message" aria-live="polite">
+            You can enter up to 200 characters
         </span>
-        <textarea class="govuk-textarea js-character-count " id="with-hint" name="with-hint" rows="5" aria-describedby="with-hint-hint"></textarea>
     </div>
 
-    <span id="with-hint-info" class="govuk-hint govuk-character-count__message" aria-live="polite">
-        You can enter up to 200 characters
-    </span>
-</div>
 
+    <div class="govuk-character-count govuk-!-margin-bottom-9" data-module="character-count" data-maxlength="4000">
+        <div class="govuk-form-group">
+            <label class="govuk-label govuk-!-font-size-24" for="entry-with-hint">
+                Entry Requirements
+            </label>
+            <span id="entry-with-hint-hint" class="govuk-hint">
+                Please list the entry requirements for this course.
+            </span>
+            <textarea class="govuk-textarea js-character-count " id="entry-with-hint" name="entry-with-hint" rows="8" aria-describedby="entry-with-hint-hint"></textarea>
+        </div>
 
-<div class="govuk-character-count govuk-!-margin-bottom-9" data-module="character-count" data-maxlength="4000">
-    <div class="govuk-form-group">
-        <label class="govuk-label govuk-!-font-size-24" for="entry-with-hint">
-            Entry Requirements
-        </label>
-        <span id="entry-with-hint-hint" class="govuk-hint">
-            Please list the entry requirements for this course.
+        <span id="entry-with-hint-info" class="govuk-hint govuk-character-count__message" aria-live="polite">
+            You can enter up to 4000 characters
         </span>
-        <textarea class="govuk-textarea js-character-count " id="entry-with-hint" name="entry-with-hint" rows="8" aria-describedby="entry-with-hint-hint"></textarea>
     </div>
 
-    <span id="entry-with-hint-info" class="govuk-hint govuk-character-count__message" aria-live="polite">
-        You can enter up to 4000 characters
-    </span>
-</div>
 
+    <div class="govuk-character-count govuk-!-margin-bottom-9" data-module="character-count" data-maxlength="200">
+        <div class="govuk-form-group">
+            <label class="govuk-label govuk-!-font-size-24" for="what-with-hint">
+                What You'll learn
+            </label>
+            <span id="gwith-hint-hint" class="govuk-hint">
+                Details of topics covered on the course.
+            </span>
+            <textarea class="govuk-textarea js-character-count " id="what-with-hint" name="gwith-hint" rows="5" aria-describedby="gwith-hint-hint"></textarea>
+        </div>
 
-<div class="govuk-character-count govuk-!-margin-bottom-9" data-module="character-count" data-maxlength="200">
-    <div class="govuk-form-group">
-        <label class="govuk-label govuk-!-font-size-24" for="what-with-hint">
-            What You'll learn
-        </label>
-        <span id="gwith-hint-hint" class="govuk-hint">
-            Details of topics covered on the course.
+        <span id="what-with-hint-info" class="govuk-hint govuk-character-count__message" aria-live="polite">
+            You can enter up to 200 characters
         </span>
-        <textarea class="govuk-textarea js-character-count " id="what-with-hint" name="gwith-hint" rows="5" aria-describedby="gwith-hint-hint"></textarea>
     </div>
 
-    <span id="what-with-hint-info" class="govuk-hint govuk-character-count__message" aria-live="polite">
-        You can enter up to 200 characters
-    </span>
-</div>
+    <div class="govuk-character-count govuk-!-margin-bottom-9" data-module="character-count" data-maxlength="200">
+        <div class="govuk-form-group">
+            <label class="govuk-label govuk-!-font-size-24" for="how-with-hint">
+                How You'll learn
+            </label>
+            <span id="gwith-hint-hint" class="govuk-hint">
+                Describe the course delivery methods.
+            </span>
+            <textarea class="govuk-textarea js-character-count " id="how-with-hint" name="gwith-hint" rows="5" aria-describedby="gwith-hint-hint"></textarea>
+        </div>
 
-<div class="govuk-character-count govuk-!-margin-bottom-9" data-module="character-count" data-maxlength="200">
-    <div class="govuk-form-group">
-        <label class="govuk-label govuk-!-font-size-24" for="how-with-hint">
-            How You'll learn
-        </label>
-        <span id="gwith-hint-hint" class="govuk-hint">
-            Describe the course delivery methods.
+        <span id="how-with-hint-info" class="govuk-hint govuk-character-count__message" aria-live="polite">
+            You can enter up to 200 characters
         </span>
-        <textarea class="govuk-textarea js-character-count " id="how-with-hint" name="gwith-hint" rows="5" aria-describedby="gwith-hint-hint"></textarea>
     </div>
+    <div class="govuk-character-count govuk-!-margin-bottom-9" data-module="character-count" data-maxlength="4000">
+        <div class="govuk-form-group">
+            <label class="govuk-label govuk-!-font-size-24" for="bring-with-hint">
+                What You'll need to bring
+            </label>
+            <span id="bring-with-hint-hint" class="govuk-hint">
+                Enter details of any equipment learners will need to bring to sessions.
+            </span>
+            <textarea class="govuk-textarea js-character-count " id="bring-with-hint" name="gwith-hint" rows="8" aria-describedby="bring-with-hint-hint"></textarea>
+        </div>
 
-    <span id="how-with-hint-info" class="govuk-hint govuk-character-count__message" aria-live="polite">
-        You can enter up to 200 characters
-    </span>
-</div>
-<div class="govuk-character-count govuk-!-margin-bottom-9" data-module="character-count" data-maxlength="4000">
-    <div class="govuk-form-group">
-        <label class="govuk-label govuk-!-font-size-24" for="bring-with-hint">
-            What You'll need to bring
-        </label>
-        <span id="bring-with-hint-hint" class="govuk-hint">
-            Enter details of any equipment learners will need to bring to sessions.
+        <span id="bring-with-hint-info" class="govuk-hint govuk-character-count__message" aria-live="polite">
+            You can enter up to 4000 characters
         </span>
-        <textarea class="govuk-textarea js-character-count " id="bring-with-hint" name="gwith-hint" rows="8" aria-describedby="bring-with-hint-hint"></textarea>
     </div>
+    <div class="govuk-character-count govuk-!-margin-bottom-9" data-module="character-count" data-maxlength="4000">
+        <div class="govuk-form-group">
+            <label class="govuk-label govuk-!-font-size-24" for="assessed-with-hint">
+                How You'll be assessed
+            </label>
+            <span id="assessed-with-hint-hint" class="govuk-hint">
+                Describe the course assessment methods.
+            </span>
+            <textarea class="govuk-textarea js-character-count " id="assessed-with-hint" name="assessed-with-hint" rows="8" aria-describedby="assessed-with-hint-hint"></textarea>
+        </div>
 
-    <span id="bring-with-hint-info" class="govuk-hint govuk-character-count__message" aria-live="polite">
-        You can enter up to 4000 characters
-    </span>
-</div>
-<div class="govuk-character-count govuk-!-margin-bottom-9" data-module="character-count" data-maxlength="4000">
-    <div class="govuk-form-group">
-        <label class="govuk-label govuk-!-font-size-24" for="assessed-with-hint">
-            How You'll be assessed
-        </label>
-        <span id="assessed-with-hint-hint" class="govuk-hint">
-            Describe the course assessment methods.
+        <span id="assessed-with-hint-info" class="govuk-hint govuk-character-count__message" aria-live="polite">
+            You can enter up to 4000 characters
         </span>
-        <textarea class="govuk-textarea js-character-count " id="assessed-with-hint" name="assessed-with-hint" rows="8" aria-describedby="assessed-with-hint-hint"></textarea>
     </div>
+    <div class="govuk-character-count govuk-!-margin-bottom-9" data-module="character-count" data-maxlength="200">
+        <div class="govuk-form-group">
+            <label class="govuk-label govuk-!-font-size-24" for="next-with-hint">
+                Where next
+            </label>
+            <span id="next-with-hint-hint" class="govuk-hint">
+                Provide details of the possible next destinations for learners.
+            </span>
+            <textarea class="govuk-textarea js-character-count " id="next-with-hint" name="gwith-hint" rows="5" aria-describedby="next-with-hint-hint"></textarea>
+        </div>
 
-    <span id="assessed-with-hint-info" class="govuk-hint govuk-character-count__message" aria-live="polite">
-        You can enter up to 4000 characters
-    </span>
-</div>
-<div class="govuk-character-count govuk-!-margin-bottom-9" data-module="character-count" data-maxlength="200">
-    <div class="govuk-form-group">
-        <label class="govuk-label govuk-!-font-size-24" for="next-with-hint">
-           Where next
-        </label>
-        <span id="next-with-hint-hint" class="govuk-hint">
-            Provide details of the possible next destinations for learners.
+        <span id="next-with-hint-info" class="govuk-hint govuk-character-count__message" aria-live="polite">
+            You can enter up to 200 characters
         </span>
-        <textarea class="govuk-textarea js-character-count " id="next-with-hint" name="gwith-hint" rows="5" aria-describedby="next-with-hint-hint"></textarea>
     </div>
-
-    <span id="next-with-hint-info" class="govuk-hint govuk-character-count__message" aria-live="polite">
-        You can enter up to 200 characters
-    </span>
-</div>
-<button type="submit" class="govuk-button" formaction="/AddCourse/Details" formmethod="post">
-    Continue
-</button>
+    <button type="submit" class="govuk-button" formaction="/AddCourse/Details" formmethod="post">
+        Continue
+    </button>
 </form>

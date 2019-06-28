@@ -3,9 +3,7 @@
     
 
 }
-.cd-flex{
-    display:flex;
-}
+
 
 
 .cd-subHead {
@@ -38,6 +36,7 @@
         font-size: 0.9em;
         .cd-secondary-nav--item {
             text-decoration:none;
+            padding:0 0.5em;
         }
     }
 }

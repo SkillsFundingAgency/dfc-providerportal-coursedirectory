@@ -1,0 +1,39 @@
+﻿.cd-right {
+    float:right;
+}
+.cd-flex {
+    display: flex;
+}
+
+.select-list {
+    display: none;
+    transition: all .5s ease-in-out;
+}
+
+.no-bottom-padding {
+    padding-bottom:0em;
+}
+
+.hide {
+    display: none;
+    transition: all .5s ease-in-out;
+}
+
+.visible {
+    display: block;
+    transition: all .5s ease-in-out;
+}
+
+
+.visible-table {
+    display: table;
+    transition: all .5s ease-in-out;
+}
+
+.minwidth200 {
+    min-width: 200px;
+}
+
+.float-right {
+    float: right;
+}

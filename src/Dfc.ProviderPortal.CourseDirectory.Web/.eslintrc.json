@@ -1,8 +1,10 @@
-{
+﻿{
   "extends": "eslint:recommended",
   "env": {
     "browser": true,
-    "es6": true
+    "commonjs": true,
+    "es6": true,
+    "jquery": true
   },
   "globals": {
     "jQuery": true

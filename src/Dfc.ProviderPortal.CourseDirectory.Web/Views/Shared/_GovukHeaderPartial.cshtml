@@ -1,50 +1,34 @@
 ﻿<header class="govuk-header " role="banner" data-module="header">
-    <div class="govuk-header__container  cd-fullwidth-container">
+    <div class="govuk-header__container  cd-fullwidth-container cd-header">
 
-        <div class="govuk-header__logo">
-            <a asp-controller="Home" asp-action="index" class="govuk-header__link govuk-header__link--homepage">
 
-            </a>
-        </div>
-        <div class="govuk-header__content">
+        <div class="govuk-header__content cd-header--content">
 
             <a href="/" class="govuk-header__link govuk-header__link--service-name">
-                Course Directory
+                Publish to the course directory
             </a>
+            <a href="#" class="cd-right cd-header--link">Sign out</a>
 
-            <button type="button" role="button" class="govuk-header__menu-button js-header-toggle" aria-controls="navigation" aria-label="Show or hide Top Level Navigation">Menu</button>
-            @*<nav>
+            @*<button type="button" role="button" class="govuk-header__menu-button js-header-toggle" aria-controls="navigation" aria-label="Show or hide Top Level Navigation">Menu</button>*@
+            <nav>
                 <ul id="navigation" class="govuk-header__navigation " aria-label="Top Level Navigation">
                     <li class="govuk-header__navigation-item govuk-header__navigation-item--active">
-                        <a class="govuk-header__link" href="#1">
-                            Navigation item 1
-                        </a>
+                        <a class="govuk-header__link" asp-controller="courses" asp-action="index">Courses</a>
                     </li>
                     <li class="govuk-header__navigation-item">
-                        <a class="govuk-header__link" href="#2">
-                            Navigation item 2
-                        </a>
+                        <a class="govuk-header__link" asp-controller="Apprenticeships" asp-action="home">Apprenticeships</a>
                     </li>
                     <li class="govuk-header__navigation-item">
-                        <a class="govuk-header__link" href="#3">
-                            Navigation item 3
-                        </a>
+
+                        <a class="govuk-header__link" asp-controller="AddCourse" asp-action="BulkUpload">Bulk Upload</a>
                     </li>
                 </ul>
-            </nav>*@
+            </nav>
         </div>
     </div>
 </header>
 
-<div class="cd-subHead">
-    <div class="cd-fullwidth-container cd-subHead-container">
-        <span class="cd-subHead--item">Provider name</span>
-        <div class="cd-subHead--item">
-            <span>Username</span>
-            <span>log out</span>
-        </div>
-    </div>
-</div>
+
 <div class="govuk-phase-banner cd-fullwidth-container">
     <p class="govuk-phase-banner__content">
         <strong class="govuk-tag govuk-phase-banner__content__tag ">
@@ -56,11 +40,5 @@
         </span>
     </p>
 </div>
-<div class="navigation-container cd-fullwidth-container govuk-body">
-    <nav class="cd-secondary-nav">
-        <a class="cd-secondary-nav--item govuk-link"  asp-controller="courses" asp-action="index">Courses</a>
-        <a class="cd-secondary-nav--item govuk-link" asp-controller="Apprenticeships" asp-action="home">Apprenticeships</a>
-        <a class="cd-secondary-nav--item govuk-link" asp-controller="AddCourse" asp-action="BulkUpload">Bulk Upload</a>
-    </nav>
-</div>
+
 

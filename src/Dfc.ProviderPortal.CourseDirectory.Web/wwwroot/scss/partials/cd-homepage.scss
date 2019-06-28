@@ -22,6 +22,28 @@ $grey: #6f777b;
         font-weight: 600;
     }
 }
+.sortable {
+    th {
+        color: #005ea5;
+        cursor:pointer;
+    }
+}
+.cd-migration-panel {
+    background-color: #f8f8f8;
+    border-left: 1px solid #28a197;
+    padding: .5rem 1rem;
+
+    &__title {
+        font-size: 1.1em;
+        font-weight: 400;
+        margin:0;
+    }
+
+    &__number {
+        font-size: 1.4em;
+        font-weight: 600;
+    }
+}
 .cd-status-panel {
     background-color: #dee0e2;
     display: flex;
@@ -29,8 +51,12 @@ $grey: #6f777b;
     margin-bottom: 1.5em;
     text-align: center;
     /*justify-content: center;*/
-    height:100%;
+    height: 100%;
     flex-direction: column;
+
+    &.border-left-red {
+        border-left: 4px solid red;
+    }
 
     &.blue {
         text-align: left;

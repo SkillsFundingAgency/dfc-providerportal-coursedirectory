@@ -4,33 +4,7 @@
     padding: 0.5em;
 }
 
-.select-list {
-    display: none;
-    transition: all .5s ease-in-out;
-}
-.hide {
-    display: none;
-    transition: all .5s ease-in-out;
-}
 
-.visible {
-    display:block;
-    transition: all .5s ease-in-out;
-}
-
-
-.visible-table {
-    display: table;
-    transition: all .5s ease-in-out;
-}
-
-.minwidth200{
-    min-width:200px;
-}
-
-.float-right {
-    float:right;
-}
 
 .summary--linked-title {
     display: flex;

@@ -1,9 +1,15 @@
-﻿.govuk-header__container {
-    border-bottom: none !important;
-}
+﻿
 
-.govuk-header__content {
-    margin-bottom: 10px;
+.cd-header {
+
+
+    &--content {
+        width:100%;
+    }
+
+    &--link {
+        color: #fff;
+    }
 }
 
 .cd-header-blue {
