@@ -33,7 +33,7 @@
 
         let $table = $(this);
         let $tbody = $table.find('tbody');
-        let $controls = $table.find('th');
+        let $controls = $table.find('th.main');
         let rows = $tbody.find('tr').toArray();
 
         $controls.on('click', function () {

@@ -5,7 +5,7 @@
 }
 <div class="govuk-grid-row">
     <main class="govuk-grid-column-full govuk-body ">
-        <h1 class="govuk-heading-l">Migration report</h1>
+        <h1 class="govuk-heading-l">Migration status report</h1>
         <div class="govuk-grid-row govuk-!-margin-bottom-9 homepage-item--container">
             <div class="govuk-grid-column-one-third homepage-item ">
                 <div class="cd-migration-panel">
@@ -29,35 +29,44 @@
         <div class="govuk-grid-row">
             <div class="govuk-grid-column-full">
                 <table class="govuk-table sortable">
-                    <caption class="govuk-table__caption govuk-!-margin-bottom-6">Migration data quality</caption>
+                    <caption class="govuk-table__caption govuk-!-margin-bottom-6">Migration data quality by provider</caption>
                     <thead class="govuk-table__head">
                         <tr class="govuk-table__row">
-                            <th data-sort="name"class="govuk-table__header app-custom-class" scope="col">Provider</th>
-                            <th data-sort="number" class="govuk-table__header app-custom-class" scope="col">Migration rate %</th>
-                            <th data-sort="number" class="govuk-table__header app-custom-class" scope="col">Against whole provision % </th>
+                            <th data-sort="name"class="govuk-table__header app-custom-class main" scope="col">Provider <span class="updown__arrows cd-right">&#8645;</span></th>
+                            <th data-sort="number" class="govuk-table__header app-custom-class main" scope="col">Migration rate % <span class="updown__arrows cd-right">&#8645;</span></th>
+                            <th data-sort="number" class="govuk-table__header app-custom-class main" scope="col">Against whole provision % <span class="updown__arrows cd-right">&#8645;</span></th>
                         </tr>
                     </thead>
                     <tbody class="govuk-table__body">
                         <tr class="govuk-table__row">
-                            <th class="govuk-table__header" scope="row">London College</th>
+                            <th class="govuk-table__header underline" scope="row"><a href="#">London College</a></th>
                             <td class="govuk-table__cell">12</td>
                             <td class="govuk-table__cell">0.8</td>
                         </tr>
                         <tr class="govuk-table__row">
-                            <th class="govuk-table__header" scope="row">Sheffield college</th>
+                            <th class="govuk-table__header underline" scope="row"><a href="#">Sheffield college</a></th>
                             <td class="govuk-table__cell">25</td>
                             <td class="govuk-table__cell">10</td>
                         </tr>
                         <tr class="govuk-table__row">
-                            <th class="govuk-table__header" scope="row">Derby College</th>
+                            <th class="govuk-table__header underline" scope="row"><a href="#">Derby College</a></th>
                             <td class="govuk-table__cell">16</td>
                             <td class="govuk-table__cell">5</td>
+                        </tr>
+                        <tr class="govuk-table__row">
+                            <th class="govuk-table__header underline" scope="row"><a href="#">Kale College</a></th>
+                            <td class="govuk-table__cell">26</td>
+                            <td class="govuk-table__cell">15</td>
+                        </tr>
+                        <tr class="govuk-table__row">
+                            <th class="govuk-table__header underline" scope="row"><a href="#">Star training</a></th>
+                            <td class="govuk-table__cell">36</td>
+                            <td class="govuk-table__cell">35</td>
                         </tr>
                     </tbody>
                 </table>
             </div>
         </div>
-
     </main>
 </div>
 
