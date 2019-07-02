@@ -84,7 +84,8 @@ $grey: #6f777b;
 
     &.grey {
         background-color: #f8f8f8;
-        border: 1px solid #bfc1c3;
+        //border: 1px solid #bfc1c3;
+        border-left: 5px solid #28a197; 
         display: block;
         text-align: left;
         flex-direction: row;

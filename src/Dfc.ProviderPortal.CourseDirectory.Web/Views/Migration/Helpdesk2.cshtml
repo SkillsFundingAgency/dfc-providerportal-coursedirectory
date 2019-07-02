@@ -1,0 +1,146 @@
+﻿@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@{
+}
+<div class="govuk-grid-row">
+    <main class="govuk-grid-column-full govuk-body ">
+        <h1 class="govuk-heading-l">Migration status report</h1>
+        <div class="govuk-grid-row govuk-!-margin-bottom-6 homepage-item--container">
+            <div class="govuk-grid-column-one-third homepage-item ">
+                <div class="cd-migration-panel">
+                    <h2 class="cd-migration-panel__title">Providers migrated</h2>
+                    <span class="cd-migration-panel__number">1,234</span><br />
+                    <span class="govuk-body-s">12% of all 12,345 providers</span>
+                </div>
+            </div>
+            <div class="govuk-grid-column-one-third homepage-item ">
+                <div class="cd-migration-panel  ">
+                    <h2 class="cd-migration-panel__title">Courses migrated</h2>
+                    <span class="cd-migration-panel__number">43,210</span><br />
+                    <span class="govuk-body-s">10% of all 43,218 courses</span>
+                </div>
+            </div>
+            <div class="govuk-grid-column-one-third homepage-item ">
+                <div class="cd-migration-panel">
+                    <h2 class="cd-migration-panel__title"> Courses with errors</h2>
+                    <span class="cd-migration-panel__number">8,912</span><br />
+                    <span class="govuk-body-s">14% of 99,876 migrated courses</span>
+                </div>
+            </div>
+        </div>
+        <div class="govuk-grid-row govuk-!-margin-bottom-6">
+            <div class="govuk-grid-column-full">
+                <div class="cd-migration-panel">
+                    It can take up to 8 weeks to register a lasting power of attorney if there are no mistakes in the application.
+                </div>
+            </div>
+        </div>
+        <div class="govuk-grid-row govuk-!-margin-bottom-6 ">
+            <div class="govuk-grid-column-two-thirds">
+                <form action="@ViewBag.Target" class="site-search ui-front" id="header-search" method="post" role="search">
+                    <div class="header-search-content">
+                        <h2>Search for a provider</h2>
+                        <div class="search-input-wrapper">
+                            <label class="cd-search__label" for="search">@ViewBag.Placeholder</label>
+                            <input class="govuk-input  search-input js-search-focus" id="search" name="SearchTerm" type="search">
+                            <div class="cd-c-search__item cd-search__submit-wrapper">
+                                <button type="submit" class=" submit">Search</button>
+                            </div>
+                        </div>
+                    </div>
+                </form>
+            </div>
+
+            <div class="govuk-grid-column-one-third">
+                @*<div class="govuk-form-group">
+                    <fieldset class="govuk-fieldset" aria-describedby="waste-hint">
+                        <legend class="govuk-fieldset__legend govuk-fieldset__legend--s">
+
+                            Filter
+
+                        </legend>
+
+                        <div class="govuk-checkboxes govuk-checkboxes--small">
+                            <div class="govuk-checkboxes__item">
+                                <input class="govuk-checkboxes__input" id="waste-1" name="waste" type="checkbox" value="carcasses">
+                                <label class="govuk-label govuk-checkboxes__label" for="waste-1">
+                                   F.E.
+                                </label>
+                            </div>
+                            <div class="govuk-checkboxes__item">
+                                <input class="govuk-checkboxes__input" id="waste-2" name="waste" type="checkbox" value="mines">
+                                <label class="govuk-label govuk-checkboxes__label" for="waste-2">
+                                    Apprenticeships
+                                </label>
+                            </div>
+
+                        </div>
+                    </fieldset>
+                </div>*@
+            </div>
+        </div>
+        <div class="govuk-grid-row">
+            <div class="govuk-grid-column-full">
+                <h2>Migration data by provider</h2>
+                <table class="govuk-table sortable">
+                    @*<caption class="govuk-table__caption govuk-!-margin-bottom-6">Migration data quality by provider</caption>*@
+                    <thead class="govuk-table__head">
+                        <tr class="govuk-table__row">
+                            <th data-sort="name" class="govuk-table__header app-custom-class main" scope="col">Provider <span class="updown__arrows cd-right">&#8597;</span></th>
+                            <th data-sort="name" class="govuk-table__header app-custom-class main" scope="col">Provider type <span class="updown__arrows cd-right">&#8597;</span></th>
+                            <th data-sort="date" class="govuk-table__header app-custom-class main" scope="col">Migration date <span class="updown__arrows cd-right">&#8597;</span></th>
+                            <th data-sort="number" class="govuk-table__header app-custom-class main" scope="col">Migration rate % <span class="updown__arrows cd-right">&#8597;</span></th>
+                            <th data-sort="number" class="govuk-table__header app-custom-class main" scope="col">Against whole provision % <span class="updown__arrows cd-right">&#8597;</span></th>
+                            <th data-sort="name" class="govuk-table__header app-custom-class main" scope="col"> </th>
+                        </tr>
+                    </thead>
+                    <tbody class="govuk-table__body">
+                        <tr class="govuk-table__row">
+                            <th class="govuk-table__header underline" scope="row"><a href="#">London College</a></th>
+                            <td class="govuk-table__cell">F.E.</td>
+                            <td class="govuk-table__cell">23 April 2019</td>
+                            <td class="govuk-table__cell">12</td>
+                            <td class="govuk-table__cell">0.8</td>
+                            <td class="govuk-table__cell"><a href="#">View</a></td>
+                        </tr>
+                        <tr class="govuk-table__row">
+                            <th class="govuk-table__header underline" scope="row"><a href="#">Sheffield college</a></th>
+                            <td class="govuk-table__cell">Both</td>
+                            <td class="govuk-table__cell">23 April 2019</td>
+                            <td class="govuk-table__cell">25</td>
+                            <td class="govuk-table__cell">10</td>
+                            <td class="govuk-table__cell"><a href="#">View</a></td>
+                        </tr>
+                        <tr class="govuk-table__row">
+                            <th class="govuk-table__header underline" scope="row"><a href="#">Derby College</a></th>
+                            <td class="govuk-table__cell">F.E.</td>
+                            <td class="govuk-table__cell">23 April 2019</td>
+                            <td class="govuk-table__cell">16</td>
+                            <td class="govuk-table__cell">5</td>
+                            <td class="govuk-table__cell"><a href="#">View</a></td>
+                        </tr>
+                        <tr class="govuk-table__row">
+                            <th class="govuk-table__header underline" scope="row"><a href="#">Kale College</a></th>
+                            <td class="govuk-table__cell">Apprenticeship</td>
+                            <td class="govuk-table__cell">23 January 2019</td>
+                            <td class="govuk-table__cell">1</td>
+                            <td class="govuk-table__cell">1</td>
+                            <td class="govuk-table__cell"><a href="#">View</a></td>
+                        </tr>
+                        <tr class="govuk-table__row">
+                            <th class="govuk-table__header underline" scope="row"><a href="#">Star training</a></th>
+                            <td class="govuk-table__cell">F.E.</td>
+                            <td class="govuk-table__cell">23 June 2019</td>
+                            <td class="govuk-table__cell">36</td>
+                            <td class="govuk-table__cell">35</td>
+                            <td class="govuk-table__cell"><a href="#">View</a></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </main>
+</div>
+
+
