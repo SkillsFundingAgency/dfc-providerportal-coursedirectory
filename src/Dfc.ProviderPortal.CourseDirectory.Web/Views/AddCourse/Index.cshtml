@@ -7,18 +7,8 @@
     ViewData["Target"] = "/providers/results/";
     ViewData["Area"] = "Courses";
 }
+<a asp-controller="Home" asp-action="Index7" class="govuk-back-link">Back</a>
 
-<div class="govuk-breadcrumbs">
-    <ol class="govuk-breadcrumbs__list">
-        <li class="govuk-breadcrumbs__list-item">
-            <a class="govuk-breadcrumbs__link" href="/home/index6">Home</a>
-        </li>
-        <li class="govuk-breadcrumbs__list-item">
-            <a class="govuk-breadcrumbs__link" href="/courses/index">@ViewBag.Area</a>
-        </li>
-        <li class="govuk-breadcrumbs__list-item" aria-current="page">Add a course</li>
-    </ol>
-</div>
 <h1 class="govuk-heading-l">Add a course</h1>
 <form>
     <div class="govuk-character-count govuk-!-margin-bottom-9" data-module="character-count" data-maxlength="200">

@@ -126,6 +126,15 @@ $grey: #6f777b;
 
 }
 
+.cd-homepage__list {
+    padding-top:1.5em;
+    margin-bottom:1.5em;
+    &--item  a {
+        font-size:1em;
+        font-weight:400;
+    }
+}
+
 .cd-activity-item {
     display: block;
     border-bottom: 1px solid #bfc1c3;
@@ -165,6 +174,7 @@ $grey: #6f777b;
         &.white {
             background-color: white;
             padding: 1em;
+            color:black;
         }
 
         &.blue {
@@ -173,6 +183,10 @@ $grey: #6f777b;
 
         div {
             margin-bottom: .5em;
+        }
+
+        a {
+            font-size:.8em;
         }
     }
 }
@@ -191,6 +205,7 @@ $grey: #6f777b;
         }
     }
 }
+
 
 .autocomplete__wrapper {
     position: relative
@@ -326,4 +341,3 @@ $grey: #6f777b;
         line-height: 1.31579
     }
 }
-
