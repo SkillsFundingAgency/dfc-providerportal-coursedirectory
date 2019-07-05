@@ -12,13 +12,14 @@
 </div>
 <div class=" homepage-item govuk-body ">
     <div class="cd-status-panel blue">
-        <a asp-controller="home" asp-action="Migration3" class="govuk-link">Migration</a>
-        <p>View details of the data we migrated.</p>
+        <p>
+            <a asp-controller="home" asp-action="Migration3" class="govuk-link">Migration </a>  : 
+            View details about the information we have transferred about your courses.
+        </p>
     </div>
 </div>
 
 <div class="cd-dashboard provider govuk-body">
-
     <h1 class="govuk-heading-xl cd-dashboard-title">Publish to the course directory</h1>
     <hr class="spacer" />
     <div class="govuk-grid-row">
@@ -39,7 +40,6 @@
                             <a asp-controller="courses" asp-action="Courselistfullwidth6" class="govuk-link">View, edit, copy or delete a course</a>
                         </li>
                         <li class="cd-homepage__list--item">
-
                             <a asp-controller="AddCourse" asp-action="BulkUpload" class="govuk-link">Bulk upload course information</a>
                         </li>
                     </ul>
@@ -48,7 +48,7 @@
                     <div class="cd-migration-panel  ">
                         <h2 class="cd-migration-panel__title">Manage your apprenticeship training</h2>
                         <span class="cd-migration-panel__number"><a href="#">23</a></span><br />
-                                                                                          <span class="govuk-body-s">apprenticeship training in the course directory</span>
+                        <span class="govuk-body-s">apprenticeship training in the course directory</span>
                     </div>
                     <ul class="govuk-list cd-homepage__list">
                         <li class="cd-homepage__list--item">
@@ -58,7 +58,6 @@
                             <a asp-controller="AddCourse" asp-action="Index" class="govuk-link">View, edit, copy or delete apprenticeship training</a>
                         </li>
                         <li class="cd-homepage__list--item">
-
                             <a asp-controller="AddCourse" asp-action="BulkUpload" class="govuk-link">Bulk upload apprenticeship training information</a>
                         </li>
                     </ul>
