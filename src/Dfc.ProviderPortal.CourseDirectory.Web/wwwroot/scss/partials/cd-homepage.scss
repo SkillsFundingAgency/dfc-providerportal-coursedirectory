@@ -61,6 +61,10 @@ $grey: #6f777b;
     height: 100%;
     flex-direction: column;
 
+    &.slim{
+        padding:0 1em;
+    }
+
     &.border-left-red {
         border-left: 4px solid red;
     }
