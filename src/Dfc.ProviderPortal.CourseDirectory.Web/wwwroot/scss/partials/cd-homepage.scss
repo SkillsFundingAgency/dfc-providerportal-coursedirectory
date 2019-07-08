@@ -62,7 +62,12 @@ $grey: #6f777b;
     flex-direction: column;
 
     &.slim{
-        padding:0 1em;
+        //padding:0 1em;
+
+        a{
+            font-size:1rem;
+            font-weight:400;
+        }
     }
 
     &.border-left-red {

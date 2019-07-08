@@ -12,10 +12,8 @@
 </div>
 <div class=" homepage-item govuk-body ">
     <div class="cd-status-panel slim blue">
-        <p>
-            <a asp-controller="home" asp-action="Migration3" class="govuk-link">Migration </a>  : 
-            View details about the information we have transferred about your courses.
-        </p>
+        Migration 
+        <a asp-controller="home" asp-action="Migration3" class="govuk-link"> View details about the information we have transferred about your courses.</a>
     </div>
 </div>
 
@@ -28,9 +26,9 @@
                 <div class="govuk-grid-column-one-half homepage-item ">
                     <div class="cd-migration-panel">
                         <h2 class="cd-migration-panel__title">Manage your courses</h2>
-                        <span class="cd-migration-panel__number"><a asp-controller="courses" asp-action="Courselistfullwidth6" class="govuk-link">233</a></span><br />
-                        <span class="govuk-body-s">courses in the course directory</span>
-                        <br />
+                        <span class="cd-migration-panel__number"><a asp-controller="courses" asp-action="Courselistfullwidth6" class="govuk-link">233</a></span><span> courses</span><br />
+                        @*<span class="govuk-body-s">courses in the course directory</span>*@
+
                     </div>
                     <ul class="govuk-list cd-homepage__list">
                         <li class="cd-homepage__list--item">
@@ -65,8 +63,8 @@
                 <div class="govuk-grid-column-one-half homepage-item ">
                     <div class="cd-migration-panel">
                         <h2 class="cd-migration-panel__title">Manage your locations</h2>
-                        <span class="cd-migration-panel__number"><a href="#">4</a></span><br />
-                        <span class="govuk-body-s">14% of 99,876 migrated courses</span>
+                        <span class="cd-migration-panel__number"><a href="#">4</a></span><spn> locations</spn><br />
+                        @*<span class="govuk-body-s">14% of 99,876 migrated courses</span>*@
                     </div>
                     <ul class="govuk-list cd-homepage__list">
                         <li class="cd-homepage__list--item">
