@@ -1,0 +1,82 @@
+﻿@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@{
+}
+@{
+
+    ViewData["Target"] = "/providers/results/";
+    ViewData["Area"] = "Courses";
+}
+
+@*<div class="govuk-breadcrumbs">
+    <ol class="govuk-breadcrumbs__list">
+        <li class="govuk-breadcrumbs__list-item">
+            <a class="govuk-breadcrumbs__link" href="/home/index6">Home</a>
+        </li>
+        <li class="govuk-breadcrumbs__list-item">
+            <a class="govuk-breadcrumbs__link" href="/courses/index">@ViewBag.Area</a>
+        </li>
+        <li class="govuk-breadcrumbs__list-item" aria-current="page">Bulk upload</li>
+    </ol>
+</div>*@
+<a asp-controller="Home" asp-action="Index7" class="govuk-back-link">Back</a>
+
+<div>
+    <main class="govuk-main-wrapper">
+        <h1 class="govuk-heading-xl">Bulk upload apprenticeship training information</h1>
+        <div class="govuk-grid-row">
+            <div class="govuk-grid-column-two-thirds">
+                <div class="govuk-body">
+                    <p>
+                        You can use a file to replace information about all of your published apprenticeship training. To create the file you can:
+                        <ul>
+                            <li>enter your apprenticeship training information in an empty template</li>
+                            <li>update a template containing your published apprenticeship training information</li>
+                        </ul>
+                    </p>
+                    <p>
+                        Your updated apprenticeship training information will be published after you have uploaded your file and fixed any errors.
+                    </p>
+
+                    <div class="govuk-form-group">
+                        <label class=" govuk-heading-s" for="file-upload-1">
+                            Upload a file
+                        </label>
+                        <input class="govuk-file-upload" id="file-upload-1" name="file-upload-1" type="file">
+                    </div>
+                    <div class="govuk-warning-text">
+                        <span class="govuk-warning-text__icon" aria-hidden="true">!</span>
+                        <strong class="govuk-warning-text__text">
+                            <span class="govuk-warning-text__assistive">Warning</span>
+                            You'll replace all information about your courses if you continue.
+                        </strong>
+                    </div>
+
+
+                    <div class="cta-container">
+                        <a class="govuk-button govuk-!-margin-right-3 " asp-controller="Home" asp-action="index6">Continue</a>
+                        <a class="govuk-link " asp-controller="Home" asp-action="Index6">Cancel</a>
+                    </div>
+                </div>
+            </div>
+            <div class="govuk-grid-column-one-third">
+                <aside class="sidebar">
+
+                    <div class="widget white blue">
+                        <h3 class="govuk-heading-m">File templates</h3>
+
+                        <ul class="govuk-list">
+                            <li><a href="#" class="govuk-link">Download a blank template</a></li>
+                            <li><a href="#" class="govuk-link">Download a template containing your current courses</a></li>
+                        </ul>
+
+                    </div>
+                </aside>
+
+            </div>
+        </div>
+
+    </main>
+</div>
+
