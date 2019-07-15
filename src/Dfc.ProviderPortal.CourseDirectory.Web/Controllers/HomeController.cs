@@ -24,6 +24,10 @@ namespace Dfc.ProviderPortal.CourseDirectory.Web.Controllers
         {
             return View();
         }
+        public IActionResult Help()
+        {
+            return View();
+        }
         public IActionResult Helpdesk1()
         {
             return View();
