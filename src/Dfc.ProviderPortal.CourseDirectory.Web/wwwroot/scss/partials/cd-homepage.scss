@@ -61,12 +61,11 @@ $grey: #6f777b;
     height: 100%;
     flex-direction: column;
 
-    &.slim{
+    &.slim {
         //padding:0 1em;
-
-        a{
-            font-size:1rem;
-            font-weight:400;
+        a {
+            font-size: 1rem;
+            font-weight: 400;
         }
     }
 
@@ -78,6 +77,18 @@ $grey: #6f777b;
         text-align: left;
         background-color: #005ea5;
         color: white;
+
+
+        h2, a, span {
+            color: white;
+        }
+    }
+
+    &.teal {
+        text-align: left;
+        background-color: #28a197;
+        color: white;
+        padding:1em 1em 0 1em;
 
 
         h2, a, span {
@@ -101,7 +112,7 @@ $grey: #6f777b;
     &.grey {
         background-color: #f8f8f8;
         border: 1px solid #bfc1c3;
-        //border-left: 5px solid #28a197; 
+        //border-left: 5px solid #28a197;
         display: block;
         text-align: left;
         flex-direction: row;

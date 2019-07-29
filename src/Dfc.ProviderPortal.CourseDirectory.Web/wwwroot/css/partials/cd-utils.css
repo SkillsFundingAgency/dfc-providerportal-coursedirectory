@@ -1,0 +1,63 @@
+.cd-right {
+  float: right;
+}
+
+.cd-flex {
+  display: flex;
+}
+
+.select-list {
+  display: none;
+  transition: all .5s ease-in-out;
+}
+
+.no-bottom-padding {
+  padding-bottom: 0em;
+}
+
+.hide {
+  display: none;
+  transition: all .5s ease-in-out;
+}
+
+.visible {
+  display: block;
+  transition: all .5s ease-in-out;
+}
+
+.visible-table {
+  display: table;
+  transition: all .5s ease-in-out;
+}
+
+.minwidth200 {
+  min-width: 200px;
+}
+
+.float-right {
+  float: right;
+}
+
+.updown__arrows {
+  font-weight: 600;
+  font-size: 18px;
+  position: absolute;
+  top: 23px;
+  right: 10px;
+}
+
+.underline {
+  text-decoration: underline;
+}
+
+.text-align-right {
+  text-align: right;
+}
+
+.screenreader-only {
+  height: 1px;
+  width: 1px;
+  position: absolute;
+  overflow: hidden;
+  top: -10px;
+}

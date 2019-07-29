@@ -6,11 +6,11 @@
 }
 
 
-<div class="cd-dashboard provider apprenticeship-type govuk-grid-row">
+<main id="main-content" class="cd-dashboard provider apprenticeship-type govuk-grid-row">
     <div class="govuk-grid-column-two-thirds">
         <div class="govuk-form-group">
             <fieldset class="govuk-fieldset">
-                <legend class="govuk-fieldset__legend govuk-fieldset__legend--xl">
+                <legend class="govuk-fieldset__legend govuk-fieldset__legend--l">
                     <h1 class="govuk-fieldset__heading">
                         What would you like to do?
                     </h1>
@@ -20,20 +20,20 @@
                 </span>
                 <div class="govuk-radios">
                     <div class="govuk-radios__item">
-                        <input class="govuk-radios__input" id="where-do-you-live-1" name="where-do-you-live" type="radio" value="/addcourse/index">
-                        <label class="govuk-label govuk-radios__label" for="where-do-you-live-1">
+                        <input class="govuk-radios__input" id="add-a-new-course" name="add-a-new-course" type="radio" value="/addcourse/index">
+                        <label class="govuk-label govuk-radios__label" for="add-a-new-course">
                             Add a new course
                         </label>
                     </div>
                     <div class="govuk-radios__item">
-                        <input class="govuk-radios__input" id="where-do-you-live-2" name="where-do-you-live" type="radio" value="/addcourse/BulkUpload">
-                        <label class="govuk-label govuk-radios__label" for="where-do-you-live-2">
+                        <input class="govuk-radios__input" id="bulk-upload" name="bulk-upload" type="radio" value="/addcourse/BulkUpload">
+                        <label class="govuk-label govuk-radios__label" for="bulk-upload">
                             Add multiple new courses via a bulk upload
                         </label>
                     </div>
                     <div class="govuk-radios__item">
-                        <input class="govuk-radios__input" id="where-do-you-live-3" name="where-do-you-live" type="radio" value="/courses/CourseListFullWidth6">
-                        <label class="govuk-label govuk-radios__label" for="where-do-you-live-3">
+                        <input class="govuk-radios__input" id="view-and-edit" name="view-and-edit" type="radio" value="/courses/CourseListFullWidth6">
+                        <label class="govuk-label govuk-radios__label" for="view-and-edit">
                             View or make changes to existing course(s)
                         </label>
                     </div>
@@ -44,5 +44,5 @@
         </div>
         <a class="govuk-button" asp-controller="courses" asp-action="index">Continue</a>
     </div>
-</div>
+</main>
 

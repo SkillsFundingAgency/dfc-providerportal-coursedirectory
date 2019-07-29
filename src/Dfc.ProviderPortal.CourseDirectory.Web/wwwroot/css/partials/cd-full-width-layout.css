@@ -2,10 +2,6 @@
   margin-bottom: -10px;
 }
 
-.cd-flex {
-  display: flex;
-}
-
 .cd-subHead {
   background-color: #005ea5;
   margin-top: -10px;
@@ -38,6 +34,7 @@
 
 .navigation-container .cd-secondary-nav .cd-secondary-nav--item {
   text-decoration: none;
+  padding: 0 0.5em;
 }
 
 .cd-filter-reset {

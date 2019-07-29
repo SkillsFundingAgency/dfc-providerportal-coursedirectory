@@ -1,0 +1,44 @@
+﻿<header class="govuk-header " role="banner" data-module="header">
+    <div class="govuk-header__container  cd-fullwidth-container cd-header">
+
+
+        <div class="govuk-header__content cd-header--content">
+
+            <a href="/" class="govuk-header__link govuk-header__link--service-name">
+                Course directory helpdesk
+            </a>
+            <a href="#" class="cd-right cd-header--link">Sign out</a>
+
+            @*<button type="button" role="button" class="govuk-header__menu-button js-header-toggle" aria-controls="navigation" aria-label="Show or hide Top Level Navigation">Menu</button>*@
+            <nav>
+
+                <ul id="navigationhelp" class="govuk-header__navigation " aria-label="Top Level Navigation">
+                    <li class="govuk-header__navigation-item govuk-header__navigation-item--active">
+                        <a class="govuk-header__link" asp-controller="home" asp-action="index8">Search</a>
+                    </li>
+
+                    <li class="govuk-header__navigation-item">
+                        <a class="govuk-header__link" asp-controller="Apprenticeships" asp-action="home">Manage users</a>
+                    </li>
+                    <li class="govuk-header__navigation-item">
+                        <a class="govuk-header__link" asp-controller="Apprenticeships" asp-action="home">Reports</a>
+                    </li>
+
+                </ul>
+            </nav>
+        </div>
+    </div>
+</header>
+<div class="govuk-phase-banner cd-fullwidth-container govuk-!-margin-bottom-6" role="complementary">
+    <p class="govuk-phase-banner__content">
+        <strong class="govuk-tag govuk-phase-banner__content__tag ">
+            Beta
+        </strong>
+        <span class="govuk-phase-banner__text">
+            This is a new service – your
+            <a class="govuk-link" href="#">feedback</a> will help us to improve it.
+        </span>
+    </p>
+</div>
+
+
