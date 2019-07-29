@@ -6889,6 +6889,27 @@ ul.sort-list {
   color: white;
 }
 
+.cd-status-panel.teal--border {
+  text-align: left;
+  background-color: #f8f8f8;
+  border-left: 5px solid #28a197;
+  color: black;
+  padding: 1em 1em 0 1em;
+}
+
+.cd-status-panel.teal--border .helpdesk__link {
+  text-decoration: underline;
+  font-weight: 600;
+}
+
+.cd-status-panel.teal--border .helpdesk__link:hover {
+  color: blue;
+}
+
+.cd-status-panel.teal--border h2, .cd-status-panel.teal--border a, .cd-status-panel.teal--border span {
+  color: black;
+}
+
 .cd-status-panel.green {
   background-color: green;
 }

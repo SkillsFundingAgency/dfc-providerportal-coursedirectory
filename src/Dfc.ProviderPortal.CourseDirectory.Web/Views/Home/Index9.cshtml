@@ -3,50 +3,51 @@
     Layout = "_LayoutFullWidthHelpdesk";
     ViewData["Title"] = "Index";
 }
-<div class="cd-fullwidth-container">
-    <div class=" homepage-item govuk-body ">
-        <div class="cd-status-panel slim teal">
-            <nav>
-                <ul id="navigation" class="govuk-header__navigation " aria-label="Top Level Navigation">
-                    <li class="govuk-header__navigation-item ">
-                        Provider name
-                    </li>
-                    <li class="govuk-header__navigation-item govuk-header__navigation-item--active">
-                        <a class="govuk-header__link" asp-controller="home" asp-action="index8">Home</a>
-                    </li>
-                    <li class="govuk-header__navigation-item ">
-                        <a class="govuk-header__link" asp-controller="courses" asp-action="index">My courses</a>
-                    </li>
-                    <li class="govuk-header__navigation-item">
-                        <a class="govuk-header__link" asp-controller="Apprenticeships" asp-action="home">My apprenticeship training</a>
-                    </li>
-                    <li class="govuk-header__navigation-item">
-                        <a class="govuk-header__link" asp-controller="Venues" asp-action="VenuesChoice">My locations</a>
-                    </li>
-                    <li class="govuk-header__navigation-item">
-                        <a class="govuk-header__link" asp-controller="AddCourse" asp-action="BulkUploadType">Bulk upload</a>
-                    </li>
-                </ul>
-            </nav>
-        </div>
-    </div>
-    <div class="cd-info-summary" aria-labelledby="info-summary-title" role="alert" tabindex="-1" data-module="info-summary">
-        <h2 class="cd-info-summary__title" id="info-summary-title">
-            Info
-        </h2>
-        <div class="cd-info-summary__body">
-            <p>Info message</p>
-        </div>
-    </div>
-    <div class=" homepage-item govuk-body ">
-        <div class="cd-status-panel slim blue">
-            Migration
-            <a asp-controller="home" asp-action="Migration3" class="govuk-link"> View details about the information we have transferred about your courses.</a>
-        </div>
-    </div>
-</div>
-
 <main id="main-content" class="cd-dashboard provider govuk-body cd-fullwidth-container">
+
+        <div class=" homepage-item govuk-body ">
+            <div class="cd-status-panel slim teal--border">
+                <nav>
+                    <ul id="navigation" class="govuk-header__navigation " aria-label="Top Level Navigation">
+                        <li class="govuk-header__navigation-item ">
+                            Provider name
+                        </li>
+                        <li class="govuk-header__navigation-item govuk-header__navigation-item--active">
+                            <a class="helpdesk__link govuk-header__link" asp-controller="home" asp-action="index8">Home</a>
+                        </li>
+                        <li class="govuk-header__navigation-item ">
+                            <a class="helpdesk__link govuk-header__link" asp-controller="courses" asp-action="index">My courses</a>
+                        </li>
+                        <li class="govuk-header__navigation-item">
+                            <a class=" helpdesk__link govuk-header__link" asp-controller="Apprenticeships" asp-action="home">My apprenticeship training</a>
+                        </li>
+                        <li class="govuk-header__navigation-item">
+                            <a class="helpdesk__link  govuk-header__link" asp-controller="Venues" asp-action="VenuesChoice">My locations</a>
+                        </li>
+                        <li class="govuk-header__navigation-item">
+                            <a class="helpdesk__link govuk-header__link" asp-controller="AddCourse" asp-action="BulkUploadType">Bulk upload</a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+        <div class="cd-info-summary" aria-labelledby="info-summary-title" role="region" tabindex="-1" data-module="info-summary">
+            <h2 class="cd-info-summary__title" id="info-summary-title">
+                Info
+            </h2>
+            <div class="cd-info-summary__body">
+                <p>Info message</p>
+            </div>
+        </div>
+        <div class=" homepage-item govuk-body ">
+            <div class="cd-status-panel slim blue">
+                Migration
+                <a asp-controller="home" asp-action="Migration3" class="govuk-link"> View details about the information we have transferred about your courses.</a>
+            </div>
+        </div>
+
+
+
     <h1 class="govuk-heading-xl cd-dashboard-title">Publish to the course directory</h1>
     <hr class="spacer" />
     <div class="govuk-grid-row">
@@ -109,7 +110,7 @@
         </div>
 
         <div class="govuk-grid-column-one-third">
-            <aside class="sidebar">
+            <div class="sidebar">
                 <div class="widget white ">
                     <h3>Other actions</h3>
 
@@ -126,7 +127,7 @@
                         </li>
                     </ul>
                 </div>
-            </aside>
+            </div>
 
         </div>
     </div>

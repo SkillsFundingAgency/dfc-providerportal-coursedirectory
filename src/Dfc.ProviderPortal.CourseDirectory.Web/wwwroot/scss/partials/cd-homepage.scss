@@ -88,11 +88,31 @@ $grey: #6f777b;
         text-align: left;
         background-color: #28a197;
         color: white;
-        padding:1em 1em 0 1em;
+        padding: 1em 1em 0 1em;
 
 
         h2, a, span {
             color: white;
+        }
+    }
+
+    &.teal--border {
+        text-align: left;
+        background-color: #f8f8f8;
+        border-left: 5px solid #28a197;
+        color: black;
+        padding: 1em 1em 0 1em;
+
+        .helpdesk__link {
+            text-decoration:underline;
+            font-weight:600;
+
+            &:hover {
+                color:blue;
+            }
+        }
+        h2, a, span {
+            color: black;
         }
     }
 
