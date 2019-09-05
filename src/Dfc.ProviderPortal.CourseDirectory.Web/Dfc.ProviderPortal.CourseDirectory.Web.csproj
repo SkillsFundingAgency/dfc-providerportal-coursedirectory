@@ -16,6 +16,7 @@
     <Folder Include="Views\UR\" />
     <Folder Include="Views\Migration\" />
     <Folder Include="Views\Venues\" />
+    <Folder Include="Views\QA\" />
   </ItemGroup>
 
   <ItemGroup>

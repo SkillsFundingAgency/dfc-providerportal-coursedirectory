@@ -1,54 +1,23 @@
 ﻿
 @{
-    Layout = "_LayoutFullWidthHelpdesk";
     ViewData["Title"] = "Index";
 }
-<main id="main-content" class="cd-dashboard provider govuk-body cd-fullwidth-container">
+<div class="cd-info-summary" aria-labelledby="info-summary-title" role="alert" tabindex="-1" data-module="info-summary">
+    <h2 class="cd-info-summary__title" id="info-summary-title">
+        Info
+    </h2>
+    <div class="cd-info-summary__body">
+        <p>Info message</p>
+    </div>
+</div>
+<div class=" homepage-item govuk-body ">
+    <div class="cd-status-panel slim blue">
+        Migration 
+        <a asp-controller="home" asp-action="Migration3" class="govuk-link"> View details about the information we have transferred about your courses.</a>
+    </div>
+</div>
 
-        <div class=" homepage-item govuk-body ">
-            <div id="helpdesk__navigation" class="cd-status-panel slim teal--border helpdesk_nav">
-                <div class=" ">
-                    Provider name
-                </div>
-                <nav>
-                    <ul class="helpdesk__nav-list" aria-label="Helpdesk Level Navigation">
-
-                        <li class="helpdesk__nav-list-item">
-                            <a class="helpdesk__link " asp-controller="home" asp-action="index8">Home</a>
-                        </li>
-                        <li class="helpdesk__nav-list-item">
-                            <a class="helpdesk__link govuk-header__link" asp-controller="courses" asp-action="index">My courses</a>
-                        </li>
-                        <li class=" helpdesk__nav-list-item">
-                            <a class=" helpdesk__link govuk-header__link" asp-controller="Apprenticeships" asp-action="home">My apprenticeship training</a>
-                        </li>
-                        <li class="helpdesk__nav-list-item">
-                            <a class="helpdesk__link  govuk-header__link" asp-controller="Venues" asp-action="VenuesChoice">My locations</a>
-                        </li>
-                        <li class="helpdesk__nav-list-item">
-                            <a class="helpdesk__link govuk-header__link" asp-controller="AddCourse" asp-action="BulkUploadType">Bulk upload</a>
-                        </li>
-                    </ul>
-                </nav>
-            </div>
-        </div>
-        <div class="cd-info-summary" aria-labelledby="info-summary-title" role="region" tabindex="-1" data-module="info-summary">
-            <h2 class="cd-info-summary__title" id="info-summary-title">
-                Info
-            </h2>
-            <div class="cd-info-summary__body">
-                <p>Info message</p>
-            </div>
-        </div>
-        <div class=" homepage-item govuk-body ">
-            <div class="cd-status-panel slim blue">
-                Migration
-                <a asp-controller="home" asp-action="Migration3" class="govuk-link"> View details about the information we have transferred about your courses.</a>
-            </div>
-        </div>
-
-
-
+<main  id="main-content"class="cd-dashboard provider govuk-body">
     <h1 class="govuk-heading-xl cd-dashboard-title">Publish to the course directory</h1>
     <hr class="spacer" />
     <div class="govuk-grid-row">
@@ -73,24 +42,43 @@
                         </li>
                     </ul>
                 </div>
+                <div class="govuk-grid-column-one-half homepage-item ">
+                    <div class="cd-migration-panel">
+                        <h2 class="cd-migration-panel__title">Manage your apprenticeships</h2>
+                        <span class="cd-migration-panel__number"><a asp-controller="courses" asp-action="Courselistfullwidth6" class="govuk-link">23</a></span><span> apprenticeships</span><br />
+                        @*<span class="govuk-body-s">courses in the course directory</span>*@
+                        <br />
+                    </div>
+                    <ul class="govuk-list cd-homepage__list">
+                        <li class="cd-homepage__list--item">
+                            <a asp-controller="AddCourse" asp-action="Index" class="govuk-link">Add a new apprenticeship</a>
+                        </li>
+                        <li class="cd-homepage__list--item">
+                            <a asp-controller="courses" asp-action="Courselistfullwidth6" class="govuk-link">View, edit, copy or delete a apprenticeship</a>
+                        </li>
+                        <li class="cd-homepage__list--item">
+                            <a asp-controller="AddCourse" asp-action="BulkUpload" class="govuk-link">Bulk upload apprenticeship information</a>
+                        </li>
+                    </ul>
+                </div>
                 @*<div class="govuk-grid-column-one-half homepage-item ">
-                        <div class="cd-migration-panel  ">
-                            <h2 class="cd-migration-panel__title">Manage your apprenticeship training</h2>
-                            <span class="cd-migration-panel__number"><a href="#">23</a></span><br />
-                            <span class="govuk-body-s">apprenticeship training in the course directory</span>
-                        </div>
-                        <ul class="govuk-list cd-homepage__list">
-                            <li class="cd-homepage__list--item">
-                                <a asp-controller="AddCourse" asp-action="Index" class="govuk-link">Add new apprenticeship training</a>
-                            </li>
-                            <li class="cd-homepage__list--item">
-                                <a asp-controller="AddCourse" asp-action="Index" class="govuk-link">View, edit, copy or delete apprenticeship training</a>
-                            </li>
-                            <li class="cd-homepage__list--item">
-                                <a asp-controller="AddCourse" asp-action="BulkUpload" class="govuk-link">Bulk upload apprenticeship training information</a>
-                            </li>
-                        </ul>
-                    </div>*@
+            <div class="cd-migration-panel  ">
+                <h2 class="cd-migration-panel__title">Manage your apprenticeship training</h2>
+                <span class="cd-migration-panel__number"><a href="#">23</a></span><br />
+                <span class="govuk-body-s">apprenticeship training in the course directory</span>
+            </div>
+            <ul class="govuk-list cd-homepage__list">
+                <li class="cd-homepage__list--item">
+                    <a asp-controller="AddCourse" asp-action="Index" class="govuk-link">Add new apprenticeship training</a>
+                </li>
+                <li class="cd-homepage__list--item">
+                    <a asp-controller="AddCourse" asp-action="Index" class="govuk-link">View, edit, copy or delete apprenticeship training</a>
+                </li>
+                <li class="cd-homepage__list--item">
+                    <a asp-controller="AddCourse" asp-action="BulkUpload" class="govuk-link">Bulk upload apprenticeship training information</a>
+                </li>
+            </ul>
+        </div>*@
                 <div class="govuk-grid-column-one-half homepage-item ">
                     <div class="cd-migration-panel">
                         <h2 class="cd-migration-panel__title">Manage your locations</h2>
@@ -111,7 +99,7 @@
         </div>
 
         <div class="govuk-grid-column-one-third">
-            <div class="sidebar">
+            <aside class="sidebar">
                 <div class="widget white ">
                     <h3>Other actions</h3>
 
@@ -128,7 +116,7 @@
                         </li>
                     </ul>
                 </div>
-            </div>
+            </aside>
 
         </div>
     </div>

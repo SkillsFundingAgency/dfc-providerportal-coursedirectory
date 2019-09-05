@@ -5,7 +5,7 @@ using Microsoft.AspNetCore.Mvc;
 
 namespace Dfc.ProviderPortal.CourseDirectory.Web.Controllers
 {
-    public class QA : Controller
+    public class UR : Controller
     {
         public IActionResult Index()
         {
@@ -16,7 +16,7 @@ namespace Dfc.ProviderPortal.CourseDirectory.Web.Controllers
         {
             return View();
         }
-   
+
         public IActionResult CourseList()
         {
             return View();

@@ -76,6 +76,14 @@ namespace Dfc.ProviderPortal.CourseDirectory.Web.Controllers
         {
             return View();
         }
+        public IActionResult Index10()
+        {
+            return View();
+        }
+        public IActionResult Index11()
+        {
+            return View();
+        }
 
         public IActionResult Details()
         {
@@ -102,6 +110,10 @@ namespace Dfc.ProviderPortal.CourseDirectory.Web.Controllers
             return View();
         }
         public IActionResult Migration3()
+        {
+            return View();
+        }
+        public IActionResult Migration4()
         {
             return View();
         }
