@@ -65,6 +65,7 @@
 
 .govuk-currency-input__inner {
     position: relative;
+    margin-bottom: 20px;
 
     &__unit {
         position: absolute;
@@ -76,18 +77,19 @@
     &__input {
         padding-left: 25px;
     }
+
+    .form-control {
+        -webkit-box-sizing: border-box;
+        -moz-box-sizing: border-box;
+        box-sizing: border-box;
+        font-family: "nta", Arial, sans-serif;
+        font-weight: 400;
+        text-transform: none;
+        font-size: 16px;
+        line-height: 1.25;
+        width: 100%;
+        padding: 5px 4px 1px 25px;
+        border: 2px solid #0b0c0c;
+    }
 }
 
-.form-control {
-    -webkit-box-sizing: border-box;
-    -moz-box-sizing: border-box;
-    box-sizing: border-box;
-    font-family: "nta", Arial, sans-serif;
-    font-weight: 400;
-    text-transform: none;
-    font-size: 16px;
-    line-height: 1.25;
-    width: 100%;
-    padding: 5px 4px 4px;
-    border: 2px solid #0b0c0c;
-}

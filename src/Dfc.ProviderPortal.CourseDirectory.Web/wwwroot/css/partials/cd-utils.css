@@ -61,3 +61,33 @@
   overflow: hidden;
   top: -10px;
 }
+
+.govuk-currency-input__inner {
+  position: relative;
+  margin-bottom: 20px;
+}
+
+.govuk-currency-input__inner__unit {
+  position: absolute;
+  bottom: 5px;
+  left: 10px;
+  font-weight: bold;
+}
+
+.govuk-currency-input__inner__input {
+  padding-left: 25px;
+}
+
+.govuk-currency-input__inner .form-control {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  font-family: "nta", Arial, sans-serif;
+  font-weight: 400;
+  text-transform: none;
+  font-size: 16px;
+  line-height: 1.25;
+  width: 100%;
+  padding: 5px 4px 1px 25px;
+  border: 2px solid #0b0c0c;
+}
