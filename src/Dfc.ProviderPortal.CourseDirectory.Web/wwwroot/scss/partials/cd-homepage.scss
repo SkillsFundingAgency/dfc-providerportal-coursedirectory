@@ -1,5 +1,33 @@
 ﻿
 $grey: #6f777b;
+$green: #28a197; 
+
+#helpdesk__navigation {
+.helpdesk__nav-list {
+    margin-top: 0;
+    display: flex;
+    flex-direction: row;
+    list-style-type: none;
+
+    &-item {
+        padding: 0 .5rem;
+    }
+
+    &.helpdesk__link {
+        list-style-type: none;
+        text-decoration: none;
+
+        &:hover {
+            color: #003078;
+            text-decoration: underline;
+        }
+
+        &:focus {
+            background-color: #ffdd00;
+        }
+    }
+}
+}
 .cd-dashboard.provider {
         .cd-dashboard-title {
             margin-bottom:0.23em;
@@ -36,8 +64,8 @@ $grey: #6f777b;
 
     &__full {
         background-color: #005ea5;
-        color:white;
-        padding:10px;
+        color: white;
+        padding: 10px;
     }
 
     &__title {
@@ -49,6 +77,13 @@ $grey: #6f777b;
     &__number {
         font-size: 1.4em;
         font-weight: 600;
+    }
+
+    &--in-progress {
+        background-color: #1d70b8;
+        color: white;
+        //border-left: 5px solid #5694ca;
+        padding: .5rem 1rem;
     }
 }
 .cd-status-panel {
@@ -75,7 +110,7 @@ $grey: #6f777b;
 
     &.blue {
         text-align: left;
-        background-color: #005ea5;
+        background-color: #1d70b8;
         color: white;
 
 
@@ -96,6 +131,8 @@ $grey: #6f777b;
         }
     }
 
+
+
     &.teal--border {
         text-align: left;
         background-color: #f8f8f8;
@@ -104,15 +141,21 @@ $grey: #6f777b;
         padding: 1em 1em 0 1em;
 
         .helpdesk__link {
-            text-decoration:underline;
-            font-weight:600;
+            text-decoration: underline;
+            font-weight: 600;
 
             &:hover {
-                color:blue;
+                color: blue;
             }
         }
+
         h2, a, span {
             color: black;
+        }
+
+        &.helpdesk_nav {
+            display: flex;
+            flex-direction: row;
         }
     }
 
@@ -209,16 +252,15 @@ $grey: #6f777b;
     .widget {
         border-top: 5px solid #28a197;
         background-color: #f8f8f8;
-        padding-left: 1rem;
 
         &.white {
             background-color: white;
-            padding: 1em;
-            color:black;
+            padding: 1em 0rem;
+            color: black;
         }
 
         &.blue {
-            border-top: 5px solid #005ea5;
+            border-top: 5px solid #28a197;
         }
 
         div {
@@ -226,7 +268,7 @@ $grey: #6f777b;
         }
 
         a {
-            font-size:.8em;
+            font-size: .8em;
         }
     }
 }
@@ -240,8 +282,8 @@ $grey: #6f777b;
         flex: 1;
 
         a {
-            font-size: 1.5rem;
-            font-weight: 600;
+            //font-size: 1.5rem;
+            //font-weight: 600;
         }
     }
 }

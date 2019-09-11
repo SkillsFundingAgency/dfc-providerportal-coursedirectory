@@ -1,3 +1,28 @@
+#helpdesk__navigation .helpdesk__nav-list {
+  margin-top: 0;
+  display: flex;
+  flex-direction: row;
+  list-style-type: none;
+}
+
+#helpdesk__navigation .helpdesk__nav-list-item {
+  padding: 0 .5rem;
+}
+
+#helpdesk__navigation .helpdesk__nav-list.helpdesk__link {
+  list-style-type: none;
+  text-decoration: none;
+}
+
+#helpdesk__navigation .helpdesk__nav-list.helpdesk__link:hover {
+  color: #003078;
+  text-decoration: underline;
+}
+
+#helpdesk__navigation .helpdesk__nav-list.helpdesk__link:focus {
+  background-color: #ffdd00;
+}
+
 .cd-dashboard.provider .cd-dashboard-title {
   margin-bottom: 0.23em;
 }
@@ -45,6 +70,12 @@
   font-weight: 600;
 }
 
+.cd-migration-panel--in-progress {
+  background-color: #1d70b8;
+  color: white;
+  padding: .5rem 1rem;
+}
+
 .cd-status-panel {
   background-color: #dee0e2;
   display: flex;
@@ -67,7 +98,7 @@
 
 .cd-status-panel.blue {
   text-align: left;
-  background-color: #005ea5;
+  background-color: #1d70b8;
   color: white;
 }
 
@@ -105,6 +136,11 @@
 
 .cd-status-panel.teal--border h2, .cd-status-panel.teal--border a, .cd-status-panel.teal--border span {
   color: black;
+}
+
+.cd-status-panel.teal--border.helpdesk_nav {
+  display: flex;
+  flex-direction: row;
 }
 
 .cd-status-panel.green {
@@ -195,17 +231,16 @@
 .sidebar .widget {
   border-top: 5px solid #28a197;
   background-color: #f8f8f8;
-  padding-left: 1rem;
 }
 
 .sidebar .widget.white {
   background-color: white;
-  padding: 1em;
+  padding: 1em 0rem;
   color: black;
 }
 
 .sidebar .widget.blue {
-  border-top: 5px solid #005ea5;
+  border-top: 5px solid #28a197;
 }
 
 .sidebar .widget div {
@@ -222,10 +257,6 @@
   }
   .homepage-item {
     flex: 1;
-  }
-  .homepage-item a {
-    font-size: 1.5rem;
-    font-weight: 600;
   }
 }
 

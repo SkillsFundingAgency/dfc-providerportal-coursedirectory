@@ -33,6 +33,10 @@ namespace Dfc.ProviderPortal.CourseDirectory.Web.Controllers
         {
             return View();
         }
+        public IActionResult BulkUpload2()
+        {
+            return View();
+        }
         public IActionResult BulkUploadType()
         {
             return View();

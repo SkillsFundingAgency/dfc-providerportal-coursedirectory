@@ -22,13 +22,16 @@
   padding: 0.5em;
 }
 
-.cd-your-apprenticeships-search-result__container {
-  padding: 0.5em;
+.cd-your-apprenticeships-search-result__container h2 {
+  margin-bottom: 10px;
+}
+
+.cd-your-apprenticeships-search-result__container p {
+  margin: 0;
 }
 
 .ctas {
   border: 1px solid #bfc1c3;
-  padding: 0.5em;
   border-top: none;
   margin-bottom: 1em;
   display: flex;

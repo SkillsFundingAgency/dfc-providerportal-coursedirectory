@@ -1,7 +1,7 @@
 ﻿@{
     Layout = "_Layout";
-    ViewData["Title"] = "Your published apprenticeship training courses";
-    ViewData["Subtext"] = "Search by keyword for a training course you have published on the Course directory.";
+    ViewData["Title"] = "Your published apprenticeship training";
+    ViewData["Subtext"] = "Search by keyword for published apprenticeship training";
     ViewData["Target"] = "/providers/AddResults/";
     ViewData["Placeholder"] = "Search";
     ViewData["Area"] = "Qualifications";
@@ -9,21 +9,22 @@
 <div class="apprenticeship-search-page">
     <div>
         <h1 class="govuk-heading-l govuk-!-margin-top-4">@ViewBag.Title</h1>
-        <p class="column-two-thirds govuk-body">@ViewBag.Subtext</p>
     </div>
-    <div class="site-search ui-front" id="header-search" role="search">
-        <div class="header-search-content govuk-!-width-two-thirds">
+    <div class="cd-search-container">
+        <p class="column-two-thirds govuk-body">@ViewBag.Subtext</p>
+        <div class="site-search ui-front" id="header-search" role="search">
+            <div class="header-search-content govuk-!-width-two-thirds">
 
-            <div class="search-input-wrapper govuk-!-margin-bottom-4">
+                <div class="search-input-wrapper govuk-!-margin-bottom-4">
 
-                <input class="govuk-input  search-input js-search-focus" id="search" name="SearchTerm" type="search">
-                <div class="cd-c-search__item cd-search__submit-wrapper">
-                    <button type="submit" class=" submit">Search</button>
+                    <input class="govuk-input  search-input js-search-focus" id="search" name="SearchTerm" type="search">
+                    <div class="cd-c-search__item cd-search__submit-wrapper">
+                        <button type="submit" class=" submit">Search</button>
+                    </div>
                 </div>
             </div>
         </div>
     </div>
-
 
     <div class="govuk-grid-row">
 
@@ -35,9 +36,9 @@
                 </div>
 
                 <div class="cd-your-apprenticeships-search-result__container">
-                    <h3 class="govuk-heading-m">Network Engineer <span class="govuk-!-margin-left-3 govuk-tag">Framework</span></h3>
-
-                    <p class="govuk-body">Level: <span class="govuk-!-font-weight-bold">4</span></p>
+                    <h2 class="govuk-heading-m">Network Engineer <span class="govuk-!-margin-left-3 govuk-tag">Framework</span></h2>
+                    <p class="govuk-body govuk-!-font-weight-bold govuk-!-margin-bottom-0">Level: <span class="govuk-body">4</span></p>
+                    <p class="govuk-!-margin-top-0 govuk-!-margin-bottom-2"><span class="govuk-!-font-weight-bold">Last updated: </span><span class="govuk-!-margin-right-9">1 Jan 2019</span><span class="govuk-!-font-weight-bold">Last updated by: </span><span>Username One</span></p>
                 </div>
                 <div class="ctas">
                     <a class="govuk-link" href="/apprenticeships/ViewEdit">View and edit</a>
@@ -45,47 +46,52 @@
                 </div>
                 <div class="cd-your-apprenticeships-search-result__container">
                     <h2 class="govuk-heading-m">Software Developer <span class="govuk-!-margin-left-3 govuk-tag">Framework</span></h2>
-                    <p class="govuk-body">Level: <span class="govuk-!-font-weight-bold">4</span></p>
+                    <p class="govuk-body govuk-!-font-weight-bold">Level: <span class="govuk-body">4</span></p>
+                    <p><span class="govuk-!-font-weight-bold">Last updated: </span><span class="govuk-!-margin-right-9">1 Jan 2019</span><span class="govuk-!-font-weight-bold">Last updated by: </span><span>Username One</span></p>
                 </div>
                 <div class="ctas">
                     <a class="govuk-link" href="/apprenticeships/ViewEdit">View and edit</a>
                     <a class="govuk-link" href="/apprenticeships/ConfirmApprenticeshipDelete">Delete</a>
                 </div>
                 <div class="cd-your-apprenticeships-search-result__container">
-                    <h3 class="govuk-heading-m">
+                    <h2 class="govuk-heading-m">
                         Aerospace Manufacturing Fitter
-                    </h3>
-                    <p class="govuk-body">Level: <span class="govuk-!-font-weight-bold">3</span></p>
+                    </h2>
+                    <p class="govuk-body govuk-!-font-weight-bold">Level: <span class="govuk-body">3</span></p>
+                    <p><span class="govuk-!-font-weight-bold">Last updated: </span><span class="govuk-!-margin-right-9">1 Jan 2019</span><span class="govuk-!-font-weight-bold">Last updated by: </span><span>Username One</span></p>
                 </div>
                 <div class="ctas">
                     <a class="govuk-link" href="/apprenticeships/ViewEdit">View and edit</a>
                     <a class="govuk-link" href="/apprenticeships/ConfirmApprenticeshipDelete">Delete</a>
                 </div>
                 <div class="cd-your-apprenticeships-search-result__container">
-                    <h3 class="govuk-heading-m">
+                    <h2 class="govuk-heading-m">
                         Installation Electrician/Maintenance Electrician
-                    </h3>
-                    <p class="govuk-body">Level: <span class="govuk-!-font-weight-bold">3</span></p>
+                    </h2>
+                    <p class="govuk-body govuk-!-font-weight-bold">Level: <span class="govuk-body">3</span></p>
+                    <p><span class="govuk-!-font-weight-bold">Last updated: </span><span class="govuk-!-margin-right-9">1 Jan 2019</span><span class="govuk-!-font-weight-bold">Last updated by: </span><span>Username One</span></p>
                 </div>
                 <div class="ctas">
                     <a class="govuk-link" href="/apprenticeships/ViewEdit">View and edit</a>
                     <a class="govuk-link" href="/apprenticeships/ConfirmApprenticeshipDelete">Delete</a>
                 </div>
                 <div class="cd-your-apprenticeships-search-result__container">
-                    <h3 class="govuk-heading-m">
+                    <h2 class="govuk-heading-m">
                         Power Network Craftsperson
-                    </h3>
-                    <p class="govuk-body">Level: <span class="govuk-!-font-weight-bold">3</span></p>
+                    </h2>
+                    <p class="govuk-body govuk-!-font-weight-bold">Level: <span class="govuk-body">3</span></p>
+                    <p><span class="govuk-!-font-weight-bold">Last updated: </span><span class="govuk-!-margin-right-9">1 Jan 2019</span><span class="govuk-!-font-weight-bold">Last updated by: </span><span>Username One</span></p>
                 </div>
                 <div class="ctas">
                     <a class="govuk-link" href="/apprenticeships/ViewEdit">View and edit</a>
                     <a class="govuk-link" href="/apprenticeships/ConfirmApprenticeshipDelete">Delete</a>
                 </div>
                 <div class="cd-your-apprenticeships-search-result__container">
-                    <h3 class="govuk-heading-m">
+                    <h2 class="govuk-heading-m">
                         Relationship Manager (Banking)
-                    </h3>
-                    <p class="govuk-body">Level: <span class="govuk-!-font-weight-bold">6</span></p>
+                    </h2>
+                    <p class="govuk-body govuk-!-font-weight-bold">Level: <span class="govuk-body">6</span></p>
+                    <p><span class="govuk-!-font-weight-bold">Last updated: </span><span class="govuk-!-margin-right-9">1 Jan 2019</span><span class="govuk-!-font-weight-bold">Last updated by: </span><span>Username One</span></p>
                 </div>
                 <div class="ctas">
                     <a class="govuk-link" href="/apprenticeships/ViewEdit">View and edit</a>

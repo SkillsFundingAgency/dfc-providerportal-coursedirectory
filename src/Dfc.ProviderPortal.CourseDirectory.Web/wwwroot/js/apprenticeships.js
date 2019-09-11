@@ -29,17 +29,16 @@ get_data('/js/apprenticeships.json', function(data) {
     var hidden = document.getElementsByClassName('design2')[0];
 
     if(!hidden){
-
-    
-
     let courses = [];
     for (let x of data) {
 
     let course = `
     <div class="cd-apprenticeships-search-result__container">
         <h3 class="govuk-heading-m" >${x.StandardName}</h3>
-        <p class="govuk-body">Level: <span class="govuk-!-font-weight-bold">${x.NotionalEndLevel}</span></p>
-        <p class="govuk-body"><a class="govuk-link" href="/apprenticeships/add">Choose this apprenticeship</a></p>
+<p class="govuk-body">Level: <span class="govuk-!-font-weight-bold">${x.NotionalEndLevel}</span></p>
+<p><span class="govuk-!-font-weight-bold">unique id : </span><span>1234rftg</span></p>
+<p class="govuk-body"><a class="govuk-link" href="/apprenticeships/add">Choose this apprenticeship</a></p>
+
     </div>`
 
       courses.push(course);

@@ -1,0 +1,102 @@
+﻿@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@{
+}
+@{
+
+    ViewData["Target"] = "/providers/results/";
+    ViewData["Area"] = "Courses";
+}
+
+@*<div class="govuk-breadcrumbs">
+    <ol class="govuk-breadcrumbs__list">
+        <li class="govuk-breadcrumbs__list-item">
+            <a class="govuk-breadcrumbs__link" href="/home/index6">Home</a>
+        </li>
+        <li class="govuk-breadcrumbs__list-item">
+            <a class="govuk-breadcrumbs__link" href="/courses/index">@ViewBag.Area</a>
+        </li>
+        <li class="govuk-breadcrumbs__list-item" aria-current="page">Bulk upload</li>
+    </ol>
+</div>*@
+
+
+<div>
+    <main class="govuk-main-wrapper">
+        <a asp-controller="addcourse" asp-action="bulkuploadtype" class="govuk-back-link">Back</a>
+        <h1 class="govuk-heading-l">Bulk upload course information</h1>
+        <div class="govuk-grid-row">
+            <div class="govuk-grid-column-two-thirds">
+                <div class="govuk-body">
+                    <p>
+                        You can use a file to replace information about all of your published courses. To create the file you can:
+                        <ul>
+                            <li>enter your course information in a blank file</li>
+                            <li>update a template containing your current course information</li>
+                        </ul>
+                    </p>
+                    <p class="govuk-!-margin-bottom-9">
+                        Your updated course information will be published after you have uploaded your file and fixed any errors.
+                    </p>
+
+                    <div class="govuk-form-group govuk-!-margin-bottom-9">
+
+                        <label class=" govuk-heading-m" for="file-upload-1">
+                            Upload a file
+                        </label>
+                        <div class="govuk-warning-text govuk-heading-s">
+                            <span class="govuk-warning-text__icon" aria-hidden="true">!</span>
+                            <strong class="govuk-warning-text__text ">
+                                <span class="govuk-warning-text__assistive">Warning</span>
+                                This will replace all of your course information in the course directory
+                            </strong>
+                        </div>
+                        <input class="govuk-file-upload" id="file-upload-1" name="file-upload-1" type="file">
+                    </div>
+
+
+                    <fieldset class="govuk-fieldset govuk-!-margin-bottom-9">
+                    <legend class="govuk-fieldset__legend govuk-fieldset__legend--m">
+                      <h2 class="govuk-fieldset__heading govuk-heading-m">What do you want to do?</h2>
+                    </legend>
+                    <div class="govuk-radios  govuk-radios--small govuk-!-margin-bottom-6">
+                        <div class="govuk-radios__item">
+                            <input class="govuk-radios__input" id="where-do-you-live-1" name="where-do-you-live" type="radio" value="ConfirmationDelete">
+                            <label class="govuk-label govuk-radios__label" for="where-do-you-live-1">
+                                Replace my existing course information
+                            </label>
+                        </div>
+                        <div class="govuk-radios__item">
+                            <input class="govuk-radios__input" id="where-do-you-live-2" name="where-do-you-live" type="radio" value="yourapprenticeships">
+                            <label class="govuk-label govuk-radios__label" for="where-do-you-live-2">
+                                Do not replace my existing course information and go back to my home page
+                            </label>
+                        </div>
+                    </div>
+                    </fieldset>
+
+                    <div class="cta-container">
+                        <a class="govuk-button govuk-!-margin-right-3 " asp-controller="Home" asp-action="index6">Continue</a>
+                    </div>
+                </div>
+            </div>
+            <div class="govuk-grid-column-one-third">
+                <aside class="sidebar">
+
+                    <div class="widget white blue">
+                        <h3 class="govuk-heading-s">Templates</h3>
+                        <ul class="govuk-list">
+                            <li><a href="#" class="govuk-link">Download a blank template</a></li>
+                            <li><a href="#" class="govuk-link">Download a template containing your current courses</a></li>
+                        </ul>
+
+                    </div>
+                </aside>
+
+            </div>
+        </div>
+
+    </main>
+</div>
+

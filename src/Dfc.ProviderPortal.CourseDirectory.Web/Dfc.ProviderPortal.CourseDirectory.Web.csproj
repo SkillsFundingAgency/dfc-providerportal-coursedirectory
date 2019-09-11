@@ -269,6 +269,7 @@
     <Content Remove="wwwroot\js\Search.cshtml" />
    
 
+    <Content Remove="wwwroot\css\partials\cd-utils.css" />
   </ItemGroup>
 	<ItemGroup>
 	<Content Update="Views\Providers\Index.cshtml">
