@@ -36,10 +36,10 @@ get_data('/js/apprenticeships.json', function(data) {
 
     let course = `
     <div class="cd-apprenticeships-search-result__container">
-        <h3 class="govuk-heading-m" >${x.StandardName}</h3>
-<p class="govuk-body">Level: <span class="govuk-!-font-weight-bold">${x.NotionalEndLevel}</span></p>
-<p><span class="govuk-!-font-weight-bold">unique id : </span><span>1234rftg</span></p>
-<p class="govuk-body"><a class="govuk-link" href="/apprenticeships/add">Choose this apprenticeship</a></p>
+        <h3 class="govuk-heading-m cd-apprenticeships-search-result-heading" >${x.StandardName}</h3>
+        <p class="govuk-body cd-apprenticeships-search-result-text "><span class="govuk-!-font-weight-bold">Level: </span><span>${x.NotionalEndLevel}</span></p>
+        <p class="cd-apprenticeships-search-result-text"><span class="govuk-!-font-weight-bold">unique id : </span><span>1234rftg</span></p>
+        <a class="govuk-link cd-apprenticeships-search-result-link" href="/apprenticeships/add">Choose this apprenticeship</a>
 
     </div>`
 
