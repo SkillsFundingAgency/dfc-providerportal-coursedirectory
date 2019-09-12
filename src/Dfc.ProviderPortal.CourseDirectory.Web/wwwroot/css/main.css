@@ -7542,6 +7542,25 @@ ul.sort-list {
   transition: all .5s ease-in-out;
 }
 
+.submit {
+  height: 40px;
+  width: 40px;
+  cursor: pointer;
+  overflow: hidden;
+  text-indent: 50000px;
+  background: black;
+  background-image: url("/assets/images/icon-search-2x.png");
+  background-repeat: no-repeat;
+  background-position: 60% 50%;
+  background-size: 24px;
+  float: left;
+  padding: 6px;
+  border: 0;
+  color: white;
+  z-index: 900;
+  position: relative;
+}
+
 .visible {
   display: block;
   transition: all .5s ease-in-out;
@@ -7616,7 +7635,17 @@ ul.sort-list {
 
 .cd-search-container {
   background-color: #f3f2f1;
-  padding: 1rem 0rem 1rem 1rem;
+  padding: 1rem;
   margin-bottom: 1rem;
   border-left: 5px solid #28a197;
+}
+
+.search--container {
+  display: flex;
+  flex-direction: column;
+}
+
+.search--container .search__input--container {
+  margin-top: 0.5rem;
+  display: flex;
 }
