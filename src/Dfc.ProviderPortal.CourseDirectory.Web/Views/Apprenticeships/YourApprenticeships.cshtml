@@ -11,8 +11,8 @@
         <h1 class="govuk-heading-l govuk-!-margin-top-4">@ViewBag.Title</h1>
     </div>
     <div class="cd-search-container">
-        <p class="column-two-thirds govuk-body">@ViewBag.Subtext</p>
-        <div class="site-search ui-front" id="header-search" role="search">
+       
+        @*<div class="site-search ui-front" id="header-search" role="search">
             <div class="header-search-content govuk-!-width-two-thirds">
 
                 <div class="search-input-wrapper govuk-!-margin-bottom-4">
@@ -23,6 +23,17 @@
                     </div>
                 </div>
             </div>
+        </div>*@
+
+        <div class="search--container">
+            <label class="govuk-label" name="unregulated-search" for="">@ViewBag.Subtext </label>
+
+            <div class="search__input--container">
+                <input class=" zcodesearch--container-input govuk-input  govuk-input--width-20" type="text" aria-label="unregulated-search" />
+                <button id="searchZCode" type="submit" class="submit">Search</button>
+
+            </div>
+
         </div>
     </div>
 
