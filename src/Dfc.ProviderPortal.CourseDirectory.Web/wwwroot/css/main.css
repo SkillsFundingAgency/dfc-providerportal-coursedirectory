@@ -7449,6 +7449,10 @@ ul.sort-list {
   padding: 0.5em;
 }
 
+.cd-apprenticeships-search-result__container:hover {
+  background-color: #f8f8f8;
+}
+
 .summary--linked-title {
   display: flex;
   justify-content: space-between;
@@ -7473,6 +7477,10 @@ ul.sort-list {
 
 .cd-your-apprenticeships-search-result__container p {
   margin: 0;
+}
+
+.cd-your-apprenticeships-search-result__container:hover {
+  background-color: #f8f8f8;
 }
 
 .cd-apprenticeships-search-result__container .cd-apprenticeships-search-result-text {

@@ -2,6 +2,10 @@
     border: 1px solid #bfc1c3;
     margin-bottom: 1em;
     padding: 0.5em;
+
+    &:hover {
+        background-color: #f8f8f8;
+    }
 }
 
 
@@ -17,6 +21,8 @@
     a {
         font-size: 1.1875rem;
     }
+
+
 }
 .cd-your-apprenticeships-search-result__container {
     border: 1px solid #bfc1c3;
@@ -30,6 +36,10 @@
     p{ 
         margin: 0;
 
+    }
+
+    &:hover {
+        background-color:#f8f8f8;
     }
 }
 
