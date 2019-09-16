@@ -12,22 +12,27 @@
                     <div class="">
                         <div class="govuk-panel govuk-panel--confirmation">
                             <h1 class="govuk-panel__title">
-                                Apprenticeship published
+                                Apprenticeship training published
 
                             </h1>
                             <div class="govuk-panel__body">
-                                <strong> [Apprenticeship name]</strong> has been added to the Course directory
+                                <strong> [Apprenticeship name]</strong> 
                             </div>
                         </div>
 
-                        <h2 class="govuk-heading-m">Next steps</h2>
+                        <h2 class="govuk-heading-m">
+                            What do you want to do next?
+                        </h2>
 
                         <p class="govuk-body">
-                            <a class="govuk-link" asp-controller="Apprenticeships" asp-action="Search">
-                                Add another apprenticeship
+                            <a class="govuk-link" asp-controller="Apprenticeships" asp-action="Search"> 
+                                Add another apprenticeship training
+                            </a><br />
+                            <a class="govuk-link" asp-controller="Apprenticeships" asp-action="YourApprenticeships">
+                                View your published apprenticeship training
                             </a><br />
                             <a class="govuk-link" asp-controller="Apprenticeships" asp-action="Index">
-                                Return to dashboard
+                                Go to your homepage
                             </a>
                         </p>
                     </div>
