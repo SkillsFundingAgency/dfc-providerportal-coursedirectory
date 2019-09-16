@@ -23,19 +23,25 @@
                         <h2 class="govuk-heading-m">
                             What do you want to do next?
                         </h2>
+                        <ul class="govuk-list">
+                            <li>
+                                <a class="govuk-link govuk-!-margin-bottom-4" asp-controller="Apprenticeships" asp-action="Search">
+                                    Add another apprenticeship training
+                                </a>
+                            </li>
+                            <li>
+                                <a class="govuk-link govuk-!-margin-bottom-4" asp-controller="Apprenticeships" asp-action="YourApprenticeships">
+                                    View your published apprenticeship training
+                                </a>
+                            </li>
+                            <li>
+                                <a class="govuk-link govuk-!-margin-bottom-4" asp-controller="Apprenticeships" asp-action="Index">
+                                    Go to your homepage
+                                </a>
+                            </li>
+                        </ul>
 
-                        <p class="govuk-body">
-                            <a class="govuk-link" asp-controller="Apprenticeships" asp-action="Search"> 
-                                Add another apprenticeship training
-                            </a><br />
-                            <a class="govuk-link" asp-controller="Apprenticeships" asp-action="YourApprenticeships">
-                                View your published apprenticeship training
-                            </a><br />
-                            <a class="govuk-link" asp-controller="Apprenticeships" asp-action="Index">
-                                Go to your homepage
-                            </a>
-                        </p>
-                    </div>
+</div>
                 </div>
             </main>
         </div>
