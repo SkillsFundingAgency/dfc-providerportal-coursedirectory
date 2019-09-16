@@ -14,16 +14,14 @@
             <div class="govuk-grid-row">
                 <div class="govuk-grid-column-full">
 
-                    <h1 class="govuk-heading-l">View and edit this apprenticeship</h1>
+                    <h1 class="govuk-heading-l">View and edit apprenticeship training</h1>
 
                     <h2 class="govuk-heading-m">[Apprenticeship name]</h2>
 
                     <dl class="govuk-summary-list ">
                         <div class="govuk-summary-list__row">
                             <dt class="govuk-summary-list__key">
-                                Apprenticeship
-                                information for
-                                employers
+                                Training description
                             </dt>
                             <dd class="govuk-summary-list__value">
                                 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.   Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum.
@@ -34,10 +32,10 @@
                             </dd>
                         </div>
                     </dl>
-                    <dl class="govuk-summary-list ">
+                    <dl class="govuk-summary-list govuk-!-margin-bottom-9 ">
                         <div class="govuk-summary-list__row">
                             <dt class="govuk-summary-list__key">
-                                Apprenticeship webpage
+                                URL for this training
                             </dt>
                             <dd class="govuk-summary-list__value">
                                 http://www.collegesite.com
@@ -48,6 +46,7 @@
                             </dd>
                         </div>
                     </dl>
+                    <h2 class="govuk-heading-m govuk-!-margin-bottom-5">Contact information</h2>
                     <dl class="govuk-summary-list">
                         <div class="govuk-summary-list__row">
                             <dt class="govuk-summary-list__key">
@@ -62,10 +61,24 @@
                             </dd>
                         </div>
                     </dl>
+                    <dl class="govuk-summary-list">
+                        <div class="govuk-summary-list__row">
+                            <dt class="govuk-summary-list__key">
+                                Telephone
+                            </dt>
+                            <dd class="govuk-summary-list__value">
+                                000000000000
+                            </dd>
+                            <dd class="govuk-summary-list__actions">
+                                <a class="" asp-controller="Apprenticeships" asp-action="EditYourApprenticeships">Change <span class="govuk-visually-hidden"> edit</span></a>
+
+                            </dd>
+                        </div>
+                    </dl>
                     <dl class="govuk-summary-list govuk-!-margin-bottom-9">
                         <div class="govuk-summary-list__row">
                             <dt class="govuk-summary-list__key">
-                                Contact URL
+                                URL for contact information
                             </dt>
                             <dd class="govuk-summary-list__value">
                                 user@college.com
@@ -96,20 +109,16 @@
                         </thead>
                         <tbody class="govuk-table__body">
                             <tr class="govuk-table__row">
-                                <th class="govuk-table__header" scope="row">Birmingham</th>
+                                <td class="govuk-table__cell" scope="row">Birmingham</td>
                                 <td class="govuk-table__cell">Day release, Block release</td>
 
-                                <td class="govuk-table__cell">
-
-                                </td>
+                                <td class="govuk-table__cell"></td>
                             </tr>
                             <tr class="govuk-table__row">
-                                <th class="govuk-table__header" scope="row">Leeds</th>
+                                <td class="govuk-table__cell" scope="row">Leeds</td>
                                 <td class="govuk-table__cell">Block release</td>
 
-                                <td class="govuk-table__cell">
-
-                                </td>
+                                <td class="govuk-table__cell"></td>
                             </tr>
 
                         </tbody>
@@ -117,7 +126,7 @@
 
 
 
-                    <a class="govuk-button" asp-controller="Apprenticeships" asp-action="YourApprenticeships">Close</a>
+                    <a class="govuk-button" asp-controller="Apprenticeships" asp-action="YourApprenticeships">Go to your homepage</a>
                 </div>
             </div>
         </main>
