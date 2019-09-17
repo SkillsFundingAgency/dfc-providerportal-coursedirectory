@@ -6812,6 +6812,13 @@ ul.sort-list {
   display: flex;
   flex-direction: row;
   list-style-type: none;
+  margin-left: 0px;
+  padding-left: 0px;
+}
+
+#helpdesk__navigation .helpdesk__nav-list .provider-name {
+  width: 30%;
+  max-width: 30%;
 }
 
 #helpdesk__navigation .helpdesk__nav-list-item {
