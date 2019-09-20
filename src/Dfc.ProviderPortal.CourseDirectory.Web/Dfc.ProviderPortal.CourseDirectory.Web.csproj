@@ -294,6 +294,7 @@
     <Content Remove="wwwroot\css\partials\view-components.pagination.css" />
     <Content Remove="Views\Apprenticeships2\classroombased %28another copy%29.cshtml" />
     <Content Remove="wwwroot\js\gov.js" />
+    <Content Remove="wwwroot\dist\gov.js" />
   </ItemGroup>
 	<ItemGroup>
 	<Content Update="Views\Providers\Index.cshtml">
@@ -314,9 +315,8 @@
   <ItemGroup>
     <None Include="wwwroot\js\apprenticeships.json" />
     <None Include="wwwroot\js\providers.json" />
-    <None Include="wwwroot\js\gov.js" />
+    <None Include="wwwroot\dist\gov.js" />
 <None Include="wwwroot\assets\apprenticeships.json" />
 <None Include="wwwroot\js\tablesorter.js" />
-<None Include="wwwroot\js\gov.js" />
   </ItemGroup>
 </Project>
