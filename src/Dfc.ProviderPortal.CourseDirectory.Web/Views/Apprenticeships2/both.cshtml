@@ -7,10 +7,8 @@
 <div class="cd-dashboard govuk-grid-row govuk-body  ">
 
     <div class="govuk-form-group govuk-grid-column-two-thirds">
-
-        <span>your loactions</span>
         <div class="govuk-form-group">
-            <fieldset class="govuk-fieldset" aria-describedby="citizenship-conditional-hint">
+            <fieldset class="govuk-fieldset govuk-!-margin-bottom-4" aria-describedby="citizenship-conditional-hint">
                 <legend class="govuk-fieldset__legend govuk-fieldset__legend--l">
                     <h1 class="govuk-fieldset__heading">
                         Choose locations
@@ -19,6 +17,7 @@
                 <span id="citizenship-conditional-hint" class="govuk-hint">
                     Choose all that apply.
                 </span>
+                <h2 class="govuk-headding-s">Your locations</h2>
                 <div class="govuk-checkboxes govuk-checkboxes--small" data-module="govuk-checkboxes">
                     <div class="govuk-checkboxes__item">
                         <input class="govuk-checkboxes__input" id="citizenship-conditional" name="citizen" type="checkbox" value="email" data-aria-controls="conditional-citizenship-conditional">
@@ -90,7 +89,7 @@
                 </div>
 
             </fieldset>
-            <a href="#" class="govuk-link">Add a new location</a>
+            <a href="#" class="govuk-link ">Add a new location</a>
         </div>
         <div class="govuk-!-margin-top-7">
             <a class="govuk-button govuk-!-margin-right-2" asp-controller="Apprenticeships2" asp-action="whereCanYouTravel">Continue</a>
