@@ -32,6 +32,14 @@ namespace Dfc.ProviderPortal.CourseDirectory.Web.Controllers
         {
             return View();
         }
+        public IActionResult DistanceFromLocation()
+        {
+            return View();
+        }
+        public IActionResult WhereCanYouTravel()
+        {
+            return View();
+        }
         public IActionResult ConfirmDelete()
         {
             return View();

@@ -1,0 +1,91 @@
+﻿
+@{
+    ViewData["Title"] = "Index";
+}
+
+<a asp-controller="Apprenticeships2" asp-action="CourseType"class="govuk-back-link">Back</a>
+<div class="cd-dashboard govuk-grid-row govuk-body ">
+
+    <div class="govuk-form-group govuk-grid-column-two-thirds">
+
+
+
+        <div class="govuk-form-group">
+            <div class="govuk-form-group">
+                <fieldset class="govuk-fieldset" aria-describedby="citizenship-conditional-hint">
+                    <legend class="govuk-fieldset__legend govuk-fieldset__legend--l">
+                        <h1 class="govuk-fieldset__heading">
+                            Where can you travel?
+                            <span>how far from your locations can you travel</span>
+                        </h1>
+                    </legend>
+                    <span id="citizenship-conditional-hint" class="govuk-hint">
+                        Select all options that are relevant to you.
+                    </span>
+                    <div class="govuk-checkboxes" data-module="govuk-checkboxes">
+                        <div class="govuk-checkboxes__item">
+                            <input class="govuk-checkboxes__input" id="citizenship-conditional" name="citizen" type="checkbox" value="email" data-aria-controls="conditional-citizenship-conditional">
+                            <label class="govuk-label govuk-checkboxes__label" for="citizenship-conditional">
+                                Mercury House
+                            </label>
+                        </div>
+                        <div class="govuk-checkboxes__conditional govuk-checkboxes__conditional--hidden" id="conditional-citizenship-conditional">
+                            <div class="govuk-form-group">
+                                <label class="govuk-label" for="contact-by-email">
+                                    Distance in miles
+                                </label>
+                                <input class="govuk-input govuk-!-width-one-third" id="contact-by-email" name="contact-by-email" type="email" spellcheck="false">
+                            </div>
+
+                        </div>
+                        <div class="govuk-checkboxes__item">
+                            <input class="govuk-checkboxes__input" id="citizenship-conditional-2" name="citizen" type="checkbox" value="phone" data-aria-controls="conditional-citizenship-conditional-2">
+                            <label class="govuk-label govuk-checkboxes__label" for="citizenship-conditional-2">
+                                Cheylesmore House
+                            </label>
+                        </div>
+                        <div class="govuk-checkboxes__conditional govuk-checkboxes__conditional--hidden" id="conditional-citizenship-conditional-2">
+                            <div class="govuk-form-group">
+                                <label class="govuk-label" for="contact-by-phone">
+                                    Distance in miles
+                                </label>
+                                <input class="govuk-input govuk-!-width-one-third" id="contact-by-phone" name="contact-by-phone" type="tel">
+                            </div>
+
+                        </div>
+                        <div class="govuk-checkboxes__item">
+                            <input class="govuk-checkboxes__input" id="citizenship-conditional-3" name="citizen" type="checkbox" value="text message" data-aria-controls="conditional-citizenship-conditional-3">
+                            <label class="govuk-label govuk-checkboxes__label" for="citizenship-conditional-3">
+                                Herdeyke Temple
+                            </label>
+                        </div>
+                        <div class="govuk-checkboxes__conditional govuk-checkboxes__conditional--hidden" id="conditional-citizenship-conditional-3">
+                            <div class="govuk-form-group">
+                                <label class="govuk-label" for="contact-by-text">
+                                    Distance in miles
+                                </label>
+                                <input class="govuk-input govuk-!-width-one-third" id="contact-by-text" name="contact-by-text" type="tel">
+                            </div>
+
+                        </div>
+                    </div>
+                </fieldset>
+            </div>
+            <a href="#" class="govuk-link">Add a new location</a>
+        </div>
+
+
+        <div class="govuk-!-margin-top-7">
+            <a class="govuk-button govuk-!-margin-right-2" asp-controller="Apprenticeships" asp-action="Summary">Continue</a>
+
+        </div>
+
+
+
+        <div ></div>
+    </div>
+
+
+
+</div>
+
