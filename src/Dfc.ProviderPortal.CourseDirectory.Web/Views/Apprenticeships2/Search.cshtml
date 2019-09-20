@@ -1,0 +1,82 @@
+﻿@{
+    Layout = "_Layout";
+    ViewData["Title"] = "Find an apprenticeship";
+    ViewData["Subtext"] = "Search by name or keyword for the apprenticeship you are delivering with this training.";
+    ViewData["Target"] = "/providers/AddResults/";
+    ViewData["Placeholder"] = "Search";
+    ViewData["Area"] = "Qualifications";
+}
+<div class="apprenticeship-search-page">
+    <div>
+        <h1 class="govuk-heading-l govuk-!-margin-top-4">@ViewBag.Title</h1>
+    </div>
+    <div class="cd-search-container">
+
+        <form action="javascript:void(0);" class="site-search ui-front" id="header-search" role="search">
+            <div class="header-search-content govuk-!-width-two-thirds">
+
+                @*<div class="search-input-wrapper">
+                        <label>@ViewBag.Subtext</label>
+                        <input class="govuk-input  search-input js-search-focus" id="search" name="SearchTerm" type="search">
+                        <div class="cd-c-search__item cd-search__submit-wrapper">
+                            <button type="submit" class=" submit">Search</button>
+                        </div>
+                    </div>*@
+            </div>
+
+
+            <div class="search--container">
+                <label class="govuk-label" name="unregulated-search" for="">@ViewBag.Subtext </label>
+
+                <div class="search__input--container">
+                    <input class=" zcodesearch--container-input govuk-input  govuk-input--width-20" type="text" aria-label="unregulated-search" />
+                    <button id="searchZCode" type="submit" class="submit">Search</button>
+
+                </div>
+
+            </div>
+        </form>
+    </div>
+
+    <div class="govuk-grid-row">
+
+        <div class="govuk-grid-column-two-thirds  ">
+
+            <div class="cd-apprenticeships2-results hide govuk-body">
+                <div class="govuk-!-margin-bottom-4">
+                    <span>Found <strong>[Number]</strong> results for <strong>[Search term]</strong></span>
+                </div>
+
+                <div class="cd-apprenticeships-search-result__container">
+                    <h2 class="govuk-heading-m cd-apprenticeships-search-result-heading">Network Engineer</h2>
+                    <p class="govuk-body cd-apprenticeships-search-result-text "><span class="govuk-!-font-weight-bold">Level: </span><span>4</span></p>
+                    <p class="cd-apprenticeships-search-result-text"><span class="govuk-!-font-weight-bold">unique id : </span><span>1234rftg</span></p>
+                    <a class="govuk-link cd-apprenticeships-search-result-link" href="/apprenticeships2/add">Choose this apprenticeship</a>
+
+                </div>
+                <div class="cd-apprenticeships-search-result__container">
+                    <h2 class="govuk-heading-m cd-apprenticeships-search-result-heading">Network Engineer</h2>
+                    <p class="govuk-body cd-apprenticeships-search-result-text "><span class="govuk-!-font-weight-bold">Level: </span><span>4</span></p>
+                    <p class="cd-apprenticeships-search-result-text"><span class="govuk-!-font-weight-bold">unique id : </span><span>1234rftg</span></p>
+                    <a class="govuk-link cd-apprenticeships-search-result-link" href="/apprenticeships2/add">Choose this apprenticeship</a>
+
+                </div>
+                <div class="cd-apprenticeships-search-result__container">
+                    <h2 class="govuk-heading-m cd-apprenticeships-search-result-heading">Network Engineer</h2>
+                    <p class="govuk-body cd-apprenticeships-search-result-text "><span class="govuk-!-font-weight-bold">Level: </span><span>4</span></p>
+                    <p class="cd-apprenticeships-search-result-text"><span class="govuk-!-font-weight-bold">unique id : </span><span>1234rftg</span></p>
+                    <a class="govuk-link cd-apprenticeships-search-result-link" href="/apprenticeships2/add">Choose this apprenticeship</a>
+
+                </div>
+                <div class="cd-apprenticeships-search-result__container">
+                    <h2 class="govuk-heading-m cd-apprenticeships-search-result-heading">Network Engineer</h2>
+                    <p class="govuk-body cd-apprenticeships-search-result-text "><span class="govuk-!-font-weight-bold">Level: </span><span>4</span></p>
+                    <p class="cd-apprenticeships-search-result-text"><span class="govuk-!-font-weight-bold">unique id : </span><span>1234rftg</span></p>
+                    <a class="govuk-link cd-apprenticeships-search-result-link" href="/apprenticeships2/add">Choose this apprenticeship</a>
+
+                </div>
+            </div>
+            <partial name="_CDPagination" />
+        </div>
+    </div>
+</div>

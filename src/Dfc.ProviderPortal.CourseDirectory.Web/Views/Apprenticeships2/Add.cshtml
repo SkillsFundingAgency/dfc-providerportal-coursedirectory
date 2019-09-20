@@ -1,0 +1,90 @@
+﻿
+@{
+    ViewData["Title"] = "Index";
+}
+
+<a asp-controller="Apprenticeships" asp-action="search" class="govuk-back-link">Back</a>
+<div class="cd-dashboard govuk-grid-row govuk-body ">
+
+    <div class="govuk-form-group govuk-grid-column-two-thirds">
+        <fieldset class="govuk-fieldset" aria-describedby="Addapprenticeshiptraining">
+            <legend class="govuk-fieldset__legend govuk-fieldset__legend--l">
+                <h1 class="govuk-fieldset__heading" name="Add apprenticeship training" id="Addapprenticeshiptraining">
+                    Add apprenticeship training
+
+                </h1>
+            </legend>
+            <p class="govuk-body-l">
+                Use these sections to provide information to learners about this training.
+            </p>
+            <div class="govuk-character-count" data-module="character-count" data-maxlength="750">
+                <div class="govuk-form-group ">
+                    <label class="govuk-label--m" for="with-hint">
+                        Training description
+                    </label>
+                    <span id="with-hint-hint" class="govuk-hint">
+                        Provide information for employers about this training. Advice is available in <a href="https://www.gov.uk/government/publications/find-apprenticeship-training-how-to-submit-data">guidance</a>.
+                    </span>
+                    <textarea class="govuk-textarea js-character-count  " id="with-hint" name="with-hint" rows="7" aria-describedby="with-hint-hint"></textarea>
+                </div>
+
+                <span id="with-hint-info" class="govuk-hint govuk-character-count__message" aria-live="polite">
+                    You have 750 characters remaining
+                </span>
+            </div>
+
+            <div class="govuk-form-group">
+                <label class="govuk-label--m" for="event-name">
+                    URL for this training
+                </label>
+                <span class="govuk-hint">Enter the URL for this training on your website. For example, http://www.provider.com/training.</span>
+                <input class="govuk-input" id="event-name" name="event-name" type="text">
+            </div>
+
+            <h2 class="govuk-heading-l">Contact details</h2>
+
+
+            <div class="govuk-form-group">
+                <label class="govuk-label--m" for="email">
+                    Email
+                </label>
+                <input class="govuk-input" id="email" name="email" type="text">
+            </div>
+            <div class="govuk-form-group ">
+                <label class="govuk-label--m govuk-grid-column-full govuk-!-padding-0 " for="telephone">
+                    Telephone
+                </label>
+                <input class="govuk-input govuk-!-width-one-half" id="telephone" name="telephone" type="number">
+            </div>
+            <div class="govuk-form-group">
+                <label class="govuk-label--m" for="url">
+                    URL for contact information
+                </label>
+                <span class="govuk-hint">Enter the URL for contact information about this training on your website. For example, http://www.provider.com/contactus.</span>
+                <input class="govuk-input " id="url" name="url" type="text">
+            </div>
+            <div class="govuk-form-group govuk-!-margin-bottom-6">
+
+
+            </div>
+
+
+
+
+
+
+            @*<div class="govuk-form-group">
+            <label class="govuk-label" for="event-name">
+                Catchment radius
+            </label>
+            <span id="waste-hint" class="govuk-hint">
+                what is the radius
+            </span>
+            <input class="govuk-input govuk-input--width-4" id="event-name" name="event-name" type="text"> <span>miles</span>
+        </div>*@
+
+            <a class="govuk-button" asp-controller="Apprenticeships2" asp-action="CourseType">Continue</a>
+        </fieldset>
+    </div>
+</div>
+

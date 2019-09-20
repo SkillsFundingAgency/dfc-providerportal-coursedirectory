@@ -1,0 +1,50 @@
+﻿
+@{
+    ViewData["Title"] = "Index";
+}
+
+
+<div class="cd-dashboard provider apprenticeship-type govuk-grid-row">
+    <div class="govuk-grid-column-full">
+        <div class="">
+            <main class="govuk-main-wrapper govuk-main-wrapper--l" id="main-content" role="main">
+                <div class="govuk-grid-row">
+                    <div class="">
+                        <div class="govuk-panel govuk-panel--confirmation">
+                            <h1 class="govuk-panel__title">
+                                Apprenticeship training published
+
+                            </h1>
+                            <div class="govuk-panel__body">
+                                <strong> [Apprenticeship name]</strong> 
+                            </div>
+                        </div>
+
+                        <h2 class="govuk-heading-m">
+                            What do you want to do next?
+                        </h2>
+                        <ul class="govuk-list">
+                            <li>
+                                <a class="govuk-link govuk-!-margin-bottom-4" asp-controller="Apprenticeships" asp-action="Search">
+                                    Add another apprenticeship training
+                                </a>
+                            </li>
+                            <li>
+                                <a class="govuk-link govuk-!-margin-bottom-4" asp-controller="Apprenticeships" asp-action="YourApprenticeships">
+                                    View your published apprenticeship training
+                                </a>
+                            </li>
+                            <li>
+                                <a class="govuk-link govuk-!-margin-bottom-4" asp-controller="Apprenticeships" asp-action="Index">
+                                    Go to your homepage
+                                </a>
+                            </li>
+                        </ul>
+
+</div>
+                </div>
+            </main>
+        </div>
+    </div>
+</div>
+

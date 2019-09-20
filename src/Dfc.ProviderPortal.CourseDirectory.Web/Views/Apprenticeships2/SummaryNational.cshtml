@@ -1,0 +1,124 @@
+﻿
+@{
+    ViewData["Title"] = "Index";
+}
+
+
+<div class="cd-dashboard ">
+
+
+    <div class="">
+
+
+        <main class="govuk-mainwrapper " id="main-content" role="main">
+            <div class="govuk-grid-row">
+                <div class="govuk-grid-column-full">
+
+                    <h1 class="govuk-heading-l">Check and publish</h1>
+
+                    <h2 class="govuk-heading-m">Apprenticeship in accounting</h2>
+
+                    <dl class="govuk-summary-list ">
+                        <div class="govuk-summary-list__row">
+                            <dt class="govuk-summary-list__key">
+                                Apprenticeship
+                                information for
+                                employers
+                            </dt>
+                            <dd class="govuk-summary-list__value">
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.   Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum.
+                            </dd>
+                            <dd class="govuk-summary-list__actions">
+                                <a class="" asp-controller="Apprenticeships" asp-action="Edit">Change <span class="govuk-visually-hidden"> change</span></a>
+
+                            </dd>
+                        </div>
+                    </dl>
+                    <dl class="govuk-summary-list ">
+                        <div class="govuk-summary-list__row">
+                            <dt class="govuk-summary-list__key">
+                                Apprenticeship webpage
+                            </dt>
+                            <dd class="govuk-summary-list__value">
+                                http://www.collegesite.com
+                            </dd>
+                            <dd class="govuk-summary-list__actions">
+                                <a class="" asp-controller="Apprenticeships" asp-action="Edit">Change <span class="govuk-visually-hidden"> change</span></a>
+
+                            </dd>
+                        </div>
+                    </dl>
+                    <dl class="govuk-summary-list">
+                        <div class="govuk-summary-list__row">
+                            <dt class="govuk-summary-list__key">
+                                Email
+                            </dt>
+                            <dd class="govuk-summary-list__value">
+                                user@college.com
+                            </dd>
+                            <dd class="govuk-summary-list__actions">
+                                <a class="" asp-controller="Apprenticeships" asp-action="Edit">Change <span class="govuk-visually-hidden"> change</span></a>
+
+                            </dd>
+                        </div>
+                    </dl>
+                    <dl class="govuk-summary-list govuk-!-margin-bottom-9">
+                        <div class="govuk-summary-list__row">
+                            <dt class="govuk-summary-list__key">
+                                Contact URL
+                            </dt>
+                            <dd class="govuk-summary-list__value">
+                                user@college.com
+                            </dd>
+                            <dd class="govuk-summary-list__actions">
+                                <a class="" asp-controller="Apprenticeships" asp-action="Edit">Change <span class="govuk-visually-hidden"> change</span></a>
+                            </dd>
+                        </div>
+                    </dl>
+
+                    <div class="summary--linked-title">
+                        <h2 class="govuk-heading-m">Delivery options </h2>
+                        <a class="govuk-link float-right " asp-controller="Apprenticeships" asp-action="classroombasedwithTableEdit">
+                            Change
+                        </a>
+                    </div>
+
+                    <table class="govuk-table">
+                        <caption class="govuk-table__caption govuk-visually-hidden">Delivery options</caption>
+
+                        <thead class="govuk-table__head">
+                            <tr class="govuk-table__row">
+                                <th class="govuk-table__header" scope="col">Location</th>
+                                <th class="govuk-table__header" scope="col">Radius</th>
+                                <th class="govuk-table__header" scope="col"></th>
+                            </tr>
+                        </thead>
+                        <tbody class="govuk-table__body">
+                            <tr class="govuk-table__row">
+                                <th class="govuk-table__header" scope="row">National</th>
+                                <td class="govuk-table__cell">
+                                    I can deliver this apprenticeship training at employer addresses
+                                    anywhere in England.
+                                <td class="govuk-table__cell">
+
+                                </td>
+                            </tr>
+
+
+                        </tbody>
+                    </table>
+
+
+
+                    <a class="govuk-button" asp-controller="Apprenticeships" asp-action="Confirmation">Publish</a>
+                </div>
+            </div>
+        </main>
+    </div>
+
+
+
+
+
+</div>
+

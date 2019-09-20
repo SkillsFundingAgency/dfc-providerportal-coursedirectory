@@ -139,12 +139,16 @@ if (searchpage) {
     const pagination = document.getElementsByClassName('pagination')[0];
     const searchButton =  document.getElementsByClassName('submit')[0];
     const resultsContainer = document.getElementsByClassName('cd-apprenticeships-results')[0];
+    const results2Container = document.getElementsByClassName('cd-apprenticeships2-results')[0];
 
     pagination.classList.add('hide');
 
     searchButton.addEventListener('click', () => {
         create_data();
-        resultsContainer.classList.add('visible');
+        if (resultsContainer) {
+            resultsContainer.classList.add('visible');
+        }
+        results2Container.classList.add('visible');
         pagination.classList.add('visible');
 
     })

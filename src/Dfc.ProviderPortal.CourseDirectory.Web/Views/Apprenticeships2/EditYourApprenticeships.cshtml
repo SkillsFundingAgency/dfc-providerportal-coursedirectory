@@ -1,0 +1,94 @@
+﻿
+@{
+    ViewData["Title"] = "Index";
+}
+
+
+<div class="cd-dashboard govuk-grid-row govuk-body ">
+
+    <div class="govuk-form-group govuk-grid-column-two-thirds">
+        <fieldset class="govuk-fieldset" aria-describedby="how-contacted-conditional-hint">
+            <legend class="govuk-fieldset__legend govuk-fieldset__legend--l">
+                <h1 class="govuk-fieldset__heading">
+                    Edit apprenticeship training details
+
+                </h1>
+            </legend>
+
+            <div class="govuk-character-count" data-module="character-count" data-maxlength="750">
+                <div class="govuk-form-group ">
+                    <label class="govuk-label" for="with-hint">
+                        Apprenticeship information for employers
+                    </label>
+                    <span id="with-hint-hint" class="govuk-hint">
+                        Give information for employers about how you deliver this specific apprenticeship training. For useful advice
+                        on how to fill out this section go to the <a href="https://www.gov.uk/government/publications/find-apprenticeship-training-how-to-submit-data">guidance</a>
+                    </span>
+                    <textarea class="govuk-textarea js-character-count  " id="with-hint" name="with-hint" rows="7" aria-describedby="with-hint-hint">
+content
+                    </textarea>
+                </div>
+
+                <span id="with-hint-info" class="govuk-hint govuk-character-count__message" aria-live="polite">
+                    You can enter up to 750 characters
+                </span>
+            </div>
+
+            <div class="govuk-form-group">
+                <label class="govuk-label" for="event-name">
+                    Apprenticeship
+                    webpage
+                </label>
+                <span class="govuk-hint">Your web page for this apprenticeship. Include http://</span>
+                <input class="govuk-input" id="event-name" name="event-name" type="text" value="content">
+            </div>
+            <h2 class="">Contact details</h2>
+
+            <div class="govuk-form-group">
+                <label class="govuk-label" for="event-name">
+                    Email
+                </label>
+                <input class="govuk-input" id="event-name" name="event-name" type="text" value="content">
+            </div>
+            <div class="govuk-form-group">
+                <label class="govuk-label" for="event-name">
+                    Telephone
+                </label>
+                <input class="govuk-input govuk-!-width-one-half" id="event-name" name="event-name" type="text" value="content">
+            </div>
+            <div class="govuk-form-group">
+                <label class="govuk-label" for="event-name">
+                    Contact Url
+                </label>
+                <span class="govuk-hint">You can also add the url of any ‘Contact us’ page you have on your website.</span>
+                <input class="govuk-input " id="event-name" name="event-name" type="text" value="content">
+            </div>
+            <div class="govuk-form-group govuk-!-margin-bottom-6">
+
+
+            </div>
+
+
+
+
+
+
+            @*<div class="govuk-form-group">
+            <label class="govuk-label" for="event-name">
+                Catchment radius
+            </label>
+            <span id="waste-hint" class="govuk-hint">
+                what is the radius
+            </span>
+            <input class="govuk-input govuk-input--width-4" id="event-name" name="event-name" type="text"> <span>miles</span>
+        </div>*@
+
+
+            <div class="cta-container">
+                <a class="govuk-button" asp-controller="Apprenticeships" asp-action="ViewEditSave">Save</a>
+                <a class="govuk-link govuk-!-margin-left-3 " asp-controller="Apprenticeships" asp-action="ViewEdit">Cancel</a>
+            </div>
+        </fieldset>
+    </div>
+</div>
+

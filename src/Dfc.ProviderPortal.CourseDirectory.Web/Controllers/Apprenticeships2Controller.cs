@@ -6,7 +6,7 @@ using Microsoft.AspNetCore.Mvc;
 
 namespace Dfc.ProviderPortal.CourseDirectory.Web.Controllers
 {
-    public class ApprenticeshipsController : Controller
+    public class Apprenticeships2Controller : Controller
     {
         public IActionResult Index()
         {

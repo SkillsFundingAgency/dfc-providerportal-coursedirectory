@@ -1,0 +1,37 @@
+﻿
+@{
+    ViewData["Title"] = "Index";
+}
+
+<a asp-controller="Apprenticeships" asp-action="CourseType" class="govuk-back-link">Back</a>
+<div class="cd-dashboard govuk-grid-row govuk-body employerNationalQuestion  ">
+
+    <div class="govuk-form-group govuk-grid-column-two-thirds">
+        <fieldset class="govuk-fieldset govuk-!-margin-bottom-6">
+            <legend class="govuk-fieldset__legend govuk-fieldset__legend--l">
+                <h1 class="govuk-fieldset__heading">
+                    Can you deliver this training at employers’ locations
+                    anywhere in England?
+                </h1>
+            </legend>
+            <span class="govuk-hint">This will flag you as a national provider to people searching for apprenticeship training</span>
+            <div class="govuk-radios">
+                <div class="govuk-radios__item">
+                    <input class="govuk-radios__input" id="where-do-you-live-1" name="where-do-you-live" type="radio" value="/apprenticeships/summarynational">
+                    <label class="govuk-label govuk-radios__label" for="where-do-you-live-1">
+                        Yes
+                    </label>
+                </div>
+                <div class="govuk-radios__item">
+                    <input class="govuk-radios__input" id="where-do-you-live-2" name="where-do-you-live" type="radio" value="/apprenticeships/regionselect">
+                    <label class="govuk-label govuk-radios__label" for="where-do-you-live-2">
+                        No
+                    </label>
+                </div>
+
+            </div>
+        </fieldset>
+        <a class="govuk-button" asp-controller="Apprenticeships" asp-action="Search">Continue</a>
+    </div>
+</div>
+

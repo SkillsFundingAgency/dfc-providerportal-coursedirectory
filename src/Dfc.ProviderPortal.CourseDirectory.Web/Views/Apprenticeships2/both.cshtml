@@ -1,0 +1,105 @@
+﻿
+@{
+    ViewData["Title"] = "Index";
+}
+
+<a asp-controller="Apprenticeships" asp-action="CourseType" class="govuk-back-link">Back</a>
+<div class="cd-dashboard govuk-grid-row govuk-body dual-delivery ">
+
+    <div class="govuk-form-group govuk-grid-column-two-thirds">
+        <h1 class="govuk-heading-l">
+            Select delivery options
+        </h1>
+
+
+        <div class="govuk-form-group govuk-!-margin-bottom-6">
+            <fieldset class="govuk-fieldset govuk-!-margin-bottom-6" aria-describedby="waste-hint">
+                <legend class="govuk-fieldset__legend govuk-fieldset__legend--s">
+                    <h3 class="govuk-fieldset__heading">
+                        How is the training delivered at this location?
+                    </h3>
+                </legend>
+                <span id="waste-hint" class="govuk-hint">
+                    Select all that apply.
+                </span>
+                <div class="govuk-checkboxes">
+                    <div class="govuk-checkboxes__item">
+                        <input class="govuk-checkboxes__input" id="day" name="waste" type="checkbox" value="carcasses">
+                        <label class="govuk-label govuk-checkboxes__label" for="day">
+                            Day release
+                        </label>
+                    </div>
+                    <div class="govuk-checkboxes__item">
+                        <input class="govuk-checkboxes__input" id="block" name="waste" type="checkbox" value="mines">
+                        <label class="govuk-label govuk-checkboxes__label" for="block">
+                            Block release
+                        </label>
+                    </div>
+                    <div class="govuk-checkboxes__item">
+                        <input class="govuk-checkboxes__input" id="employer" name="waste" type="checkbox" value="mines">
+                        <label class="govuk-label govuk-checkboxes__label" for="employer">
+                            Employers address
+                        </label>
+                    </div>
+
+                </div>
+
+            </fieldset>
+
+            <div class="govuk-form-group  govuk-!-margin-left-9">
+                <div class="">
+                    <h3 class="" for="sort">
+                        Select location
+                    </h3>
+                    <span class="govuk-hint">
+                        Select a location 
+                    </span>
+                    <select class="govuk-select govuk-!-margin-right-6 govuk-!-margin-bottom-6" id="sort" name="sort">
+                        <option value="published">college 1</option>
+                        <option value="updated" selected>Select a location</option>
+                        <option value="views">College 2</option>
+                        <option value="comments">College 3</option>
+                    </select>
+                    <a href="#" class="govuk-link">I need to add a location to this list</a>
+
+                </div>
+
+                <fieldset class="govuk-fieldset" aria-describedby="waste-hint">
+                    <legend class="govuk-fieldset__legend govuk-fieldset__legend--s">
+                        <h3 class="govuk-fieldset__heading">
+                            How is the training delivered at this location?
+
+                        </h3>
+                    </legend>
+                    <span id="waste-hint" class="govuk-hint">
+                        How far are willing to travel from [venue name]?
+
+                    </span>
+                    <div class="govuk-form-group">
+
+                        <input class="govuk-input govuk-input--width-4 govuk-!-margin-right-3" id="width-4" name="width-4" type="text"><span>miles</span>
+                    </div>
+                    <p>Or</p>
+                    <div class="govuk-checkboxes__item">
+                        <input class="govuk-checkboxes__input" id="national name="national" type="checkbox" value="farm">
+                        <label class="govuk-label govuk-checkboxes__label" for="national">
+                            Across England
+                        </label>
+                    </div>
+                </fieldset>
+            </div>
+
+
+
+        </div>
+
+
+
+
+        </fieldset>
+        <a class="govuk-button govuk-!-margin-right-2" asp-controller="Apprenticeships" asp-action="SummaryMixed">Save and continue</a>
+        <a class="govuk-button govuk-button--secondary" >Save and add another</a>
+
+    </div>
+</div>
+
