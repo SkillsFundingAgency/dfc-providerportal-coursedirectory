@@ -74,3 +74,15 @@
 .red-background {
   background-color: red;
 }
+
+.govuk-checkboxes__conditional .no-right-border {
+  border-right: none;
+}
+
+.govuk-checkboxes__conditional .miles {
+  border-right: 2px solid black;
+  border-top: 2px solid black;
+  border-bottom: 2px solid black;
+  padding: 5px;
+  margin-left: -.4rem;
+}

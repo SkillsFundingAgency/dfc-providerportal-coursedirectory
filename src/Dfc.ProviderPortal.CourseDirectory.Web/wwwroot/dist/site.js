@@ -80,7 +80,7 @@ if (apprenticeshipQuestion) {
 
 radioSwitcher('apprenticeship-type');
 radioSwitcher('employerNationalQuestion');
-radioSwitcher('employerNationalQuestion');
+
 
 
 const DualDeliveryPage = document.getElementsByClassName('dual-delivery')[0];
