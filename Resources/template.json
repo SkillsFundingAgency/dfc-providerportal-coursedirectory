@@ -2,6 +2,9 @@
   "$schema": "https://schema.management.azure.com/schemas/2015-01-01/deploymentTemplate.json",
   "contentVersion": "1.0.0.0",
   "parameters": {
+    "appInsightsInstrumentationKey":{
+      "type": "string"
+    },
     "projectPrefix": {
       "type": "string",
       "metadata": {
@@ -23,36 +26,36 @@
   },
   "variables": {
     "dasDeploymentUrlBase": "https://raw.githubusercontent.com/SkillsFundingAgency/das-platform-building-blocks/master/templates/",
-    "appInsightsName": "[concat(parameters('projectPrefix'),'-ai')]",
+    //"appInsightsName": "[concat(parameters('projectPrefix'),'-ai')]",
     "appServiceName": "[concat(parameters('projectPrefix'),'-as')]"
   },
   "resources": [
-    {
-      "apiVersion": "2017-05-10",
-      "name": "providerPortalCourseDirectoryAppInsights",
-      "type": "Microsoft.Resources/deployments",
-      "properties": {
-        "mode": "Incremental",
-        "templateLink": {
-          "uri": "[concat(variables('dasDeploymentUrlBase'),'application-insights.json')]",
-          "contentVersion": "1.0.0.0"
-        },
-        "parameters": {
-          "appInsightsName": {
-            "value": "[variables('appInsightsName')]"
-          },
-          "attachedService": {
-            "value": "[variables('appServiceName')]"
-          }
-        }
-      }
-    },
+    // {
+    //   "apiVersion": "2017-05-10",
+    //   "name": "providerPortalCourseDirectoryAppInsights",
+    //   "type": "Microsoft.Resources/deployments",
+    //   "properties": {
+    //     "mode": "Incremental",
+    //     "templateLink": {
+    //       "uri": "[concat(variables('dasDeploymentUrlBase'),'application-insights.json')]",
+    //       "contentVersion": "1.0.0.0"
+    //     },
+    //     "parameters": {
+    //       "appInsightsName": {
+    //         "value": "[parameters('appInsightsInstrumentationKey')]"
+    //       },
+    //       "attachedService": {
+    //         "value": "[variables('appServiceName')]"
+    //       }
+    //     }
+    //   }
+    // },
     {
       "apiVersion": "2017-05-10",
       "name": "providerPortalCourseDirectoryAppService",
       "type": "Microsoft.Resources/deployments",
       "dependsOn": [
-        "providerPortalCourseDirectoryAppInsights"
+        //"appInsightsInstrumentationKey"
       ],
       "properties": {
         "mode": "Incremental",
@@ -72,6 +75,9 @@
           },
           "deployStagingSlot": {
             "value": true
+          },
+          "appInsightsInstrumentationKey":{
+            "value": "[parameters('appInsightsInstrumentationKey')]"
           }
         }
       }
@@ -80,7 +86,7 @@
   "outputs": {
     "appInsightInstrumentationKey": {
       "type": "string",
-      "value": "[reference('providerPortalCourseDirectoryAppInsights').outputs.InstrumentationKey.value]"
+      "value": "[parameters('appInsightsInstrumentationKey')]"
     },
     "appServiceName": {
       "type": "string",
