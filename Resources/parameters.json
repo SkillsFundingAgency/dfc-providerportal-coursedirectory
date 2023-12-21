@@ -10,6 +10,12 @@
     },
     "appServicePlanResourceGroup": {
       "value": "dfc-dev-prov-rg"
+    },
+    "workspaceName": {
+      "value": "__sharedLogAnalyticsWorkspace__"
+    },
+    "workspaceResourceGroup": {
+      "value": "__sharedLogAnalyticsResourceGroup__"
     }
   }
 }

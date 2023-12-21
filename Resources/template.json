@@ -19,6 +19,12 @@
       "metadata": {
           "description": "Number of instances in the app service plan"
       }
+    },
+    "workspaceName": {
+      "type": "string"
+    },
+    "workspaceResourceGroup": {
+      "type": "string"
     }
   },
   "variables": {
@@ -43,6 +49,13 @@
           },
           "attachedService": {
             "value": "[variables('appServiceName')]"
+
+          },
+          "workspaceName": {
+            "value": "[parameters('workspaceName')]"
+          },
+          "workspaceResourceGroup": {
+            "value": "[parameters('workspaceResourceGroup')]"
           }
         }
       }
